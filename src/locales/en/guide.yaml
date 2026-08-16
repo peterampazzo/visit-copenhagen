@@ -1,5 +1,6 @@
 site:
   title: A København sono tutti matti
+  eyebrow: Pietro’s Copenhagen notes
   subtitle: A little guide for friends visiting me in Copenhagen
   welcome: >-
     Welcome! I'm Italian and I've lived in Copenhagen for a long time now, so
@@ -7,173 +8,237 @@ site:
     I actually like, where to eat, and a couple of local habits that will make
     you look like a local.
   langLabel: Language
-  nav: Jump to
+  nav: Jump to a section
   footer: Made with love in København. Have a great trip!
   linkLabel: Open
 sections:
-  - id: know
+  know:
     emoji: 🧯
     title: Things to know
     blurb: The small stuff that makes a big difference.
     groups:
-      - title: Public transport
+      transport:
+        title: Public transport
         items:
-          - name: The Metro runs 24/7
+          metro:
+            name: The Metro runs 24/7
             note: Every day, all night. No excuses for missing the last train.
-          - name: Paper tickets need no validation
+          paperTickets:
+            name: Paper tickets need no validation
             note: They're time-stamped when you buy them, so just hop on. One ticket works for metro, bus, train and the waterbus.
-          - name: City Pass Small
+          cityPass:
+            name: City Pass Small
             note: If you go for paper tickets, this is usually all you need for the city area.
-          - name: Copenhagen Card
+          copenhagenCard:
+            name: Copenhagen Card
             note: Better value if you plan to visit several museums — transport and admissions included.
             url: https://copenhagencard.com
-          - name: Waterbus
+          waterbus:
+            name: Waterbus
             note: Your normal transport ticket covers it. It crosses the harbour, roughly every half hour — check Citymapper for times.
-      - title: Cycling
+      cycling:
+        title: Cycling
         items:
-          - name: Lights are mandatory after sunset
+          lights:
+            name: Lights are mandatory after sunset
             note: Police do fine tourists too.
-          - name: Always raise your arm before stopping
+          stopping:
+            name: Always raise your arm before stopping
             note: And stay in the right lane if you're slow.
-          - name: How to cycle in Denmark
+          cyclingGuide:
+            name: How to cycle in Denmark
             note: Two minutes of reading that saves you a lot of angry bell-ringing.
             url: https://politi.dk/-/media/mediefiler/kbh/billeder-diverse/how-to-cycle-in-denmark-(1).pdf
-      - title: Everyday life
+      everyday:
+        title: Everyday life
         items:
-          - name: Don't bin bottles and cans
+          deposit:
+            name: Don't bin bottles and cans
             note: They carry a deposit — return them at any supermarket and get money back.
-          - name: Payments
+          payments:
+            name: Payments
             note: We use Danish kroner, not euros. But the country is almost entirely cashless, so your card works everywhere.
-  - id: places
+  places:
     emoji: 🏰
     title: Places & things
     blurb: What to see, from the postcard classics to the odd stuff.
     groups:
-      - title: Classics & parks
+      classics:
+        title: Classics & parks
         items:
-          - name: Nyhavn
+          nyhavn:
+            name: Nyhavn
             note: The iconic coloured harbour. Touristy, still lovely.
-          - name: Christiania
+          christiania:
+            name: Christiania
             note: Pusher Street has been closed, but the area is a nice walk.
-          - name: Søerne (The Lakes)
+          lakes:
+            name: Søerne (The Lakes)
             note: The city's favourite loop for a stroll or a run.
-          - name: Amalienborg
+          amalienborg:
+            name: Amalienborg
             note: The Royal Palace.
-          - name: Kongens Have
+          kingsGarden:
+            name: Kongens Have
             note: The King's Garden, with a rose garden.
-          - name: Kastellet
+          kastellet:
+            name: Kastellet
             note: A star-shaped army fortress with a beautiful park and cherry trees.
-          - name: Tivoli
+          tivoli:
+            name: Tivoli
             note: Amusement park right in the city centre. You can also just walk in — there are restaurants inside.
-          - name: Magstræde
+          magstraede:
+            name: Magstræde
             note: One of the oldest streets in town.
-      - title: Neighbourhoods
+      neighbourhoods:
+        title: Neighbourhoods
         items:
-          - name: Nørrebro
+          norrebro:
+            name: Nørrebro
             note: Vibrant and historic, one of the most multi-ethnic and diverse parts of Copenhagen.
-          - name: Nordhavn
+          nordhavn:
+            name: Nordhavn
             note: A new neighbourhood on an artificial peninsula, with the waterbus terminal.
-          - name: Amager Strand
+          amagerStrand:
+            name: Amager Strand
             note: A beach park. Yes, you can swim.
-      - title: Modern & views
+      modern:
+        title: Modern & views
         items:
-          - name: Superkilen
+          superkilen:
+            name: Superkilen
             note: A park in Nørrebro you've probably already seen in a commercial.
-          - name: CopenHill (Amager Bakke)
+          copenhill:
+            name: CopenHill (Amager Bakke)
             note: An incinerator with a ski slope on top. Free elevator to the roof, but a bit out of the way — nothing fancy.
-          - name: Parliament Tower
+          parliament:
+            name: Parliament Tower
             note: Take the elevator up for the view. Free, no booking needed.
-      - title: Trips
+      trips:
+        title: Trips
         items:
-          - name: Castles north of Copenhagen
+          castles:
+            name: Castles north of Copenhagen
             note: Several of them, all reachable by train.
-          - name: Malmö, Sweden
+          malmo:
+            name: Malmö, Sweden
             note: Take the train across the Øresund Bridge. Another country before lunch.
-  - id: food
+  food:
     emoji: 😋
     title: What to eat
     blurb: Danish cuisine isn't life-changing, but smørrebrød is worth it.
     groups:
-      - title: Markets
+      markets:
+        title: Markets
         items:
-          - name: Torvehallerne
+          torvehallerne:
+            name: Torvehallerne
             note: Food market, and a great place to try smørrebrød.
             url: https://share.google/mTnctOOOQcl2mNZXC
-          - name: Reffen
+          reffen:
+            name: Reffen
             note: Outdoor street food market by the water.
-          - name: Broens Gadekøkken
+          broens:
+            name: Broens Gadekøkken
             note: The Bridge Street Kitchen, just across from Nyhavn. Outdoor.
-          - name: Kødbyen
+          kodbyen:
+            name: Kødbyen
             note: The Meatpacking District — bars and restaurants in old butcher halls.
-      - title: Dining
+      dining:
+        title: Dining
         items:
-          - name: Det Lille Apotek
+          detLilleApotek:
+            name: Det Lille Apotek
             note: For proper, typical Danish food.
             url: https://share.google/uK69ZSpmLYuXoaC9h
-          - name: Aamanns 1921
+          aamanns:
+            name: Aamanns 1921
             note: Excellent smørrebrød — do check the prices first.
             url: https://share.google/SBy6GWdlYLLtZitEX
-      - title: Pastries 🍰
+  pastries:
+    emoji: 🍰
+    title: Pastries
+    blurb: Cardamom, butter and a very good reason to get up early.
+    groups:
+      bakeries:
+        title: Bakeries
         items:
-          - name: Andersen
+          andersen:
+            name: Andersen
             note: Worth the detour.
-          - name: Juno
+          juno:
+            name: Juno
             note: Go early, the cardamom buns disappear.
-          - name: Lagkagehuset
+          lagkagehuset:
+            name: Lagkagehuset
             note: A chain. It's everywhere, and it's fine.
-          - name: More pastry ideas
+          morePastries:
+            name: More pastry ideas
             note: My little list.
             url: https://www.instagram.com/p/DOSrrF8DJpF/
-  - id: museums
+  museums:
     emoji: 🏺
     title: Museums
     blurb: Rainy day? Perfect, that's most days.
     groups:
-      - title: Art & history
+      art:
+        title: Art & history
         items:
-          - name: SMK
+          smk:
+            name: SMK
             note: The National Gallery of Denmark.
-          - name: Nationalmuseet
+          nationalmuseet:
+            name: Nationalmuseet
             note: The National Museum of Denmark.
-          - name: Thorvaldsens Museum
+          thorvaldsens:
+            name: Thorvaldsens Museum
             note: Small, beautiful, wildly colourful inside.
-          - name: Ny Carlsberg Glyptotek
+          glyptotek:
+            name: Ny Carlsberg Glyptotek
             note: Antiquities under a palm-filled winter garden.
-          - name: Cisternerne
+          cisternerne:
+            name: Cisternerne
             note: Art installations in old underground water cisterns.
-          - name: Experimentarium
+          experimentarium:
+            name: Experimentarium
             note: Hands-on science. Great with kids.
-          - name: Louisiana Museum of Modern Art
+          louisiana:
+            name: Louisiana Museum of Modern Art
             note: Outside the city, around one hour by train. Worth the whole day.
-          - name: Copenhagen's top museums
+          museumGuide:
+            name: Copenhagen's top museums
             note: The official round-up.
             url: https://www.visitcopenhagen.com/copenhagen/activities/copenhagens-top-museums
-  - id: saunas
+  saunas:
     emoji: 🧖
     title: Saunas
     blurb: Hot room, cold harbour, repeat. Very Nordic.
     groups:
-      - title: Where to sweat
+      sweat:
+        title: Where to sweat
         items:
-          - name: Glaecier
+          glaecier:
+            name: Glaecier
             note: Book ahead.
             url: https://share.google/PZtXQ1YARZ5NkiuqM
-          - name: Sauna85
-            note: ""
+          sauna85:
+            name: Sauna85
             url: https://www.sauna85.dk/en/
-          - name: Plugin Heat Club
-            note: ""
+          pluginHeat:
+            name: Plugin Heat Club
             url: https://www.pluginheatclub.com/
-          - name: Platform CPH
-            note: ""
+          platform:
+            name: Platform CPH
             url: https://www.platformcph.com/
-  - id: inspiration
+  inspiration:
     emoji: 👻
     title: Inspiration
     blurb: If you want someone else's opinion for once.
     groups:
-      - title: Things I like
+      things:
+        title: Things I like
         items:
-          - name: Things to do in Copenhagen
+          nyt:
+            name: Things to do in Copenhagen
             note: The New York Times guide. A good one.
             url: https://www.nytimes.com/interactive/2023/07/20/travel/things-to-do-copenhagen.html
