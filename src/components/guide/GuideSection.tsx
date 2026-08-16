@@ -22,7 +22,6 @@ export function GuideSection({
   linkLabel,
   mapPlaces,
   showOnMapLabel,
-  googleMapsLabel,
   onShowOnMap,
 }: {
   section: GuideSectionData;
@@ -30,14 +29,13 @@ export function GuideSection({
   linkLabel: string;
   mapPlaces: GuideMapPlace[];
   showOnMapLabel: string;
-  googleMapsLabel: string;
   onShowOnMap: (id: string) => void;
 }) {
   return (
     <section
       id={section.id}
       className={cn(
-        "scroll-mt-16 border-t-2 border-ink/10 px-4 py-14 sm:px-6 sm:py-20",
+        "scroll-mt-16 border-t-2 border-ink/10 px-4 py-10 sm:px-6 sm:py-14",
         SECTION_THEMES[sectionIndex % SECTION_THEMES.length],
       )}
     >
@@ -47,34 +45,34 @@ export function GuideSection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.42 }}
-          className="mb-8 flex items-start gap-4 sm:mb-10 sm:gap-6"
+          className="mb-6 flex items-start gap-3 sm:mb-8 sm:gap-5"
         >
           <span
             aria-hidden="true"
-            className="grid h-14 w-14 shrink-0 rotate-[-3deg] place-items-center rounded-2xl border-2 border-ink bg-card text-3xl shadow-pop sm:h-16 sm:w-16 sm:text-4xl"
+            className="grid h-12 w-12 shrink-0 rotate-[-3deg] place-items-center rounded-2xl border-2 border-ink bg-card text-2xl shadow-[3px_3px_0_var(--ink)] sm:h-14 sm:w-14 sm:text-3xl"
           >
             {section.emoji}
           </span>
           <div>
-            <h2 className="font-display text-4xl font-extrabold tracking-[-0.04em] text-ink sm:text-6xl">
+            <h2 className="font-display text-3xl font-extrabold tracking-[-0.04em] text-ink sm:text-5xl">
               {section.title}
             </h2>
             {section.blurb ? (
-              <p className="mt-2 max-w-2xl text-base leading-7 text-ink/68 sm:text-lg">
+              <p className="mt-1.5 max-w-2xl text-[0.95rem] leading-6 text-ink/68 sm:text-base">
                 {section.blurb}
               </p>
             ) : null}
           </div>
         </motion.div>
 
-        <div className="space-y-10 sm:space-y-14">
+        <div className="space-y-8 sm:space-y-10">
           {section.groups.map((group) => (
             <div key={group.id}>
-              <h3 className="mb-5 flex items-center gap-3 font-display text-xl font-bold text-ink sm:text-2xl">
-                <span className="h-2.5 w-2.5 rounded-full bg-primary" aria-hidden="true" />
+              <h3 className="mb-3 flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
+                <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
                 {group.title}
               </h3>
-              <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+              <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/15 bg-ink/12 sm:grid-cols-2 lg:grid-cols-3">
                 {group.items.map((item, index) => {
                   const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
                   return (
@@ -84,7 +82,6 @@ export function GuideSection({
                       linkLabel={linkLabel}
                       {...(mapPlace ? { mapPlace } : {})}
                       showOnMapLabel={showOnMapLabel}
-                      googleMapsLabel={googleMapsLabel}
                       onShowOnMap={onShowOnMap}
                       index={index}
                     />

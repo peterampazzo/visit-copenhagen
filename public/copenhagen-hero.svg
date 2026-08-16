@@ -188,7 +188,7 @@
     </symbol>
   </defs>
 
-  <circle cx="1065" cy="64" r="34" fill="#f3ac36" opacity=".9" />
+  <circle cx="1005" cy="82" r="34" fill="#f3ac36" opacity=".9" />
 
   <g transform="translate(822 96)">
     <path d="M0 0v133" fill="none" stroke="#153b3c" stroke-linecap="round" stroke-width="3" />

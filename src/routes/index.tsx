@@ -15,28 +15,28 @@ const GuideMapDialog = lazy(() => import("@/components/guide/GuideMapDialog"));
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "A København sono tutti matti — Copenhagen guide" },
+      { title: "Hygge i København — a personal Copenhagen guide" },
       {
         name: "description",
         content:
-          "Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
+          "Hej! Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
       },
-      { property: "og:title", content: "A København sono tutti matti" },
+      { property: "og:title", content: "Hygge i København" },
       {
         property: "og:description",
         content:
-          "Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
+          "Hej! Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/og.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "A København sono tutti matti" },
+      { name: "twitter:title", content: "Hygge i København" },
       {
         name: "twitter:description",
         content:
-          "Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
+          "Hej! Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
       },
       { name: "twitter:image", content: "/og.png" },
     ],
@@ -97,7 +97,6 @@ function Index() {
             linkLabel={t("site.linkLabel")}
             mapPlaces={mapPlaces}
             showOnMapLabel={t("site.showOnMap")}
-            googleMapsLabel={t("site.googleMapsLabel")}
             onShowOnMap={(placeId) => openMap(placeId)}
           />
         ))}
