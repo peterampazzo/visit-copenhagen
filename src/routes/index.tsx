@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MotionConfig } from "motion/react";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Hero } from "@/components/guide/Hero";
@@ -8,6 +8,9 @@ import { GuideSection } from "@/components/guide/GuideSection";
 import { SectionNav } from "@/components/guide/SectionNav";
 import { toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
+import { toGuideMapPlaces } from "@/lib/locations";
+
+const GuideMapDialog = lazy(() => import("@/components/guide/GuideMapDialog"));
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -15,22 +18,25 @@ export const Route = createFileRoute("/")({
       { title: "A København sono tutti matti — Copenhagen guide" },
       {
         name: "description",
-        content: "A personal, bilingual guide to Copenhagen for visiting friends.",
+        content:
+          "Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
       },
       { property: "og:title", content: "A København sono tutti matti" },
       {
         property: "og:description",
-        content: "A personal, bilingual guide to Copenhagen for visiting friends.",
+        content:
+          "Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/og.png" },
-      { property: "og:image:width", content: "1536" },
-      { property: "og:image:height", content: "1024" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "A København sono tutti matti" },
       {
         name: "twitter:description",
-        content: "A personal, bilingual guide to Copenhagen for visiting friends.",
+        content:
+          "Just a list of places, tips, and bits of Copenhagen — collected over time for friends and family.",
       },
       { name: "twitter:image", content: "/og.png" },
     ],
@@ -41,9 +47,12 @@ export const Route = createFileRoute("/")({
 function Index() {
   const { t } = useTranslation();
   const [language, setLanguage] = useState<Language>("en");
+  const [mapOpen, setMapOpen] = useState(false);
+  const [selectedMapPlaceId, setSelectedMapPlaceId] = useState<string | null>(null);
   const sections = toGuideSections(
     t("sections", { returnObjects: true }) as unknown as GuideSectionsRecord,
   );
+  const mapPlaces = toGuideMapPlaces(sections);
 
   useEffect(() => {
     const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
@@ -60,30 +69,73 @@ function Index() {
     document.documentElement.lang = next;
   };
 
+  const openMap = (placeId: string | null = null) => {
+    setSelectedMapPlaceId(placeId);
+    setMapOpen(true);
+  };
+
   return (
     <MotionConfig reducedMotion="user">
       <main className="min-h-screen bg-background">
         <Hero
           language={language}
           onLanguageChange={changeLanguage}
-          eyebrow={t("site.eyebrow")}
           title={t("site.title")}
-          subtitle={t("site.subtitle")}
-          welcome={t("site.welcome")}
+          description={t("site.description")}
         />
-        <SectionNav sections={sections} label={t("site.nav")} />
+        <SectionNav
+          sections={sections}
+          label={t("site.nav")}
+          mapLabel={t("site.mapLabel")}
+          onOpenMap={() => openMap()}
+        />
         {sections.map((section, index) => (
           <GuideSection
             key={section.id}
             section={section}
             sectionIndex={index}
             linkLabel={t("site.linkLabel")}
+            mapPlaces={mapPlaces}
+            showOnMapLabel={t("site.showOnMap")}
+            googleMapsLabel={t("site.googleMapsLabel")}
+            onShowOnMap={(placeId) => openMap(placeId)}
           />
         ))}
         <footer className="border-t-2 border-ink bg-ink px-4 py-12 text-center text-cream sm:px-6">
           <p className="font-display text-xl font-bold sm:text-2xl">{t("site.footer")}</p>
           <p className="mt-3 text-sm text-cream/60">København · 55.6761° N</p>
         </footer>
+        {mapOpen ? (
+          <Suspense
+            fallback={
+              <div
+                role="dialog"
+                aria-modal="true"
+                aria-label={t("site.mapTitle")}
+                className="fixed inset-0 z-50 grid place-items-center bg-cream px-6 text-center text-ink"
+              >
+                <p className="font-display text-xl font-bold">{t("site.mapLoading")}</p>
+              </div>
+            }
+          >
+            <GuideMapDialog
+              places={mapPlaces}
+              initialSelectedId={selectedMapPlaceId}
+              onClose={() => {
+                setMapOpen(false);
+                setSelectedMapPlaceId(null);
+              }}
+              copy={{
+                title: t("site.mapTitle"),
+                intro: t("site.mapIntro"),
+                listLabel: t("site.mapListLabel"),
+                close: t("site.closeMap"),
+                all: t("site.allPlaces"),
+                googleMaps: t("site.googleMapsLabel"),
+              }}
+            />
+          </Suspense>
+        ) : null}
       </main>
     </MotionConfig>
   );

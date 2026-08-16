@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 
 import type { GuideSectionData } from "@/lib/guide-content";
+import type { GuideMapPlace } from "@/lib/locations";
 import { cn } from "@/lib/utils";
 
 import { PlaceCard } from "./PlaceCard";
@@ -19,10 +20,18 @@ export function GuideSection({
   section,
   sectionIndex,
   linkLabel,
+  mapPlaces,
+  showOnMapLabel,
+  googleMapsLabel,
+  onShowOnMap,
 }: {
   section: GuideSectionData;
   sectionIndex: number;
   linkLabel: string;
+  mapPlaces: GuideMapPlace[];
+  showOnMapLabel: string;
+  googleMapsLabel: string;
+  onShowOnMap: (id: string) => void;
 }) {
   return (
     <section
@@ -38,7 +47,7 @@ export function GuideSection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.42 }}
-          className="mb-10 flex items-start gap-4 sm:mb-12 sm:gap-6"
+          className="mb-8 flex items-start gap-4 sm:mb-10 sm:gap-6"
         >
           <span
             aria-hidden="true"
@@ -58,17 +67,29 @@ export function GuideSection({
           </div>
         </motion.div>
 
-        <div className="space-y-12 sm:space-y-16">
+        <div className="space-y-10 sm:space-y-14">
           {section.groups.map((group) => (
             <div key={group.id}>
               <h3 className="mb-5 flex items-center gap-3 font-display text-xl font-bold text-ink sm:text-2xl">
                 <span className="h-2.5 w-2.5 rounded-full bg-primary" aria-hidden="true" />
                 {group.title}
               </h3>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((item, index) => (
-                  <PlaceCard key={item.id} item={item} linkLabel={linkLabel} index={index} />
-                ))}
+              <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+                {group.items.map((item, index) => {
+                  const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
+                  return (
+                    <PlaceCard
+                      key={item.id}
+                      item={item}
+                      linkLabel={linkLabel}
+                      {...(mapPlace ? { mapPlace } : {})}
+                      showOnMapLabel={showOnMapLabel}
+                      googleMapsLabel={googleMapsLabel}
+                      onShowOnMap={onShowOnMap}
+                      index={index}
+                    />
+                  );
+                })}
               </div>
             </div>
           ))}

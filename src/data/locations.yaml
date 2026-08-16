@@ -1,0 +1,154 @@
+nyhavn:
+  latitude: 55.679736
+  longitude: 12.5908855
+  googleQuery: Nyhavn, Copenhagen
+christiania:
+  latitude: 55.6772107
+  longitude: 12.610452
+  googleQuery: Christiania, Copenhagen
+lakes:
+  latitude: 55.6871
+  longitude: 12.5686
+  googleQuery: Dronning Louises Bro, Copenhagen
+amalienborg:
+  latitude: 55.6839601
+  longitude: 12.5930781
+  googleQuery: Amalienborg, Copenhagen
+kingsGarden:
+  latitude: 55.685078
+  longitude: 12.5799809
+  googleQuery: Kongens Have, Copenhagen
+kastellet:
+  latitude: 55.6913826
+  longitude: 12.5937449
+  googleQuery: Kastellet, Copenhagen
+tivoli:
+  latitude: 55.6734266
+  longitude: 12.5691891
+  googleQuery: Tivoli Gardens, Copenhagen
+magstraede:
+  latitude: 55.6763751
+  longitude: 12.5754925
+  googleQuery: Magstræde, Copenhagen
+norrebro:
+  latitude: 55.7006813
+  longitude: 12.5378036
+  googleQuery: Nørrebro, Copenhagen
+nordhavn:
+  latitude: 55.7049718
+  longitude: 12.5910118
+  googleQuery: Nordhavn, Copenhagen
+amagerStrand:
+  latitude: 55.6547864
+  longitude: 12.6480564
+  googleQuery: Amager Strandpark, Copenhagen
+superkilen:
+  latitude: 55.6996781
+  longitude: 12.5423968
+  googleQuery: Superkilen, Copenhagen
+copenhill:
+  latitude: 55.6848712
+  longitude: 12.6211016
+  googleQuery: CopenHill, Copenhagen
+parliament:
+  latitude: 55.6762803
+  longitude: 12.580424
+  googleQuery: Christiansborg Tower, Copenhagen
+malmo:
+  latitude: 55.6091712
+  longitude: 12.9998411
+  googleQuery: Malmö, Sweden
+torvehallerne:
+  latitude: 55.6838669
+  longitude: 12.5695512
+  googleQuery: TorvehallerneKBH, Copenhagen
+reffen:
+  latitude: 55.6931675
+  longitude: 12.60978
+  googleQuery: Reffen, Copenhagen
+broens:
+  latitude: 55.6776804
+  longitude: 12.5972626
+  googleQuery: Broens Gadekøkken, Copenhagen
+kodbyen:
+  latitude: 55.6676775
+  longitude: 12.5595333
+  googleQuery: Kødbyen, Copenhagen
+detLilleApotek:
+  latitude: 55.680325
+  longitude: 12.5745687
+  googleQuery: Det Lille Apotek, Copenhagen
+aamanns:
+  latitude: 55.68021
+  longitude: 12.57594
+  googleQuery: Aamanns 1921, Copenhagen
+andersen:
+  latitude: 55.6672313
+  longitude: 12.5784845
+  googleQuery: Andersen Bakery, Islands Brygge, Copenhagen
+juno:
+  latitude: 55.7061592
+  longitude: 12.5817961
+  googleQuery: Juno the Bakery, Copenhagen
+smk:
+  latitude: 55.6887637
+  longitude: 12.5783697
+  googleQuery: SMK, Copenhagen
+nationalmuseet:
+  latitude: 55.6747103
+  longitude: 12.5743545
+  googleQuery: Nationalmuseet, Copenhagen
+thorvaldsens:
+  latitude: 55.6767531
+  longitude: 12.5787879
+  googleQuery: Thorvaldsens Museum, Copenhagen
+glyptotek:
+  latitude: 55.6725342
+  longitude: 12.5717657
+  googleQuery: Ny Carlsberg Glyptotek, Copenhagen
+cisternerne:
+  latitude: 55.6677
+  longitude: 12.5237
+  googleQuery: Cisternerne, Copenhagen
+experimentarium:
+  latitude: 55.7267014
+  longitude: 12.5800624
+  googleQuery: Experimentarium, Hellerup
+louisiana:
+  latitude: 55.969352
+  longitude: 12.5431572
+  googleQuery: Louisiana Museum of Modern Art, Humlebæk
+glaecier:
+  latitude: 55.690419
+  longitude: 12.606667
+  googleQuery: Glaecier, Refshalevej 143, Copenhagen
+sauna85Amager:
+  itemId: sauna85
+  label: Amager
+  latitude: 55.669003
+  longitude: 12.62215
+  googleQuery: Sauna85, Yderlandsvej 1, Copenhagen
+sauna85Nordvest:
+  itemId: sauna85
+  label: Nordvest
+  latitude: 55.707711
+  longitude: 12.524971
+  googleQuery: Sauna85, Rentemestervej 64, Copenhagen
+pluginAmager:
+  itemId: pluginHeat
+  label: Kløvermarken
+  latitude: 55.675797
+  longitude: 12.617249
+  googleQuery: Plugin Heat Club, Kløvermarksvej 70, Copenhagen
+pluginSydhavn:
+  itemId: pluginHeat
+  label: Sydhavnen
+  latitude: 55.658529
+  longitude: 12.554135
+  googleQuery: Plugin Heat Club, Vasbygade 10A, Copenhagen
+platformBlox:
+  itemId: platform
+  label: BLOX
+  latitude: 55.6720405
+  longitude: 12.5791901
+  googleQuery: BLOX, Bryghuspladsen, Copenhagen

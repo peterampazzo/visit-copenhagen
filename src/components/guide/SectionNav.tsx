@@ -1,9 +1,20 @@
 import { useEffect, useState } from "react";
+import { MapPinned } from "lucide-react";
 
 import type { GuideSectionData } from "@/lib/guide-content";
 import { cn } from "@/lib/utils";
 
-export function SectionNav({ sections, label }: { sections: GuideSectionData[]; label: string }) {
+export function SectionNav({
+  sections,
+  label,
+  mapLabel,
+  onOpenMap,
+}: {
+  sections: GuideSectionData[];
+  label: string;
+  mapLabel: string;
+  onOpenMap: () => void;
+}) {
   const [active, setActive] = useState(sections[0]?.id ?? "");
 
   useEffect(() => {
@@ -30,7 +41,17 @@ export function SectionNav({ sections, label }: { sections: GuideSectionData[]; 
       aria-label={label}
       className="sticky top-0 z-40 border-b-2 border-ink/10 bg-background/90 backdrop-blur-md"
     >
-      <ul className="scrollbar-none flex gap-2 overflow-x-auto px-4 py-3 sm:justify-center">
+      <ul className="scrollbar-none mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-3">
+        <li className="shrink-0">
+          <button
+            type="button"
+            onClick={onOpenMap}
+            className="flex min-h-10 items-center gap-1.5 rounded-full border-2 border-ink bg-sun px-3.5 py-1.5 text-sm font-bold text-ink shadow-[2px_2px_0_var(--ink)] transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <MapPinned aria-hidden="true" size={17} strokeWidth={2.5} />
+            {mapLabel}
+          </button>
+        </li>
         {sections.map((section) => (
           <li key={section.id} className="shrink-0">
             <a

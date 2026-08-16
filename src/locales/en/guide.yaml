@@ -1,16 +1,21 @@
 site:
   title: A København sono tutti matti
-  eyebrow: Pietro’s Copenhagen notes
-  subtitle: A little guide for friends visiting me in Copenhagen
-  welcome: >-
-    Welcome! I'm Italian and I've lived in Copenhagen for a long time now, so
-    here's everything I'd tell you over a coffee: how to move around, the places
-    I actually like, where to eat, and a couple of local habits that will make
-    you look like a local.
+  description: >-
+    Just a list of places, tips, and bits of Copenhagen — collected over time
+    for friends and family.
   langLabel: Language
   nav: Jump to a section
-  footer: Made with love in København. Have a great trip!
-  linkLabel: Open
+  footer: God tur!
+  linkLabel: Open link
+  mapLabel: Map
+  mapTitle: Copenhagen on the map
+  mapIntro: Choose a pin, or open any place straight in Google Maps.
+  mapListLabel: Places on this map
+  mapLoading: Opening the map…
+  closeMap: Close map
+  allPlaces: All
+  showOnMap: On map
+  googleMapsLabel: Google Maps
 sections:
   know:
     emoji: 🧯
@@ -134,7 +139,6 @@ sections:
           torvehallerne:
             name: Torvehallerne
             note: Food market, and a great place to try smørrebrød.
-            url: https://share.google/mTnctOOOQcl2mNZXC
           reffen:
             name: Reffen
             note: Outdoor street food market by the water.
@@ -150,11 +154,9 @@ sections:
           detLilleApotek:
             name: Det Lille Apotek
             note: For proper, typical Danish food.
-            url: https://share.google/uK69ZSpmLYuXoaC9h
           aamanns:
             name: Aamanns 1921
             note: Excellent smørrebrød — do check the prices first.
-            url: https://share.google/SBy6GWdlYLLtZitEX
   pastries:
     emoji: 🍰
     title: Pastries
@@ -220,7 +222,6 @@ sections:
           glaecier:
             name: Glaecier
             note: Book ahead.
-            url: https://share.google/PZtXQ1YARZ5NkiuqM
           sauna85:
             name: Sauna85
             url: https://www.sauna85.dk/en/

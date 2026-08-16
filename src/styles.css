@@ -190,6 +190,652 @@
   }
 }
 
+.cph-hero {
+  min-height: clamp(20rem, 31vw, 22.5rem);
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  border-radius: 2rem;
+  background: linear-gradient(110deg, var(--cream) 0%, var(--cream) 38%, #edf6eb 63%, #c7e9e6 100%);
+  box-shadow: 7px 7px 0 var(--ink);
+  isolation: isolate;
+}
+
+.cph-hero::after {
+  content: none;
+}
+
+.cph-hero__copy {
+  width: 53%;
+  padding: 2rem 2.35rem 4.5rem;
+}
+
+.cph-landscape {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cph-landscape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cph-harbour-stage {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+}
+
+.cph-sun {
+  position: absolute;
+  top: 12%;
+  right: 6%;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 2px solid color-mix(in srgb, var(--ink) 36%, transparent);
+  border-radius: 999px;
+  background: var(--sun);
+  opacity: 0.82;
+}
+
+.cph-skyline-window {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 21%;
+  left: 0;
+  height: 51%;
+  overflow: hidden;
+}
+
+.cph-skyline-track {
+  display: flex;
+  width: max-content;
+  height: 100%;
+  animation: cph-skyline-loop 48s linear infinite;
+  will-change: transform;
+}
+
+.cph-skyline-strip {
+  display: flex;
+  width: 76rem;
+  height: 100%;
+  flex: 0 0 76rem;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0 0.45rem;
+}
+
+.cph-house,
+.cph-landmark {
+  position: relative;
+  flex: 0 0 auto;
+  border: 2px solid var(--ink);
+  border-bottom: 0;
+  box-shadow: inset -7px 0 0 color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.cph-house {
+  display: flex;
+  width: 7rem;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+
+.cph-house--small {
+  height: 8.7rem;
+}
+
+.cph-house--medium {
+  height: 11rem;
+}
+
+.cph-house--tall {
+  height: 13.6rem;
+}
+
+.cph-house--mustard {
+  background: var(--sun);
+}
+
+.cph-house--coral {
+  background: var(--coral);
+}
+
+.cph-house--harbour {
+  background: var(--harbour);
+}
+
+.cph-house--blue {
+  background: #2f8ea3;
+}
+
+.cph-house--cream {
+  background: #f4e1bd;
+}
+
+.cph-house__roof {
+  position: absolute;
+  top: -1.65rem;
+  right: -2px;
+  left: -2px;
+  height: 1.7rem;
+  border: 2px solid var(--ink);
+  background: color-mix(in srgb, var(--coral) 70%, var(--ink));
+  clip-path: polygon(11% 100%, 21% 10%, 79% 10%, 89% 100%);
+}
+
+.cph-house--curved .cph-house__roof {
+  top: -2.45rem;
+  height: 2.5rem;
+  clip-path: polygon(
+    0 100%,
+    0 54%,
+    17% 54%,
+    23% 18%,
+    39% 18%,
+    43% 0,
+    57% 0,
+    61% 18%,
+    77% 18%,
+    83% 54%,
+    100% 54%,
+    100% 100%
+  );
+}
+
+.cph-house--stepped .cph-house__roof {
+  top: -2.15rem;
+  height: 2.2rem;
+  clip-path: polygon(
+    0 100%,
+    0 72%,
+    18% 72%,
+    18% 48%,
+    35% 48%,
+    35% 24%,
+    65% 24%,
+    65% 48%,
+    82% 48%,
+    82% 72%,
+    100% 72%,
+    100% 100%
+  );
+}
+
+.cph-house__windows {
+  position: absolute;
+  top: 1.25rem;
+  right: 1rem;
+  left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1rem;
+}
+
+.cph-house__windows > span {
+  height: 1.15rem;
+  border: 1.5px solid var(--ink);
+  background: color-mix(in srgb, var(--cream) 88%, white);
+  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--ink) 13%, transparent);
+}
+
+.cph-house__door {
+  width: 1.4rem;
+  height: 2.25rem;
+  border: 2px solid var(--ink);
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+  background: var(--ink);
+}
+
+.cph-landmark--borsen {
+  width: 7.5rem;
+  height: 7.6rem;
+  background: #c95e43;
+}
+
+.cph-landmark--borsen::before {
+  position: absolute;
+  top: -2.2rem;
+  right: -2px;
+  left: -2px;
+  height: 2.25rem;
+  border: 2px solid var(--ink);
+  background: #4f8a78;
+  clip-path: polygon(6% 100%, 18% 14%, 82% 14%, 94% 100%);
+  content: "";
+}
+
+.cph-landmark--borsen::after {
+  position: absolute;
+  top: -8.4rem;
+  left: 50%;
+  width: 1.35rem;
+  height: 6.5rem;
+  border: 1.5px solid var(--ink);
+  background: repeating-linear-gradient(55deg, var(--ink) 0 0.16rem, #b3b35d 0.17rem 0.45rem);
+  clip-path: polygon(46% 0, 62% 0, 100% 100%, 0 100%);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.cph-landmark--borsen span {
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  left: 0.75rem;
+  height: 3.9rem;
+  background: repeating-linear-gradient(90deg, var(--cream) 0 0.75rem, var(--ink) 0.76rem 0.9rem);
+  opacity: 0.82;
+}
+
+.cph-landmark--rundetaarn {
+  width: 6.1rem;
+  height: 12.6rem;
+  border-radius: 3.05rem 3.05rem 0 0;
+  background: #cf956d;
+}
+
+.cph-landmark--rundetaarn::before {
+  position: absolute;
+  top: -1.15rem;
+  left: 50%;
+  width: 4.7rem;
+  height: 1.35rem;
+  border: 2px solid var(--ink);
+  border-radius: 50% 50% 0.2rem 0.2rem;
+  background: #4d7770;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.cph-landmark--rundetaarn::after {
+  position: absolute;
+  inset: 1.2rem 0.75rem 0.8rem;
+  background: repeating-linear-gradient(
+    164deg,
+    transparent 0 1.1rem,
+    color-mix(in srgb, var(--ink) 65%, transparent) 1.15rem 1.42rem
+  );
+  content: "";
+  opacity: 0.68;
+}
+
+.cph-landmark--rundetaarn span {
+  position: absolute;
+  z-index: 1;
+  top: 1.7rem;
+  left: 50%;
+  width: 0.8rem;
+  height: 1.2rem;
+  border: 2px solid var(--ink);
+  background: var(--cream);
+  transform: translateX(-50%);
+}
+
+.cph-flagpole {
+  position: relative;
+  width: 2.9rem;
+  height: 11.5rem;
+  flex: 0 0 2.9rem;
+  border-left: 2px solid var(--ink);
+}
+
+.cph-flagpole i {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 2.75rem;
+  height: 1.65rem;
+  border: 1.5px solid var(--ink);
+  background:
+    linear-gradient(90deg, transparent 0 31%, var(--cream) 31% 43%, transparent 43%),
+    linear-gradient(180deg, transparent 0 42%, var(--cream) 42% 58%, transparent 58%), var(--coral);
+}
+
+.cph-landmark--marmorkirken {
+  width: 9.4rem;
+  height: 5.7rem;
+  background: #e6c99b;
+}
+
+.cph-landmark--marmorkirken::before {
+  position: absolute;
+  top: -6.1rem;
+  left: 50%;
+  width: 8rem;
+  height: 6.2rem;
+  border: 2px solid var(--ink);
+  border-radius: 50% 50% 12% 12%;
+  background: repeating-conic-gradient(from 268deg at 50% 100%, #4f8f82 0 9deg, #d4b55a 9deg 11deg);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.cph-landmark--marmorkirken::after {
+  position: absolute;
+  top: -9rem;
+  left: 50%;
+  width: 1.3rem;
+  height: 3rem;
+  border: 2px solid var(--ink);
+  border-bottom: 0;
+  background: var(--sun);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.cph-landmark--marmorkirken span {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0;
+  left: 0.8rem;
+  height: 3.7rem;
+  border-top: 2px solid var(--ink);
+  background: repeating-linear-gradient(90deg, var(--cream) 0 1.05rem, var(--ink) 1.06rem 1.2rem);
+}
+
+.cph-landmark--christiansborg {
+  width: 5.1rem;
+  height: 13rem;
+  background: #9c886e;
+}
+
+.cph-landmark--christiansborg::before {
+  position: absolute;
+  top: -4.7rem;
+  left: 50%;
+  width: 3.8rem;
+  height: 4.8rem;
+  border: 2px solid var(--ink);
+  background: #355f59;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.cph-landmark--christiansborg::after {
+  position: absolute;
+  top: -6.5rem;
+  left: 50%;
+  width: 0.35rem;
+  height: 2rem;
+  background: var(--sun);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.cph-landmark--christiansborg span {
+  position: absolute;
+  top: 1.3rem;
+  left: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--cream);
+  transform: translateX(-50%);
+}
+
+.cph-quay {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 19.5%;
+  left: 0;
+  height: 1.1rem;
+  border-block: 2px solid var(--ink);
+  background: repeating-linear-gradient(90deg, #f5e5c4 0 3.8rem, #dfc796 3.8rem 4rem);
+}
+
+.cph-bike-run {
+  position: absolute;
+  z-index: 5;
+  bottom: calc(19.5% + 0.65rem);
+  left: -5rem;
+  color: var(--ink);
+  animation: cph-bike-loop 25s linear infinite;
+  filter: drop-shadow(2px 2px 0 color-mix(in srgb, var(--cream) 75%, transparent));
+  will-change: left;
+}
+
+.cph-water {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20%;
+  border-top: 2px solid var(--ink);
+  background:
+    radial-gradient(
+        ellipse at 50% -15%,
+        transparent 0 2.4rem,
+        color-mix(in srgb, var(--cream) 36%, transparent) 2.5rem 3.25rem,
+        transparent 3.35rem
+      )
+      0 0 / 8rem 3.2rem repeat-x,
+    var(--harbour);
+  animation: cph-water-loop 8s linear infinite;
+}
+
+.cph-harbourbus-run {
+  position: absolute;
+  z-index: 6;
+  bottom: 6%;
+  left: -10rem;
+  width: 8.5rem;
+  height: 4.5rem;
+  animation: cph-harbourbus-loop 20s linear infinite;
+  will-change: left;
+}
+
+.cph-harbourbus {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: cph-boat-bob 2.4s ease-in-out infinite;
+}
+
+.cph-harbourbus__roof {
+  position: absolute;
+  top: 0.35rem;
+  left: 1rem;
+  width: 5.9rem;
+  height: 0.55rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px 999px 0.15rem 0.15rem;
+  background: var(--sun);
+}
+
+.cph-harbourbus__cabin {
+  position: absolute;
+  top: 0.85rem;
+  left: 1.25rem;
+  display: grid;
+  width: 5.5rem;
+  height: 2.15rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.22rem;
+  border: 2px solid var(--ink);
+  border-bottom: 0;
+  border-radius: 0.45rem 0.8rem 0 0;
+  background: var(--sun);
+  padding: 0.35rem;
+}
+
+.cph-harbourbus__cabin i {
+  border: 1px solid var(--ink);
+  border-radius: 0.12rem;
+  background: color-mix(in srgb, #b9e2e3 75%, white);
+}
+
+.cph-harbourbus__number {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  right: 0.7rem;
+  display: grid;
+  width: 1.45rem;
+  height: 1.25rem;
+  place-items: center;
+  border: 1.5px solid var(--ink);
+  border-radius: 0.25rem;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-style: normal;
+  line-height: 1;
+}
+
+.cph-harbourbus__hull {
+  position: absolute;
+  right: 0;
+  bottom: 0.65rem;
+  left: 0;
+  height: 1.5rem;
+  border: 2px solid var(--ink);
+  border-radius: 0.2rem 0.2rem 3rem 1.2rem;
+  background: var(--harbour);
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 15% 100%);
+}
+
+.cph-harbourbus::after {
+  position: absolute;
+  right: 78%;
+  bottom: 0.05rem;
+  width: 4rem;
+  height: 0.55rem;
+  border-top: 2px solid color-mix(in srgb, var(--cream) 75%, transparent);
+  border-radius: 50%;
+  content: "";
+}
+
+@keyframes cph-skyline-loop {
+  to {
+    transform: translateX(-76rem);
+  }
+}
+
+@keyframes cph-bike-loop {
+  from {
+    left: -5rem;
+  }
+
+  to {
+    left: calc(100% + 1rem);
+  }
+}
+
+@keyframes cph-harbourbus-loop {
+  from {
+    left: -10rem;
+  }
+
+  to {
+    left: calc(100% + 2rem);
+  }
+}
+
+@keyframes cph-water-loop {
+  to {
+    background-position:
+      8rem 0,
+      0 0;
+  }
+}
+
+@keyframes cph-boat-bob {
+  50% {
+    transform: translateY(0.3rem) rotate(0.8deg);
+  }
+}
+
+.guide-map-marker {
+  display: grid;
+  width: 2.35rem;
+  height: 2.35rem;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 999px 999px 999px 0.35rem;
+  background: var(--card);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition:
+    transform 150ms ease,
+    background-color 150ms ease;
+}
+
+.guide-map-marker__emoji {
+  display: block;
+  transform: rotate(45deg);
+}
+
+.guide-map-marker:hover,
+.guide-map-marker[data-selected="true"] {
+  z-index: 2;
+  background: var(--sun);
+  transform: rotate(-45deg) translate(2px, -2px) scale(1.12);
+}
+
+.guide-map-marker:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
+.maplibregl-popup-content {
+  border: 2px solid var(--ink);
+  border-radius: 1rem;
+  background: var(--card);
+  box-shadow: 4px 4px 0 var(--ink);
+  color: var(--ink);
+  padding: 0.9rem 1rem;
+}
+
+.maplibregl-popup-close-button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 1.25rem;
+}
+
+.guide-map-popup__title {
+  margin: 0;
+  padding-right: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.guide-map-popup__note {
+  margin: 0.45rem 0 0;
+  color: color-mix(in srgb, var(--ink) 68%, transparent);
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.guide-map-popup__link {
+  display: inline-block;
+  margin-top: 0.65rem;
+  color: var(--harbour);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -198,5 +844,114 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .cph-skyline-track,
+  .cph-water,
+  .cph-harbourbus {
+    animation: none !important;
+  }
+
+  .cph-bike-run {
+    left: 8%;
+    animation: none !important;
+  }
+
+  .cph-harbourbus-run {
+    left: 68%;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .cph-hero {
+    min-height: 26rem;
+    border-radius: 1.65rem;
+    background: linear-gradient(
+      160deg,
+      var(--cream) 0%,
+      var(--cream) 55%,
+      #edf5e9 74%,
+      #c7e9e6 100%
+    );
+    box-shadow: 5px 5px 0 var(--ink);
+  }
+
+  .cph-hero__copy {
+    width: 100%;
+    padding: 3.5rem 1rem 0;
+  }
+
+  .cph-hero__copy h1 {
+    max-width: 22rem;
+    font-size: clamp(2.25rem, 10.5vw, 2.75rem);
+    line-height: 0.92;
+  }
+
+  .cph-hero__copy p:last-of-type {
+    max-width: 21rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .cph-hero__copy > a {
+    min-height: 2.25rem;
+    margin-top: 0.75rem;
+    padding: 0.35rem 0.8rem;
+  }
+
+  .cph-hero [role="group"] {
+    gap: 0;
+    padding: 0.2rem;
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+
+  .cph-hero [role="group"] button {
+    min-height: 2rem;
+    padding: 0.25rem 0.65rem;
+    font-size: 0.75rem;
+  }
+
+  .cph-landscape {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: -20%;
+    width: 135%;
+    height: 52%;
+  }
+
+  .cph-landscape img {
+    object-fit: contain;
+    object-position: center bottom;
+  }
+
+  .cph-sun {
+    top: 17%;
+    right: -1.1rem;
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .cph-skyline-window {
+    height: 47%;
+  }
+
+  .cph-skyline-track {
+    animation-duration: 60s;
+  }
+
+  .cph-house,
+  .cph-landmark {
+    transform: scale(0.78);
+    transform-origin: bottom center;
+  }
+
+  .cph-bike-run {
+    animation-duration: 20s;
+  }
+
+  .cph-harbourbus-run {
+    animation-duration: 16s;
   }
 }

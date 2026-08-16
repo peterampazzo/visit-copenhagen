@@ -1,16 +1,21 @@
 site:
   title: A København sono tutti matti
-  eyebrow: Gli appunti di Pietro su Copenaghen
-  subtitle: Una piccola guida per gli amici che vengono a trovarmi a Copenaghen
-  welcome: >-
-    Benvenuti! Sono italiano e vivo a Copenaghen da un bel po', quindi qui trovate
-    tutto quello che vi racconterei davanti a un caffè: come muoversi, i posti che
-    mi piacciono davvero, dove mangiare e due abitudini locali che vi faranno
-    sembrare del posto.
+  description: >-
+    Una lista di posti, dritte e un po’ di Copenaghen — raccolta nel tempo per
+    amici e famiglia.
   langLabel: Lingua
   nav: Vai a una sezione
-  footer: Fatto con affetto a København. Buon viaggio!
-  linkLabel: Apri
+  footer: God tur!
+  linkLabel: Apri link
+  mapLabel: Mappa
+  mapTitle: Copenaghen sulla mappa
+  mapIntro: Scegliete un segnaposto oppure aprite il luogo direttamente in Google Maps.
+  mapListLabel: Luoghi su questa mappa
+  mapLoading: Apertura della mappa…
+  closeMap: Chiudi la mappa
+  allPlaces: Tutti
+  showOnMap: Sulla mappa
+  googleMapsLabel: Google Maps
 sections:
   know:
     emoji: 🧯
@@ -134,7 +139,6 @@ sections:
           torvehallerne:
             name: Torvehallerne
             note: Food market, ottimo posto per provare gli smørrebrød.
-            url: https://share.google/mTnctOOOQcl2mNZXC
           reffen:
             name: Reffen
             note: Street food all'aperto sull'acqua.
@@ -150,11 +154,9 @@ sections:
           detLilleApotek:
             name: Det Lille Apotek
             note: Per il cibo danese tipico, quello vero.
-            url: https://share.google/uK69ZSpmLYuXoaC9h
           aamanns:
             name: Aamanns 1921
             note: Smørrebrød eccellenti — date un occhio ai prezzi.
-            url: https://share.google/SBy6GWdlYLLtZitEX
   pastries:
     emoji: 🍰
     title: Pasticceria
@@ -220,7 +222,6 @@ sections:
           glaecier:
             name: Glaecier
             note: Meglio prenotare.
-            url: https://share.google/PZtXQ1YARZ5NkiuqM
           sauna85:
             name: Sauna85
             url: https://www.sauna85.dk/en/
