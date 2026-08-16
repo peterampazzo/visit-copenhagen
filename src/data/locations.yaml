@@ -2,6 +2,10 @@ nyhavn:
   latitude: 55.679736
   longitude: 12.5908855
   googleQuery: Nyhavn, Copenhagen
+christiansborg:
+  latitude: 55.6762803
+  longitude: 12.580424
+  googleQuery: Christiansborg Palace, Copenhagen
 christiania:
   latitude: 55.6772107
   longitude: 12.610452
@@ -22,6 +26,10 @@ kastellet:
   latitude: 55.6913826
   longitude: 12.5937449
   googleQuery: Kastellet, Copenhagen
+assistens:
+  latitude: 55.691925
+  longitude: 12.549553
+  googleQuery: Assistens Cemetery, Copenhagen
 tivoli:
   latitude: 55.6734266
   longitude: 12.5691891
@@ -30,10 +38,46 @@ magstraede:
   latitude: 55.6763751
   longitude: 12.5754925
   googleQuery: Magstræde, Copenhagen
+gefion:
+  latitude: 55.689319
+  longitude: 12.597902
+  googleQuery: Gefion Fountain, Copenhagen
+littleMermaid:
+  latitude: 55.69288
+  longitude: 12.599258
+  googleQuery: The Little Mermaid, Copenhagen
+david:
+  latitude: 55.686862
+  longitude: 12.597446
+  googleQuery: Michelangelo David, Toldbodgade 40, Copenhagen
+storkFountain:
+  latitude: 55.678946
+  longitude: 12.579955
+  googleQuery: Stork Fountain, Amagertorv, Copenhagen
+caritas:
+  latitude: 55.677785
+  longitude: 12.570576
+  googleQuery: Caritas Fountain, Gammeltorv, Copenhagen
+playhouse:
+  latitude: 55.679395
+  longitude: 12.597105
+  googleQuery: Royal Danish Playhouse, Copenhagen
+papiroen:
+  latitude: 55.679924
+  longitude: 12.603273
+  googleQuery: Papirøen, Copenhagen
+opera:
+  latitude: 55.681812
+  longitude: 12.600541
+  googleQuery: Copenhagen Opera House
 norrebro:
   latitude: 55.7006813
   longitude: 12.5378036
   googleQuery: Nørrebro, Copenhagen
+christianshavn:
+  latitude: 55.672804
+  longitude: 12.594443
+  googleQuery: Christianshavn, Copenhagen
 nordhavn:
   latitude: 55.7049718
   longitude: 12.5910118
@@ -50,10 +94,6 @@ copenhill:
   latitude: 55.6848712
   longitude: 12.6211016
   googleQuery: CopenHill, Copenhagen
-parliament:
-  latitude: 55.6762803
-  longitude: 12.580424
-  googleQuery: Christiansborg Tower, Copenhagen
 malmo:
   latitude: 55.6091712
   longitude: 12.9998411

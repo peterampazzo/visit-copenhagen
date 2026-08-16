@@ -1,3 +1,4 @@
+import { ArrowRight, Footprints } from "lucide-react";
 import { motion } from "motion/react";
 
 import type { GuideSectionData } from "@/lib/guide-content";
@@ -5,6 +6,7 @@ import type { GuideMapPlace } from "@/lib/locations";
 import { cn } from "@/lib/utils";
 
 import { PlaceCard } from "./PlaceCard";
+import type { StoryCopy } from "./GuideStoryDialog";
 
 const SECTION_THEMES = [
   "bg-sun/14",
@@ -23,6 +25,7 @@ export function GuideSection({
   mapPlaces,
   showOnMapLabel,
   onShowOnMap,
+  storyCopy,
 }: {
   section: GuideSectionData;
   sectionIndex: number;
@@ -30,6 +33,7 @@ export function GuideSection({
   mapPlaces: GuideMapPlace[];
   showOnMapLabel: string;
   onShowOnMap: (id: string) => void;
+  storyCopy: StoryCopy;
 }) {
   return (
     <section
@@ -68,10 +72,26 @@ export function GuideSection({
         <div className="space-y-8 sm:space-y-10">
           {section.groups.map((group) => (
             <div key={group.id}>
-              <h3 className="mb-3 flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
-                <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
-                {group.title}
-              </h3>
+              <div className="mb-3">
+                <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
+                  <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
+                  {group.title}
+                </h3>
+                {group.route ? (
+                  <div className="scrollbar-none mt-3 flex items-center gap-2 overflow-x-auto rounded-2xl border-2 border-harbour/20 bg-card/70 px-3 py-2.5 text-xs font-bold text-ink/72 sm:w-fit sm:max-w-full sm:text-sm">
+                    <span className="flex shrink-0 items-center gap-1.5 text-harbour">
+                      <Footprints size={16} strokeWidth={2.5} aria-hidden="true" />
+                      {group.route.label}
+                    </span>
+                    {group.route.stops.map((stop, index) => (
+                      <span key={stop} className="flex shrink-0 items-center gap-2">
+                        <ArrowRight size={13} strokeWidth={2.5} aria-hidden="true" />
+                        <span className="rounded-full bg-harbour/8 px-2.5 py-1">{stop}</span>
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
               <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/15 bg-ink/12 sm:grid-cols-2 lg:grid-cols-3">
                 {group.items.map((item, index) => {
                   const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
@@ -83,6 +103,7 @@ export function GuideSection({
                       {...(mapPlace ? { mapPlace } : {})}
                       showOnMapLabel={showOnMapLabel}
                       onShowOnMap={onShowOnMap}
+                      storyCopy={storyCopy}
                       index={index}
                     />
                   );

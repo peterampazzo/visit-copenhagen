@@ -3,11 +3,17 @@ export type GuideItem = {
   name: string;
   note?: string;
   url?: string;
+  kicker?: string;
+  story?: string;
 };
 
 export type GuideGroup = {
   id: string;
   title: string;
+  route?: {
+    label: string;
+    stops: string[];
+  };
   items: GuideItem[];
 };
 
@@ -23,6 +29,10 @@ type GuideItemRecord = Omit<GuideItem, "id">;
 
 type GuideGroupRecord = {
   title: string;
+  route?: {
+    label: string;
+    stops: string[];
+  };
   items: Record<string, GuideItemRecord>;
 };
 
@@ -37,7 +47,10 @@ export type GuideSectionsRecord = Record<string, GuideSectionRecord>;
 
 const GUIDE_ORDER = [
   { id: "know", groups: ["transport", "cycling", "everyday"] },
-  { id: "places", groups: ["classics", "neighbourhoods", "modern", "trips"] },
+  {
+    id: "places",
+    groups: ["classics", "stories", "harbour", "neighbourhoods", "modern", "trips"],
+  },
   { id: "food", groups: ["markets", "dining"] },
   { id: "pastries", groups: ["bakeries"] },
   { id: "museums", groups: ["art"] },
@@ -67,6 +80,7 @@ export function toGuideSections(resources: GuideSectionsRecord): GuideSectionDat
       groups: preferredEntries(section.groups, preferredGroups).map(([groupId, group]) => ({
         id: groupId,
         title: group.title,
+        ...(group.route === undefined ? {} : { route: group.route }),
         items: Object.entries(group.items).map(([itemId, item]) => ({ id: itemId, ...item })),
       })),
     };

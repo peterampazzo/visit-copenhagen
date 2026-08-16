@@ -65,6 +65,12 @@ export function App() {
             mapPlaces={mapPlaces}
             showOnMapLabel={t("site.showOnMap")}
             onShowOnMap={(placeId) => openMap(placeId)}
+            storyCopy={{
+              label: t("site.storyLabel"),
+              close: t("site.closeStory"),
+              map: t("site.storyMapLabel"),
+              learnMore: t("site.learnMoreLabel"),
+            }}
           />
         ))}
         <footer className="border-t-2 border-ink bg-ink px-4 py-12 text-center text-cream sm:px-6">

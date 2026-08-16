@@ -16,6 +16,10 @@ site:
   allPlaces: All
   showOnMap: On map
   googleMapsLabel: Google Maps
+  storyLabel: The story
+  closeStory: Close story
+  storyMapLabel: Find it on the map
+  learnMoreLabel: Read more
 sections:
   know:
     emoji: 🧯
@@ -65,42 +69,204 @@ sections:
             note: We use Danish kroner, not euros. But the country is almost entirely cashless, so your card works everywhere.
   places:
     emoji: 🏰
-    title: Places & things
-    blurb: What to see, from the postcard classics to the odd stuff.
+    title: Places & stories
+    blurb: The city makes more sense once you know what you're looking at.
     groups:
       classics:
-        title: Classics & parks
+        title: Classics with a backstory
         items:
           nyhavn:
             name: Nyhavn
             note: The iconic coloured harbour. Touristy, still lovely.
+          christiansborg:
+            name: Christiansborg & the Tower
+            note: Parliament, palace and a free city view—all on the same island.
+            kicker: Third palace on this site
+            story: >-
+              Christiansborg did not burn three times. The first and second
+              palaces burned in 1794 and 1884; today's building is the third.
+              Beneath it are the ruins of Bishop Absalon's castle and Copenhagen
+              Castle. It now houses Parliament, the Prime Minister's Office, the
+              Supreme Court and royal reception rooms.
+            url: https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
+          amalienborg:
+            name: Amalienborg
+            note: Four matching palaces around one very impressive king on horseback.
+            kicker: 1750s · Royal quarter
+            story: >-
+              Amalienborg was built as four noblemen's palaces around Saly's
+              equestrian statue of Frederik V. The royal family moved here after
+              Christiansborg burned in 1794. The calm geometry is deliberate:
+              Amalienborg is the centre of the grand Frederiksstaden district.
+            url: https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/amalienborg/
+          tivoli:
+            name: Tivoli
+            note: Historic amusement garden in the middle of the city—rides optional.
+            kicker: Since 1843
+            story: >-
+              Georg Carstensen opened Tivoli in 1843 after receiving royal
+              permission. It began as an elegant pleasure garden with music,
+              food and entertainment outside the old city walls. H.C. Andersen
+              was among its early visitors and found inspiration here for The
+              Nightingale.
+            url: https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
           christiania:
             name: Christiania
             note: Pusher Street has been closed, but the area is a nice walk.
           lakes:
             name: Søerne (The Lakes)
-            note: The city's favourite loop for a stroll or a run.
-          amalienborg:
-            name: Amalienborg
-            note: The Royal Palace.
+            note: Three long lakes and the city's favourite 6.35 km walking loop.
+            kicker: Wetlands → water supply → city walk
+            story: >-
+              Sankt Jørgens Sø, Peblinge Sø and Sortedams Sø grew from low
+              wetlands into a carefully managed water system. Over the centuries
+              they powered mills, stored drinking water and strengthened the
+              city's defences. Today their hard-working past is mostly hidden
+              beneath Copenhagen's favourite walking and running route.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
           kingsGarden:
             name: Kongens Have
             note: The King's Garden, with a rose garden.
           kastellet:
             name: Kastellet
-            note: A star-shaped army fortress with a beautiful park and cherry trees.
-          tivoli:
-            name: Tivoli
-            note: Amusement park right in the city centre. You can also just walk in — there are restaurants inside.
+            note: A working star fortress that doubles as one of the city's best walks.
+            kicker: 1662–65 · Frederik III
+            story: >-
+              Christian IV began the fortifications, but Frederik III completed
+              Kastellet with Dutch engineer Henrik Rüse. It is still an active
+              military workplace and is also open as a public park. Look up at
+              Kongeporten: the face above the gate is a bust of Frederik III.
+            url: https://www.forsvaret.dk/da/side/kastellet/kastellets-historie/
+          assistens:
+            name: Assistens Cemetery
+            note: Nørrebro's greenest history book—and still an active cemetery.
+            kicker: Since 1760
+            story: >-
+              Assistens opened when burial space inside Copenhagen's walls ran
+              out. It later became the resting place of H.C. Andersen, Søren
+              Kierkegaard, Niels Bohr, H.C. Ørsted and musician Natasja Saad.
+              Parts feel like a park, but other areas remain active burial ground,
+              so follow the signs and keep it respectful.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/assistens-cemetery-gdk964360
           magstraede:
             name: Magstræde
             note: One of the oldest streets in town.
+      stories:
+        title: Statues, fountains & curious copies
+        items:
+          gefion:
+            name: Gefion Fountain
+            note: Copenhagen's most dramatic fountain, just outside Kastellet.
+            kicker: 1908 · Norse legend
+            story: >-
+              The goddess Gefion drives four oxen—her sons transformed—while
+              ploughing the island of Zealand out of Sweden. Anders Bundgaard's
+              fountain was funded for Carlsberg's 50th anniversary and finished
+              in 1908. The matching hole left in Sweden is, according to the
+              legend, Lake Vänern.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/gefion-fountain-gdk410604
+          littleMermaid:
+            name: The Little Mermaid
+            note: Smaller and quieter than the crowd around her suggests.
+            kicker: 1913 · H.C. Andersen
+            story: >-
+              Brewer Carl Jacobsen commissioned Edvard Eriksen after seeing a
+              ballet based on H.C. Andersen's tale. Eriksen's wife Eline modelled
+              for the sculpture. The mermaid has watched the harbour since 1913
+              and has survived repeated vandalism, repairs and endless tourist
+              photographs.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/the-little-mermaid-gdk586951
+          david:
+            name: David by the harbour
+            note: Michelangelo in Copenhagen? A full-size bronze cast, not a counterfeit.
+            kicker: 1897 · The art of copying
+            story: >-
+              Carl Jacobsen commissioned this bronze cast of Michelangelo's David
+              for Copenhagen. It first stood near City Hall in 1897, where its
+              nudity caused complaints, and moved to the harbour in 1993. The
+              original remains in Florence; this copy introduces the Royal Cast
+              Collection behind it.
+            url: https://www.open.smk.dk/en/artwork/image/DEP466/1
+          storkFountain:
+            name: Stork Fountain
+            note: The busy fountain on Amagertorv—with birds that are actually herons.
+            kicker: 1894 · Strøget
+            story: >-
+              The fountain was unveiled in 1894 and quickly became one of
+              Strøget's best-known meeting points. Its three birds are herons,
+              despite the name. Since 1950, newly qualified midwives have kept
+              the wonderfully specific tradition of dancing around it.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/the-stork-fountain-gdk410612
+          caritas:
+            name: Caritas Fountain
+            note: Copenhagen's oldest fountain, hiding in plain sight on Gammeltorv.
+            kicker: 1608 · Water for the city
+            story: >-
+              Christian IV gave Caritas to Copenhagen when Gammeltorv was the
+              city's main civic square. It was not only decoration: water arrived
+              from Emdrup Sø through hollow wooden pipes, and people used the well
+              below for everyday water. The figures represent charity and love.
+            url: https://cphmuseum.kk.dk/en/whats-on/greed-garbage-and-grand-architecture-an-almost-free-guided-tour-in-copenhagen
+      harbour:
+        title: The harbour, rebuilt
+        route:
+          label: Easy waterside walk
+          stops:
+            - Nyhavn
+            - Skuespilhuset
+            - Papirøen
+            - Operaen
+        items:
+          playhouse:
+            name: Skuespilhuset & Ofelia Plads
+            note: Theatre, public promenade and a front-row view of the harbour.
+            kicker: 2008 · Drama by the water
+            story: >-
+              The glass-fronted building at the end of Nyhavn is the Royal Danish
+              Playhouse—not part of the Opera building, although both belong to
+              the Royal Danish Theatre. You can enter the foyer or walk its oak
+              promenade without a ticket. Aamanns currently runs the restaurant
+              on the ground floor.
+            url: https://www.kglteater.dk/dit-besoeg/lokationer/skuespilhuset/
+          papiroen:
+            name: Papirøen
+            note: From naval stores and newspaper rolls to a new waterside neighbourhood.
+            kicker: 1696 → now
+            story: >-
+              Christiansholm is an artificial island that has stored cannons,
+              coal and, from 1958, huge newspaper-paper rolls—the source of its
+              nickname. Copenhagen Street Food opened the former warehouses to
+              the public in 2014. Today there are homes, cafés, a hotel and new
+              public waterfront spaces; the old street-food spirit moved on to Reffen.
+            url: https://papiroeen.dk/historien/
+          opera:
+            name: Operaen
+            note: Denmark's monumental opera house, directly across from Amalienborg.
+            kicker: 2005 · A gift to Denmark
+            story: >-
+              The A.P. Møller Foundation funded the opera house and gave it to
+              Denmark; Mærsk Mc-Kinney Møller personally influenced many design
+              decisions. Henning Larsen was the architect, and their disagreements
+              helped make the building famously controversial. Its position ends
+              the grand visual axis from Marmorkirken through Amalienborg.
+            url: https://www.apmollerfonde.dk/projekter/operaen/
       neighbourhoods:
         title: Neighbourhoods
         items:
           norrebro:
             name: Nørrebro
             note: Vibrant and historic, one of the most multi-ethnic and diverse parts of Copenhagen.
+          christianshavn:
+            name: Christianshavn
+            note: A canal district designed as a little Dutch-inspired city of its own.
+            kicker: Founded 1617–18
+            story: >-
+              Christian IV ordered Christianshavn built on shallow, reclaimed
+              land to protect the harbour and create a fortified merchant town.
+              Johan Semp planned its straight streets and canals in the Dutch
+              style. It was briefly independent, then grew wealthy through
+              international shipping—including Denmark's colonial trade.
+            url: https://kp24.kk.dk/retningslinjer/kulturarv/vaerdifulde-kulturmiljoeer/21-christianshavn
           nordhavn:
             name: Nordhavn
             note: A new neighbourhood on an artificial peninsula, with the waterbus terminal.
@@ -116,9 +282,6 @@ sections:
           copenhill:
             name: CopenHill (Amager Bakke)
             note: An incinerator with a ski slope on top. Free elevator to the roof, but a bit out of the way — nothing fancy.
-          parliament:
-            name: Parliament Tower
-            note: Take the elevator up for the view. Free, no booking needed.
       trips:
         title: Trips
         items:
