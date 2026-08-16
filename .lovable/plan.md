@@ -55,8 +55,9 @@ The Italian file mirrors the same keys with Italian values. Rendering order come
 ## Technical notes
 
 - One route: rewrite `src/routes/index.tsx` (the placeholder home page) with its own SEO head — unique title, description, og/twitter tags.
-- YAML is imported at build time via a small Vite YAML loader plugin (or a `yaml` parse of a raw import), typed with a Zod-free lightweight TS type so the page renders it directly. No backend, no database.
-- Language state lives in React with the choice persisted to `localStorage`, read after hydration to avoid SSR mismatch; `lang` reflected on the content container.
+- YAML locale files are loaded at build time (Vite YAML import) and registered as i18next resource bundles — no runtime HTTP fetching, so SSR renders the right language immediately.
+- i18n via `i18next` + `react-i18next`: `fallbackLng: "en"`, namespace `guide`, `returnObjects: true` for lists. Language choice persisted in `localStorage` and applied after hydration to avoid SSR mismatch; `lang` attribute kept in sync.
+
 - Design tokens (colors, radius, fonts) go into `src/styles.css` as semantic tokens — no hardcoded color classes in components.
 - Animation with Motion for React (`motion`) plus CSS transitions; all guarded by reduced-motion.
 - Components split small: `Hero`, `SectionNav`, `GuideSection`, `PlaceCard`, `LanguageToggle`.
