@@ -24,28 +24,33 @@ A single-page, mobile-first Copenhagen guide for your visitors, in English and I
 
 Every item that has a map or website link gets a tappable link button. Items keep their little honest asides ("nothing fancy", "Pusher Street is closed") since that's the charm of your notes.
 
-## Editing the content via YAML
+## Editing the content (standard i18n)
 
-All copy and every place lives in `src/content/guide.yaml`, structured so you edit one file and both languages update:
+Content uses the standard i18next setup: one locale file per language, same key structure in each, so it works with any translation tool or editor.
+
+- `src/locales/en/guide.yaml`
+- `src/locales/it/guide.yaml`
 
 ```yaml
-languages: [en, it]
 site:
-  title: { en: "...", it: "..." }
-  welcome: { en: "...", it: "..." }
+  title: A København sono tutti matti
+  welcome: Welcome to Copenhagen...
 sections:
-  - id: know
+  know:
     emoji: "🧯"
-    title: { en: "Things to know", it: "Cose da sapere" }
+    title: Things to know
     groups:
-      - title: { en: "Public transport", it: "Mezzi pubblici" }
+      transport:
+        title: Public transport
         items:
-          - name: { en: "The Metro runs 24/7", it: "La metro funziona H24" }
-            note: { en: "...", it: "..." }
-            url: "https://..."
+          metro:
+            name: The Metro runs 24/7
+            note: Paper tickets don't need validating.
+            url: https://...
 ```
 
-Adding a place = adding a list item. Adding a section = adding a block. Missing Italian text falls back to English so nothing breaks mid-edit.
+The Italian file mirrors the same keys with Italian values. Rendering order comes from a small ordered key list per section, so adding a place = adding a key in both locale files (English is the fallback language, so an untranslated key still renders instead of breaking).
+
 
 ## Technical notes
 
