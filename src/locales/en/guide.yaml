@@ -294,15 +294,20 @@ sections:
           copenhill:
             name: CopenHill (Amager Bakke)
             note: An incinerator with a ski slope on top. Free elevator to the roof, but a bit out of the way — nothing fancy.
-      trips:
-        title: Trips
+      shops:
+        title: Shops worth the stop
         items:
-          castles:
-            name: Castles north of Copenhagen
-            note: Several of them, all reachable by train.
-          malmo:
-            name: Malmö, Sweden
-            note: Take the train across the Øresund Bridge. Another country before lunch.
+          legoStore:
+            name: LEGO Store Copenhagen
+            note: Two floors on Vimmelskaftet, in the middle of Strøget. Build-a-minifigure wall, big city models, and the Pick & Build bricks by weight.
+            kicker: Danish since 1932
+            story: >-
+              LEGO comes from Billund in Jutland, where Ole Kirk Kristiansen
+              started making wooden toys in 1932; the name is short for "leg
+              godt" — play well. The plastic interlocking brick as we know it
+              was patented in 1958. The Copenhagen flagship is the easy city
+              stop; the full experience is LEGO House in Billund.
+            url: https://www.lego.com/en-dk/stores/store/copenhagen
   food:
     emoji: 😋
     title: What to eat
@@ -406,6 +411,132 @@ sections:
           platform:
             name: Platform CPH
             url: https://www.platformcph.com/
+  beyond:
+    emoji: 🚆
+    title: Beyond Copenhagen
+    blurb: The rest of Denmark is small, flat and very reachable by train.
+    groups:
+      daytrips:
+        title: Easy day trips (under ~1h by train)
+        items:
+          frederiksborg:
+            name: Frederiksborg Castle, Hillerød
+            note: A Renaissance castle on three islets, with baroque gardens behind it. The most beautiful of the lot.
+            travel: 40 min from Nørreport
+            kicker: Christian IV · 1600s
+            story: >-
+              Christian IV rebuilt Frederiksborg as his showpiece castle in the
+              early 1600s. After a fire in 1859 the brewer J.C. Jacobsen paid
+              for its restoration, and it reopened as the Museum of National
+              History. The terraced baroque garden behind the castle is free
+              to walk.
+            url: https://dnm.dk/en/
+          kronborg:
+            name: Kronborg Castle, Helsingør
+            note: Hamlet's castle, guarding the narrowest point of the Øresund. Sweden is right there.
+            travel: 45 min from Copenhagen H
+            kicker: UNESCO · Hamlet
+            story: >-
+              Kronborg controlled the Sound and the toll every passing ship had
+              to pay, which made the Danish crown rich. Shakespeare turned it
+              into Elsinore in Hamlet without ever visiting. Under the castle
+              sleeps Holger Danske, who legend says wakes when Denmark needs him.
+            url: https://kongeligeslotte.dk/en/palaces-and-gardens/kronborg-castle.html
+          roskilde:
+            name: Roskilde
+            note: Royal cathedral plus five Viking ships raised from the fjord — and you can sail a reconstruction.
+            travel: 25 min by train
+            kicker: Cathedral + Viking ships
+            story: >-
+              Roskilde was Denmark's capital in the Middle Ages, and its brick
+              cathedral is the burial church of Danish kings and queens. Down at
+              the fjord, five ships were deliberately sunk around 1070 to block
+              the channel; they were excavated in 1962 and now sit in the Viking
+              Ship Museum.
+            url: https://www.vikingeskibsmuseet.dk/en
+          louisianaTrip:
+            name: Louisiana, Humlebæk
+            note: Modern art, sea view and a sculpture park. Half a day minimum.
+            travel: 35 min by train + short walk
+          malmo:
+            name: Malmö, Sweden
+            note: Take the train across the Øresund Bridge. Another country before lunch — bring your passport or ID.
+            travel: 35 min from Copenhagen H
+      longer:
+        title: Worth the longer ride
+        items:
+          monsKlint:
+            name: Møns Klint
+            note: White chalk cliffs dropping 120 m into turquoise water, with beech forest on top. Denmark's most unexpected landscape.
+            travel: ~2h by car, longer by bus
+            kicker: 70 million years old
+            story: >-
+              The cliffs are chalk formed from the shells of countless tiny sea
+              creatures, pushed up by the ice age. Fossils wash out on the beach
+              below — look for belemnites and sea urchins. Møn is also a Dark
+              Sky reserve, so the night sky is unusually good.
+            url: https://www.moensklint.dk/en/
+          stevnsKlint:
+            name: Stevns Klint
+            note: The same chalk, closer to town, with a UNESCO-listed line marking the day the dinosaurs died.
+            travel: ~1h 15 by car
+            kicker: UNESCO · the K-Pg boundary
+            story: >-
+              In the cliff face runs a thin dark layer of "fish clay" — debris
+              from the asteroid impact that ended the age of the dinosaurs 66
+              million years ago. Above it, the church of Højerup slowly lost its
+              choir to the sea in 1928.
+            url: https://www.stevnsklint.dk/en/
+          odense:
+            name: Odense
+            note: H.C. Andersen's hometown, with a museum built around the house where he was born.
+            travel: 1h 15 by train
+            kicker: Fairy tales · Funen
+            story: >-
+              Andersen grew up poor in Odense and left for Copenhagen at
+              fourteen. The new H.C. Andersen's House by Kengo Kuma is built
+              half underground, arranged like a fairy tale rather than a
+              biography. The old quarter around it is one of Denmark's
+              prettiest.
+            url: https://hcandersenshus.dk/en
+      jutland:
+        title: Jutland & further
+        items:
+          legoHouse:
+            name: LEGO House, Billund
+            note: The real thing: 25 million bricks, six build zones and a whole LEGO town next door at Legoland.
+            travel: ~3h by train + bus
+            kicker: Home of the brick
+            story: >-
+              LEGO House stands in Billund, where the company was founded, and
+              is shaped like 21 stacked bricks. It is designed for building
+              rather than looking: everything inside is hands-on. Legoland is a
+              short walk away if you have kids in tow.
+            url: https://legohouse.com/en-gb/
+          aarhus:
+            name: Aarhus
+            note: Denmark's second city. Walk the rainbow ring on top of ARoS, then Den Gamle By, an entire old town rebuilt street by street.
+            travel: 3h by train
+            url: https://www.aros.dk/en/
+          skagen:
+            name: Skagen & Grenen
+            note: The very top of Denmark, where two seas meet and you can stand with a foot in each.
+            travel: ~5h by train
+            kicker: Where the seas collide
+            story: >-
+              At Grenen the Skagerrak and Kattegat meet head-on, and you can see
+              the waves crash into each other from the sandbar. The clear
+              northern light drew the Skagen Painters here in the late 1800s,
+              and their yellow houses still set the town's look.
+            url: https://www.visitdenmark.com/denmark/destinations/north-jutland/skagen
+          rubjergKnude:
+            name: Rubjerg Knude Lighthouse
+            note: A lighthouse on a giant migrating sand dune. It was moved inland on rails in 2019 to stop it falling into the sea.
+            travel: ~5h by train + bus
+          moreTrips:
+            name: Planning day trips
+            note: Official round-up of trips out of the city.
+            url: https://www.visitcopenhagen.com/copenhagen/activities/day-trips-copenhagen
   inspiration:
     emoji: 👻
     title: Inspiration
