@@ -20,6 +20,18 @@ site:
   closeStory: Close story
   storyMapLabel: Find it on the map
   learnMoreLabel: Read more
+  mapSearchLabel: Search places
+  mapSearchPlaceholder: Search a place…
+  mapNoResults: Nothing here — try another search.
+  mapScopeLabel: Map view
+  mapScopeCity: City
+  mapScopeAll: All of Denmark
+  mapListToggle: Places list
+  favouritesLabel: Saved
+  favouriteAdd: Save this place
+  favouriteRemove: Remove from saved
+  favouritesEmpty: Tap the star on any place to save it here.
+  navLabel: Sections
 sections:
   know:
     emoji: 🧯
