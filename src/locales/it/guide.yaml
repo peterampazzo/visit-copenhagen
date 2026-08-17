@@ -20,6 +20,18 @@ site:
   closeStory: Chiudi la storia
   storyMapLabel: Trovalo sulla mappa
   learnMoreLabel: Scopri di più
+  mapSearchLabel: Cerca luoghi
+  mapSearchPlaceholder: Cerca un luogo…
+  mapNoResults: Niente qui — provate un'altra ricerca.
+  mapScopeLabel: Vista mappa
+  mapScopeCity: Città
+  mapScopeAll: Tutta la Danimarca
+  mapListToggle: Elenco dei luoghi
+  favouritesLabel: Salvati
+  favouriteAdd: Salva questo posto
+  favouriteRemove: Togli dai salvati
+  favouritesEmpty: Toccate la stella su un posto per salvarlo qui.
+  navLabel: Sezioni
 sections:
   know:
     emoji: 🧯
