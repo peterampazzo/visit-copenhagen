@@ -504,7 +504,7 @@ sections:
         items:
           legoHouse:
             name: LEGO House, Billund
-            note: L'originale: 25 milioni di mattoncini, sei zone di costruzione e Legoland accanto.
+            note: "L'originale: 25 milioni di mattoncini, sei zone di costruzione e Legoland accanto."
             travel: ~3h tra treno e bus
             kicker: La casa del mattoncino
             story: >-

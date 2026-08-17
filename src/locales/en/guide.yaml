@@ -504,7 +504,7 @@ sections:
         items:
           legoHouse:
             name: LEGO House, Billund
-            note: The real thing: 25 million bricks, six build zones and a whole LEGO town next door at Legoland.
+            note: "The real thing: 25 million bricks, six build zones and a whole LEGO town next door at Legoland."
             travel: ~3h by train + bus
             kicker: Home of the brick
             story: >-
