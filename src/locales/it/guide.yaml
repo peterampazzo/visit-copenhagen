@@ -20,6 +20,18 @@ site:
   closeStory: Chiudi la storia
   storyMapLabel: Trovalo sulla mappa
   learnMoreLabel: Scopri di più
+  mapSearchLabel: Cerca luoghi
+  mapSearchPlaceholder: Cerca un luogo…
+  mapNoResults: Niente qui — provate un'altra ricerca.
+  mapScopeLabel: Vista mappa
+  mapScopeCity: Città
+  mapScopeAll: Tutta la Danimarca
+  mapListToggle: Elenco dei luoghi
+  favouritesLabel: Salvati
+  favouriteAdd: Salva questo posto
+  favouriteRemove: Togli dai salvati
+  favouritesEmpty: Toccate la stella su un posto per salvarlo qui.
+  navLabel: Sezioni
 sections:
   know:
     emoji: 🧯
@@ -280,15 +292,20 @@ sections:
           copenhill:
             name: CopenHill (Amager Bakke)
             note: Un inceneritore con la pista da sci sopra. Si sale gratis con l'ascensore, ma è un po' fuori — niente di speciale.
-      trips:
-        title: Gite
+      shops:
+        title: Negozi che valgono una sosta
         items:
-          castles:
-            name: Castelli a nord di Copenaghen
-            note: Ce ne sono vari, ci si arriva in treno.
-          malmo:
-            name: Malmö, Svezia
-            note: Treno attraverso il ponte dell'Øresund. Un altro Paese prima di pranzo.
+          legoStore:
+            name: LEGO Store Copenaghen
+            note: Due piani su Vimmelskaftet, in mezzo allo Strøget. Il muro per costruire la minifigure, i grandi modelli della città e i mattoncini a peso.
+            kicker: Danese dal 1932
+            story: >-
+              La LEGO nasce a Billund, nello Jutland, dove Ole Kirk Kristiansen
+              iniziò a fare giocattoli di legno nel 1932; il nome viene da "leg
+              godt", giocare bene. Il mattoncino a incastro come lo conosciamo
+              è stato brevettato nel 1958. Il negozio di Copenaghen è la tappa
+              comoda in città; l'esperienza completa è la LEGO House a Billund.
+            url: https://www.lego.com/en-dk/stores/store/copenhagen
   food:
     emoji: 😋
     title: Cosa mangiare
@@ -392,6 +409,134 @@ sections:
           platform:
             name: Platform CPH
             url: https://www.platformcph.com/
+  beyond:
+    emoji: 🚆
+    title: Fuori Copenaghen
+    blurb: Il resto della Danimarca è piccolo, piatto e molto comodo in treno.
+    groups:
+      daytrips:
+        title: Gite in giornata (meno di ~1h di treno)
+        items:
+          frederiksborg:
+            name: Castello di Frederiksborg, Hillerød
+            note: Un castello rinascimentale su tre isolotti, con giardini barocchi dietro. Il più bello di tutti.
+            travel: 40 min da Nørreport
+            kicker: Christian IV · '600
+            story: >-
+              Christian IV ricostruì Frederiksborg all'inizio del Seicento come
+              il suo castello di rappresentanza. Dopo l'incendio del 1859 fu il
+              birraio J.C. Jacobsen a pagarne il restauro, e riaprì come Museo
+              di Storia Nazionale. Il giardino barocco a terrazze dietro il
+              castello si visita gratis.
+            url: https://dnm.dk/en/
+          kronborg:
+            name: Castello di Kronborg, Helsingør
+            note: Il castello di Amleto, nel punto più stretto dell'Øresund. La Svezia è lì davanti.
+            travel: 45 min da Copenhagen H
+            kicker: UNESCO · Amleto
+            story: >-
+              Kronborg controllava lo Stretto e il pedaggio che ogni nave doveva
+              pagare, e questo rese ricca la corona danese. Shakespeare lo
+              trasformò in Elsinore nell'Amleto senza averlo mai visto. Sotto il
+              castello dorme Holger Danske, che secondo la leggenda si sveglierà
+              quando la Danimarca ne avrà bisogno.
+            url: https://kongeligeslotte.dk/en/palaces-and-gardens/kronborg-castle.html
+          roskilde:
+            name: Roskilde
+            note: La cattedrale reale più cinque navi vichinghe recuperate dal fiordo — e si può navigare su una ricostruzione.
+            travel: 25 min di treno
+            kicker: Cattedrale + navi vichinghe
+            story: >-
+              Roskilde era la capitale della Danimarca nel Medioevo, e la sua
+              cattedrale di mattoni è la chiesa sepolcrale di re e regine
+              danesi. Giù al fiordo, cinque navi furono affondate di proposito
+              intorno al 1070 per bloccare il canale; scavate nel 1962, ora
+              stanno nel Museo delle Navi Vichinghe.
+            url: https://www.vikingeskibsmuseet.dk/en
+          louisianaTrip:
+            name: Louisiana, Humlebæk
+            note: Arte moderna, vista sul mare e un parco di sculture. Mezza giornata minimo.
+            travel: 35 min di treno + breve camminata
+          malmo:
+            name: Malmö, Svezia
+            note: Treno attraverso il ponte dell'Øresund. Un altro Paese prima di pranzo — portate documento o passaporto.
+            travel: 35 min da Copenhagen H
+      longer:
+        title: Vale il viaggio più lungo
+        items:
+          monsKlint:
+            name: Møns Klint
+            note: Scogliere bianche di gesso che cadono per 120 m su acqua turchese, con una faggeta sopra. Il paesaggio più inaspettato della Danimarca.
+            travel: ~2h in auto, di più in bus
+            kicker: 70 milioni di anni
+            story: >-
+              Le scogliere sono gesso formato dai gusci di innumerevoli
+              creature marine, spinto in superficie dall'era glaciale. Sulla
+              spiaggia sotto emergono fossili — cercate belemniti e ricci di
+              mare. Møn è anche riserva Dark Sky: il cielo notturno è
+              spettacolare.
+            url: https://www.moensklint.dk/en/
+          stevnsKlint:
+            name: Stevns Klint
+            note: Lo stesso gesso, più vicino alla città, con una linea patrimonio UNESCO che segna il giorno in cui si estinsero i dinosauri.
+            travel: ~1h 15 in auto
+            kicker: UNESCO · il limite K-Pg
+            story: >-
+              Nella parete corre un sottile strato scuro di "argilla dei pesci":
+              i detriti dell'asteroide che 66 milioni di anni fa chiuse l'era
+              dei dinosauri. Sopra, la chiesa di Højerup perse il coro nel mare
+              nel 1928.
+            url: https://www.stevnsklint.dk/en/
+          odense:
+            name: Odense
+            note: La città di H.C. Andersen, con un museo costruito attorno alla casa dove è nato.
+            travel: 1h 15 di treno
+            kicker: Fiabe · Fionia
+            story: >-
+              Andersen crebbe povero a Odense e partì per Copenaghen a
+              quattordici anni. La nuova H.C. Andersen's House di Kengo Kuma è
+              mezza interrata e costruita come una fiaba più che come una
+              biografia. Il quartiere antico attorno è tra i più belli di
+              Danimarca.
+            url: https://hcandersenshus.dk/en
+      jutland:
+        title: Jutland & oltre
+        items:
+          legoHouse:
+            name: LEGO House, Billund
+            note: "L'originale: 25 milioni di mattoncini, sei zone di costruzione e Legoland accanto."
+            travel: ~3h tra treno e bus
+            kicker: La casa del mattoncino
+            story: >-
+              La LEGO House sta a Billund, dove l'azienda è nata, ed è a forma
+              di 21 mattoncini impilati. È fatta per costruire, non per
+              guardare: dentro si tocca tutto. Legoland è a due passi se avete
+              bambini.
+            url: https://legohouse.com/en-gb/
+          aarhus:
+            name: Aarhus
+            note: La seconda città danese. L'anello arcobaleno sul tetto dell'ARoS e poi Den Gamle By, una città vecchia ricostruita strada per strada.
+            travel: 3h di treno
+            url: https://www.aros.dk/en/
+          skagen:
+            name: Skagen & Grenen
+            note: La punta estrema della Danimarca, dove due mari si incontrano e si può stare con un piede in ciascuno.
+            travel: ~5h di treno
+            kicker: Dove i mari si scontrano
+            story: >-
+              A Grenen lo Skagerrak e il Kattegat si incontrano di fronte, e
+              dalla lingua di sabbia si vedono le onde scontrarsi. La luce
+              chiara del nord attirò qui i Pittori di Skagen a fine Ottocento,
+              e le loro case gialle danno ancora il tono al paese.
+            url: https://www.visitdenmark.com/denmark/destinations/north-jutland/skagen
+          rubjergKnude:
+            name: Faro di Rubjerg Knude
+            note: Un faro su una gigantesca duna in movimento. Nel 2019 è stato spostato su rotaie per non farlo cadere in mare.
+            travel: ~5h tra treno e bus
+          moreTrips:
+            name: Organizzare le gite
+            note: La lista ufficiale delle gite fuori città.
+            url: https://www.visitcopenhagen.com/copenhagen/activities/day-trips-copenhagen
   inspiration:
     emoji: 👻
     title: Ispirazione
