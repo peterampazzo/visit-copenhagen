@@ -22,7 +22,19 @@ export type GuideMapPlace = {
   sectionId: string;
   sectionTitle: string;
   sectionEmoji: string;
+  far: boolean;
 };
+
+const CITY_BOUNDS = { minLat: 55.55, maxLat: 55.8, minLng: 12.35, maxLng: 12.8 };
+
+export function isFarFromCity(latitude: number, longitude: number) {
+  return (
+    latitude < CITY_BOUNDS.minLat ||
+    latitude > CITY_BOUNDS.maxLat ||
+    longitude < CITY_BOUNDS.minLng ||
+    longitude > CITY_BOUNDS.maxLng
+  );
+}
 
 const locationRecords = parse(locationsYaml) as Record<string, LocationRecord>;
 
@@ -62,6 +74,7 @@ export function toGuideMapPlaces(sections: GuideSectionData[]): GuideMapPlace[] 
         sectionId: match.sectionId,
         sectionTitle: match.sectionTitle,
         sectionEmoji: match.sectionEmoji,
+        far: isFarFromCity(location.latitude, location.longitude),
       },
     ];
   });
