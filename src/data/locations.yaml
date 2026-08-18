@@ -192,3 +192,51 @@ platformBlox:
   latitude: 55.6720405
   longitude: 12.5791901
   googleQuery: BLOX, Bryghuspladsen, Copenhagen
+legoStore:
+  latitude: 55.678787
+  longitude: 12.577624
+  googleQuery: LEGO Store Copenhagen, Vimmelskaftet 37
+frederiksborg:
+  latitude: 55.9350533
+  longitude: 12.3007194
+  googleQuery: Frederiksborg Castle, Hillerød
+kronborg:
+  latitude: 56.0390185
+  longitude: 12.6215273
+  googleQuery: Kronborg Castle, Helsingør
+roskilde:
+  latitude: 55.6510727
+  longitude: 12.0790143
+  googleQuery: Roskilde Cathedral, Roskilde
+louisianaTrip:
+  latitude: 55.969352
+  longitude: 12.5431572
+  googleQuery: Louisiana Museum of Modern Art, Humlebæk
+monsKlint:
+  latitude: 54.9694444
+  longitude: 12.5461111
+  googleQuery: Møns Klint, Denmark
+stevnsKlint:
+  latitude: 55.2836
+  longitude: 12.4413
+  googleQuery: Stevns Klint, Denmark
+odense:
+  latitude: 55.3961
+  longitude: 10.3883
+  googleQuery: H.C. Andersens Hus, Odense
+legoHouse:
+  latitude: 55.7350536
+  longitude: 9.1265889
+  googleQuery: LEGO House, Billund
+aarhus:
+  latitude: 56.1533
+  longitude: 10.2003
+  googleQuery: ARoS Aarhus Kunstmuseum
+skagen:
+  latitude: 57.7441
+  longitude: 10.6416
+  googleQuery: Grenen, Skagen
+rubjergKnude:
+  latitude: 57.4485
+  longitude: 9.7754
+  googleQuery: Rubjerg Knude Lighthouse, Denmark

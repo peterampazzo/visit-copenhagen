@@ -26,6 +26,7 @@ export function GuideSection({
   showOnMapLabel,
   onShowOnMap,
   storyCopy,
+  favouriteCopy,
 }: {
   section: GuideSectionData;
   sectionIndex: number;
@@ -34,6 +35,7 @@ export function GuideSection({
   showOnMapLabel: string;
   onShowOnMap: (id: string) => void;
   storyCopy: StoryCopy;
+  favouriteCopy: { add: string; remove: string };
 }) {
   return (
     <section
@@ -104,6 +106,7 @@ export function GuideSection({
                       showOnMapLabel={showOnMapLabel}
                       onShowOnMap={onShowOnMap}
                       storyCopy={storyCopy}
+                      favouriteCopy={favouriteCopy}
                       index={index}
                     />
                   );

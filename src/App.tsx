@@ -71,6 +71,10 @@ export function App() {
               map: t("site.storyMapLabel"),
               learnMore: t("site.learnMoreLabel"),
             }}
+            favouriteCopy={{
+              add: t("site.favouriteAdd"),
+              remove: t("site.favouriteRemove"),
+            }}
           />
         ))}
         <footer className="border-t-2 border-ink bg-ink px-4 py-12 text-center text-cream sm:px-6">
@@ -104,6 +108,17 @@ export function App() {
                 close: t("site.closeMap"),
                 all: t("site.allPlaces"),
                 googleMaps: t("site.googleMapsLabel"),
+                searchLabel: t("site.mapSearchLabel"),
+                searchPlaceholder: t("site.mapSearchPlaceholder"),
+                noResults: t("site.mapNoResults"),
+                scopeLabel: t("site.mapScopeLabel"),
+                scopeCity: t("site.mapScopeCity"),
+                scopeAll: t("site.mapScopeAll"),
+                listToggle: t("site.mapListToggle"),
+                favourites: t("site.favouritesLabel"),
+                favouriteAdd: t("site.favouriteAdd"),
+                favouriteRemove: t("site.favouriteRemove"),
+                favouritesEmpty: t("site.favouritesEmpty"),
               }}
             />
           </Suspense>

@@ -5,7 +5,9 @@ export type GuideItem = {
   url?: string;
   kicker?: string;
   story?: string;
+  travel?: string;
 };
+
 
 export type GuideGroup = {
   id: string;
@@ -49,12 +51,13 @@ const GUIDE_ORDER = [
   { id: "know", groups: ["transport", "cycling", "everyday"] },
   {
     id: "places",
-    groups: ["classics", "stories", "harbour", "neighbourhoods", "modern", "trips"],
+    groups: ["classics", "stories", "harbour", "neighbourhoods", "modern", "shops"],
   },
   { id: "food", groups: ["markets", "dining"] },
   { id: "pastries", groups: ["bakeries"] },
   { id: "museums", groups: ["art"] },
   { id: "saunas", groups: ["sweat"] },
+  { id: "beyond", groups: ["daytrips", "longer", "jutland"] },
   { id: "inspiration", groups: ["things"] },
 ] as const;
 

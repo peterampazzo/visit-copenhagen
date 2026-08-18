@@ -37,12 +37,14 @@ export function GuideMapCanvas({
   onSelect,
   googleMapsLabel,
   mapTitle,
+  fitScope = "city",
 }: {
   places: GuideMapPlace[];
   selectedId: string | null;
   onSelect: (id: string) => void;
   googleMapsLabel: string;
   mapTitle: string;
+  fitScope?: "city" | "all";
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
@@ -88,6 +90,7 @@ export function GuideMapCanvas({
       element.className = "guide-map-marker";
       element.setAttribute("aria-label", place.name);
       element.dataset["selected"] = "false";
+      element.dataset["far"] = String(place.far);
       const emoji = document.createElement("span");
       emoji.className = "guide-map-marker__emoji";
       emoji.setAttribute("aria-hidden", "true");
@@ -111,11 +114,9 @@ export function GuideMapCanvas({
     const map = mapRef.current;
     if (!map || !mapReady || places.length === 0) return;
 
-    const nearbyPlaces = places.filter(
-      ({ latitude, longitude }) =>
-        latitude >= 55.6 && latitude <= 55.8 && longitude >= 12.4 && longitude <= 12.75,
-    );
-    const fittingPlaces = nearbyPlaces.length >= Math.min(3, places.length) ? nearbyPlaces : places;
+    const nearbyPlaces = places.filter(({ far }) => !far);
+    const fittingPlaces =
+      fitScope === "all" || nearbyPlaces.length === 0 ? places : nearbyPlaces;
     const bounds = new LngLatBounds();
     for (const place of fittingPlaces) bounds.extend([place.longitude, place.latitude]);
 
@@ -124,7 +125,7 @@ export function GuideMapCanvas({
       maxZoom: 13,
       duration: 550,
     });
-  }, [mapReady, places]);
+  }, [fitScope, mapReady, places]);
 
   useEffect(() => {
     const map = mapRef.current;
