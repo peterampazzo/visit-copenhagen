@@ -5,7 +5,9 @@ export type GuideItem = {
   url?: string;
   kicker?: string;
   story?: string;
+  travel?: string;
 };
+
 
 export type GuideGroup = {
   id: string;
