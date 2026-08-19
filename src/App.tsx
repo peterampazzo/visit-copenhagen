@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
+import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
 import { SectionNav } from "@/components/guide/SectionNav";
 import { toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
@@ -16,6 +17,7 @@ export function App() {
   const [language, setLanguage] = useState<Language>("en");
   const [mapOpen, setMapOpen] = useState(false);
   const [selectedMapPlaceId, setSelectedMapPlaceId] = useState<string | null>(null);
+  const [mapFilter, setMapFilter] = useState<"all" | "favourites">("all");
   const sections = toGuideSections(
     t("sections", { returnObjects: true }) as unknown as GuideSectionsRecord,
   );
@@ -36,8 +38,9 @@ export function App() {
     document.documentElement.lang = next;
   };
 
-  const openMap = (placeId: string | null = null) => {
+  const openMap = (placeId: string | null = null, filter: "all" | "favourites" = "all") => {
     setSelectedMapPlaceId(placeId);
+    setMapFilter(filter);
     setMapOpen(true);
   };
 
@@ -77,7 +80,16 @@ export function App() {
             }}
           />
         ))}
-        <footer className="border-t-2 border-ink bg-ink px-4 py-12 text-center text-cream sm:px-6">
+        <MobileBottomNav
+          sections={sections}
+          sectionsLabel={t("site.navLabel")}
+          mapLabel={t("site.mapLabel")}
+          favouritesLabel={t("site.favouritesLabel")}
+          closeLabel={t("site.closeMap")}
+          onOpenMap={() => openMap()}
+          onOpenFavourites={() => openMap(null, "favourites")}
+        />
+        <footer className="border-t-2 border-ink bg-ink px-4 py-12 pb-28 text-center text-cream sm:px-6 lg:pb-12">
           <p className="font-display text-xl font-bold sm:text-2xl">{t("site.footer")}</p>
           <p className="mt-3 text-sm text-cream/60">København · 55.6761° N</p>
         </footer>
@@ -97,6 +109,7 @@ export function App() {
             <GuideMapDialog
               places={mapPlaces}
               initialSelectedId={selectedMapPlaceId}
+              initialFilter={mapFilter}
               onClose={() => {
                 setMapOpen(false);
                 setSelectedMapPlaceId(null);
