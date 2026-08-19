@@ -801,6 +801,19 @@
   outline-offset: 3px;
 }
 
+.guide-map-marker[data-far="true"] {
+  border-style: dashed;
+  background: color-mix(in srgb, var(--harbour) 16%, var(--card));
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--harbour) 28%, transparent),
+    3px 3px 0 var(--ink);
+}
+
+.guide-map-marker[data-far="true"]:hover,
+.guide-map-marker[data-far="true"][data-selected="true"] {
+  background: var(--sun);
+}
+
 .maplibregl-popup-content {
   border: 2px solid var(--ink);
   border-radius: 1rem;

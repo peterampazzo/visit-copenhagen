@@ -39,7 +39,7 @@ export function SectionNav({
   return (
     <nav
       aria-label={label}
-      className="sticky top-0 z-40 border-b-2 border-ink/10 bg-background/90 backdrop-blur-md"
+      className="sticky top-0 z-40 hidden border-b-2 lg:block border-ink/10 bg-background/90 backdrop-blur-md"
     >
       <ul className="scrollbar-none mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-3">
         <li className="shrink-0">
