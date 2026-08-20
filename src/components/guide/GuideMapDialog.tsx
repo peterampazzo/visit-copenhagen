@@ -91,6 +91,11 @@ export default function GuideMapDialog({
 
   useEffect(() => {
     if (!selectedId) return;
+    if (window.innerWidth < 1024) {
+      const scroller = listRef.current?.parentElement;
+      scroller?.scrollTo({ top: 0 });
+      return;
+    }
     listRef.current
       ?.querySelector<HTMLElement>(`[data-map-place="${selectedId}"]`)
       ?.scrollIntoView({ block: "nearest" });
