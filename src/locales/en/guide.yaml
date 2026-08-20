@@ -27,6 +27,8 @@ site:
   mapScopeCity: City
   mapScopeAll: All of Denmark
   mapListToggle: Places list
+  mapScopeAllShort: Denmark
+  mapSheetHandle: Drag to resize the places list
   favouritesLabel: Saved
   favouriteAdd: Save this place
   favouriteRemove: Remove from saved
