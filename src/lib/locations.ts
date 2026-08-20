@@ -72,6 +72,7 @@ export function toGuideMapPlaces(sections: GuideSectionData[]): GuideMapPlace[] 
         latitude: location.latitude,
         longitude: location.longitude,
         googleQuery: location.googleQuery,
+        ...(match.item.travel === undefined ? {} : { travel: match.item.travel }),
         sectionId: match.sectionId,
         sectionTitle: match.sectionTitle,
         sectionEmoji: match.sectionEmoji,
