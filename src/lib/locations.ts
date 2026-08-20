@@ -19,6 +19,7 @@ export type GuideMapPlace = {
   latitude: number;
   longitude: number;
   googleQuery: string;
+  travel?: string;
   sectionId: string;
   sectionTitle: string;
   sectionEmoji: string;
