@@ -92,8 +92,7 @@ export default function GuideMapDialog({
   useEffect(() => {
     if (!selectedId) return;
     if (window.innerWidth < 1024) {
-      const scroller = listRef.current?.parentElement;
-      scroller?.scrollTo({ top: 0 });
+      requestAnimationFrame(() => listRef.current?.parentElement?.scrollTo({ top: 0 }));
       return;
     }
     listRef.current
@@ -110,6 +109,7 @@ export default function GuideMapDialog({
     [places],
   );
 
+  const cardOnlyRef = null;
   const selectedPlace = visiblePlaces.find(({ id }) => id === selectedId) ?? null;
   const selectedIndex = selectedPlace ? visiblePlaces.indexOf(selectedPlace) : -1;
 
@@ -256,7 +256,7 @@ export default function GuideMapDialog({
               handleLabel={copy.sheetHandle}
               label={copy.listLabel}
             >
-              <div className="lg:hidden">{filters}</div>
+              <div className={cn("lg:hidden", cardOnly && "hidden")}>{filters}</div>
 
               {selectedPlace ? (
                 <div className="mt-2.5 rounded-2xl border-2 border-primary bg-card p-3.5 lg:hidden">
@@ -321,7 +321,7 @@ export default function GuideMapDialog({
                 </div>
               ) : null}
 
-              <div ref={listRef} className="mt-2.5 space-y-2">
+              <div ref={listRef} className={cn("mt-2.5 space-y-2", cardOnly && "hidden lg:block")}>
                 {visiblePlaces.length === 0 ? (
                   <p className="px-2 py-6 text-center text-sm font-semibold text-ink/60">
                     {activeSection === "favourites" && !query.trim()
