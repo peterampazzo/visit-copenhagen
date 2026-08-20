@@ -814,6 +814,37 @@
   background: var(--sun);
 }
 
+.guide-map-marker::after {
+  content: "";
+  position: absolute;
+  inset: -0.35rem;
+}
+
+.guide-map-marker {
+  position: relative;
+}
+
+.guide-map-cluster {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--sun);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.guide-map-cluster:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
 .maplibregl-popup-content {
   border: 2px solid var(--ink);
   border-radius: 1rem;
