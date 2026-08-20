@@ -27,6 +27,8 @@ site:
   mapScopeCity: Città
   mapScopeAll: Tutta la Danimarca
   mapListToggle: Elenco dei luoghi
+  mapScopeAllShort: Danimarca
+  mapSheetHandle: Trascina per ridimensionare l'elenco
   favouritesLabel: Salvati
   favouriteAdd: Salva questo posto
   favouriteRemove: Togli dai salvati
