@@ -109,9 +109,9 @@ export default function GuideMapDialog({
     [places],
   );
 
-  const cardOnly = snap === "peek" && selectedPlace !== null;
   const selectedPlace = visiblePlaces.find(({ id }) => id === selectedId) ?? null;
   const selectedIndex = selectedPlace ? visiblePlaces.indexOf(selectedPlace) : -1;
+  const cardOnly = snap === "peek" && selectedPlace !== null;
 
   const step = (delta: number) => {
     if (visiblePlaces.length === 0) return;
