@@ -331,62 +331,72 @@ export default function GuideMapDialog({
                 ) : null}
                 {visiblePlaces.map((place) => {
                   const saved = isFavourite(place.itemId);
+                  const active = selectedId === place.id;
                   return (
                     <div
                       key={place.id}
                       data-map-place={place.id}
                       className={cn(
-                        "flex items-stretch overflow-hidden rounded-2xl border-2 bg-card transition-colors",
-                        selectedId === place.id ? "border-primary" : "border-ink/10",
+                        "overflow-hidden rounded-2xl border-2 bg-card transition-colors",
+                        active ? "border-primary" : "border-ink/10",
                       )}
                     >
                       <button
                         type="button"
                         onClick={() => selectPlace(place.id)}
-                        className="min-w-0 flex-1 px-3.5 py-3 text-left focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-primary"
+                        className="block w-full px-3.5 pb-2.5 pt-3 text-left focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-primary"
                       >
                         <span className="block font-display font-bold leading-tight">
                           {place.sectionEmoji} {place.name}
                         </span>
+                        {place.travel ? (
+                          <span className="mt-1.5 inline-flex rounded-full bg-harbour/10 px-2 py-0.5 text-[0.7rem] font-extrabold text-harbour">
+                            🚆 {place.travel}
+                          </span>
+                        ) : null}
                         {place.note ? (
                           <span className="mt-1 line-clamp-2 block text-sm leading-5 text-ink/62">
                             {place.note}
                           </span>
                         ) : null}
                       </button>
-                      <button
-                        type="button"
-                        onClick={() => toggle(place.itemId)}
-                        aria-pressed={saved}
-                        aria-label={saved ? copy.favouriteRemove : copy.favouriteAdd}
-                        className="grid w-11 shrink-0 place-items-center border-l-2 border-ink/10 transition-colors hover:bg-sun focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-primary"
-                      >
-                        <Star
-                          aria-hidden="true"
-                          size={18}
-                          strokeWidth={2.5}
-                          className={saved ? "fill-sun text-ink" : "text-ink/35"}
-                        />
-                      </button>
-                      <a
-                        href={googleMapsUrl(place)}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`${copy.googleMaps}: ${place.name}`}
-                        className="grid w-12 shrink-0 place-items-center border-l-2 border-ink/10 text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-primary"
-                      >
-                        <span className="relative" aria-hidden="true">
-                          <MapPin size={20} strokeWidth={2.5} />
-                          <ExternalLink
-                            className="absolute -right-2 -top-2"
-                            size={10}
-                            strokeWidth={3}
+                      <div className="flex items-center gap-2 border-t-2 border-ink/8 px-2.5 py-2">
+                        <button
+                          type="button"
+                          onClick={() => toggle(place.itemId)}
+                          aria-pressed={saved}
+                          aria-label={saved ? copy.favouriteRemove : copy.favouriteAdd}
+                          className={cn(
+                            "inline-flex min-h-9 items-center gap-1.5 rounded-full border-2 px-3 text-xs font-extrabold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+                            saved
+                              ? "border-ink bg-sun text-ink"
+                              : "border-ink/12 text-ink/70 hover:border-primary/40",
+                          )}
+                        >
+                          <Star
+                            aria-hidden="true"
+                            size={15}
+                            strokeWidth={2.5}
+                            className={saved ? "fill-ink text-ink" : ""}
                           />
-                        </span>
-                      </a>
+                          {copy.favourites}
+                        </button>
+                        <a
+                          href={googleMapsUrl(place)}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`${copy.googleMaps}: ${place.name}`}
+                          className="ml-auto inline-flex min-h-9 items-center gap-1.5 rounded-full border-2 border-ink/12 px-3 text-xs font-extrabold text-harbour transition-colors hover:border-primary/40 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        >
+                          <MapPin size={15} strokeWidth={2.5} aria-hidden="true" />
+                          {copy.googleMaps}
+                          <ExternalLink size={11} strokeWidth={3} aria-hidden="true" />
+                        </a>
+                      </div>
                     </div>
                   );
                 })}
+
               </div>
             </MapPlaceSheet>
           </div>
