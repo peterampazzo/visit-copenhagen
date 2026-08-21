@@ -1,49 +1,39 @@
-# Copenhagen Connect
+# Hygge i København
 
-A mobile-first Copenhagen guide for friends and family, available in English and Italian.
+A small Copenhagen guide for friends and family, in English and Italian.
 
-The site is a static Vite + React application. Its guide content lives in YAML files, and the
-interactive map runs entirely in the browser.
-
-## Local development
-
-Use pnpm for all package management commands.
+## Work locally
 
 ```bash
 pnpm install
 pnpm dev
-```
-
-The editable guide content is stored in:
-
-- `src/locales/en/guide.yaml`
-- `src/locales/it/guide.yaml`
-- `src/data/locations.yaml`
-
-## Production build
-
-```bash
 pnpm build
-```
-
-The deployable static site is generated in `dist/`.
-
-To check the production build locally:
-
-```bash
 pnpm preview
 ```
 
-## Cloudflare Pages
+The production-ready static site is generated in `dist/`.
 
-For a Git-connected Pages project, use:
+## Edit the guide
 
-- Build command: `pnpm build`
-- Build output directory: `dist`
-- Root directory: leave empty
+- Copy: `src/locales/en/guide.yaml` and `src/locales/it/guide.yaml`
+- Map locations: `src/data/locations.yaml`
 
-For a manual direct upload, upload the contents generated in `dist/`. No Worker entry point,
-server bundle, compatibility flag, or Wrangler configuration is required.
+Keep English and Italian keys aligned. English is the fallback language.
 
-The files in `public/` are copied into the root of `dist/`. This includes the Cloudflare Pages
-redirect and caching rules in `public/_redirects` and `public/_headers`.
+## Deploys
+
+GitHub Actions builds and uploads the static site to Cloudflare Pages:
+
+| Event                    | Destination                               |
+| ------------------------ | ----------------------------------------- |
+| Push to `main`           | Cloudflare Pages preview branch `preview` |
+| Published GitHub release | Cloudflare Pages production branch `main` |
+
+One-time setup in GitHub repository **Settings → Secrets and variables → Actions**:
+
+- Secret `CLOUDFLARE_API_TOKEN`: Cloudflare API token with **Account / Cloudflare Pages / Edit** permission.
+- Secret `CLOUDFLARE_ACCOUNT_ID`: the Cloudflare account ID.
+
+The Pages project name is set to `visit-copenhagen` in the workflows. In Cloudflare Pages, disconnect the existing Git integration (or disable its automatic deployments); otherwise a push to `main` would also trigger Cloudflare’s normal production deploy, bypassing the preview workflow.
+
+To publish, create a GitHub release from the commit you want to ship. The release workflow deploys that exact tag to production.
