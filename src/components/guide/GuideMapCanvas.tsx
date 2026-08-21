@@ -130,7 +130,28 @@ export function GuideMapCanvas({
 
     const map = new MapLibreMap({
       container: containerRef.current,
-      style: "https://tiles.openfreemap.org/styles/bright",
+      // Keep the guide free and keyless: OpenStreetMap's standard raster tiles
+      // are appropriate for this small, interactive map (with attribution).
+      style: {
+        version: 8,
+        sources: {
+          openstreetmap: {
+            type: "raster",
+            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+            tileSize: 256,
+            minzoom: 0,
+            maxzoom: 19,
+            attribution: "© OpenStreetMap contributors",
+          },
+        },
+        layers: [
+          {
+            id: "openstreetmap",
+            type: "raster",
+            source: "openstreetmap",
+          },
+        ],
+      },
       center: [12.575, 55.681],
       zoom: 11.5,
       attributionControl: { compact: true },
