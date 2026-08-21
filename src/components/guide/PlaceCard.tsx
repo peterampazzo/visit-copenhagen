@@ -93,21 +93,24 @@ export function PlaceCard({
             ) : null}
           </div>
 
-          <button
-            type="button"
-            onClick={() => toggle(item.id)}
-            aria-pressed={saved}
-            aria-label={saved ? favouriteCopy.remove : favouriteCopy.add}
-            title={saved ? favouriteCopy.remove : favouriteCopy.add}
-            className="grid h-8 w-8 shrink-0 place-items-center rounded-full transition-colors hover:bg-sun focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <Star
-              aria-hidden="true"
-              size={17}
-              strokeWidth={2.25}
-              className={saved ? "fill-sun text-ink" : "text-ink/35"}
-            />
-          </button>
+          {mapPlace ? (
+            <button
+              type="button"
+              onClick={() => toggle(item.id)}
+              aria-pressed={saved}
+              aria-label={saved ? favouriteCopy.remove : favouriteCopy.add}
+              title={saved ? favouriteCopy.remove : favouriteCopy.add}
+              className="grid h-8 w-8 shrink-0 place-items-center rounded-full transition-colors hover:bg-sun focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <Star
+                aria-hidden="true"
+                size={17}
+                strokeWidth={2.25}
+                className={saved ? "fill-sun text-ink" : "text-ink/35"}
+              />
+            </button>
+          ) : null}
+
 
           {item.url && !item.story ? (
             <a
