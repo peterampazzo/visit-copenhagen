@@ -32,8 +32,9 @@ GitHub Actions builds and uploads the static site to Cloudflare Pages:
 One-time setup in GitHub repository **Settings → Secrets and variables → Actions**:
 
 - Secret `CLOUDFLARE_API_TOKEN`: Cloudflare API token with **Account / Cloudflare Pages / Edit** permission.
-- Secret `CLOUDFLARE_ACCOUNT_ID`: the Cloudflare account ID.
+- Variable `CLOUDFLARE_ACCOUNT_ID`: the Cloudflare account ID.
+- Variable `CLOUDFLARE_PROJECT_NAME`: `visit-copenhagen`.
 
-The Pages project name is set to `visit-copenhagen` in the workflows. In Cloudflare Pages, disconnect the existing Git integration (or disable its automatic deployments); otherwise a push to `main` would also trigger Cloudflare’s normal production deploy, bypassing the preview workflow.
+In Cloudflare Pages, disconnect the existing Git integration (or disable its automatic deployments); otherwise a push to `main` would also trigger Cloudflare’s normal production deploy, bypassing the preview workflow.
 
 To publish, create a GitHub release from the commit you want to ship. The release workflow deploys that exact tag to production.
