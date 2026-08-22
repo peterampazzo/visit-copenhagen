@@ -246,6 +246,23 @@ export default function GuideMapDialog({
           {copy.favourites}
           {favourites.length > 0 ? ` (${String(favourites.length)})` : ""}
         </button>
+        <button
+          type="button"
+          aria-pressed={sort === "near"}
+          onClick={() => {
+            if (sort === "near") {
+              setSort("default");
+            } else {
+              setSort("near");
+              requestLocation();
+            }
+          }}
+          className={chipClass(sort === "near", "primary")}
+        >
+          <Locate size={15} strokeWidth={2.5} aria-hidden="true" />
+          {copy.sortNearMe}
+        </button>
+
         {sections.map((section) => (
           <button
             key={section.id}
