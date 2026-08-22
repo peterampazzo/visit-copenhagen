@@ -70,6 +70,10 @@ opera:
   latitude: 55.681812
   longitude: 12.600541
   googleQuery: Copenhagen Opera House
+goboat:
+  latitude: 55.663331
+  longitude: 12.583313
+  googleQuery: GoBoat Copenhagen, Islands Brygge
 norrebro:
   latitude: 55.7006813
   longitude: 12.5378036
@@ -114,6 +118,10 @@ kodbyen:
   latitude: 55.6676775
   longitude: 12.5595333
   googleQuery: Kødbyen, Copenhagen
+tivoliFoodHall:
+  latitude: 55.672925
+  longitude: 12.568643
+  googleQuery: Tivoli Food Hall, Copenhagen
 detLilleApotek:
   latitude: 55.680325
   longitude: 12.5745687
@@ -130,6 +138,10 @@ juno:
   latitude: 55.7061592
   longitude: 12.5817961
   googleQuery: Juno the Bakery, Copenhagen
+alice:
+  latitude: 55.6684086
+  longitude: 12.5970575
+  googleQuery: Alice, Amagerbrogade 5, Copenhagen
 smk:
   latitude: 55.6887637
   longitude: 12.5783697
@@ -224,6 +236,10 @@ odense:
   latitude: 55.3961
   longitude: 10.3883
   googleQuery: H.C. Andersens Hus, Odense
+bornholm:
+  latitude: 55.0984
+  longitude: 14.703
+  googleQuery: Rønne, Bornholm, Denmark
 legoHouse:
   latitude: 55.7350536
   longitude: 9.1265889
@@ -232,6 +248,10 @@ aarhus:
   latitude: 56.1533
   longitude: 10.2003
   googleQuery: ARoS Aarhus Kunstmuseum
+aalborg:
+  latitude: 57.0488
+  longitude: 9.9217
+  googleQuery: Utzon Center, Aalborg
 skagen:
   latitude: 57.7441
   longitude: 10.6416

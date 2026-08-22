@@ -275,6 +275,11 @@ sections:
               helped make the building famously controversial. Its position ends
               the grand visual axis from Marmorkirken through Amalienborg.
             url: https://www.apmollerfonde.dk/projekter/operaen/
+          goboat:
+            name: GoBoat
+            note: Be your own captain in a quiet electric picnic boat. Bring snacks, book ahead and take the harbour slowly.
+            kicker: Islands Brygge · No licence needed
+            url: https://goboat.dk/en/copenhagen
       neighbourhoods:
         title: Neighbourhoods
         items:
@@ -341,6 +346,10 @@ sections:
           kodbyen:
             name: Kødbyen
             note: The Meatpacking District — bars and restaurants in old butcher halls.
+          tivoliFoodHall:
+            name: Tivoli Food Hall
+            note: An easy central food-hall stop, right by Central Station. You can enter from the street without a Tivoli ticket.
+            url: https://www.tivoli.dk/en/food-and-drinks/tivoli-food-hall
       dining:
         title: Dining
         items:
@@ -367,6 +376,10 @@ sections:
           lagkagehuset:
             name: Lagkagehuset
             note: A chain. It's everywhere, and it's fine.
+          alice:
+            name: Alice, Amager
+            note: Proper pastries, coffee and seasonal ice cream. Try the cardamom ice cream if it's on.
+            url: https://maps.app.goo.gl/932ZVTmvULBaKjFJ7
           morePastries:
             name: More pastry ideas
             note: My little list.
@@ -512,6 +525,18 @@ sections:
               biography. The old quarter around it is one of Denmark's
               prettiest.
             url: https://hcandersenshus.dk/en
+          bornholm:
+            name: Bornholm
+            note: Denmark's Baltic island for smoked fish, rocky coasts, beaches and a proper slow weekend away.
+            travel: Ferry or a short flight from Copenhagen · stay over
+            kicker: Island escape
+            story: >-
+              Bornholm feels unlike the rest of Denmark: granite cliffs and
+              round churches in the north, broad beaches in the south, and
+              smokehouses everywhere. It is too much for a day trip, so make a
+              weekend of it—take the ferry or fly from Copenhagen, then use the
+              island buses or a bike to wander.
+            url: https://visit-bornholm.com/en/plan-your-trip-to-bornholm
       jutland:
         title: Jutland & further
         items:
@@ -531,6 +556,12 @@ sections:
             note: Denmark's second city. Walk the rainbow ring on top of ARoS, then Den Gamle By, an entire old town rebuilt street by street.
             travel: 3h by train
             url: https://www.aros.dk/en/
+          aalborg:
+            name: Aalborg
+            note: A friendly university city on the Limfjord, with a transformed waterfront, the Utzon Center and plenty of street art.
+            travel: ~4h by train
+            kicker: North Jutland · waterfront city
+            url: https://www.visitaalborg.com/
           skagen:
             name: Skagen & Grenen
             note: The very top of Denmark, where two seas meet and you can stand with a foot in each.

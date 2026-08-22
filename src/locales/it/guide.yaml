@@ -273,6 +273,11 @@ sections:
               disaccordi resero l'opera famosa e controversa. La posizione chiude
               l'asse visivo che parte da Marmorkirken e attraversa Amalienborg.
             url: https://www.apmollerfonde.dk/projekter/operaen/
+          goboat:
+            name: GoBoat
+            note: Si guida da soli una barca elettrica, silenziosa e da picnic. Portate gli snack, prenotate e prendetevela con calma sul porto.
+            kicker: Islands Brygge · Patente non necessaria
+            url: https://goboat.dk/en/copenhagen
       neighbourhoods:
         title: Quartieri
         items:
@@ -339,6 +344,10 @@ sections:
           kodbyen:
             name: Kødbyen
             note: Il Meatpacking District — bar e ristoranti nelle vecchie macellerie.
+          tivoliFoodHall:
+            name: Tivoli Food Hall
+            note: Una tappa facile e centrale, accanto alla stazione. Si entra dalla strada senza biglietto per Tivoli.
+            url: https://www.tivoli.dk/en/food-and-drinks/tivoli-food-hall
       dining:
         title: Ristoranti
         items:
@@ -365,6 +374,10 @@ sections:
           lagkagehuset:
             name: Lagkagehuset
             note: È una catena, sta ovunque, ed è buona.
+          alice:
+            name: Alice, Amager
+            note: Pasticceria fatta bene, caffè e gelato stagionale. Se c'è, provate il gelato al cardamomo.
+            url: https://maps.app.goo.gl/932ZVTmvULBaKjFJ7
           morePastries:
             name: Altri consigli dolci
             note: La mia piccola lista.
@@ -512,6 +525,18 @@ sections:
               biografia. Il quartiere antico attorno è tra i più belli di
               Danimarca.
             url: https://hcandersenshus.dk/en
+          bornholm:
+            name: Bornholm
+            note: "L'isola baltica danese: pesce affumicato, scogliere, spiagge e un vero weekend lento."
+            travel: Traghetto o volo breve da Copenaghen · dormite lì
+            kicker: Fuga su un'isola
+            story: >-
+              Bornholm sembra diversa dal resto della Danimarca: scogliere di
+              granito e chiese rotonde a nord, grandi spiagge a sud e affumicatoi
+              ovunque. È troppo per una gita in giornata: fateci un weekend,
+              con traghetto o volo da Copenaghen, poi bus dell'isola o bici per
+              girarla senza fretta.
+            url: https://visit-bornholm.com/en/plan-your-trip-to-bornholm
       jutland:
         title: Jutland & oltre
         items:
@@ -531,6 +556,12 @@ sections:
             note: La seconda città danese. L'anello arcobaleno sul tetto dell'ARoS e poi Den Gamle By, una città vecchia ricostruita strada per strada.
             travel: 3h di treno
             url: https://www.aros.dk/en/
+          aalborg:
+            name: Aalborg
+            note: Una città universitaria simpatica sul Limfjord, con lungofiume reinventato, Utzon Center e tanta street art.
+            travel: ~4h di treno
+            kicker: Jutland del Nord · città sul fiordo
+            url: https://www.visitaalborg.com/
           skagen:
             name: Skagen & Grenen
             note: La punta estrema della Danimarca, dove due mari si incontrano e si può stare con un piede in ciascuno.
