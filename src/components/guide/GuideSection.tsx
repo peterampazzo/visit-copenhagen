@@ -84,7 +84,7 @@ export function GuideSection({
         </motion.div>
 
         <div className="space-y-8 sm:space-y-10">
-          {section.groups.map((group) => (
+          {visibleGroups.map((group) => (
             <div key={group.id}>
               <div className="mb-3">
                 <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
