@@ -593,3 +593,78 @@ sections:
             name: Things to do in Copenhagen
             note: The New York Times guide. A good one.
             url: https://www.nytimes.com/interactive/2023/07/20/travel/things-to-do-copenhagen.html
+      february:
+        title: February
+        collapsible: true
+        months: [2]
+        items:
+          lightFestival:
+            name: Copenhagen Light Festival
+            note: Dark evenings, light installations all over the city. Check the programme and dress warmly.
+            url: https://copenhagenlightfestival.org/
+      april:
+        title: April
+        collapsible: true
+        months: [4]
+        items:
+          sakura:
+            name: Sakura Festival
+            note: Cherry blossom, Japanese food and a very large crowd around Langelinie. Go early.
+            url: https://sakurafestival.dk/
+      june:
+        title: June
+        collapsible: true
+        months: [6]
+        items:
+          distortion:
+            name: Distortion
+            note: Copenhagen's loudest street party. Fun, chaotic and completely avoidable if that is not your thing.
+            url: https://www.cphdistortion.dk/
+          threeDays:
+            name: 3daysofdesign
+            note: Copenhagen turns into a giant design open house. Many exhibitions are free—book the popular ones.
+            url: https://www.3daysofdesign.dk/
+          sanktHans:
+            name: Sankt Hans
+            note: Midsummer bonfires by the water, usually on 23 June. Very Danish, slightly witchy.
+            url: https://www.visitcopenhagen.com/copenhagen/activities/sankt-hans-eve-gdk415605
+      july:
+        title: July
+        collapsible: true
+        months: [7]
+        items:
+          jazz:
+            name: Copenhagen Jazz Festival
+            note: Music spills out of clubs, parks and courtyards for ten summer days. Wander rather than over-plan.
+            url: https://jazz.dk/
+      august:
+        title: August
+        collapsible: true
+        months: [8]
+        items:
+          pride:
+            name: Copenhagen Pride
+            note: Parade, concerts and a lot of people around City Hall Square. Check the programme before you go.
+            url: https://www.copenhagenpride.dk/en/
+          operaFestival:
+            name: Copenhagen Opera Festival
+            note: Opera in unexpected places, including free outdoor performances around the harbour.
+            url: https://www.operafestival.dk/
+      october:
+        title: October
+        collapsible: true
+        months: [10]
+        items:
+          kulturnatten:
+            name: Kulturnatten
+            note: One Friday when museums, churches and odd institutions stay open late. Buy the Culture Night Pass.
+            url: https://www.kulturnatten.dk/da/Kulturnatten
+      december:
+        title: December
+        collapsible: true
+        months: [12]
+        items:
+          santaLucia:
+            name: Santa Lucia parade in kayaks
+            note: A floating procession of lights through the canals. Arrive early for a good spot by the water.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/santa-lucia-parade-kayaks-gdk1106677

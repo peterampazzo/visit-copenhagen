@@ -1,5 +1,6 @@
-import { ArrowRight, Footprints } from "lucide-react";
+import { ArrowRight, ChevronDown, Footprints } from "lucide-react";
 import { motion } from "motion/react";
+import { useState } from "react";
 
 import { itemMatchesQuery, type GuideSectionData } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
@@ -39,6 +40,14 @@ export function GuideSection({
   storyCopy: StoryCopy;
   favouriteCopy: { add: string; remove: string };
 }) {
+  const [openGroups, setOpenGroups] = useState(
+    () =>
+      new Set(
+        section.groups
+          .filter((group) => group.collapsible && group.months?.includes(new Date().getMonth() + 1))
+          .map((group) => group.id),
+      ),
+  );
   const visibleGroups = section.groups
     .map((group) => ({
       ...group,
@@ -49,7 +58,6 @@ export function GuideSection({
   if (visibleGroups.length === 0) return null;
 
   return (
-
     <section
       id={section.id}
       className={cn(
@@ -84,48 +92,80 @@ export function GuideSection({
         </motion.div>
 
         <div className="space-y-8 sm:space-y-10">
-          {visibleGroups.map((group) => (
-            <div key={group.id}>
-              <div className="mb-3">
-                <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
-                  <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
-                  {group.title}
-                </h3>
-                {group.route ? (
-                  <div className="scrollbar-none mt-3 flex items-center gap-2 overflow-x-auto rounded-2xl border-2 border-harbour/20 bg-card/70 px-3 py-2.5 text-xs font-bold text-ink/72 sm:w-fit sm:max-w-full sm:text-sm">
-                    <span className="flex shrink-0 items-center gap-1.5 text-harbour">
-                      <Footprints size={16} strokeWidth={2.5} aria-hidden="true" />
-                      {group.route.label}
-                    </span>
-                    {group.route.stops.map((stop, index) => (
-                      <span key={stop} className="flex shrink-0 items-center gap-2">
-                        <ArrowRight size={13} strokeWidth={2.5} aria-hidden="true" />
-                        <span className="rounded-full bg-harbour/8 px-2.5 py-1">{stop}</span>
+          {visibleGroups.map((group) => {
+            const collapsible = group.collapsible === true;
+            const isOpen = !collapsible || query.trim().length > 0 || openGroups.has(group.id);
+
+            return (
+              <div key={group.id}>
+                <div className="mb-3">
+                  {collapsible ? (
+                    <button
+                      type="button"
+                      aria-expanded={isOpen}
+                      onClick={() =>
+                        setOpenGroups((current) => {
+                          const next = new Set(current);
+                          if (next.has(group.id)) next.delete(group.id);
+                          else next.add(group.id);
+                          return next;
+                        })
+                      }
+                      className="flex w-full items-center gap-2.5 rounded-xl py-1 text-left font-display text-lg font-bold text-ink transition-colors hover:text-harbour focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:text-xl"
+                    >
+                      <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
+                      <span className="flex-1">{group.title}</span>
+                      <ChevronDown
+                        className={cn("transition-transform", isOpen && "rotate-180")}
+                        size={19}
+                        strokeWidth={2.75}
+                        aria-hidden="true"
+                      />
+                    </button>
+                  ) : (
+                    <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
+                      <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
+                      {group.title}
+                    </h3>
+                  )}
+                  {group.route ? (
+                    <div className="scrollbar-none mt-3 flex items-center gap-2 overflow-x-auto rounded-2xl border-2 border-harbour/20 bg-card/70 px-3 py-2.5 text-xs font-bold text-ink/72 sm:w-fit sm:max-w-full sm:text-sm">
+                      <span className="flex shrink-0 items-center gap-1.5 text-harbour">
+                        <Footprints size={16} strokeWidth={2.5} aria-hidden="true" />
+                        {group.route.label}
                       </span>
-                    ))}
+                      {group.route.stops.map((stop, index) => (
+                        <span key={stop} className="flex shrink-0 items-center gap-2">
+                          <ArrowRight size={13} strokeWidth={2.5} aria-hidden="true" />
+                          <span className="rounded-full bg-harbour/8 px-2.5 py-1">{stop}</span>
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
+                {isOpen ? (
+                  <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/15 bg-ink/12 sm:grid-cols-2 lg:grid-cols-3">
+                    {group.items.map((item, index) => {
+                      const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
+                      return (
+                        <PlaceCard
+                          key={item.id}
+                          item={item}
+                          linkLabel={linkLabel}
+                          {...(mapPlace ? { mapPlace } : {})}
+                          showOnMapLabel={showOnMapLabel}
+                          onShowOnMap={onShowOnMap}
+                          storyCopy={storyCopy}
+                          favouriteCopy={favouriteCopy}
+                          index={index}
+                        />
+                      );
+                    })}
                   </div>
                 ) : null}
               </div>
-              <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/15 bg-ink/12 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((item, index) => {
-                  const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
-                  return (
-                    <PlaceCard
-                      key={item.id}
-                      item={item}
-                      linkLabel={linkLabel}
-                      {...(mapPlace ? { mapPlace } : {})}
-                      showOnMapLabel={showOnMapLabel}
-                      onShowOnMap={onShowOnMap}
-                      storyCopy={storyCopy}
-                      favouriteCopy={favouriteCopy}
-                      index={index}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

@@ -11,13 +11,16 @@ export type GuideItem = {
 export function itemMatchesQuery(item: GuideItem, groupTitle: string, query: string): boolean {
   const needle = query.trim().toLowerCase();
   if (!needle) return true;
-  const haystack = `${item.name} ${item.note ?? ""} ${item.kicker ?? ""} ${groupTitle}`.toLowerCase();
+  const haystack =
+    `${item.name} ${item.note ?? ""} ${item.kicker ?? ""} ${groupTitle}`.toLowerCase();
   return haystack.includes(needle);
 }
 
 export type GuideGroup = {
   id: string;
   title: string;
+  collapsible?: boolean;
+  months?: number[];
   route?: {
     label: string;
     stops: string[];
@@ -33,11 +36,12 @@ export type GuideSectionData = {
   groups: GuideGroup[];
 };
 
-
 type GuideItemRecord = Omit<GuideItem, "id">;
 
 type GuideGroupRecord = {
   title: string;
+  collapsible?: boolean;
+  months?: number[];
   route?: {
     label: string;
     stops: string[];
@@ -65,7 +69,10 @@ const GUIDE_ORDER = [
   { id: "museums", groups: ["art"] },
   { id: "saunas", groups: ["sweat"] },
   { id: "beyond", groups: ["daytrips", "longer", "jutland"] },
-  { id: "inspiration", groups: ["things"] },
+  {
+    id: "inspiration",
+    groups: ["things", "february", "april", "june", "july", "august", "october", "december"],
+  },
 ] as const;
 
 function preferredEntries<T>(record: Record<string, T>, preferred: readonly string[]) {
@@ -90,6 +97,8 @@ export function toGuideSections(resources: GuideSectionsRecord): GuideSectionDat
       groups: preferredEntries(section.groups, preferredGroups).map(([groupId, group]) => ({
         id: groupId,
         title: group.title,
+        ...(group.collapsible === undefined ? {} : { collapsible: group.collapsible }),
+        ...(group.months === undefined ? {} : { months: group.months }),
         ...(group.route === undefined ? {} : { route: group.route }),
         items: Object.entries(group.items).map(([itemId, item]) => ({ id: itemId, ...item })),
       })),
