@@ -6,6 +6,8 @@ site:
   langLabel: Language
   nav: Jump to a section
   footer: God tur!
+  footerCredit: Built with AI. The opinions are very real.
+  footerSource: See the source on GitHub
   linkLabel: Open link
   mapLabel: Map
   mapTitle: Copenhagen on the map
@@ -70,6 +72,9 @@ sections:
           waterbus:
             name: Waterbus
             note: Your normal transport ticket covers it. It crosses the harbour, roughly every half hour — check Citymapper for times.
+          sTrainBike:
+            name: Take your bike on the S-train
+            note: Bikes travel free on Copenhagen's S-trains. A useful shortcut when your legs have had enough.
       cycling:
         title: Cycling
         items:
@@ -92,6 +97,10 @@ sections:
           payments:
             name: Payments
             note: We use Danish kroner, not euros. But the country is almost entirely cashless, so your card works everywhere.
+          publicToilets:
+            name: Public toilets are free
+            note: Copenhagen has around 175 of them. The city's map shows the nearest one and its opening hours; park toilets may close in winter.
+            url: https://visitorservice.kk.dk/en/explore-copenhagen/public-toilets
   places:
     emoji: 🏰
     title: Places & stories
@@ -275,11 +284,6 @@ sections:
               helped make the building famously controversial. Its position ends
               the grand visual axis from Marmorkirken through Amalienborg.
             url: https://www.apmollerfonde.dk/projekter/operaen/
-          goboat:
-            name: GoBoat
-            note: Be your own captain in a quiet electric picnic boat. Bring snacks, book ahead and take the harbour slowly.
-            kicker: Islands Brygge · No licence needed
-            url: https://goboat.dk/en/copenhagen
       neighbourhoods:
         title: Neighbourhoods
         items:
@@ -326,6 +330,14 @@ sections:
               was patented in 1958. The Copenhagen flagship is the easy city
               stop; the full experience is LEGO House in Billund.
             url: https://www.lego.com/en-dk/stores/store/copenhagen
+          illumBolighus:
+            name: Illums Bolighus
+            note: The place for Danish design, from a useful souvenir to furniture you cannot take home.
+            url: https://www.illumsbolighus.com/
+          royalCopenhagen:
+            name: Royal Copenhagen
+            note: Blue-and-white porcelain, very Danish and very pretty. The outlet is better for a serious bargain hunt.
+            url: https://www.royalcopenhagen.com/en-int/
   food:
     emoji: 😋
     title: What to eat
@@ -359,6 +371,10 @@ sections:
           aamanns:
             name: Aamanns 1921
             note: Excellent smørrebrød — do check the prices first.
+          gasolineGrill:
+            name: Gasoline Grill
+            note: A Copenhagen burger institution with a lot of international hype. Go if a very good burger and a queue sound like lunch.
+            url: https://gasolinegrill.com/
   pastries:
     emoji: 🍰
     title: Pastries
@@ -382,7 +398,7 @@ sections:
             url: https://maps.app.goo.gl/932ZVTmvULBaKjFJ7
           morePastries:
             name: More pastry ideas
-            note: My little list.
+            note: A useful Instagram list — not mine, but worth saving.
             url: https://www.instagram.com/p/DOSrrF8DJpF/
   museums:
     emoji: 🏺
@@ -427,7 +443,6 @@ sections:
         items:
           glaecier:
             name: Glaecier
-            note: Book ahead.
           sauna85:
             name: Sauna85
             url: https://www.sauna85.dk/en/
@@ -437,6 +452,34 @@ sections:
           platform:
             name: Platform CPH
             url: https://www.platformcph.com/
+  boats:
+    emoji: ⛵
+    title: Boats
+    blurb: Copenhagen makes more sense from the water. Pick who gets to steer.
+    groups:
+      sail:
+        title: Choose your boat
+        items:
+          goboat:
+            name: GoBoat
+            note: A quiet electric picnic boat you drive yourself. Bring snacks and take the harbour slowly.
+            kicker: Self-drive · No licence needed
+            url: https://goboat.dk/en/copenhagen
+          friendships:
+            name: FriendShips
+            note: Another electric picnic boat you can drive yourself, right in the centre. Bring your own food and drinks.
+            kicker: Self-drive · Up to 8 people
+            url: https://www.friendships.dk/
+          heyCaptain:
+            name: Hey Captain
+            note: A small, social canal tour with a captain rather than a large sightseeing boat.
+            kicker: Guided · Public or private
+            url: https://www.heycaptain.dk/
+          duffyBoats:
+            name: Duffy Boats
+            note: A comfortable electric boat with its own captain — the relaxed option if no one wants to steer.
+            kicker: Captained · Bring a picnic
+            url: https://duffyboats.dk/
   beyond:
     emoji: 🚆
     title: Beyond Copenhagen
@@ -488,6 +531,14 @@ sections:
             name: Malmö, Sweden
             note: Take the train across the Øresund Bridge. Another country before lunch — bring your passport or ID.
             travel: 35 min from Copenhagen H
+          skybarMalmo:
+            name: Skybar, Malmö Live
+            note: A Malmö stop for food or drinks with a big view over the city.
+            url: https://maps.app.goo.gl/EyKtERFBjXYHZ5pc8
+          bullenMalmo:
+            name: Bullen – Två Krögare
+            note: Proper old-school Swedish cooking in Malmö.
+            url: https://maps.app.goo.gl/TJjq7w8dQaPwn2JC7
       longer:
         title: Worth the longer ride
         items:
@@ -537,6 +588,21 @@ sections:
               weekend of it—take the ferry or fly from Copenhagen, then use the
               island buses or a bike to wander.
             url: https://visit-bornholm.com/en/plan-your-trip-to-bornholm
+          tisvildeleje:
+            name: Tisvildeleje
+            note: "A laid-back north-coast beach town: sand, colourful beach huts and Tisvilde Hegn forest right behind it."
+            travel: ~1h 20 by train
+            url: https://www.visitnorthzealand.com/north-zealand/cities/tisvildeleje-historic-seaside-resort-and-young-culture
+          gilleleje:
+            name: Gilleleje
+            note: A working fishing harbour, seafood, old lanes and a proper beach on the Danish Riviera.
+            travel: ~1h 15 by train
+            url: https://www.visitnorthzealand.com/north-zealand/cities/gilleleje-the-fishing-town-at-the-top-of-north-zealand
+          campAdventure:
+            name: Camp Adventure
+            note: Forest Tower and a huge climbing park in the south of Zealand — a good outdoors day if you have a car.
+            travel: ~1h 15 by car
+            url: https://www.campadventure.dk/
       jutland:
         title: Jutland & further
         items:
@@ -612,6 +678,10 @@ sections:
             name: Sakura Festival
             note: Cherry blossom, Japanese food and a very large crowd around Langelinie. Go early.
             url: https://sakurafestival.dk/
+          cherryBlossoms:
+            name: Cherry blossom walks
+            note: Do Kastellet and Langelinie, then the famous pink tunnel at Bispebjerg Cemetery. The streets around Bispebjerg are lovely too.
+            url: https://www.visitcopenhagen.com/copenhagen/this-is-copenhagen/seasons/places-to-see-copenhagen-in-its-spring-coat
       june:
         title: June
         collapsible: true

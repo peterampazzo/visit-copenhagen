@@ -70,6 +70,7 @@ const GUIDE_ORDER = [
   { id: "pastries", groups: ["bakeries"] },
   { id: "museums", groups: ["art"] },
   { id: "saunas", groups: ["sweat"] },
+  { id: "boats", groups: ["sail"] },
   { id: "beyond", groups: ["daytrips", "longer", "jutland"] },
   {
     id: "inspiration",

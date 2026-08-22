@@ -102,6 +102,14 @@ malmo:
   latitude: 55.6091712
   longitude: 12.9998411
   googleQuery: Malmö, Sweden
+skybarMalmo:
+  latitude: 55.6077447
+  longitude: 12.9942878
+  googleQuery: Skybar Malmö Live, Malmö
+bullenMalmo:
+  latitude: 55.5999602
+  longitude: 13.0013993
+  googleQuery: Bullen – Två Krögare, Malmö
 torvehallerne:
   latitude: 55.6838669
   longitude: 12.5695512

@@ -2,6 +2,7 @@ import { MotionConfig } from "motion/react";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { GuideFooter } from "@/components/guide/GuideFooter";
 import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
 import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
@@ -12,7 +13,6 @@ import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "
 import { toGuideMapPlaces } from "@/lib/locations";
 
 const GuideMapDialog = lazy(() => import("@/components/guide/GuideMapDialog"));
-
 
 export function App() {
   const { t } = useTranslation();
@@ -107,7 +107,9 @@ export function App() {
         ))}
         {!hasResults ? (
           <div className="px-4 py-16 text-center sm:px-6">
-            <p className="font-display text-xl font-bold text-ink/80">{t("site.searchNoResults")}</p>
+            <p className="font-display text-xl font-bold text-ink/80">
+              {t("site.searchNoResults")}
+            </p>
           </div>
         ) : null}
         <MobileBottomNav
@@ -119,10 +121,11 @@ export function App() {
           onOpenMap={() => openMap()}
           onOpenFavourites={() => openMap(null, "favourites")}
         />
-        <footer className="border-t-2 border-ink bg-ink px-4 py-12 pb-28 text-center text-cream sm:px-6 lg:pb-12">
-          <p className="font-display text-xl font-bold sm:text-2xl">{t("site.footer")}</p>
-          <p className="mt-3 text-sm text-cream/60">København · 55.6761° N</p>
-        </footer>
+        <GuideFooter
+          title={t("site.footer")}
+          credit={t("site.footerCredit")}
+          source={t("site.footerSource")}
+        />
         {mapOpen ? (
           <Suspense
             fallback={
@@ -178,4 +181,3 @@ export function App() {
     </MotionConfig>
   );
 }
-
