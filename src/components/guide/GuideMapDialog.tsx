@@ -41,7 +41,14 @@ type MapCopy = {
   favouriteAdd: string;
   favouriteRemove: string;
   favouritesEmpty: string;
+  sortDefault: string;
+  sortNearMe: string;
+  distanceUnitM: string;
+  distanceUnitKm: string;
+  walkingTime: string;
+  locationDenied: string;
 };
+
 
 const BOTTOM_PADDING: Record<SheetSnap, number> = { peek: 190, half: 300, full: 300 };
 
