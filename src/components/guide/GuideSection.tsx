@@ -1,7 +1,7 @@
 import { ArrowRight, Footprints } from "lucide-react";
 import { motion } from "motion/react";
 
-import type { GuideSectionData } from "@/lib/guide-content";
+import { itemMatchesQuery, type GuideSectionData } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
 import { cn } from "@/lib/utils";
 
@@ -21,6 +21,7 @@ const SECTION_THEMES = [
 export function GuideSection({
   section,
   sectionIndex,
+  query,
   linkLabel,
   mapPlaces,
   showOnMapLabel,
@@ -30,6 +31,7 @@ export function GuideSection({
 }: {
   section: GuideSectionData;
   sectionIndex: number;
+  query: string;
   linkLabel: string;
   mapPlaces: GuideMapPlace[];
   showOnMapLabel: string;
@@ -37,7 +39,17 @@ export function GuideSection({
   storyCopy: StoryCopy;
   favouriteCopy: { add: string; remove: string };
 }) {
+  const visibleGroups = section.groups
+    .map((group) => ({
+      ...group,
+      items: group.items.filter((item) => itemMatchesQuery(item, group.title, query)),
+    }))
+    .filter((group) => group.items.length > 0);
+
+  if (visibleGroups.length === 0) return null;
+
   return (
+
     <section
       id={section.id}
       className={cn(
