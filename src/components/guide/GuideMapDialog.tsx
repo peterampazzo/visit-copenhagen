@@ -434,16 +434,25 @@ export default function GuideMapDialog({
                         <span className="block font-display font-bold leading-tight">
                           {place.sectionEmoji} {place.name}
                         </span>
-                        {place.travel ? (
-                          <span className="mt-1.5 inline-flex rounded-full bg-harbour/10 px-2 py-0.5 text-[0.7rem] font-extrabold text-harbour">
-                            🚆 {place.travel}
-                          </span>
-                        ) : null}
+                        <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+                          {place.travel ? (
+                            <span className="inline-flex rounded-full bg-harbour/10 px-2 py-0.5 text-[0.7rem] font-extrabold text-harbour">
+                              🚆 {place.travel}
+                            </span>
+                          ) : null}
+                          {place.distance ? (
+                            <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-[0.7rem] font-extrabold text-primary">
+                              <Locate size={12} strokeWidth={2.5} aria-hidden="true" />
+                              {formatDistance(place.distance)}
+                            </span>
+                          ) : null}
+                        </div>
                         {place.note ? (
                           <span className="mt-1 line-clamp-2 block text-sm leading-5 text-ink/62">
                             {place.note}
                           </span>
                         ) : null}
+
                       </button>
                       <div className="flex items-center gap-2 border-t-2 border-ink/8 px-2.5 py-2">
                         <button
