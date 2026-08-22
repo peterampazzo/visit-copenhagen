@@ -65,6 +65,7 @@ export default function GuideMapDialog({
   onClose: () => void;
   copy: MapCopy;
 }) {
+  const { t } = useTranslation();
   const initialPlace = places.find(({ id }) => id === initialSelectedId);
   const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId);
   const [activeSection, setActiveSection] = useState(
@@ -73,8 +74,25 @@ export default function GuideMapDialog({
   const [query, setQuery] = useState("");
   const [scope, setScope] = useState<"city" | "all">(initialPlace?.far ? "all" : "city");
   const [snap, setSnap] = useState<SheetSnap>("peek");
+  const [sort, setSort] = useState<"default" | "near">("default");
+  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [locationDenied, setLocationDenied] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
   const { favourites, isFavourite, toggle } = useFavourites();
+
+  const requestLocation = useCallback(() => {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setUserLocation({ lat: position.coords.latitude, lng: position.coords.longitude });
+        setLocationDenied(false);
+      },
+      () => {
+        setLocationDenied(true);
+        setSort("default");
+      },
+    );
+  }, []);
 
   const sections = useMemo(
     () =>
@@ -89,9 +107,17 @@ export default function GuideMapDialog({
     [places],
   );
 
+  const placesWithDistance = useMemo(() => {
+    if (!userLocation) return places;
+    return places.map((place) => ({
+      ...place,
+      distance: haversineMeters(userLocation.lat, userLocation.lng, place.latitude, place.longitude),
+    }));
+  }, [places, userLocation]);
+
   const visiblePlaces = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return places.filter((place) => {
+    let filtered = placesWithDistance.filter((place) => {
       if (activeSection === "favourites" && !favourites.includes(place.itemId)) return false;
       if (
         activeSection !== "all" &&
@@ -102,7 +128,12 @@ export default function GuideMapDialog({
       if (!needle) return true;
       return `${place.name} ${place.note ?? ""}`.toLowerCase().includes(needle);
     });
-  }, [activeSection, favourites, places, query]);
+    if (sort === "near" && userLocation) {
+      filtered = [...filtered].sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
+    }
+    return filtered;
+  }, [activeSection, favourites, placesWithDistance, query, sort, userLocation]);
+
 
   useEffect(() => {
     if (selectedId && !visiblePlaces.some(({ id }) => id === selectedId)) setSelectedId(null);
