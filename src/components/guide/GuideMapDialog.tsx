@@ -354,14 +354,28 @@ export default function GuideMapDialog({
                       />
                     </button>
                   </div>
-                  {selectedPlace.travel ? (
-                    <p className="mt-1.5 inline-flex rounded-full border-2 border-ink/12 px-2.5 py-0.5 text-xs font-bold text-ink/70">
-                      🚆 {selectedPlace.travel}
-                    </p>
-                  ) : null}
+                  <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+                    {selectedPlace.travel ? (
+                      <span className="inline-flex rounded-full border-2 border-ink/12 px-2.5 py-0.5 text-xs font-bold text-ink/70">
+                        🚆 {selectedPlace.travel}
+                      </span>
+                    ) : null}
+                    {selectedPlace.distance ? (
+                      <span className="inline-flex items-center gap-1 rounded-full border-2 border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs font-bold text-primary">
+                        <Locate size={12} strokeWidth={2.5} aria-hidden="true" />
+                        {formatDistance(selectedPlace.distance)}
+                        {selectedPlace.distance < 3_000 ? (
+                          <span className="text-ink/60">
+                            · {t(copy.walkingTime, { minutes: walkingMinutes(selectedPlace.distance) })}
+                          </span>
+                        ) : null}
+                      </span>
+                    ) : null}
+                  </div>
                   {selectedPlace.note ? (
                     <p className="mt-1.5 text-sm leading-5 text-ink/65">{selectedPlace.note}</p>
                   ) : null}
+
                   <div className="mt-3 flex items-center gap-2">
                     <button
                       type="button"
