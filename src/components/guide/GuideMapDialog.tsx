@@ -276,8 +276,12 @@ export default function GuideMapDialog({
           </button>
         ))}
       </div>
+      {locationDenied ? (
+        <p className="text-xs font-semibold text-coral">{copy.locationDenied}</p>
+      ) : null}
     </div>
   );
+
 
   return (
     <Dialog.Root open onOpenChange={(open) => !open && onClose()}>
