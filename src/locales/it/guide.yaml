@@ -43,7 +43,7 @@ site:
   distanceUnitM: m
   distanceUnitKm: km
   walkingTime: "{{minutes}} min a piedi"
-  locationDenied: Serve l'accesso alla posizione per ordinare per distanza.
+  locationDenied: La posizione è bloccata — abilitala nelle impostazioni del browser per usare Vicino a me.
 
 sections:
   know:

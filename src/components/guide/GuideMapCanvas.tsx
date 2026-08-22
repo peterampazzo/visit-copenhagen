@@ -4,6 +4,7 @@ import {
   Map as MapLibreMap,
   Marker,
   NavigationControl,
+  type GeolocatePositionEvent,
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -50,6 +51,9 @@ export function GuideMapCanvas({
   mapTitle,
   fitScope = "city",
   bottomPadding = 0,
+  onLocationFound,
+  onLocationError,
+  locationHint,
 }: {
   places: GuideMapPlace[];
   selectedId: string | null;
@@ -57,13 +61,16 @@ export function GuideMapCanvas({
   mapTitle: string;
   fitScope?: "city" | "all";
   bottomPadding?: number;
+  onLocationFound?: (location: { lat: number; lng: number }) => void;
+  onLocationError?: () => void;
+  locationHint?: string;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const markersRef = useRef<Marker[]>([]);
   const [mapReady, setMapReady] = useState(false);
-  const stateRef = useRef({ places, selectedId, onSelect });
-  stateRef.current = { places, selectedId, onSelect };
+  const stateRef = useRef({ places, selectedId, onSelect, onLocationFound, onLocationError });
+  stateRef.current = { places, selectedId, onSelect, onLocationFound, onLocationError };
 
   const renderMarkers = useCallback(() => {
     const map = mapRef.current;
@@ -98,9 +105,7 @@ export function GuideMapCanvas({
           const bounds = new LngLatBounds();
           for (const place of cluster.places) bounds.extend([place.longitude, place.latitude]);
           const sameSpot =
-            bounds.getNorthEast().distanceTo(bounds.getSouthWest()) < 30
-              ? true
-              : false;
+            bounds.getNorthEast().distanceTo(bounds.getSouthWest()) < 30 ? true : false;
           if (sameSpot) {
             map.easeTo({
               center: [cluster.longitude, cluster.latitude],
@@ -158,10 +163,18 @@ export function GuideMapCanvas({
     });
 
     map.addControl(new NavigationControl({ showCompass: false }), "top-right");
-    map.addControl(
-      new GeolocateControl({ trackUserLocation: true, positionOptions: { enableHighAccuracy: true } }),
-      "top-right",
-    );
+    const geolocate = new GeolocateControl({
+      trackUserLocation: true,
+      positionOptions: { enableHighAccuracy: true, maximumAge: 60_000, timeout: 10_000 },
+    });
+    geolocate.on("geolocate", (event: GeolocatePositionEvent) => {
+      stateRef.current.onLocationFound?.({
+        lat: event.coords.latitude,
+        lng: event.coords.longitude,
+      });
+    });
+    geolocate.on("error", () => stateRef.current.onLocationError?.());
+    map.addControl(geolocate, "top-right");
     mapRef.current = map;
     setMapReady(true);
 
@@ -216,5 +229,17 @@ export function GuideMapCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mapReady, selectedId]);
 
-  return <div ref={containerRef} className="h-full w-full" aria-label={mapTitle} />;
+  return (
+    <div className="relative h-full w-full">
+      <div ref={containerRef} className="h-full w-full" aria-label={mapTitle} />
+      {locationHint ? (
+        <p
+          role="status"
+          className="pointer-events-none absolute left-3 top-3 max-w-[min(18rem,calc(100%-5rem))] rounded-xl border-2 border-coral/25 bg-card/95 px-3 py-2 text-xs font-bold leading-4 text-coral shadow-sm"
+        >
+          {locationHint}
+        </p>
+      ) : null}
+    </div>
+  );
 }

@@ -17,7 +17,6 @@ import { formatDistance, haversineMeters, walkingMinutes } from "@/lib/distance"
 import { cn } from "@/lib/utils";
 import { googleMapsUrl, type GuideMapPlace } from "@/lib/locations";
 
-
 import { GuideMapCanvas } from "./GuideMapCanvas";
 import { MapPlaceSheet, type SheetSnap } from "./MapPlaceSheet";
 
@@ -49,7 +48,6 @@ type MapCopy = {
   locationDenied: string;
 };
 
-
 const BOTTOM_PADDING: Record<SheetSnap, number> = { peek: 190, half: 300, full: 300 };
 
 export default function GuideMapDialog({
@@ -80,19 +78,33 @@ export default function GuideMapDialog({
   const listRef = useRef<HTMLDivElement>(null);
   const { favourites, isFavourite, toggle } = useFavourites();
 
+  const saveUserLocation = useCallback((location: { lat: number; lng: number }) => {
+    setUserLocation(location);
+    setLocationDenied(false);
+  }, []);
+
+  const handleLocationError = useCallback(() => {
+    setLocationDenied(true);
+  }, []);
+
   const requestLocation = useCallback(() => {
-    if (!navigator.geolocation) return;
+    if (!navigator.geolocation) {
+      handleLocationError();
+      setSort("default");
+      return;
+    }
+
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        setUserLocation({ lat: position.coords.latitude, lng: position.coords.longitude });
-        setLocationDenied(false);
+        saveUserLocation({ lat: position.coords.latitude, lng: position.coords.longitude });
       },
       () => {
-        setLocationDenied(true);
+        handleLocationError();
         setSort("default");
       },
+      { enableHighAccuracy: true, maximumAge: 60_000, timeout: 10_000 },
     );
-  }, []);
+  }, [handleLocationError, saveUserLocation]);
 
   const sections = useMemo(
     () =>
@@ -111,7 +123,12 @@ export default function GuideMapDialog({
     if (!userLocation) return places;
     return places.map((place) => ({
       ...place,
-      distance: haversineMeters(userLocation.lat, userLocation.lng, place.latitude, place.longitude),
+      distance: haversineMeters(
+        userLocation.lat,
+        userLocation.lng,
+        place.latitude,
+        place.longitude,
+      ),
     }));
   }, [places, userLocation]);
 
@@ -133,7 +150,6 @@ export default function GuideMapDialog({
     }
     return filtered;
   }, [activeSection, favourites, placesWithDistance, query, sort, userLocation]);
-
 
   useEffect(() => {
     if (selectedId && !visiblePlaces.some(({ id }) => id === selectedId)) setSelectedId(null);
@@ -165,7 +181,8 @@ export default function GuideMapDialog({
 
   const step = (delta: number) => {
     if (visiblePlaces.length === 0) return;
-    const next = visiblePlaces[(selectedIndex + delta + visiblePlaces.length) % visiblePlaces.length];
+    const next =
+      visiblePlaces[(selectedIndex + delta + visiblePlaces.length) % visiblePlaces.length];
     if (next) selectPlace(next.id);
   };
 
@@ -276,12 +293,8 @@ export default function GuideMapDialog({
           </button>
         ))}
       </div>
-      {locationDenied ? (
-        <p className="text-xs font-semibold text-coral">{copy.locationDenied}</p>
-      ) : null}
     </div>
   );
-
 
   return (
     <Dialog.Root open onOpenChange={(open) => !open && onClose()}>
@@ -318,6 +331,9 @@ export default function GuideMapDialog({
                 mapTitle={copy.title}
                 fitScope={scope}
                 bottomPadding={BOTTOM_PADDING[snap]}
+                onLocationFound={saveUserLocation}
+                onLocationError={handleLocationError}
+                {...(locationDenied ? { locationHint: copy.locationDenied } : {})}
               />
             </div>
 
@@ -366,7 +382,10 @@ export default function GuideMapDialog({
                         {formatDistance(selectedPlace.distance)}
                         {selectedPlace.distance < 3_000 ? (
                           <span className="text-ink/60">
-                            · {t(copy.walkingTime, { minutes: walkingMinutes(selectedPlace.distance) })}
+                            ·{" "}
+                            {t(copy.walkingTime, {
+                              minutes: walkingMinutes(selectedPlace.distance),
+                            })}
                           </span>
                         ) : null}
                       </span>
@@ -448,11 +467,10 @@ export default function GuideMapDialog({
                           ) : null}
                         </div>
                         {place.note ? (
-                          <span className="mt-1 line-clamp-2 block text-sm leading-5 text-ink/62">
+                          <span className="mt-1 block text-sm leading-5 text-ink/62">
                             {place.note}
                           </span>
                         ) : null}
-
                       </button>
                       <div className="flex items-center gap-2 border-t-2 border-ink/8 px-2.5 py-2">
                         <button
@@ -490,7 +508,6 @@ export default function GuideMapDialog({
                     </div>
                   );
                 })}
-
               </div>
             </MapPlaceSheet>
           </div>

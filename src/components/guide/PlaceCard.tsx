@@ -77,7 +77,7 @@ export function PlaceCard({
               </p>
             ) : null}
             {item.note ? (
-              <p className="mt-1 line-clamp-2 text-sm leading-5 text-ink/65 sm:text-[0.95rem] sm:leading-5">
+              <p className="mt-1 text-sm leading-5 text-ink/65 sm:text-[0.95rem] sm:leading-5">
                 {item.note}
               </p>
             ) : null}
@@ -110,7 +110,6 @@ export function PlaceCard({
               />
             </button>
           ) : null}
-
 
           {item.url && !item.story ? (
             <a

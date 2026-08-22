@@ -43,7 +43,7 @@ site:
   distanceUnitM: m
   distanceUnitKm: km
   walkingTime: "{{minutes}} min walk"
-  locationDenied: Location access is needed to sort by distance.
+  locationDenied: Location is blocked — enable it in your browser settings to use Near me.
 
 sections:
   know:
