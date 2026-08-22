@@ -1,16 +1,18 @@
 import { MotionConfig } from "motion/react";
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
 import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
+import { SearchBar } from "@/components/guide/SearchBar";
 import { SectionNav } from "@/components/guide/SectionNav";
-import { toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
+import { itemMatchesQuery, toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
 import { toGuideMapPlaces } from "@/lib/locations";
 
 const GuideMapDialog = lazy(() => import("@/components/guide/GuideMapDialog"));
+
 
 export function App() {
   const { t } = useTranslation();
@@ -18,10 +20,21 @@ export function App() {
   const [mapOpen, setMapOpen] = useState(false);
   const [selectedMapPlaceId, setSelectedMapPlaceId] = useState<string | null>(null);
   const [mapFilter, setMapFilter] = useState<"all" | "favourites">("all");
+  const [search, setSearch] = useState("");
   const sections = toGuideSections(
     t("sections", { returnObjects: true }) as unknown as GuideSectionsRecord,
   );
   const mapPlaces = toGuideMapPlaces(sections);
+
+  const hasResults = useMemo(
+    () =>
+      sections.some((section) =>
+        section.groups.some((group) =>
+          group.items.some((item) => itemMatchesQuery(item, group.title, search)),
+        ),
+      ),
+    [sections, search],
+  );
 
   useEffect(() => {
     const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
@@ -53,6 +66,17 @@ export function App() {
           title={t("site.title")}
           description={t("site.description")}
         />
+        <div className="sticky top-0 z-30 border-b-2 border-ink/10 bg-background/95 px-4 py-2.5 backdrop-blur-md sm:px-6 lg:static lg:border-b-0 lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
+          <div className="mx-auto max-w-6xl">
+            <SearchBar
+              value={search}
+              onChange={setSearch}
+              placeholder={t("site.searchPlaceholder")}
+              label={t("site.searchLabel")}
+              clearLabel={t("site.searchClear")}
+            />
+          </div>
+        </div>
         <SectionNav
           sections={sections}
           label={t("site.nav")}
@@ -64,6 +88,7 @@ export function App() {
             key={section.id}
             section={section}
             sectionIndex={index}
+            query={search}
             linkLabel={t("site.linkLabel")}
             mapPlaces={mapPlaces}
             showOnMapLabel={t("site.showOnMap")}
@@ -80,6 +105,11 @@ export function App() {
             }}
           />
         ))}
+        {!hasResults ? (
+          <div className="px-4 py-16 text-center sm:px-6">
+            <p className="font-display text-xl font-bold text-ink/80">{t("site.searchNoResults")}</p>
+          </div>
+        ) : null}
         <MobileBottomNav
           sections={sections}
           sectionsLabel={t("site.navLabel")}
@@ -134,6 +164,12 @@ export function App() {
                 favouriteAdd: t("site.favouriteAdd"),
                 favouriteRemove: t("site.favouriteRemove"),
                 favouritesEmpty: t("site.favouritesEmpty"),
+                sortDefault: t("site.sortDefault"),
+                sortNearMe: t("site.sortNearMe"),
+                distanceUnitM: t("site.distanceUnitM"),
+                distanceUnitKm: t("site.distanceUnitKm"),
+                walkingTime: t("site.walkingTime"),
+                locationDenied: t("site.locationDenied"),
               }}
             />
           </Suspense>
@@ -142,3 +178,4 @@ export function App() {
     </MotionConfig>
   );
 }
+

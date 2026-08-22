@@ -24,7 +24,9 @@ export type GuideMapPlace = {
   sectionTitle: string;
   sectionEmoji: string;
   far: boolean;
+  distance?: number;
 };
+
 
 const CITY_BOUNDS = { minLat: 55.55, maxLat: 55.8, minLng: 12.35, maxLng: 12.8 };
 

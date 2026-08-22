@@ -1,10 +1,22 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { ChevronLeft, ChevronRight, ExternalLink, MapPin, Search, Star, X } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ExternalLink,
+  Locate,
+  MapPin,
+  Search,
+  Star,
+  X,
+} from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { useFavourites } from "@/hooks/use-favourites";
+import { formatDistance, haversineMeters, walkingMinutes } from "@/lib/distance";
 import { cn } from "@/lib/utils";
 import { googleMapsUrl, type GuideMapPlace } from "@/lib/locations";
+
 
 import { GuideMapCanvas } from "./GuideMapCanvas";
 import { MapPlaceSheet, type SheetSnap } from "./MapPlaceSheet";
@@ -29,7 +41,14 @@ type MapCopy = {
   favouriteAdd: string;
   favouriteRemove: string;
   favouritesEmpty: string;
+  sortDefault: string;
+  sortNearMe: string;
+  distanceUnitM: string;
+  distanceUnitKm: string;
+  walkingTime: string;
+  locationDenied: string;
 };
+
 
 const BOTTOM_PADDING: Record<SheetSnap, number> = { peek: 190, half: 300, full: 300 };
 
@@ -46,6 +65,7 @@ export default function GuideMapDialog({
   onClose: () => void;
   copy: MapCopy;
 }) {
+  const { t } = useTranslation();
   const initialPlace = places.find(({ id }) => id === initialSelectedId);
   const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId);
   const [activeSection, setActiveSection] = useState(
@@ -54,8 +74,25 @@ export default function GuideMapDialog({
   const [query, setQuery] = useState("");
   const [scope, setScope] = useState<"city" | "all">(initialPlace?.far ? "all" : "city");
   const [snap, setSnap] = useState<SheetSnap>("peek");
+  const [sort, setSort] = useState<"default" | "near">("default");
+  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [locationDenied, setLocationDenied] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
   const { favourites, isFavourite, toggle } = useFavourites();
+
+  const requestLocation = useCallback(() => {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setUserLocation({ lat: position.coords.latitude, lng: position.coords.longitude });
+        setLocationDenied(false);
+      },
+      () => {
+        setLocationDenied(true);
+        setSort("default");
+      },
+    );
+  }, []);
 
   const sections = useMemo(
     () =>
@@ -70,9 +107,17 @@ export default function GuideMapDialog({
     [places],
   );
 
+  const placesWithDistance = useMemo(() => {
+    if (!userLocation) return places;
+    return places.map((place) => ({
+      ...place,
+      distance: haversineMeters(userLocation.lat, userLocation.lng, place.latitude, place.longitude),
+    }));
+  }, [places, userLocation]);
+
   const visiblePlaces = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return places.filter((place) => {
+    let filtered = placesWithDistance.filter((place) => {
       if (activeSection === "favourites" && !favourites.includes(place.itemId)) return false;
       if (
         activeSection !== "all" &&
@@ -83,7 +128,12 @@ export default function GuideMapDialog({
       if (!needle) return true;
       return `${place.name} ${place.note ?? ""}`.toLowerCase().includes(needle);
     });
-  }, [activeSection, favourites, places, query]);
+    if (sort === "near" && userLocation) {
+      filtered = [...filtered].sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
+    }
+    return filtered;
+  }, [activeSection, favourites, placesWithDistance, query, sort, userLocation]);
+
 
   useEffect(() => {
     if (selectedId && !visiblePlaces.some(({ id }) => id === selectedId)) setSelectedId(null);
@@ -196,6 +246,23 @@ export default function GuideMapDialog({
           {copy.favourites}
           {favourites.length > 0 ? ` (${String(favourites.length)})` : ""}
         </button>
+        <button
+          type="button"
+          aria-pressed={sort === "near"}
+          onClick={() => {
+            if (sort === "near") {
+              setSort("default");
+            } else {
+              setSort("near");
+              requestLocation();
+            }
+          }}
+          className={chipClass(sort === "near", "primary")}
+        >
+          <Locate size={15} strokeWidth={2.5} aria-hidden="true" />
+          {copy.sortNearMe}
+        </button>
+
         {sections.map((section) => (
           <button
             key={section.id}
@@ -209,8 +276,12 @@ export default function GuideMapDialog({
           </button>
         ))}
       </div>
+      {locationDenied ? (
+        <p className="text-xs font-semibold text-coral">{copy.locationDenied}</p>
+      ) : null}
     </div>
   );
+
 
   return (
     <Dialog.Root open onOpenChange={(open) => !open && onClose()}>
@@ -283,14 +354,28 @@ export default function GuideMapDialog({
                       />
                     </button>
                   </div>
-                  {selectedPlace.travel ? (
-                    <p className="mt-1.5 inline-flex rounded-full border-2 border-ink/12 px-2.5 py-0.5 text-xs font-bold text-ink/70">
-                      🚆 {selectedPlace.travel}
-                    </p>
-                  ) : null}
+                  <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+                    {selectedPlace.travel ? (
+                      <span className="inline-flex rounded-full border-2 border-ink/12 px-2.5 py-0.5 text-xs font-bold text-ink/70">
+                        🚆 {selectedPlace.travel}
+                      </span>
+                    ) : null}
+                    {selectedPlace.distance ? (
+                      <span className="inline-flex items-center gap-1 rounded-full border-2 border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs font-bold text-primary">
+                        <Locate size={12} strokeWidth={2.5} aria-hidden="true" />
+                        {formatDistance(selectedPlace.distance)}
+                        {selectedPlace.distance < 3_000 ? (
+                          <span className="text-ink/60">
+                            · {t(copy.walkingTime, { minutes: walkingMinutes(selectedPlace.distance) })}
+                          </span>
+                        ) : null}
+                      </span>
+                    ) : null}
+                  </div>
                   {selectedPlace.note ? (
                     <p className="mt-1.5 text-sm leading-5 text-ink/65">{selectedPlace.note}</p>
                   ) : null}
+
                   <div className="mt-3 flex items-center gap-2">
                     <button
                       type="button"
@@ -349,16 +434,25 @@ export default function GuideMapDialog({
                         <span className="block font-display font-bold leading-tight">
                           {place.sectionEmoji} {place.name}
                         </span>
-                        {place.travel ? (
-                          <span className="mt-1.5 inline-flex rounded-full bg-harbour/10 px-2 py-0.5 text-[0.7rem] font-extrabold text-harbour">
-                            🚆 {place.travel}
-                          </span>
-                        ) : null}
+                        <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+                          {place.travel ? (
+                            <span className="inline-flex rounded-full bg-harbour/10 px-2 py-0.5 text-[0.7rem] font-extrabold text-harbour">
+                              🚆 {place.travel}
+                            </span>
+                          ) : null}
+                          {place.distance ? (
+                            <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-[0.7rem] font-extrabold text-primary">
+                              <Locate size={12} strokeWidth={2.5} aria-hidden="true" />
+                              {formatDistance(place.distance)}
+                            </span>
+                          ) : null}
+                        </div>
                         {place.note ? (
                           <span className="mt-1 line-clamp-2 block text-sm leading-5 text-ink/62">
                             {place.note}
                           </span>
                         ) : null}
+
                       </button>
                       <div className="flex items-center gap-2 border-t-2 border-ink/8 px-2.5 py-2">
                         <button

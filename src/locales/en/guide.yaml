@@ -34,6 +34,17 @@ site:
   favouriteRemove: Remove from saved
   favouritesEmpty: Tap the star on any place to save it here.
   navLabel: Sections
+  searchLabel: Search the guide
+  searchPlaceholder: Search places, food, tips…
+  searchClear: Clear search
+  searchNoResults: Nothing matches your search — try another word.
+  sortDefault: Default order
+  sortNearMe: Near me
+  distanceUnitM: m
+  distanceUnitKm: km
+  walkingTime: "{{minutes}} min walk"
+  locationDenied: Location access is needed to sort by distance.
+
 sections:
   know:
     emoji: 🧯
