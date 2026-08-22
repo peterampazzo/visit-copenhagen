@@ -8,6 +8,12 @@ export type GuideItem = {
   travel?: string;
 };
 
+export function itemMatchesQuery(item: GuideItem, groupTitle: string, query: string): boolean {
+  const needle = query.trim().toLowerCase();
+  if (!needle) return true;
+  const haystack = `${item.name} ${item.note ?? ""} ${item.kicker ?? ""} ${groupTitle}`.toLowerCase();
+  return haystack.includes(needle);
+}
 
 export type GuideGroup = {
   id: string;
@@ -26,6 +32,7 @@ export type GuideSectionData = {
   blurb?: string;
   groups: GuideGroup[];
 };
+
 
 type GuideItemRecord = Omit<GuideItem, "id">;
 
