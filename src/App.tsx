@@ -1,16 +1,18 @@
 import { MotionConfig } from "motion/react";
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
 import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
+import { SearchBar } from "@/components/guide/SearchBar";
 import { SectionNav } from "@/components/guide/SectionNav";
-import { toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
+import { itemMatchesQuery, toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
 import { toGuideMapPlaces } from "@/lib/locations";
 
 const GuideMapDialog = lazy(() => import("@/components/guide/GuideMapDialog"));
+
 
 export function App() {
   const { t } = useTranslation();
