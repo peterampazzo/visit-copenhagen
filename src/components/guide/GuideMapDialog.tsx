@@ -1,10 +1,22 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { ChevronLeft, ChevronRight, ExternalLink, MapPin, Search, Star, X } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ExternalLink,
+  Locate,
+  MapPin,
+  Search,
+  Star,
+  X,
+} from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { useFavourites } from "@/hooks/use-favourites";
+import { formatDistance, haversineMeters, walkingMinutes } from "@/lib/distance";
 import { cn } from "@/lib/utils";
 import { googleMapsUrl, type GuideMapPlace } from "@/lib/locations";
+
 
 import { GuideMapCanvas } from "./GuideMapCanvas";
 import { MapPlaceSheet, type SheetSnap } from "./MapPlaceSheet";
