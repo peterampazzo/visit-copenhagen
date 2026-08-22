@@ -33,6 +33,7 @@ export type GuideSectionData = {
   emoji: string;
   title: string;
   blurb?: string;
+  calendarTitle?: string;
   groups: GuideGroup[];
 };
 
@@ -53,6 +54,7 @@ export type GuideSectionRecord = {
   emoji: string;
   title: string;
   blurb?: string;
+  calendarTitle?: string;
   groups: Record<string, GuideGroupRecord>;
 };
 
@@ -94,6 +96,7 @@ export function toGuideSections(resources: GuideSectionsRecord): GuideSectionDat
       emoji: section.emoji,
       title: section.title,
       ...(section.blurb === undefined ? {} : { blurb: section.blurb }),
+      ...(section.calendarTitle === undefined ? {} : { calendarTitle: section.calendarTitle }),
       groups: preferredEntries(section.groups, preferredGroups).map(([groupId, group]) => ({
         id: groupId,
         title: group.title,

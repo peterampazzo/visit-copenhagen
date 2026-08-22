@@ -585,6 +585,7 @@ sections:
     emoji: 👻
     title: Inspiration
     blurb: If you want someone else's opinion for once.
+    calendarTitle: Events through the year
     groups:
       things:
         title: Things I like

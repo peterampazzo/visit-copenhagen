@@ -1,4 +1,4 @@
-import { ArrowRight, ChevronDown, Footprints } from "lucide-react";
+import { ArrowRight, ExternalLink, Footprints } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 
@@ -40,14 +40,13 @@ export function GuideSection({
   storyCopy: StoryCopy;
   favouriteCopy: { add: string; remove: string };
 }) {
-  const [openGroups, setOpenGroups] = useState(
-    () =>
-      new Set(
-        section.groups
-          .filter((group) => group.collapsible && group.months?.includes(new Date().getMonth() + 1))
-          .map((group) => group.id),
-      ),
-  );
+  const [activeCalendarGroup, setActiveCalendarGroup] = useState(() => {
+    const currentMonth = new Date().getMonth() + 1;
+    return (
+      section.groups.find((group) => group.collapsible && group.months?.includes(currentMonth))
+        ?.id ?? null
+    );
+  });
   const visibleGroups = section.groups
     .map((group) => ({
       ...group,
@@ -76,6 +75,37 @@ export function GuideSection({
           />
         );
       })}
+    </div>
+  );
+
+  const renderCalendarCards = (group: GuideGroup) => (
+    <div className="overflow-hidden rounded-2xl border border-ink/15 bg-card/90">
+      {group.items.map((item) => (
+        <article
+          key={item.id}
+          className="flex items-start gap-3 border-b border-ink/12 px-4 py-3.5 last:border-b-0 sm:px-5"
+        >
+          <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+          <div className="min-w-0 flex-1">
+            <h4 className="font-display text-base font-bold leading-snug text-ink sm:text-lg">
+              {item.name}
+            </h4>
+            {item.note ? <p className="mt-0.5 text-sm leading-5 text-ink/65">{item.note}</p> : null}
+          </div>
+          {item.url ? (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${linkLabel}: ${item.name}`}
+              title={`${linkLabel}: ${item.name}`}
+              className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <ExternalLink aria-hidden="true" size={16} strokeWidth={2.25} />
+            </a>
+          ) : null}
+        </article>
+      ))}
     </div>
   );
 
@@ -146,54 +176,68 @@ export function GuideSection({
 
           {calendarGroups.length > 0 ? (
             <div className="rounded-3xl border-2 border-ink/15 bg-card/65 p-3 shadow-[3px_3px_0_rgb(20_55_56_/_0.12)] sm:p-4">
-              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {section.calendarTitle ? (
+                <p className="mb-3 px-1 text-sm font-extrabold uppercase tracking-[0.11em] text-harbour">
+                  {section.calendarTitle}
+                </p>
+              ) : null}
+              <div className="flex flex-wrap gap-2">
                 {calendarGroups.map((group) => {
-                  const isOpen = query.trim().length > 0 || openGroups.has(group.id);
+                  const isActive = group.id === activeCalendarGroup;
                   const isCurrentMonth = group.months?.includes(currentMonth);
 
                   return (
-                    <div
+                    <button
                       key={group.id}
+                      type="button"
+                      aria-pressed={isActive}
+                      onClick={() =>
+                        setActiveCalendarGroup((current) =>
+                          current === group.id ? null : group.id,
+                        )
+                      }
                       className={cn(
-                        "overflow-hidden rounded-2xl border-2 bg-card transition-colors",
-                        isCurrentMonth ? "border-primary bg-sun/15" : "border-ink/12",
+                        "min-h-11 rounded-full border-2 px-4 font-display text-base font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+                        isActive
+                          ? "border-ink bg-ink text-card shadow-[2px_2px_0_var(--primary)]"
+                          : "border-ink/12 bg-card text-ink hover:border-harbour/45 hover:bg-harbour/8",
                       )}
                     >
-                      <button
-                        type="button"
-                        aria-expanded={isOpen}
-                        onClick={() =>
-                          setOpenGroups((current) => {
-                            const next = new Set(current);
-                            if (next.has(group.id)) next.delete(group.id);
-                            else next.add(group.id);
-                            return next;
-                          })
-                        }
-                        className="flex min-h-14 w-full items-center gap-2 px-4 text-left font-display text-lg font-bold text-ink transition-colors hover:bg-harbour/8 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
-                      >
+                      <span className="flex items-center gap-2">
                         <span
                           className={cn(
-                            "h-2.5 w-2.5 rounded-full",
-                            isCurrentMonth ? "bg-primary" : "bg-harbour/45",
+                            "h-2 w-2 rounded-full",
+                            isActive || isCurrentMonth ? "bg-primary" : "bg-harbour/45",
                           )}
                           aria-hidden="true"
                         />
-                        <span className="flex-1">{group.title}</span>
-                        <ChevronDown
-                          className={cn("transition-transform", isOpen && "rotate-180")}
-                          size={18}
-                          strokeWidth={2.75}
-                          aria-hidden="true"
-                        />
-                      </button>
-                      {isOpen ? (
-                        <div className="border-t border-ink/12">{renderCards(group)}</div>
-                      ) : null}
-                    </div>
+                        {group.title}
+                      </span>
+                    </button>
                   );
                 })}
               </div>
+              {(() => {
+                const selectedGroup =
+                  query.trim().length > 0
+                    ? calendarGroups[0]
+                    : calendarGroups.find((group) => group.id === activeCalendarGroup);
+
+                return selectedGroup ? (
+                  <motion.div
+                    key={selectedGroup.id}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="mt-3"
+                  >
+                    <h3 className="mb-2 px-1 font-display text-xl font-bold text-ink">
+                      {selectedGroup.title}
+                    </h3>
+                    {renderCalendarCards(selectedGroup)}
+                  </motion.div>
+                ) : null;
+              })()}
             </div>
           ) : null}
         </div>
