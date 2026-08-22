@@ -2,7 +2,7 @@ import { ArrowRight, ChevronDown, Footprints } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 
-import { itemMatchesQuery, type GuideSectionData } from "@/lib/guide-content";
+import { itemMatchesQuery, type GuideGroup, type GuideSectionData } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
 import { cn } from "@/lib/utils";
 
@@ -54,6 +54,30 @@ export function GuideSection({
       items: group.items.filter((item) => itemMatchesQuery(item, group.title, query)),
     }))
     .filter((group) => group.items.length > 0);
+  const standardGroups = visibleGroups.filter((group) => !group.collapsible);
+  const calendarGroups = visibleGroups.filter((group) => group.collapsible);
+  const currentMonth = new Date().getMonth() + 1;
+
+  const renderCards = (group: GuideGroup) => (
+    <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/15 bg-ink/12 sm:grid-cols-2 lg:grid-cols-3">
+      {group.items.map((item, index) => {
+        const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
+        return (
+          <PlaceCard
+            key={item.id}
+            item={item}
+            linkLabel={linkLabel}
+            {...(mapPlace ? { mapPlace } : {})}
+            showOnMapLabel={showOnMapLabel}
+            onShowOnMap={onShowOnMap}
+            storyCopy={storyCopy}
+            favouriteCopy={favouriteCopy}
+            index={index}
+          />
+        );
+      })}
+    </div>
+  );
 
   if (visibleGroups.length === 0) return null;
 
@@ -92,42 +116,14 @@ export function GuideSection({
         </motion.div>
 
         <div className="space-y-8 sm:space-y-10">
-          {visibleGroups.map((group) => {
-            const collapsible = group.collapsible === true;
-            const isOpen = !collapsible || query.trim().length > 0 || openGroups.has(group.id);
-
+          {standardGroups.map((group) => {
             return (
               <div key={group.id}>
                 <div className="mb-3">
-                  {collapsible ? (
-                    <button
-                      type="button"
-                      aria-expanded={isOpen}
-                      onClick={() =>
-                        setOpenGroups((current) => {
-                          const next = new Set(current);
-                          if (next.has(group.id)) next.delete(group.id);
-                          else next.add(group.id);
-                          return next;
-                        })
-                      }
-                      className="flex w-full items-center gap-2.5 rounded-xl py-1 text-left font-display text-lg font-bold text-ink transition-colors hover:text-harbour focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:text-xl"
-                    >
-                      <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
-                      <span className="flex-1">{group.title}</span>
-                      <ChevronDown
-                        className={cn("transition-transform", isOpen && "rotate-180")}
-                        size={19}
-                        strokeWidth={2.75}
-                        aria-hidden="true"
-                      />
-                    </button>
-                  ) : (
-                    <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
-                      <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
-                      {group.title}
-                    </h3>
-                  )}
+                  <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-ink sm:text-xl">
+                    <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
+                    {group.title}
+                  </h3>
                   {group.route ? (
                     <div className="scrollbar-none mt-3 flex items-center gap-2 overflow-x-auto rounded-2xl border-2 border-harbour/20 bg-card/70 px-3 py-2.5 text-xs font-bold text-ink/72 sm:w-fit sm:max-w-full sm:text-sm">
                       <span className="flex shrink-0 items-center gap-1.5 text-harbour">
@@ -143,29 +139,63 @@ export function GuideSection({
                     </div>
                   ) : null}
                 </div>
-                {isOpen ? (
-                  <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/15 bg-ink/12 sm:grid-cols-2 lg:grid-cols-3">
-                    {group.items.map((item, index) => {
-                      const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
-                      return (
-                        <PlaceCard
-                          key={item.id}
-                          item={item}
-                          linkLabel={linkLabel}
-                          {...(mapPlace ? { mapPlace } : {})}
-                          showOnMapLabel={showOnMapLabel}
-                          onShowOnMap={onShowOnMap}
-                          storyCopy={storyCopy}
-                          favouriteCopy={favouriteCopy}
-                          index={index}
-                        />
-                      );
-                    })}
-                  </div>
-                ) : null}
+                {renderCards(group)}
               </div>
             );
           })}
+
+          {calendarGroups.length > 0 ? (
+            <div className="rounded-3xl border-2 border-ink/15 bg-card/65 p-3 shadow-[3px_3px_0_rgb(20_55_56_/_0.12)] sm:p-4">
+              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                {calendarGroups.map((group) => {
+                  const isOpen = query.trim().length > 0 || openGroups.has(group.id);
+                  const isCurrentMonth = group.months?.includes(currentMonth);
+
+                  return (
+                    <div
+                      key={group.id}
+                      className={cn(
+                        "overflow-hidden rounded-2xl border-2 bg-card transition-colors",
+                        isCurrentMonth ? "border-primary bg-sun/15" : "border-ink/12",
+                      )}
+                    >
+                      <button
+                        type="button"
+                        aria-expanded={isOpen}
+                        onClick={() =>
+                          setOpenGroups((current) => {
+                            const next = new Set(current);
+                            if (next.has(group.id)) next.delete(group.id);
+                            else next.add(group.id);
+                            return next;
+                          })
+                        }
+                        className="flex min-h-14 w-full items-center gap-2 px-4 text-left font-display text-lg font-bold text-ink transition-colors hover:bg-harbour/8 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
+                      >
+                        <span
+                          className={cn(
+                            "h-2.5 w-2.5 rounded-full",
+                            isCurrentMonth ? "bg-primary" : "bg-harbour/45",
+                          )}
+                          aria-hidden="true"
+                        />
+                        <span className="flex-1">{group.title}</span>
+                        <ChevronDown
+                          className={cn("transition-transform", isOpen && "rotate-180")}
+                          size={18}
+                          strokeWidth={2.75}
+                          aria-hidden="true"
+                        />
+                      </button>
+                      {isOpen ? (
+                        <div className="border-t border-ink/12">{renderCards(group)}</div>
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>
