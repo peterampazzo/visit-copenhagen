@@ -1,4 +1,4 @@
-import { BookOpenText, ExternalLink, MapPin, Star, TramFront } from "lucide-react";
+import { BookOpenText, ExternalLink, Instagram, MapPin, Star, TramFront } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 
@@ -91,6 +91,21 @@ export function PlaceCard({
                 {storyCopy.label}
               </button>
             ) : null}
+            {item.url && item.linkText && !item.story ? (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-full bg-harbour/9 px-2.5 py-1 text-xs font-extrabold text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                {item.url.includes("instagram.com") ? (
+                  <Instagram size={14} strokeWidth={2.5} aria-hidden="true" />
+                ) : (
+                  <ExternalLink size={14} strokeWidth={2.5} aria-hidden="true" />
+                )}
+                {item.linkText}
+              </a>
+            ) : null}
           </div>
 
           {mapPlace ? (
@@ -111,7 +126,7 @@ export function PlaceCard({
             </button>
           ) : null}
 
-          {item.url && !item.story ? (
+          {item.url && !item.story && !item.linkText ? (
             <a
               href={item.url}
               target="_blank"

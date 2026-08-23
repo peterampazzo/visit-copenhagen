@@ -70,6 +70,10 @@ opera:
   latitude: 55.681812
   longitude: 12.600541
   googleQuery: Copenhagen Opera House
+vaeksthuset:
+  latitude: 55.6808847
+  longitude: 12.5999326
+  googleQuery: Restaurant Væksthuset, Copenhagen
 goboat:
   latitude: 55.663331
   longitude: 12.583313

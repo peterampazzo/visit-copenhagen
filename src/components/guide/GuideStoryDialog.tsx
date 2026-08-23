@@ -91,7 +91,7 @@ export function GuideStoryDialog({
                     rel="noreferrer"
                     className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-ink/15 bg-card px-4 py-2 text-sm font-extrabold transition-colors hover:border-ink hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
-                    {copy.learnMore}
+                    {item.linkText ?? copy.learnMore}
                     <ArrowUpRight size={17} strokeWidth={2.5} aria-hidden="true" />
                   </a>
                 ) : null}

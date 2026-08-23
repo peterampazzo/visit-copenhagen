@@ -57,14 +57,23 @@ sections:
         title: Public transport
         items:
           metro:
-            name: The Metro runs 24/7
-            note: Every day, all night. No excuses for missing the last train.
+            name: The Metro runs 24/7 — driverless
+            note: Copenhagen's automated Metro has no driver and is operated and maintained by Metro Service, now owned by Milan's ATM Group.
+            kicker: Driverless · with an Italian connection
+            story: >-
+              No driver means no Metro driver can go on strike—there is no
+              driver. The people who monitor, maintain and assist the system are
+              very real, of course. Since late 2025, Metro Service has been fully
+              owned by Milan's public transport group ATM; Hitachi remains the
+              main contractor for M3 and M4 until its contract ends.
+            url: https://www.metroservice.dk/media/5m5pwgyl/metroservice-annual-report-2025.pdf
           paperTickets:
             name: Paper tickets need no validation
             note: They're time-stamped when you buy them, so just hop on. One ticket works for metro, bus, train and the waterbus.
           cityPass:
             name: City Pass Small
-            note: If you go for paper tickets, this is usually all you need for the city area.
+            note: Unlimited travel only in zones 1–4—central Copenhagen plus the airport. It does not cover all of Zealand.
+            url: https://www.publictransport.dk/tickets/citypass
           copenhagenCard:
             name: Copenhagen Card
             note: Better value if you plan to visit several museums — transport and admissions included.
@@ -73,14 +82,15 @@ sections:
             name: Waterbus
             note: Your normal transport ticket covers it. It crosses the harbour, roughly every half hour — check Citymapper for times.
           sTrainBike:
-            name: Take your bike on the S-train
-            note: Bikes travel free on Copenhagen's S-trains. A useful shortcut when your legs have had enough.
+            name: The red S-trains take bikes for free
+            note: They are Copenhagen's suburban network, separate from regional and InterCity trains. Bikes are free on S-trains; other train types have different rules.
+            url: https://www.dsb.dk/s-tog/
       cycling:
         title: Cycling
         items:
           lights:
             name: Lights are mandatory after sunset
-            note: Police do fine tourists too.
+            note: Use two lights—a white or yellow one in front and a red one behind—from sunset to sunrise and whenever visibility is poor.
           stopping:
             name: Always raise your arm before stopping
             note: And stay in the right lane if you're slow.
@@ -94,6 +104,7 @@ sections:
           deposit:
             name: Don't bin bottles and cans
             note: They carry a deposit — return them at any supermarket and get money back.
+            url: https://danskretursystem.dk/en/about-deposits/
           payments:
             name: Payments
             note: We use Danish kroner, not euros. But the country is almost entirely cashless, so your card works everywhere.
@@ -146,7 +157,19 @@ sections:
             url: https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
           christiania:
             name: Christiania
-            note: Pusher Street has been closed, but the area is a nice walk.
+            note: A resident-run community born in a squatted military area—not just the former hash street.
+            kicker: 1971 → a new chapter
+            story: >-
+              In 1971 neighbours, squatters and hippies moved into abandoned
+              barracks and built a “freetown” around local self-government,
+              shared responsibility and community meetings. You cannot simply
+              buy a home here: vacancies are announced, people apply and the
+              local area chooses its new resident. A foundation bought much of
+              the land from the state in 2012. After years of gang violence
+              around the open cannabis market, residents voted to close Pusher
+              Street. On 6 April 2024 its cobbles were dug up, and the street is
+              now being remade around legal activities, culture and everyday life.
+            url: https://www.christiania.org/info/christianias-historie/
           lakes:
             name: Søerne (The Lakes)
             note: Three long lakes and the city's favourite 6.35 km walking loop.
@@ -156,11 +179,22 @@ sections:
               wetlands into a carefully managed water system. Over the centuries
               they powered mills, stored drinking water and strengthened the
               city's defences. Today their hard-working past is mostly hidden
-              beneath Copenhagen's favourite walking and running route.
+              beneath Copenhagen's favourite walking and running route. In a
+              properly cold winter parts can become a rare public ice square—but
+              only step onto the ice when the city has put up the blue “ice
+              traffic permitted” signs.
             url: https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
           kingsGarden:
             name: Kongens Have
-            note: The King's Garden, with a rose garden.
+            note: Copenhagen's oldest royal garden, with Rosenborg Castle and the Crown Jewels in the treasury below.
+            kicker: 1600s · Castle above, crowns below
+            story: >-
+              Christian IV laid out the garden and built Rosenborg as his small
+              favourite castle in the early 1600s. It later became a museum of
+              the monarchy. The treasure is not buried in the foundations: the
+              royal crowns, regalia and Danish Crown Jewels are displayed in the
+              Treasury beneath the castle.
+            url: https://denkongeligesamling.dk/en/rosenborg-castle/
           kastellet:
             name: Kastellet
             note: A working star fortress that doubles as one of the city's best walks.
@@ -246,9 +280,11 @@ sections:
         route:
           label: Easy waterside walk
           stops:
+            - Amalienborg
             - Nyhavn
             - Skuespilhuset
             - Papirøen
+            - Operaparken
             - Operaen
         items:
           playhouse:
@@ -270,8 +306,10 @@ sections:
               Christiansholm is an artificial island that has stored cannons,
               coal and, from 1958, huge newspaper-paper rolls—the source of its
               nickname. Copenhagen Street Food opened the former warehouses to
-              the public in 2014. Today there are homes, cafés, a hotel and new
-              public waterfront spaces; the old street-food spirit moved on to Reffen.
+              the public in 2014. Today there are new waterfront homes—including
+              private, social and student housing—plus cafés, a hotel and public
+              spaces; the old street-food spirit moved on to Reffen. And no, the
+              new apartments are not made of paper. I checked.
             url: https://papiroeen.dk/historien/
           opera:
             name: Operaen
@@ -284,6 +322,17 @@ sections:
               helped make the building famously controversial. Its position ends
               the grand visual axis from Marmorkirken through Amalienborg.
             url: https://www.apmollerfonde.dk/projekter/operaen/
+          vaeksthuset:
+            name: Væksthuset in Operaparken
+            note: The full-glass greenhouse beside the Opera is a café and restaurant inside a public park.
+            kicker: Greenhouse · coffee, lunch or dinner
+            story: >-
+              Operaparken opened in 2023 between Papirøen and the Opera. Its six
+              gardens, 600 trees and central glass greenhouse sit above a
+              two-storey car park. Væksthuset is the café and restaurant inside
+              the greenhouse—not another part of the Opera—and the park is free
+              to enter all year.
+            url: https://maps.app.goo.gl/5o2TLkcnDbcvyw7z5
       neighbourhoods:
         title: Neighbourhoods
         items:
@@ -338,6 +387,64 @@ sections:
             name: Royal Copenhagen
             note: Blue-and-white porcelain, very Danish and very pretty. The outlet is better for a serious bargain hunt.
             url: https://www.royalcopenhagen.com/en-int/
+  funfacts:
+    emoji: 🇩🇰
+    title: Very Danish things
+    blurb: The things that make visitors stop and ask, “wait—why?”
+    groups:
+      denmark:
+        title: Small explanations for big Danish habits
+        items:
+          studentTrucks:
+            name: The loud graduation trucks
+            note: At the end of June, each graduating class tours every student's home in a decorated open truck—with white caps, music and almost no volume control.
+            kicker: Studenterkørsel · late June
+            story: >-
+              The white cap marks the end of upper-secondary school. Then the
+              whole class climbs onto a decorated truck and spends the day
+              stopping at every classmate's family home for food, drinks and a
+              very short party. The truck ride is the loud, moving finale of a
+              Danish graduation ritual that is more than a century old.
+            url: https://researchprofiles.ku.dk/en/publications/graduation-in-denmark-secular-ritual-and-civil-religion/
+          oresundLink:
+            name: The bridge that becomes a tunnel
+            note: The link to Sweden is not half bridge and half underwater—it is 8 km of bridge, a 4 km artificial island and a 4 km tunnel.
+            kicker: Øresund Link · 15.9 km
+            story: >-
+              From Sweden the route crosses the Øresund Bridge, lands on the
+              artificial island Peberholm and then disappears into the Drogden
+              Tunnel before reaching Copenhagen Airport. The tunnel keeps the
+              approach to the airport clear and leaves the shipping channel open.
+            url: https://www.oresundsbron.com/en/about-oresundsbron/about-us/facts-about-oresundsbron
+          danishLanguage:
+            name: Danish really is hard to hear
+            note: Danish has unusually many vowel-like sounds, so word boundaries blur—even Danish-learning toddlers have to work harder.
+            kicker: Too many vowels, apparently
+            story: >-
+              Aarhus University research links Danish's reduced consonants and
+              many vowel-like sounds to slower early language processing. In one
+              comparison, Danish children knew about 30% fewer words at 15 months
+              than Norwegian children and took almost two years longer to master
+              the past tense. It is not just an excuse foreigners invented.
+            url: https://projects.au.dk/the-puzzle-of-danish/about-the-project
+          cyclingComeback:
+            name: Copenhagen was not always a bike city
+            note: Cars nearly displaced bicycles in the 1960s. The 1973 oil crisis, car-free Sundays, protests and decades of safer lanes brought them back.
+            kicker: A comeback, not a miracle
+            story: >-
+              Bikes were already mass transport here in the 1920s and 1930s,
+              but post-war prosperity pushed Copenhagen towards cars. The oil
+              crisis made that model look fragile; environmental protests and
+              public pressure then demanded space for bicycles. Continuous
+              investment in protected routes made cycling the easy everyday
+              option—not simply the fact that Denmark is flat.
+            url: https://denmark.dk/people-and-culture/biking
+          frozenLakes:
+            name: When Søerne becomes a city square
+            note: In a properly cold winter, a safe part of the frozen lakes fills with walkers and skaters. Wait for the city's blue permission signs.
+            kicker: Rare, cold and extremely Copenhagen
+            url: https://www.instagram.com/reel/DVHRB9PiILm/
+            linkText: Watch the reel
   food:
     emoji: 😋
     title: What to eat

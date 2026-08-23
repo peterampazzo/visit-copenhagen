@@ -57,14 +57,23 @@ sections:
         title: Mezzi pubblici
         items:
           metro:
-            name: La metro funziona H24
-            note: Tutti i giorni, anche di notte. Nessuna scusa per l'ultimo treno perso.
+            name: La metro è H24 e senza conducente
+            note: È automatica. Metro Service, che la gestisce e mantiene, oggi è di proprietà del gruppo ATM di Milano.
+            kicker: Senza conducente · con un legame italiano
+            story: >-
+              Senza conducenti, uno sciopero dei conducenti non può fermarla: i
+              conducenti non ci sono. Esiste naturalmente il personale che
+              controlla, mantiene e assiste il sistema. Dalla fine del 2025 Metro
+              Service è interamente di proprietà del gruppo milanese ATM; Hitachi
+              resta il principale appaltatore per M3 e M4 fino alla scadenza del contratto.
+            url: https://www.metroservice.dk/media/5m5pwgyl/metroservice-annual-report-2025.pdf
           paperTickets:
             name: Il biglietto cartaceo non si valida
             note: Ha già l'ora stampata sopra, quindi si sale e via. Vale per metro, bus, treno e vaporetto.
           cityPass:
             name: City Pass Small
-            note: Se scegliete il biglietto cartaceo, di solito basta questo per la zona urbana.
+            note: Viaggi illimitati solo nelle zone 1–4—centro e aeroporto. Non copre tutta la Zelanda.
+            url: https://www.publictransport.dk/tickets/citypass
           copenhagenCard:
             name: Copenhagen Card
             note: Conviene se pensate di visitare vari musei — include mezzi e ingressi.
@@ -73,14 +82,15 @@ sections:
             name: Vaporetto
             note: È incluso nel normale biglietto dei mezzi. Attraversa il porto, circa ogni mezz'ora — orari su Citymapper.
           sTrainBike:
-            name: Bici gratis sulla S-train
-            note: Sulle S-train di Copenaghen la bici viaggia gratis. Comodo quando le gambe hanno già dato.
+            name: Le S-train rosse portano gratis la bici
+            note: Sono la rete suburbana di Copenaghen, diversa dai treni regionali e InterCity. Sulle S-train la bici è gratis; sugli altri treni valgono regole diverse.
+            url: https://www.dsb.dk/s-tog/
       cycling:
         title: Muoversi in bici
         items:
           lights:
             name: Luci obbligatorie dopo il tramonto
-            note: Multano anche i turisti.
+            note: Servono due luci—bianca o gialla davanti e rossa dietro—dal tramonto all'alba e quando la visibilità è scarsa.
           stopping:
             name: Alzare sempre il braccio prima di fermarsi
             note: E state a destra se pedalate piano.
@@ -94,6 +104,7 @@ sections:
           deposit:
             name: Non buttate bottiglie e lattine
             note: Hanno un deposito — si riportano al supermercato e vi ridanno i soldi.
+            url: https://danskretursystem.dk/en/about-deposits/
           payments:
             name: Pagamenti
             note: Qui si usano le corone danesi, non gli euro. Ma è un Paese quasi senza contanti, la carta funziona ovunque.
@@ -146,7 +157,21 @@ sections:
             url: https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
           christiania:
             name: Christiania
-            note: Pusher Street è stata chiusa, ma è carino camminare nella zona.
+            note: Una comunità autogestita nata in un'area militare occupata, non soltanto l'ex via dell'hashish.
+            kicker: 1971 → un nuovo capitolo
+            story: >-
+              Nel 1971 abitanti del quartiere, occupanti e hippie entrarono nelle
+              caserme abbandonate e crearono una “città libera” fondata su
+              autogestione locale, responsabilità condivisa e riunioni della
+              comunità. Qui una casa non si compra semplicemente: quando se ne
+              libera una viene pubblicato un annuncio, ci si candida e l'area
+              sceglie il nuovo abitante. Nel 2012 una fondazione ha acquistato
+              gran parte dei terreni dallo Stato. Dopo anni di violenza tra bande
+              intorno al mercato aperto della cannabis, gli abitanti hanno votato
+              per chiudere Pusher Street. Il 6 aprile 2024 ne hanno rimosso i
+              sampietrini; oggi la strada viene ripensata con attività legali,
+              cultura e vita quotidiana.
+            url: https://www.christiania.org/info/christianias-historie/
           lakes:
             name: Søerne (I laghi)
             note: Tre laghi allungati e il giro cittadino preferito, lungo 6,35 km.
@@ -156,11 +181,22 @@ sections:
               e divennero un sistema d'acqua gestito con cura. Nei secoli hanno
               alimentato mulini, conservato acqua potabile e rafforzato le difese
               della città. Oggi questo passato laborioso è quasi invisibile sotto
-              il percorso preferito per passeggiare e correre.
+              il percorso preferito per passeggiare e correre. In un inverno
+              davvero freddo alcune parti possono diventare una rarissima piazza
+              sul ghiaccio, ma si sale soltanto quando il Comune espone i cartelli
+              blu che autorizzano l'accesso.
             url: https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
           kingsGarden:
             name: Kongens Have
-            note: I Giardini Reali, con il roseto.
+            note: Il giardino reale più antico della città, con il castello di Rosenborg e i Gioielli della Corona nel tesoro sotterraneo.
+            kicker: Seicento · castello sopra, corone sotto
+            story: >-
+              Christian IV fece realizzare il giardino e Rosenborg come suo
+              piccolo castello preferito all'inizio del Seicento. In seguito
+              divenne un museo della monarchia. Il tesoro non è murato nelle
+              fondamenta: corone, regalia e Gioielli della Corona danese sono
+              esposti nei sotterranei del castello.
+            url: https://denkongeligesamling.dk/en/rosenborg-castle/
           kastellet:
             name: Kastellet
             note: Una fortezza a stella ancora attiva e una delle passeggiate più belle della città.
@@ -245,9 +281,11 @@ sections:
         route:
           label: Passeggiata facile sull'acqua
           stops:
+            - Amalienborg
             - Nyhavn
             - Skuespilhuset
             - Papirøen
+            - Operaparken
             - Operaen
         items:
           playhouse:
@@ -268,8 +306,10 @@ sections:
               Christiansholm è un'isola artificiale che ha conservato cannoni,
               carbone e, dal 1958, enormi rotoli di carta da giornale: da qui il
               soprannome. Nel 2014 Copenhagen Street Food aprì i vecchi magazzini
-              al pubblico. Oggi ci sono case, caffè, un hotel e nuovi spazi sul
-              porto; lo spirito dello street food si è spostato a Reffen.
+              al pubblico. Oggi ci sono nuove case sul porto—private, sociali e
+              studentesche—oltre a caffè, un hotel e spazi pubblici; lo spirito
+              dello street food si è spostato a Reffen. E no, i nuovi appartamenti
+              non sono fatti di carta. Ho controllato.
             url: https://papiroeen.dk/historien/
           opera:
             name: Operaen
@@ -282,6 +322,17 @@ sections:
               disaccordi resero l'opera famosa e controversa. La posizione chiude
               l'asse visivo che parte da Marmorkirken e attraversa Amalienborg.
             url: https://www.apmollerfonde.dk/projekter/operaen/
+          vaeksthuset:
+            name: Væksthuset nell'Operaparken
+            note: La serra tutta in vetro accanto all'Opera è un caffè e ristorante dentro un parco pubblico.
+            kicker: Serra · caffè, pranzo o cena
+            story: >-
+              Operaparken ha aperto nel 2023 tra Papirøen e l'Opera. I suoi sei
+              giardini, 600 alberi e la serra centrale in vetro stanno sopra un
+              parcheggio di due piani. Væksthuset è il caffè e ristorante dentro
+              la serra, non un'altra parte dell'Opera; il parco è gratuito e
+              aperto tutto l'anno.
+            url: https://maps.app.goo.gl/5o2TLkcnDbcvyw7z5
       neighbourhoods:
         title: Quartieri
         items:
@@ -336,6 +387,65 @@ sections:
             name: Royal Copenhagen
             note: Porcellana bianca e blu, molto danese e molto bella. Per gli affari seri c'è anche l'outlet.
             url: https://www.royalcopenhagen.com/en-int/
+  funfacts:
+    emoji: 🇩🇰
+    title: Cose molto danesi
+    blurb: Quelle cose che fanno fermare i visitatori e chiedere “aspetta, perché?”
+    groups:
+      denmark:
+        title: Piccole spiegazioni per grandi abitudini danesi
+        items:
+          studentTrucks:
+            name: I rumorosissimi camion dei diplomati
+            note: A fine giugno ogni classe gira per le case di tutti gli studenti su un camion aperto decorato—cappelli bianchi, musica e volume senza moderazione.
+            kicker: Studenterkørsel · fine giugno
+            story: >-
+              Il cappello bianco segna la fine delle superiori. Poi tutta la
+              classe sale su un camion decorato e passa la giornata fermandosi a
+              casa di ogni compagno per mangiare, bere e fare una festa molto
+              breve. È il finale rumoroso e itinerante di un rito di diploma
+              danese che ha più di un secolo.
+            url: https://researchprofiles.ku.dk/en/publications/graduation-in-denmark-secular-ritual-and-civil-religion/
+          oresundLink:
+            name: Il ponte che diventa un tunnel
+            note: Il collegamento con la Svezia non è metà ponte e metà sott'acqua—sono 8 km di ponte, un'isola artificiale di 4 km e un tunnel di 4 km.
+            kicker: Collegamento Øresund · 15,9 km
+            story: >-
+              Arrivando dalla Svezia si percorre il ponte, si atterra sull'isola
+              artificiale di Peberholm e poi si scompare nel tunnel Drogden prima
+              dell'aeroporto di Copenaghen. Il tunnel lascia libera la rotta degli
+              aerei e il canale di navigazione.
+            url: https://www.oresundsbron.com/en/about-oresundsbron/about-us/facts-about-oresundsbron
+          danishLanguage:
+            name: Il danese è davvero difficile da sentire
+            note: Ha un numero insolito di suoni simili a vocali e i confini tra le parole sfumano; perfino i bambini danesi devono lavorare di più.
+            kicker: Troppe vocali, a quanto pare
+            story: >-
+              Le ricerche dell'Università di Aarhus collegano consonanti ridotte
+              e molti suoni vocalici a un'elaborazione linguistica iniziale più
+              lenta. In un confronto, a 15 mesi i bambini danesi conoscevano circa
+              il 30% di parole in meno dei bambini norvegesi e impiegavano quasi
+              due anni in più per padroneggiare il passato. Non è solo una scusa
+              inventata dagli stranieri.
+            url: https://projects.au.dk/the-puzzle-of-danish/about-the-project
+          cyclingComeback:
+            name: Copenaghen non è sempre stata la città delle bici
+            note: Negli anni Sessanta le auto stavano sostituendo le bici. Crisi petrolifera del 1973, domeniche senza auto, proteste e decenni di piste sicure le hanno riportate.
+            kicker: Un ritorno, non un miracolo
+            story: >-
+              Negli anni Venti e Trenta la bici era già un mezzo di massa, ma il
+              benessere del dopoguerra spinse Copenaghen verso l'auto. La crisi
+              petrolifera rese fragile quel modello; proteste ambientaliste e
+              pressione pubblica chiesero poi spazio per le biciclette.
+              Investimenti continui in percorsi protetti hanno reso la bici la
+              scelta quotidiana più facile: non basta dire che la Danimarca è piatta.
+            url: https://denmark.dk/people-and-culture/biking
+          frozenLakes:
+            name: Quando Søerne diventa una piazza
+            note: In un inverno davvero freddo, una parte sicura dei laghi si riempie di persone e pattinatori. Aspettate i cartelli blu del Comune.
+            kicker: Raro, freddo e molto Copenaghen
+            url: https://www.instagram.com/reel/DVHRB9PiILm/
+            linkText: Guarda il reel
   food:
     emoji: 😋
     title: Cosa mangiare
