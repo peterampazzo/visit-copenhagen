@@ -26,13 +26,13 @@ export function GuideStoryDialog({
   onOpenChange: (open: boolean) => void;
   onShowOnMap: (id: string) => void;
 }) {
-  if (!item.story) return null;
+  if (!item.story && !item.storyItems?.length) return null;
 
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-50 bg-ink/55 backdrop-blur-sm data-[state=closed]:animate-out data-[state=open]:animate-in data-[state=closed]:fade-out data-[state=open]:fade-in" />
-        <Dialog.Content className="fixed inset-x-3 bottom-3 z-[60] max-h-[88dvh] overflow-y-auto rounded-[1.75rem] border-2 border-ink bg-cream text-ink shadow-pop-lg outline-none data-[state=closed]:animate-out data-[state=open]:animate-in data-[state=closed]:slide-out-to-bottom-5 data-[state=open]:slide-in-from-bottom-5 sm:inset-x-auto sm:bottom-auto sm:left-1/2 sm:top-1/2 sm:w-[min(42rem,calc(100vw-2rem))] sm:-translate-x-1/2 sm:-translate-y-1/2">
+        <Dialog.Content className="fixed inset-x-3 bottom-3 z-[60] max-h-[88dvh] overflow-y-auto overscroll-contain rounded-[1.75rem] border-2 border-ink bg-cream text-ink shadow-pop-lg outline-none data-[state=closed]:animate-out data-[state=open]:animate-in data-[state=closed]:slide-out-to-bottom-5 data-[state=open]:slide-in-from-bottom-5 sm:inset-x-auto sm:bottom-auto sm:left-1/2 sm:top-1/2 sm:w-[min(42rem,calc(100vw-2rem))] sm:-translate-x-1/2 sm:-translate-y-1/2">
           <div className="relative h-28 overflow-hidden border-b-2 border-ink bg-harbour/15 sm:h-32">
             <span className="absolute right-8 top-5 h-12 w-12 rounded-full border-2 border-ink bg-sun sm:right-12 sm:h-14 sm:w-14" />
             <span className="absolute -bottom-4 left-7 h-20 w-24 rotate-[-5deg] rounded-t-[2.5rem] border-2 border-ink bg-coral" />
@@ -65,9 +65,25 @@ export function GuideStoryDialog({
               </Dialog.Description>
             ) : null}
 
-            <div className="mt-5 border-l-4 border-coral pl-4 text-[0.98rem] leading-7 text-ink/80 sm:mt-6 sm:pl-5 sm:text-[1.05rem]">
-              {item.story}
-            </div>
+            {item.story ? (
+              <div className="mt-5 border-l-4 border-coral pl-4 text-[0.98rem] leading-7 text-ink/80 sm:mt-6 sm:pl-5 sm:text-[1.05rem]">
+                {item.story}
+              </div>
+            ) : null}
+
+            {item.storyItems?.length ? (
+              <ul className="mt-5 grid gap-2.5 text-[0.98rem] leading-6 text-ink/80 sm:mt-6 sm:text-[1.05rem] sm:leading-7">
+                {item.storyItems.map((storyItem) => (
+                  <li key={storyItem} className="flex items-start gap-3">
+                    <span
+                      aria-hidden="true"
+                      className="mt-[0.55em] h-2 w-2 shrink-0 rounded-full bg-coral"
+                    />
+                    <span>{storyItem}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
 
             {mapPlace || item.url ? (
               <div className="mt-6 flex flex-wrap gap-2.5 border-t-2 border-ink/10 pt-5">

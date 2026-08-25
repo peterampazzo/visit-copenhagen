@@ -5,6 +5,7 @@ export type GuideItem = {
   url?: string;
   kicker?: string;
   story?: string;
+  storyItems?: string[];
   travel?: string;
   linkText?: string;
 };
@@ -13,7 +14,7 @@ export function itemMatchesQuery(item: GuideItem, groupTitle: string, query: str
   const needle = query.trim().toLowerCase();
   if (!needle) return true;
   const haystack =
-    `${item.name} ${item.note ?? ""} ${item.kicker ?? ""} ${item.story ?? ""} ${groupTitle}`.toLowerCase();
+    `${item.name} ${item.note ?? ""} ${item.kicker ?? ""} ${item.story ?? ""} ${(item.storyItems ?? []).join(" ")} ${groupTitle}`.toLowerCase();
   return haystack.includes(needle);
 }
 
@@ -65,10 +66,10 @@ const GUIDE_ORDER = [
   { id: "know", groups: ["transport", "cycling", "everyday"] },
   {
     id: "places",
-    groups: ["classics", "stories", "harbour", "neighbourhoods", "modern", "shops"],
+    groups: ["classics", "stories", "harbour", "waterfront", "neighbourhoods", "modern", "shops"],
   },
   { id: "funfacts", groups: ["denmark"] },
-  { id: "food", groups: ["markets", "dining"] },
+  { id: "food", groups: ["markets", "dining", "coffee"] },
   { id: "pastries", groups: ["bakeries"] },
   { id: "museums", groups: ["art"] },
   { id: "saunas", groups: ["sweat"] },

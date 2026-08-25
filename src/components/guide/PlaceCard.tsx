@@ -30,6 +30,7 @@ export function PlaceCard({
   const [storyOpen, setStoryOpen] = useState(false);
   const { isFavourite, toggle } = useFavourites();
   const saved = isFavourite(item.id);
+  const hasStory = Boolean(item.story || item.storyItems?.length);
 
   return (
     <>
@@ -81,7 +82,7 @@ export function PlaceCard({
                 {item.note}
               </p>
             ) : null}
-            {item.story ? (
+            {hasStory ? (
               <button
                 type="button"
                 onClick={() => setStoryOpen(true)}
@@ -91,7 +92,7 @@ export function PlaceCard({
                 {storyCopy.label}
               </button>
             ) : null}
-            {item.url && item.linkText && !item.story ? (
+            {item.url && item.linkText && !hasStory ? (
               <a
                 href={item.url}
                 target="_blank"
@@ -126,7 +127,7 @@ export function PlaceCard({
             </button>
           ) : null}
 
-          {item.url && !item.story && !item.linkText ? (
+          {item.url && !hasStory && !item.linkText ? (
             <a
               href={item.url}
               target="_blank"

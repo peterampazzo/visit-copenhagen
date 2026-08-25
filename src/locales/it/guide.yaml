@@ -93,7 +93,7 @@ sections:
             note: Servono due luci—bianca o gialla davanti e rossa dietro—dal tramonto all'alba e quando la visibilità è scarsa.
           stopping:
             name: Alzare sempre il braccio prima di fermarsi
-            note: E state a destra se pedalate piano.
+            note: Braccio alzato prima di fermarsi, braccio teso nella direzione della svolta e destra libera per chi vuole superarvi.
           cyclingGuide:
             name: Come si va in bici in Danimarca
             note: Due minuti di lettura che vi risparmiano molte campanelle arrabbiate.
@@ -147,13 +147,19 @@ sections:
             url: https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/amalienborg/
           tivoli:
             name: Tivoli
-            note: Storico giardino dei divertimenti in centro. Le giostre sono facoltative.
-            kicker: Dal 1843
+            note: "Più che un luna park: un giardino di piacere fatto di luci, musica, teatro, ristoranti e giostre facoltative."
+            kicker: Dal 1843 · anche Disney prese appunti
             story: >-
-              Georg Carstensen aprì Tivoli nel 1843 dopo aver ottenuto il permesso
-              del re. Nacque come elegante giardino con musica, cibo e spettacoli
-              appena fuori dalle vecchie mura. H.C. Andersen fu tra i primi
-              visitatori e qui trovò ispirazione per L'usignolo.
+              Georg Carstensen aprì Tivoli nel 1843 come luogo di evasione per
+              la città, ispirato ai giardini di piacere europei. Mescolò
+              romanticismo danese, fantasia cinese e atmosfere orientaleggianti
+              perché ogni angolo sembrasse un piccolo mondo diverso. Il Teatro
+              della Pantomima del 1874, con facciata cinese e sipario meccanico a
+              pavone, mantiene viva la tradizione della Commedia dell'Arte fin
+              dall'apertura del parco. Walt Disney visitò Tivoli nel 1951 e tornò
+              anche dopo l'apertura di Disneyland, studiandone atmosfera, pulizia
+              e attenzione ai dettagli. H.C. Andersen fu tra i primi visitatori e
+              qui trovò ispirazione per L'usignolo.
             url: https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
           christiania:
             name: Christiania
@@ -221,7 +227,7 @@ sections:
             url: https://www.visitcopenhagen.com/copenhagen/planning/assistens-cemetery-gdk964360
           magstraede:
             name: Magstræde
-            note: Una delle strade più antiche della città.
+            note: Una delle strade più antiche della città, stretta, acciottolata e fiancheggiata da facciate che sono sopravvissute agli incendi del centro.
       stories:
         title: Statue, fontane & copie curiose
         items:
@@ -333,6 +339,53 @@ sections:
               la serra, non un'altra parte dell'Opera; il parco è gratuito e
               aperto tutto l'anno.
             url: https://maps.app.goo.gl/5o2TLkcnDbcvyw7z5
+      waterfront:
+        title: Acqua, bagni e moli
+        items:
+          laBanchina:
+            name: La Banchina
+            note: Un minuscolo caffè e ristorante sul molo di Refshaleøen, con bagno in porto e sauna praticamente davanti al tavolo.
+            kicker: Refshaleøen · tutto l'anno
+            story: >-
+              Occupa una piccola ex struttura industriale sul bordo del porto.
+              Il menu cambia, punta soprattutto su verdure e pesce e il vino è
+              naturale; molte persone vengono semplicemente per un caffè, un
+              bicchiere al tramonto o un tuffo. La sauna è piccola e si prenota
+              separatamente. È uno dei posti in cui il lato post-industriale di
+              Refshaleøen e la vita sull'acqua di Copenaghen si incontrano meglio.
+            url: https://www.labanchina.dk/
+          islandsBryggeBath:
+            name: Havnebadet Islands Brygge
+            note: "Il bagno urbano classico: piscine nel porto, prato pieno di gente e skyline della città dall'altra parte dell'acqua."
+            kicker: Centro città · molto locale d'estate
+            story: >-
+              La riapertura del porto alla balneazione è una delle trasformazioni
+              più riuscite di Copenaghen. Qui un vecchio waterfront industriale è
+              diventato un salotto pubblico con vasche protette e piattaforme per
+              tuffarsi. Controllate sempre segnaletica e qualità dell'acqua prima
+              di entrare: si nuota soltanto nelle zone ufficiali.
+            url: https://www.visitcopenhagen.com/copenhagen/things-to-do/outdoor/baths-and-beaches
+          sandkaj:
+            name: Sandkaj
+            note: Pontile e zona balneare ufficiale nel nuovo Nordhavn, con scale in acqua, caffè e case moderne tutto intorno.
+            kicker: Nordhavn · bagno urbano
+            url: https://www.visitcopenhagen.com/copenhagen/things-to-do/outdoor/baths-and-beaches
+          fisketorvetBath:
+            name: Havnebadet Fisketorvet
+            note: "Piscine portuali vicino alla Cykelslangen: una sosta utile tra Vesterbro, il centro commerciale e il lungomare di Kalvebod."
+            kicker: Vasche protette · Cykelslangen
+            url: https://www.visitcopenhagen.com/copenhagen/things-to-do/outdoor/baths-and-beaches
+          bellevue:
+            name: Bellevue
+            note: Spiaggia di sabbia a nord della città, con il mondo bianco e blu progettato da Arne Jacobsen praticamente alle spalle.
+            kicker: Klampenborg · spiaggia + design
+            story: >-
+              Bellevue fa parte del paesaggio modernista che Arne Jacobsen
+              disegnò attorno a Klampenborg negli anni Trenta: teatro, complesso
+              residenziale Bellavista, strutture balneari e dettagli coordinati.
+              Si raggiunge facilmente in S-train e si combina bene con una
+              passeggiata a Dyrehaven.
+            url: https://www.visitcopenhagen.com/copenhagen/areas/beyond-copenhagen/bellevue-the-good-life
       neighbourhoods:
         title: Quartieri
         items:
@@ -355,9 +408,9 @@ sections:
             note: Uno dei quartieri nuovi, su una penisola artificiale, con il capolinea del vaporetto.
           amagerStrand:
             name: Amager Strand
-            note: Un parco con la spiaggia. Sì, si può fare il bagno.
+            note: Una lunga spiaggia urbana con laguna, dune e vista sui mulini dell'Øresund; ci si arriva comodamente in metro e si può davvero fare il bagno.
       modern:
-        title: Moderno & panorami
+        title: Architettura & curiosità
         items:
           superkilen:
             name: Superkilen
@@ -365,6 +418,41 @@ sections:
           copenhill:
             name: CopenHill (Amager Bakke)
             note: Un inceneritore con la pista da sci sopra. Si sale gratis con l'ascensore, ma è un po' fuori — niente di speciale.
+          kaktusTowers:
+            name: Kaktus Towers
+            note: Due torri appuntite di BIG con piani ruotati, appartamenti in affitto e un parco pubblico rialzato sopra la città.
+            kicker: 80 metri · BIG
+            story: >-
+              Ogni piano ruota rispetto a quello sotto, creando i balconi a punta
+              che danno alle torri il soprannome di cactus. Sono soprattutto
+              appartamenti compatti in affitto con spazi comuni; la parte più
+              interessante per chi passa è il percorso verde pubblico alla base,
+              collegato al tetto di IKEA e alla nuova zona dietro la stazione.
+            url: https://dac.dk/en/magazine/places/kaktus-towers-prickly-architecture-231
+          nyboder:
+            name: Nyboder
+            note: Le lunghe case gialle costruite per la Marina da Christian IV; molte sono ancora abitazioni in affitto della Difesa.
+            kicker: Dal 1631 · case della Marina
+            story: >-
+              Nyboder significa più o meno “nuove piccole case”. Christian IV le
+              fece costruire per marinai, artigiani e sottufficiali della flotta,
+              creando un quartiere di servizio nel centro della città. Non sono
+              un semplice fondale da cartolina: la Difesa danese gestisce ancora
+              circa seicento abitazioni in affitto qui, riservate soprattutto al
+              proprio personale.
+            url: https://www.ejendomsstyrelsen.dk/da/arbejdsomraader/salg-og-leje/forsvarets-lejeboliger/
+          grundtvigChurch:
+            name: Grundtvigs Kirke
+            note: Una cattedrale espressionista di mattoni gialli a Bispebjerg, con una facciata che sembra contemporaneamente un organo e una scogliera.
+            kicker: Sei milioni di mattoni · 1940
+            story: >-
+              Peder Vilhelm Jensen-Klint fuse la scala gotica delle cattedrali con
+              le forme semplici delle chiese rurali danesi; dopo la sua morte il
+              figlio Kaare completò l'edificio e ne disegnò anche le sedie. Online
+              viene spesso chiamata “la chiesa di Shrek” per la somiglianza con la
+              chiesa del matrimonio di Fiona e Lord Farquaad, ma DreamWorks non
+              ha mai confermato che sia stata davvero il modello.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
       shops:
         title: Negozi che valgono una sosta
         items:
@@ -395,6 +483,32 @@ sections:
       denmark:
         title: Piccole spiegazioni per grandi abitudini danesi
         items:
+          hygge:
+            name: Hygge, senza candele obbligatorie
+            note: Stare bene insieme, senza fretta e senza dover trasformare tutto in un evento. Può essere una cena, un picnic o un caffè sotto la pioggia.
+            kicker: Si pronuncia più o meno “hü-ga”
+            story: >-
+              Hygge viene spesso tradotto con “intimità” o “comodità”, ma conta
+              soprattutto la sensazione: tempo tranquillo, atmosfera informale e
+              persone con cui si sta bene. Non richiede decorazioni beige e non è
+              soltanto invernale; anche un barbecue, un giro in bici o un bagno
+              al porto possono essere hyggelige. La parola arrivò dal norvegese
+              e compare nel danese scritto dalla fine del Settecento.
+            url: https://www.visitdenmark.com/denmark/things-to-do/traditions-lifestyle/hygge
+          danishBrands:
+            name: Brand danesi da riconoscere
+            note: "Non è solo LEGO e non sono solo mobili: una piccola lista di nomi danesi che incontrerete nei negozi, nelle case e molto oltre."
+            kicker: Design · moda · industria
+            storyItems:
+              - "Mobili e oggetti: HAY, Muuto, Normann Copenhagen, &Tradition, Georg Jensen e Kay Bojesen."
+              - "Moda e accessori: GANNI, Samsøe Samsøe, Rains, Wood Wood e Mads Nørgaard."
+              - "Royal Copenhagen: la classica porcellana bianca e blu."
+              - "Bang & Olufsen: il lato audio del design danese."
+              - "Energia: Vestas per le turbine eoliche e Ørsted per l'energia rinnovabile."
+              - "Farmaceutica: Novo Nordisk, una delle aziende danesi più grandi e conosciute al mondo."
+              - "Trasporti e logistica: Mærsk, il gigante danese dei container."
+              - "Gioielli e scarpe: Pandora ed ECCO."
+              - "Illums Bolighus: il posto più semplice per vedere molti di questi nomi insieme."
           studentTrucks:
             name: I rumorosissimi camion dei diplomati
             note: A fine giugno ogni classe gira per le case di tutti gli studenti su un camion aperto decorato—cappelli bianchi, musica e volume senza moderazione.
@@ -456,10 +570,10 @@ sections:
         items:
           torvehallerne:
             name: Torvehallerne
-            note: Food market, ottimo posto per provare gli smørrebrød.
+            note: Due padiglioni coperti pieni di banchi, prodotti freschi e piccoli pasti; un posto semplice per assaggiare smørrebrød senza prenotare.
           reffen:
             name: Reffen
-            note: Street food all'aperto sull'acqua.
+            note: Street food in vecchi container sul lato industriale del porto, con tavoli all'aperto, laboratori e molto spazio; controllate l'apertura stagionale.
           broens:
             name: Broens Gadekøkken
             note: Cucine di strada, appena dall'altra parte di Nyhavn. All'aperto.
@@ -475,14 +589,33 @@ sections:
         items:
           detLilleApotek:
             name: Det Lille Apotek
-            note: Per il cibo danese tipico, quello vero.
+            note: Uno dei ristoranti più antichi della città, con stanze basse, candele e cucina danese tradizionale senza reinterpretazioni creative.
           aamanns:
             name: Aamanns 1921
-            note: Smørrebrød eccellenti — date un occhio ai prezzi.
+            note: Smørrebrød moderni e molto curati in un vero ristorante, non uno snack veloce; eccellenti, ma guardate i prezzi prima di ordinare.
           gasolineGrill:
             name: Gasoline Grill
             note: Un'istituzione per gli hamburger a Copenaghen, con molta fama internazionale. Andateci se vi va un burger molto buono e un po' di coda.
             url: https://gasolinegrill.com/
+      coffee:
+        title: Caffè con un motivo per fermarsi
+        items:
+          originalCoffeeIllum:
+            name: Original Coffee, ILLUM Rooftop
+            note: Specialty coffee in cima a ILLUM; il vero motivo per salire è bere guardando Strøget e i tetti del centro dall'alto.
+            kicker: Vista gratuita · sopra Strøget
+            url: https://originalcoffee.dk/en/pages/illum-rooftop
+          mirabelle:
+            name: Mirabelle / Lazy Bakery
+            note: Pane a lievitazione naturale, dolci che cambiano ogni giorno e un vero espresso al banco, pubblicizzato ancora a 10 kr.
+            kicker: Nørrebro · espresso al banco
+            story: >-
+              La parte bakery di Mirabelle porta a Copenaghen una piccola
+              abitudine italiana: espresso rapido, bevuto in piedi al banco e a
+              un prezzo insolitamente gentile per la città. Il sito lo indica
+              attualmente a dieci corone; essendo un prezzo, controllate che sia
+              ancora valido quando andate. Il pane e i dolci cambiano ogni giorno.
+            url: https://www.mirabelle-spiseria.dk/lazy-bakery
   pastries:
     emoji: 🍰
     title: Pasticceria
@@ -493,17 +626,29 @@ sections:
         items:
           andersen:
             name: Andersen
-            note: Vale la deviazione.
+            note: Panificio a Islands Brygge con pane, croissant e dolci molto precisi; una buona deviazione da abbinare a una passeggiata sul porto.
           juno:
             name: Juno
-            note: Andate presto, i cardamom buns finiscono subito.
+            note: Il cardamom bun più famoso della città, in una piccola panetteria di Østerbro. Andate presto e mettete in conto un po' di fila.
           lagkagehuset:
             name: Lagkagehuset
-            note: È una catena, sta ovunque, ed è buona.
+            note: "È una catena e si trova ovunque: meno speciale delle bakery indipendenti, ma affidabile per pane, dolci e colazione senza deviazioni."
           alice:
             name: Alice, Amager
             note: Pasticceria fatta bene, caffè e gelato stagionale. Se c'è, provate il gelato al cardamomo.
             url: https://maps.app.goo.gl/932ZVTmvULBaKjFJ7
+          kongHansBakery:
+            name: Kong Hans Bakery
+            note: Dal team del bistellato Kong Hans Kælder, una bakery ancora abbastanza sotto il radar con lievitati, pane e pâtisserie trattati con precisione da alta cucina.
+            kicker: Østerbro · aperta nel 2025
+            story: >-
+              Kælder significa “cantina” ed è il nome dello storico ristorante da
+              cui nasce il progetto; la bakery è invece un locale separato in
+              Øster Farimagsgade. Porta fuori dal ristorante la stessa idea di
+              precisione, unendo tecnica francese, disciplina nordica, pane a
+              lunga fermentazione, croissant e pasticceria. Il posto è piccolo e
+              relativamente nuovo: aspettatevi facilmente un po' di fila.
+            url: https://konghansbakery.dk/en/
           morePastries:
             name: Altri consigli dolci
             note: Una lista utile trovata su Instagram — non è mia, ma salvatela.
@@ -518,28 +663,28 @@ sections:
         items:
           smk:
             name: SMK
-            note: La Galleria Nazionale di Danimarca.
+            note: "La Galleria Nazionale: arte danese, grandi maestri europei e un'ala moderna affacciata sul parco di Østre Anlæg."
           nationalmuseet:
             name: Nationalmuseet
-            note: Il Museo Nazionale.
+            note: Il modo più completo per seguire la storia danese dalla preistoria ai Vichinghi e alla vita quotidiana più recente.
           thorvaldsens:
             name: Thorvaldsens Museum
-            note: Piccolo, bellissimo, coloratissimo dentro.
+            note: Sculture neoclassiche dentro sale dai soffitti dipinti e colori inaspettati; piccolo abbastanza da non sacrificargli l'intera giornata.
           glyptotek:
             name: Ny Carlsberg Glyptotek
-            note: Antichità sotto un giardino d'inverno pieno di palme.
+            note: Antichità egizie, greche e romane, pittura francese e un giardino d'inverno pieno di palme che vale già la visita.
           cisternerne:
             name: Cisternerne
             note: Installazioni artistiche in vecchie cisterne sotterranee.
           experimentarium:
             name: Experimentarium
-            note: Scienza da toccare. Ottimo con i bambini.
+            note: Tre piani di esperimenti da toccare, giochi sull'acqua e terrazza sul tetto; ottimo con bambini e giornate di pioggia lunghe.
           louisiana:
             name: Louisiana Museum of Modern Art
             note: Fuori città, circa un'ora di treno. Vale l'intera giornata.
           museumGuide:
             name: I musei top di Copenaghen
-            note: La lista ufficiale.
+            note: La selezione ufficiale per confrontare collezioni, quartieri e idee meno ovvie quando volete scegliere un solo museo.
             url: https://www.visitcopenhagen.com/copenhagen/activities/copenhagens-top-museums
   saunas:
     emoji: 🧖
@@ -551,15 +696,25 @@ sections:
         items:
           glaecier:
             name: Glaecier
+            note: Club galleggiante a Refshaleøen con sauna, piscina di acqua portuale filtrata e vista panoramica; normalmente richiede membership, salvo gli Open Gus.
+            url: https://glaecier.com/en/
           sauna85:
             name: Sauna85
+            note: "Saunagus prenotabile senza membership in più sedi: una buona introduzione se volete provare calore, oli essenziali e immersione fredda."
             url: https://www.sauna85.dk/en/
           pluginHeat:
             name: Plugin Heat Club
+            note: Sessioni guidate da 75 minuti che alternano tre giri di sauna e freddo, con sedi ad Amager e Sydhavn.
             url: https://www.pluginheatclub.com/
           platform:
             name: Platform CPH
+            note: Sauna urbana vicino a BLOX e al porto, comoda se volete aggiungere un gus a una giornata nel centro.
             url: https://www.platformcph.com/
+          kynd:
+            name: KYND Sauna
+            note: Saunagus, affitto privato e sedi molto diverse; quella a Kalvebod Brygge ha vista panoramica sul porto e accesso diretto all'acqua.
+            kicker: Ex Mobilsauna · più sedi
+            url: https://kynd.dk/
   boats:
     emoji: ⛵
     title: Barche
@@ -636,17 +791,41 @@ sections:
             name: Louisiana, Humlebæk
             note: Arte moderna, vista sul mare e un parco di sculture. Mezza giornata minimo.
             travel: 35 min di treno + breve camminata
+          dyrehaven:
+            name: Dyrehaven
+            note: Una riserva reale piena di cervi, sentieri e querce secolari appena oltre Bellevue; natura vera raggiungibile in S-train.
+            travel: ~20 min fino a Klampenborg
+            kicker: UNESCO · cervi in libertà
+            story: >-
+              L'ex terreno di caccia reale conserva lunghi viali a stella creati
+              per la caccia par force, oggi parte del patrimonio UNESCO della
+              Zelanda del Nord. Cervi rossi, daini e sika si muovono liberamente:
+              osservateli da lontano e non date loro da mangiare. Si combina
+              facilmente con Bellevue o con Bakken, il parco divertimenti nel bosco.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/deer-park-gdk414367
           malmo:
             name: Malmö, Svezia
             note: Treno attraverso il ponte dell'Øresund. Un altro Paese prima di pranzo — portate documento o passaporto.
             travel: 35 min da Copenhagen H
+          lund:
+            name: Lund, Svezia
+            note: Città universitaria compatta con cattedrale romanica, case basse e strade acciottolate; più tranquilla di Malmö e perfetta per una giornata lenta.
+            travel: ~55 min di treno diretto
+            kicker: Università dal 1666 · Skåne
+            story: >-
+              Lund fu un importante centro religioso danese prima che la Scania
+              diventasse svedese nel Seicento. La cattedrale conserva una cripta
+              dell'XI secolo e un orologio astronomico; attorno, l'università e
+              Kulturen riempiono il centro di cortili, musei e studenti. Portate
+              comunque un documento valido: state attraversando un confine.
+            url: https://visitlund.se/en
           skybarMalmo:
             name: Skybar, Malmö Live
             note: Una tappa a Malmö per mangiare o bere con una vista grande sulla città.
             url: https://maps.app.goo.gl/EyKtERFBjXYHZ5pc8
           bullenMalmo:
             name: Bullen – Två Krögare
-            note: Cucina svedese classica, come si deve, a Malmö.
+            note: "Una sala storica e cucina svedese classica senza troppi fronzoli: polpette, aringhe e piatti robusti nel centro di Malmö."
             url: https://maps.app.goo.gl/TJjq7w8dQaPwn2JC7
       longer:
         title: Vale il viaggio più lungo
@@ -755,7 +934,7 @@ sections:
             travel: ~5h tra treno e bus
           moreTrips:
             name: Organizzare le gite
-            note: La lista ufficiale delle gite fuori città.
+            note: La raccolta ufficiale per confrontare castelli, costa, musei e tempi di viaggio quando volete uscire dalla città.
             url: https://www.visitcopenhagen.com/copenhagen/activities/day-trips-copenhagen
   inspiration:
     emoji: 👻
@@ -768,7 +947,7 @@ sections:
         items:
           nyt:
             name: Things to do in Copenhagen
-            note: La guida del New York Times. Fatta bene.
+            note: La guida del New York Times per un secondo parere su quartieri, ristoranti e cose da fare. Curata e aggiornata separatamente da questa lista.
             url: https://www.nytimes.com/interactive/2023/07/20/travel/things-to-do-copenhagen.html
       february:
         title: Febbraio

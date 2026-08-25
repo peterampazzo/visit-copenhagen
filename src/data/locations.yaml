@@ -74,6 +74,38 @@ vaeksthuset:
   latitude: 55.6808847
   longitude: 12.5999326
   googleQuery: Restaurant Væksthuset, Copenhagen
+laBanchina:
+  latitude: 55.6892932
+  longitude: 12.6109061
+  googleQuery: La Banchina, Refshalevej 141, Copenhagen
+islandsBryggeBath:
+  latitude: 55.6685216
+  longitude: 12.5775065
+  googleQuery: Havnebadet Islands Brygge, Copenhagen
+sandkaj:
+  latitude: 55.7062119
+  longitude: 12.5971773
+  googleQuery: Badezone Sandkaj, Copenhagen
+fisketorvetBath:
+  latitude: 55.6630182
+  longitude: 12.5647073
+  googleQuery: Havnebadet Fisketorvet, Copenhagen
+bellevue:
+  latitude: 55.7772081
+  longitude: 12.5920488
+  googleQuery: Bellevue Strand, Klampenborg
+kaktusTowers:
+  latitude: 55.6637498
+  longitude: 12.5603409
+  googleQuery: Kaktus Towers, Carsten Niebuhrs Gade, Copenhagen
+nyboder:
+  latitude: 55.6892025
+  longitude: 12.5867628
+  googleQuery: Nyboder, Copenhagen
+grundtvigChurch:
+  latitude: 55.7165905
+  longitude: 12.5338637
+  googleQuery: Grundtvigs Kirke, På Bjerget 14B, Copenhagen
 goboat:
   latitude: 55.663331
   longitude: 12.583313
@@ -154,6 +186,18 @@ alice:
   latitude: 55.6684086
   longitude: 12.5970575
   googleQuery: Alice, Amagerbrogade 5, Copenhagen
+kongHansBakery:
+  latitude: 55.690693
+  longitude: 12.575768
+  googleQuery: Kong Hans Bakery, Øster Farimagsgade 18, Copenhagen
+originalCoffeeIllum:
+  latitude: 55.679268
+  longitude: 12.58069
+  googleQuery: Original Coffee ILLUM Rooftop, Copenhagen
+mirabelle:
+  latitude: 55.6923802
+  longitude: 12.5562627
+  googleQuery: Mirabelle, Guldbergsgade, Copenhagen
 smk:
   latitude: 55.6887637
   longitude: 12.5783697
@@ -216,6 +260,12 @@ platformBlox:
   latitude: 55.6720405
   longitude: 12.5791901
   googleQuery: BLOX, Bryghuspladsen, Copenhagen
+kyndKalvebod:
+  itemId: kynd
+  label: Kalvebod Brygge
+  latitude: 55.668826
+  longitude: 12.574042
+  googleQuery: KYND Sauna, Kalvebod Brygge 5, Copenhagen
 legoStore:
   latitude: 55.678787
   longitude: 12.577624
@@ -236,6 +286,14 @@ louisianaTrip:
   latitude: 55.969352
   longitude: 12.5431572
   googleQuery: Louisiana Museum of Modern Art, Humlebæk
+dyrehaven:
+  latitude: 55.7748565
+  longitude: 12.5790475
+  googleQuery: Dyrehaven, Klampenborg
+lund:
+  latitude: 55.7029296
+  longitude: 13.1929449
+  googleQuery: Lund Cathedral, Lund, Sweden
 monsKlint:
   latitude: 54.9694444
   longitude: 12.5461111
