@@ -1,33 +1,38 @@
-# Restructure guide sections
+# Section & card UI refinement (direction 2, applied to the existing page)
 
-## Goal
-Fewer, clearer top-level sections so the nav (chips + mobile bottom sheet) is short and scannable for any age, without adding features or weight. Pure reorganization of existing content — no new dependencies, no new pages.
+You're right — the previews were standalone mockups. This plan takes only the *ideas* from direction 2 ("Ink & Pastel Scandi") and applies them to the components already in the app. No rebuild, no new fonts, no new colors, no new dependencies, no content or feature changes.
 
-## Current state
-10 top-level sections, several with a single small group: Fun facts (1 group), Pastries (1 group), Saunas (1 group), Boats (1 group). On mobile the section nav and bottom-sheet menu are long lists of tiny targets.
+## What stays exactly as-is
+- All 10 sections, all groups, all content and YAML files.
+- Existing palette (cream / ink / sun / coral / harbour) and fonts (Outfit + Figtree).
+- Search, favourites star, story dialog, map pin, calendar pills, mobile bottom nav, "Beyond Copenhagen" — untouched logic.
 
-## Proposed new structure (7 sections)
+## What changes (presentation only)
 
-1. **Things to know** 🧯 — unchanged (transport, cycling, everyday life) + **"Very Danish things"** moves here as a group.
-2. **Places & stories** 🏰 — unchanged.
-3. **Eat & drink** 😋 — merge Food (markets, dining, coffee) + Pastries (bakeries) as groups of one section.
-4. **Museums** 🏺 — unchanged.
-5. **On the water** ⛵ — merge Saunas + Boats (both are small; both are water activities).
-6. **Beyond Copenhagen** 🚆 — unchanged.
-7. **Inspiration** 🗓️ — unchanged (calendar pills already work well).
+**1. Cards become separate cards instead of a divided grid** — `PlaceCard.tsx` + `GuideSection.tsx`
+Today items sit in a `gap-px` grid on an ink background, so they read as one dense table. Change to individually rounded cards with a 2px ink/15 border and the existing `shadow-pop`-style offset shadow, spaced with a real gap. Easier to parse for any age; also fixes the cramped feel on phones.
 
-Result: 10 sections → 7, every nav chip leads to a substantial section, mobile bottom-sheet menu fits without scrolling.
+**2. Groups get a panel, not just a heading** — `GuideSection.tsx`
+Wrap each group's cards in a soft panel (card background at low opacity, 2px border, rounded) with the group title as a small uppercase tracked label above it — same treatment the calendar block already uses, so it becomes consistent across the page. Keeps the red dot marker.
 
-## What changes technically
-- `src/locales/en/guide.yaml` and `src/locales/it/guide.yaml`: move group blocks under the merged sections, adjust emoji/titles. Item IDs stay the same, so saved favourites and map pins keep working.
-- `src/lib/guide-content.ts`: update `GUIDE_ORDER` (10 entries → 7, group keys unchanged).
-- `src/components/guide/GuideSection.tsx`: `SECTION_THEMES` cycles by index — still fine with 7.
-- No component, map, or logic changes. Content keys that are referenced by ID (map locations) are untouched.
+**3. Card interior gets a clearer hierarchy** — `PlaceCard.tsx`
+- Kicker stays as the small uppercase label, tinted with the section accent instead of always harbour.
+- Name goes up one step in size and stays the tap target for the map.
+- Note gets full-width room (no clamp) with slightly looser line height.
+- Story / link / travel move into a single bottom action row separated by a hairline divider, so every card ends with the same predictable strip.
+- Star moves to the top-right corner of the card at min 44×44 tap size (currently 32px).
 
-## Alternatives considered
-- Keep 10 sections: rejected — several are one-group stubs, nav too long on phones.
-- Tabs/accordion layout: rejected — heavier, worse for "any age" simplicity; single scroll page stays.
+**4. Section header slightly calmer** — `GuideSection.tsx`
+Keep the tilted emoji tile and big display title, but reduce the title from `text-5xl` to a size that doesn't wrap on a 390px screen, and give the blurb more line height.
+
+**5. Motion stays light**
+Same `whileInView` fade/slide already in place; only add a small tap/press feedback on cards. No new animation library.
+
+## Technical notes
+- Files touched: `src/components/guide/PlaceCard.tsx`, `src/components/guide/GuideSection.tsx`, and small token additions in `src/styles.css` if a softer shadow variant is needed.
+- All colors via existing tokens — no hardcoded hex or `text-white`/`bg-black`.
+- Tap targets ≥44px, body text ≥16px on mobile.
 
 ## Verification
-- Build passes.
-- Playwright mobile check (390×844): nav chips and bottom-sheet menu all visible, each merged section renders its groups, search still filters across merged content, favourites/map pins unaffected.
+- Build + typecheck pass.
+- Playwright at 390×844: screenshot Places, Food, Inspiration sections; confirm no text wraps awkwardly, star/story/map all still work, search filtering still collapses sections.
