@@ -35,6 +35,8 @@ site:
   favouriteAdd: Save this place
   favouriteRemove: Remove from saved
   favouritesEmpty: Tap the star on any place to save it here.
+  savedStripTitle: Saved places
+  backToTop: Back to top
   navLabel: Sections
   searchLabel: Search the guide
   searchPlaceholder: Search places, food, tips…
