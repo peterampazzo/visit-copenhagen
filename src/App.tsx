@@ -67,22 +67,32 @@ export function App() {
           description={t("site.description")}
         />
         <div className="sticky top-0 z-30 border-b-2 border-ink/10 bg-background/95 px-4 py-2.5 backdrop-blur-md sm:px-6 lg:static lg:border-b-0 lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto flex max-w-6xl items-center gap-2">
             <SearchBar
               value={search}
               onChange={setSearch}
               placeholder={t("site.searchPlaceholder")}
               label={t("site.searchLabel")}
               clearLabel={t("site.searchClear")}
+              className="min-w-0 flex-1"
             />
+            <div className="shrink-0 lg:hidden">
+              <LanguageToggle value={language} onChange={changeLanguage} />
+            </div>
           </div>
         </div>
+        <SavedStrip
+          places={mapPlaces}
+          title={t("site.savedStripTitle")}
+          onOpenPlace={(placeId) => openMap(placeId)}
+        />
         <SectionNav
           sections={sections}
           label={t("site.nav")}
           mapLabel={t("site.mapLabel")}
           onOpenMap={() => openMap()}
         />
+
         {sections.map((section, index) => (
           <GuideSection
             key={section.id}
