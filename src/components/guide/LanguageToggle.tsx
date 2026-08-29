@@ -7,9 +7,11 @@ import { cn } from "@/lib/utils";
 export function LanguageToggle({
   value,
   onChange,
+  layoutId = "lang-pill",
 }: {
   value: Language;
   onChange: (lang: Language) => void;
+  layoutId?: string;
 }) {
   const { t } = useTranslation();
 
@@ -34,7 +36,7 @@ export function LanguageToggle({
           >
             {active ? (
               <motion.span
-                layoutId="lang-pill"
+                layoutId={layoutId}
                 className="absolute inset-0 rounded-full bg-primary"
                 transition={{ type: "spring", stiffness: 420, damping: 32 }}
               />

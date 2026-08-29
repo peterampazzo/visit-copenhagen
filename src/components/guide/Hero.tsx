@@ -16,8 +16,8 @@ export function Hero({
   return (
     <header className="relative overflow-hidden px-4 pb-5 pt-4 sm:px-6 sm:pb-7 sm:pt-5">
       <div className="cph-hero relative mx-auto max-w-6xl">
-        <div className="cph-hero__language absolute right-4 top-4 z-20">
-          <LanguageToggle value={language} onChange={onLanguageChange} />
+        <div className="cph-hero__language absolute right-4 top-4 z-20 hidden lg:block">
+          <LanguageToggle value={language} onChange={onLanguageChange} layoutId="hero-lang-pill" />
         </div>
 
         <div className="cph-hero__copy relative z-10">

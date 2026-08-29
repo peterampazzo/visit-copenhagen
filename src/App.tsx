@@ -81,7 +81,11 @@ export function App() {
               className="min-w-0 flex-1"
             />
             <div className="shrink-0 lg:hidden">
-              <LanguageToggle value={language} onChange={changeLanguage} />
+              <LanguageToggle
+                value={language}
+                onChange={changeLanguage}
+                layoutId="search-lang-pill"
+              />
             </div>
           </div>
         </div>
@@ -128,7 +132,6 @@ export function App() {
         ) : null}
         <BackToTop label={t("site.backToTop")} />
         <MobileBottomNav
-
           sections={sections}
           sectionsLabel={t("site.navLabel")}
           mapLabel={t("site.mapLabel")}
