@@ -35,6 +35,8 @@ site:
   favouriteAdd: Salva questo posto
   favouriteRemove: Togli dai salvati
   favouritesEmpty: Toccate la stella su un posto per salvarlo qui.
+  savedStripTitle: Posti salvati
+  backToTop: Torna su
   navLabel: Sezioni
   searchLabel: Cerca nella guida
   searchPlaceholder: Cerca posti, cibo, dritte…

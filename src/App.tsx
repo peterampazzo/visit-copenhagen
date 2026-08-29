@@ -2,12 +2,16 @@ import { MotionConfig } from "motion/react";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { BackToTop } from "@/components/guide/BackToTop";
 import { GuideFooter } from "@/components/guide/GuideFooter";
 import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
+import { LanguageToggle } from "@/components/guide/LanguageToggle";
 import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
+import { SavedStrip } from "@/components/guide/SavedStrip";
 import { SearchBar } from "@/components/guide/SearchBar";
 import { SectionNav } from "@/components/guide/SectionNav";
+
 import { itemMatchesQuery, toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
 import { toGuideMapPlaces } from "@/lib/locations";
@@ -67,22 +71,32 @@ export function App() {
           description={t("site.description")}
         />
         <div className="sticky top-0 z-30 border-b-2 border-ink/10 bg-background/95 px-4 py-2.5 backdrop-blur-md sm:px-6 lg:static lg:border-b-0 lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto flex max-w-6xl items-center gap-2">
             <SearchBar
               value={search}
               onChange={setSearch}
               placeholder={t("site.searchPlaceholder")}
               label={t("site.searchLabel")}
               clearLabel={t("site.searchClear")}
+              className="min-w-0 flex-1"
             />
+            <div className="shrink-0 lg:hidden">
+              <LanguageToggle value={language} onChange={changeLanguage} />
+            </div>
           </div>
         </div>
+        <SavedStrip
+          places={mapPlaces}
+          title={t("site.savedStripTitle")}
+          onOpenPlace={(placeId) => openMap(placeId)}
+        />
         <SectionNav
           sections={sections}
           label={t("site.nav")}
           mapLabel={t("site.mapLabel")}
           onOpenMap={() => openMap()}
         />
+
         {sections.map((section, index) => (
           <GuideSection
             key={section.id}
@@ -112,7 +126,9 @@ export function App() {
             </p>
           </div>
         ) : null}
+        <BackToTop label={t("site.backToTop")} />
         <MobileBottomNav
+
           sections={sections}
           sectionsLabel={t("site.navLabel")}
           mapLabel={t("site.mapLabel")}

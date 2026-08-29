@@ -58,7 +58,7 @@ export function GuideSection({
   const currentMonth = new Date().getMonth() + 1;
 
   const renderCards = (group: GuideGroup) => (
-    <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/15 bg-ink/12 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {group.items.map((item, index) => {
         const mapPlace = mapPlaces.find(({ itemId }) => itemId === item.id);
         return (
