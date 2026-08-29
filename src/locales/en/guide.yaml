@@ -429,6 +429,22 @@ sections:
               for a visitor is the public green route at their base, connected to
               the IKEA rooftop and the new district behind Central Station.
             url: https://dac.dk/en/magazine/places/kaktus-towers-prickly-architecture-231
+          lynetteholm:
+            name: Lynetteholm—the whole project
+            note: "A 275-hectare artificial peninsula rising between Refshaleøen and Nordhavn: part storm-surge barrier, part reuse site for construction soil and part future city district."
+            kicker: 2022 → around 2070
+            story: >-
+              The seven-kilometre stone perimeter was completed in 2026. Surplus
+              soil from construction around Copenhagen will now fill the inside,
+              a process expected to continue until about 2050. Its new coast is
+              designed to help protect Copenhagen from storm surges from the
+              north. A 2025 political agreement envisages almost 50,000 residents
+              and 30,000 jobs on Lynetteholm, eventually served by the M5 Metro
+              and an eastern ring road. The neighbourhood and infrastructure
+              still involve separate planning, environmental reviews and laws,
+              so “Lynetteholm” can mean the peninsula, the climate barrier, the
+              soil project or the much larger city-building plan.
+            url: https://byoghavn.dk/lynetteholm/
           nyboder:
             name: Nyboder
             note: The long yellow houses Christian IV built for the Navy; many are still Defence rental homes today.
@@ -508,6 +524,28 @@ sections:
               - "Shipping and logistics: Mærsk, Denmark's container giant."
               - "Jewellery and shoes: Pandora and ECCO."
               - "Illums Bolighus: the easiest place to see many of these names together."
+          famousDanes:
+            name: Danes you may already know
+            note: Storytellers, scientists, designers, actors and athletes whose Danish connection is easy to miss.
+            kicker: A very incomplete who's who
+            storyItems:
+              - "Stories and ideas: H.C. Andersen, Søren Kierkegaard and Karen Blixen, who also wrote as Isak Dinesen."
+              - "Science: astronomer Tycho Brahe and physicists Niels Bohr and Lene Hau."
+              - "Design and architecture: Arne Jacobsen, Verner Panton, Jørn Utzon and Bjarke Ingels."
+              - "On screen: Mads Mikkelsen, Connie Nielsen, Nikolaj Coster-Waldau, Sidse Babett Knudsen and Lars Mikkelsen."
+              - "Behind the camera: Carl Th. Dreyer, Susanne Bier, Lars von Trier, Thomas Vinterberg and Nicolas Winding Refn."
+              - "Music and sport: Lars Ulrich, MØ, Lukas Graham, Caroline Wozniacki, Christian Eriksen, Viktor Axelsen and Jonas Vingegaard."
+          danishOnScreen:
+            name: Denmark on screen
+            note: Start on Netflix with Borgen – Power & Glory, The Chestnut Man and The Rain; then go deeper into Nordic noir and Danish cinema.
+            kicker: Politics · crime · Dogme 95
+            storyItems:
+              - "Series: Borgen for politics, The Killing and The Chestnut Man for Copenhagen noir, and The Bridge for a Danish–Swedish murder exactly on the border."
+              - "Lighter or stranger: Rita is a sharp school comedy-drama; The Rain turns Scandinavia into a post-apocalyptic thriller."
+              - "Films: Another Round, The Hunt, A Royal Affair, Babette's Feast and Pelle the Conqueror are excellent starting points."
+              - "For contemporary Copenhagen scenery, Netflix's A Copenhagen Love Story stays close to everyday city life."
+              - "Streaming catalogues vary by country and change over time, so search by title rather than assuming every film is available everywhere."
+            url: https://www.netflix.com/title/81282868
           studentTrucks:
             name: The loud graduation trucks
             note: At the end of June, each graduating class tours every student's home in a decorated open truck—with white caps, music and almost no volume control.
@@ -516,9 +554,41 @@ sections:
               The white cap marks the end of upper-secondary school. Then the
               whole class climbs onto a decorated truck and spends the day
               stopping at every classmate's family home for food, drinks and a
-              very short party. The truck ride is the loud, moving finale of a
-              Danish graduation ritual that is more than a century old.
-            url: https://researchprofiles.ku.dk/en/publications/graduation-in-denmark-secular-ritual-and-civil-religion/
+              very short party. And yes, the story about the “good ones” running
+              is real—with a caveat. A newer, informal custom says anyone who got
+              12, the top mark, in the final exam runs behind the truck from one
+              stop to the next. It varies by class and is not a national rule;
+              it means the top mark in that exam, not the best students overall.
+            url: https://odensekatedralskole.dk/drop-karakteren-i-huen/
+          danishRealm:
+            name: Denmark is bigger than Denmark
+            note: The country on the European map is one of three parts of the Kingdom of Denmark, alongside Greenland and the Faroe Islands.
+            kicker: Rigsfællesskabet · three parts
+            story: >-
+              Greenland and the Faroe Islands are distinct, self-governing parts
+              of the Kingdom with their own elected parliaments and governments.
+              Faroese Home Rule began in 1948 and Greenlandic Home Rule in 1979;
+              later arrangements expanded their powers in 2005 and 2009. The
+              Danish state still handles several realm-wide matters, especially
+              much of foreign, security and defence policy, with growing Faroese
+              and Greenlandic involvement. Greenland was formally a Danish colony
+              until 1953, and the relationship—and possible future independence—
+              is living politics, not merely an old constitutional curiosity.
+            url: https://um.dk/en/foreign-policy/the-arctic/greenland-and-the-faroe-islands
+          skane:
+            name: Yes, Skåne used to be Danish
+            note: Skåne, Halland and Blekinge were eastern Danish provinces until Denmark ceded them to Sweden in the Treaty of Roskilde in 1658.
+            kicker: Across the Øresund · until 1658
+            story: >-
+              Medieval Lund was one of the Danish realm's most important religious
+              centres, and Copenhagen once looked across an internal waterway
+              rather than an international border. After the wars of the 1600s,
+              Sweden integrated the former Danish provinces. Bornholm and the
+              Trondheim region were also ceded in 1658 but returned in 1660;
+              Skåne, Halland and Blekinge remained Swedish. Skåne is unequivocally
+              Swedish today, but this history explains why a day trip to Lund
+              still feels connected to the Danish story.
+            url: https://natmus.dk/historisk-viden/danmark/enevaelde-1660-1849/den-enevaeldige-stat/det-danske-rige-under-enevaelden/
           oresundLink:
             name: The bridge that becomes a tunnel
             note: The link to Sweden is not half bridge and half underwater—it is 8 km of bridge, a 4 km artificial island and a 4 km tunnel.
@@ -671,6 +741,14 @@ sections:
           glyptotek:
             name: Ny Carlsberg Glyptotek
             note: Egyptian, Greek and Roman antiquities, French painting and a palm-filled winter garden that is nearly worth the visit alone.
+          designmuseum:
+            name: Designmuseum Danmark
+            note: The clearest introduction to Danish design—furniture, craft, fashion and graphics—inside the former Royal Frederik's Hospital.
+            url: https://designmuseum.dk/en/
+          copenhagenContemporary:
+            name: Copenhagen Contemporary
+            note: Monumental installations, performance and video art in 7,000 m² of former B&W welding halls on Refshaleøen.
+            url: https://copenhagencontemporary.org/en/
           cisternerne:
             name: Cisternerne
             note: Changing art installations inside Copenhagen's old underground water reservoirs—dark, damp and unlike a conventional museum.
@@ -680,18 +758,28 @@ sections:
           louisiana:
             name: Louisiana Museum of Modern Art
             note: Outside the city, around one hour by train. Worth the whole day.
+          arken:
+            name: ARKEN Museum of Contemporary Art
+            note: Contemporary art in a ship-like building beside Ishøj's beach park; pair the galleries and sculpture park with a coastal walk.
+            travel: 16 min by S-train + bus or walk
+            url: https://www.arken.dk/en
           museumGuide:
             name: Copenhagen's top museums
             note: The official round-up for comparing collections, neighbourhoods and less obvious options when you only have time for one museum.
             url: https://www.visitcopenhagen.com/copenhagen/activities/copenhagens-top-museums
   saunas:
     emoji: 🧖
-    title: Saunas
-    blurb: Hot room, cold harbour, repeat. Very Nordic.
+    title: Saunas & baths
+    blurb: Hot room, cold harbour or candlelit thermal bath—your choice.
     groups:
       sweat:
-        title: Where to sweat
+        title: Where to sweat or soak
         items:
+          aire:
+            name: AIRE Ancient Baths
+            note: A luxurious candlelit thermal circuit, steam room and massages in the historic cellars of the old Carlsberg brewery—beautiful, quiet and priced accordingly.
+            kicker: Carlsberg Byen · book ahead
+            url: https://relax.beaire.com/en/aire-ancient-baths-copenhagen
           glaecier:
             name: Glaecier
             note: A floating Refshaleøen club with sauna, filtered harbour-water pool and panoramic views; normally members-only except for Open Gus sessions.
@@ -904,9 +992,73 @@ sections:
             url: https://legohouse.com/en-gb/
           aarhus:
             name: Aarhus
-            note: Denmark's second city. Walk the rainbow ring on top of ARoS, then Den Gamle By, an entire old town rebuilt street by street.
+            note: "Denmark's second city: compact, youthful and strong enough on museums, food and architecture to deserve an overnight stay."
             travel: 3h by train
+            url: https://www.visitaarhus.com/
+          aros:
+            name: ARoS Aarhus Art Museum
+            note: A major contemporary art museum whose rooftop rainbow turns the whole city view into part of the artwork.
+            kicker: Your rainbow panorama · Olafur Eliasson
+            story: >-
+              The museum's best-known work is Your rainbow panorama: a circular,
+              150-metre glass walkway in every colour of the spectrum, installed
+              on the roof in 2011 by Danish-Icelandic artist Olafur Eliasson.
+              Walk it slowly for shifting views over Aarhus, then leave time for
+              the collection and large installations below—it is much more than
+              a viewing platform with a museum underneath.
             url: https://www.aros.dk/en/
+          denGamleBy:
+            name: Den Gamle By, Aarhus
+            note: An open-air museum of Danish urban life, built from 80 historic houses moved here from towns across the country.
+            kicker: Streets through several centuries
+            story: >-
+              This is not a single reconstructed medieval village. You move
+              through homes, workshops, shops and gardens from the 1600s onwards,
+              with especially vivid districts around 1864, 1927 and 1974. From
+              spring to winter, costumed residents and working craftspeople turn
+              the buildings into lived-in history rather than a row of facades.
+            url: https://www.dengamleby.dk/en/
+          moesgaard:
+            name: Moesgaard
+            note: An outstanding archaeology and anthropology museum south of Aarhus, with immersive galleries and the world's best-preserved bog body.
+            travel: Aarhus + ~25 min by bus
+            kicker: Grauballe Man · walkable roof
+            story: >-
+              Grauballe Man died around 390 BC and still has skin, hair, nails
+              and facial features after more than two thousand years in a bog.
+              He is the centrepiece of an atmospheric Iron Age exhibition, but
+              Moesgaard ranges from prehistory and Vikings to anthropology. The
+              Henning Larsen building is part of the visit too: its great sloping
+              roof is open to everyone, with views towards Aarhus Bay and the
+              surrounding woods and fields.
+            url: https://moesgaardmuseum.dk/en/
+          mennesketVedHavet:
+            name: Mennesket ved Havet (Men at Sea)
+            note: Four monumental white figures sit facing the North Sea at Sædding Beach, about four kilometres from central Esbjerg.
+            travel: ~3h by train + local bus
+            kicker: Esbjerg · Svend Wiig Hansen · 1995
+            story: >-
+              Svend Wiig Hansen made the nine-metre figures deliberately simple
+              and timeless, with elongated legs like the columns of a Greek
+              temple. They were unveiled in 1995 for Esbjerg's centenary as an
+              independent municipality and quickly became the city's landmark.
+              Their blank faces look over the harbour entrance; on a clear day,
+              the four bodies can be seen from ten kilometres away.
+            url: https://www.visitdenmark.dk/danmark/explore/mennesket-ved-havet-kaempeskulptur-i-esbjerg-gdk1076855
+          fano:
+            name: Fanø
+            note: Wide North Sea beaches, dunes, seals, old maritime villages and enough wind for surfing, kites and beach sailing—all a short ferry ride from Esbjerg.
+            travel: ~3h to Esbjerg + 12 min ferry
+            kicker: Wadden Sea · not Cold Hawaii
+            story: >-
+              Fanø is genuinely good for surfing and exceptional for kite flying,
+              kite buggies and blokarts on its enormous firm beach. But it is not
+              usually the “Hawaii of Denmark”: Cold Hawaii is the name for 31
+              surf spots along the Thy coast farther north, centred on Klitmøller.
+              Fanø's own identity is the UNESCO-listed Wadden Sea, seal banks,
+              amber, Nordby's maritime lanes and the preserved village of
+              Sønderho. It pairs naturally with Esbjerg and Men at Sea.
+            url: https://visitfanoe.dk/en/
           aalborg:
             name: Aalborg
             note: A friendly university city on the Limfjord, with a transformed waterfront, the Utzon Center and plenty of street art.

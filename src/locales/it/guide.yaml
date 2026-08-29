@@ -431,6 +431,22 @@ sections:
               interessante per chi passa è il percorso verde pubblico alla base,
               collegato al tetto di IKEA e alla nuova zona dietro la stazione.
             url: https://dac.dk/en/magazine/places/kaktus-towers-prickly-architecture-231
+          lynetteholm:
+            name: Lynetteholm—il progetto completo
+            note: Una penisola artificiale di 275 ettari tra Refshaleøen e Nordhavn; insieme barriera contro le mareggiate, riuso di terra da cantiere e futuro quartiere.
+            kicker: 2022 → circa 2070
+            story: >-
+              Il perimetro di pietra lungo sette chilometri è stato completato nel
+              2026. Ora l'interno verrà riempito con terra in eccesso proveniente
+              dai cantieri di Copenaghen, un processo previsto fino al 2050 circa.
+              La nuova costa contribuirà a proteggere la città dalle mareggiate
+              da nord. Un accordo politico del 2025 prevede quasi 50.000 abitanti
+              e 30.000 posti di lavoro a Lynetteholm, serviti in futuro dalla
+              metro M5 e da una tangenziale orientale. Quartiere e infrastrutture
+              richiedono ancora pianificazione, valutazioni ambientali e leggi
+              separate: per questo “Lynetteholm” può indicare la penisola, la
+              barriera climatica, il deposito di terra o l'intero piano urbano.
+            url: https://byoghavn.dk/lynetteholm/
           nyboder:
             name: Nyboder
             note: Le lunghe case gialle costruite per la Marina da Christian IV; molte sono ancora abitazioni in affitto della Difesa.
@@ -511,6 +527,28 @@ sections:
               - "Trasporti e logistica: Mærsk, il gigante danese dei container."
               - "Gioielli e scarpe: Pandora ed ECCO."
               - "Illums Bolighus: il posto più semplice per vedere molti di questi nomi insieme."
+          famousDanes:
+            name: Danesi che forse conoscete già
+            note: Scrittori, scienziati, designer, attori e sportivi di cui è facile non conoscere il legame con la Danimarca.
+            kicker: Una lista molto incompleta
+            storyItems:
+              - "Storie e idee: H.C. Andersen, Søren Kierkegaard e Karen Blixen, che scriveva anche come Isak Dinesen."
+              - "Scienza: l'astronomo Tycho Brahe e i fisici Niels Bohr e Lene Hau."
+              - "Design e architettura: Arne Jacobsen, Verner Panton, Jørn Utzon e Bjarke Ingels."
+              - "Sullo schermo: Mads Mikkelsen, Connie Nielsen, Nikolaj Coster-Waldau, Sidse Babett Knudsen e Lars Mikkelsen."
+              - "Dietro la cinepresa: Carl Th. Dreyer, Susanne Bier, Lars von Trier, Thomas Vinterberg e Nicolas Winding Refn."
+              - "Musica e sport: Lars Ulrich, MØ, Lukas Graham, Caroline Wozniacki, Christian Eriksen, Viktor Axelsen e Jonas Vingegaard."
+          danishOnScreen:
+            name: La Danimarca sullo schermo
+            note: Su Netflix iniziate da Borgen – Potere e gloria, L'uomo delle castagne e The Rain; poi esplorate il noir nordico e il cinema danese.
+            kicker: Politica · crime · Dogma 95
+            storyItems:
+              - "Serie: Borgen per la politica, The Killing e L'uomo delle castagne per il noir di Copenaghen, The Bridge per un omicidio danese-svedese esattamente sul confine."
+              - "Più leggere o strane: Rita è una commedia drammatica scolastica tagliente; The Rain trasforma la Scandinavia in un thriller post-apocalittico."
+              - "Film: Un altro giro, Il sospetto, Royal Affair, Il pranzo di Babette e Pelle alla conquista del mondo sono ottimi punti di partenza."
+              - "Per vedere la Copenaghen contemporanea, A Copenhagen Love Story su Netflix resta vicino alla città quotidiana."
+              - "I cataloghi streaming cambiano da Paese a Paese e nel tempo: cercate sempre il titolo invece di dare per scontata la disponibilità."
+            url: https://www.netflix.com/title/81282868
           studentTrucks:
             name: I rumorosissimi camion dei diplomati
             note: A fine giugno ogni classe gira per le case di tutti gli studenti su un camion aperto decorato—cappelli bianchi, musica e volume senza moderazione.
@@ -519,9 +557,41 @@ sections:
               Il cappello bianco segna la fine delle superiori. Poi tutta la
               classe sale su un camion decorato e passa la giornata fermandosi a
               casa di ogni compagno per mangiare, bere e fare una festa molto
-              breve. È il finale rumoroso e itinerante di un rito di diploma
-              danese che ha più di un secolo.
-            url: https://researchprofiles.ku.dk/en/publications/graduation-in-denmark-secular-ritual-and-civil-religion/
+              breve. E sì, la storia dei “più bravi” che corrono è vera, ma va
+              precisata: secondo un'usanza recente e informale, chi prende 12—il
+              voto massimo—all'ultimo esame corre dietro al camion tra due tappe.
+              Cambia da classe a classe e non è una regola nazionale; riguarda
+              quel singolo esame, non gli studenti migliori in assoluto.
+            url: https://odensekatedralskole.dk/drop-karakteren-i-huen/
+          danishRealm:
+            name: La Danimarca è più grande della Danimarca
+            note: Il Paese sulla carta d'Europa è una delle tre parti del Regno di Danimarca, insieme a Groenlandia e Isole Faroe.
+            kicker: Rigsfællesskabet · tre parti
+            story: >-
+              Groenlandia e Isole Faroe sono parti distinte e autonome del Regno,
+              con parlamenti e governi eletti propri. L'autonomia faroese iniziò
+              nel 1948 e quella groenlandese nel 1979; gli accordi del 2005 e 2009
+              ne ampliarono i poteri. Lo Stato danese gestisce ancora varie
+              questioni comuni, soprattutto gran parte della politica estera,
+              della sicurezza e della difesa, con un coinvolgimento crescente di
+              Faroe e Groenlandia. La Groenlandia fu formalmente colonia danese
+              fino al 1953, e il rapporto—compresa una possibile indipendenza
+              futura—è politica viva, non una semplice curiosità costituzionale.
+            url: https://um.dk/en/foreign-policy/the-arctic/greenland-and-the-faroe-islands
+          skane:
+            name: Sì, la Skåne era danese
+            note: Skåne, Halland e Blekinge furono province danesi orientali fino alla cessione alla Svezia con il Trattato di Roskilde del 1658.
+            kicker: Oltre l'Øresund · fino al 1658
+            story: >-
+              Nel Medioevo Lund era uno dei centri religiosi più importanti del
+              regno danese, e per Copenaghen l'Øresund era una via d'acqua interna,
+              non un confine internazionale. Dopo le guerre del Seicento, la
+              Svezia integrò le ex province danesi. Anche Bornholm e la regione di
+              Trondheim furono cedute nel 1658, ma tornarono nel 1660; Skåne,
+              Halland e Blekinge restarono svedesi. Oggi la Skåne è senza ambiguità
+              svedese, ma questa storia spiega perché una gita a Lund sembri ancora
+              collegata al racconto danese.
+            url: https://natmus.dk/historisk-viden/danmark/enevaelde-1660-1849/den-enevaeldige-stat/det-danske-rige-under-enevaelden/
           oresundLink:
             name: Il ponte che diventa un tunnel
             note: Il collegamento con la Svezia non è metà ponte e metà sott'acqua—sono 8 km di ponte, un'isola artificiale di 4 km e un tunnel di 4 km.
@@ -675,6 +745,14 @@ sections:
           glyptotek:
             name: Ny Carlsberg Glyptotek
             note: Antichità egizie, greche e romane, pittura francese e un giardino d'inverno pieno di palme che vale già la visita.
+          designmuseum:
+            name: Designmuseum Danmark
+            note: L'introduzione più chiara al design danese—mobili, artigianato, moda e grafica—nell'ex Ospedale Reale Frederik.
+            url: https://designmuseum.dk/en/
+          copenhagenContemporary:
+            name: Copenhagen Contemporary
+            note: Installazioni monumentali, performance e videoarte in 7.000 m² degli ex capannoni di saldatura B&W a Refshaleøen.
+            url: https://copenhagencontemporary.org/en/
           cisternerne:
             name: Cisternerne
             note: Installazioni artistiche in vecchie cisterne sotterranee.
@@ -684,18 +762,28 @@ sections:
           louisiana:
             name: Louisiana Museum of Modern Art
             note: Fuori città, circa un'ora di treno. Vale l'intera giornata.
+          arken:
+            name: ARKEN Museum of Contemporary Art
+            note: Arte contemporanea in un edificio a forma di nave accanto al parco costiero di Ishøj; abbinate gallerie e parco di sculture a una passeggiata sul mare.
+            travel: 16 min di S-train + bus o camminata
+            url: https://www.arken.dk/en
           museumGuide:
             name: I musei top di Copenaghen
             note: La selezione ufficiale per confrontare collezioni, quartieri e idee meno ovvie quando volete scegliere un solo museo.
             url: https://www.visitcopenhagen.com/copenhagen/activities/copenhagens-top-museums
   saunas:
     emoji: 🧖
-    title: Saune
-    blurb: Caldo dentro, porto freddo fuori, e si ricomincia. Molto nordico.
+    title: Saune & bagni termali
+    blurb: "Stanza calda, porto freddo o terme a lume di candela: scegliete voi."
     groups:
       sweat:
-        title: Dove sudare
+        title: Dove sudare o immergersi
         items:
+          aire:
+            name: AIRE Ancient Baths
+            note: Un lussuoso percorso termale a lume di candela con bagno turco e massaggi nelle cantine storiche del vecchio birrificio Carlsberg—bellissimo, silenzioso e con prezzi adeguati.
+            kicker: Carlsberg Byen · prenotate
+            url: https://relax.beaire.com/en/aire-ancient-baths-copenhagen
           glaecier:
             name: Glaecier
             note: Club galleggiante a Refshaleøen con sauna, piscina di acqua portuale filtrata e vista panoramica; normalmente richiede membership, salvo gli Open Gus.
@@ -910,9 +998,75 @@ sections:
             url: https://legohouse.com/en-gb/
           aarhus:
             name: Aarhus
-            note: La seconda città danese. L'anello arcobaleno sul tetto dell'ARoS e poi Den Gamle By, una città vecchia ricostruita strada per strada.
+            note: "La seconda città danese: compatta, giovane e abbastanza ricca di musei, cibo e architettura da meritare almeno una notte."
             travel: 3h di treno
+            url: https://www.visitaarhus.com/
+          aros:
+            name: ARoS Aarhus Art Museum
+            note: Un grande museo d'arte contemporanea il cui arcobaleno sul tetto trasforma tutta la vista della città in parte dell'opera.
+            kicker: Your rainbow panorama · Olafur Eliasson
+            story: >-
+              L'opera più famosa del museo è Your rainbow panorama: un percorso
+              circolare di vetro lungo 150 metri in tutti i colori dello spettro,
+              installato sul tetto nel 2011 dall'artista danese-islandese Olafur
+              Eliasson. Percorretelo lentamente per vedere Aarhus cambiare colore,
+              poi lasciate tempo alla collezione e alle grandi installazioni ai
+              piani inferiori: è molto più di un belvedere con un museo sotto.
             url: https://www.aros.dk/en/
+          denGamleBy:
+            name: Den Gamle By, Aarhus
+            note: Un museo all'aperto della vita urbana danese, costruito con 80 case storiche trasferite qui da città di tutto il Paese.
+            kicker: Strade attraverso diversi secoli
+            story: >-
+              Non è la ricostruzione di un solo villaggio medievale. Si passa tra
+              case, botteghe, officine e giardini dal Seicento in avanti, con
+              quartieri particolarmente riusciti dedicati al 1864, 1927 e 1974.
+              Dalla primavera all'inverno, abitanti in costume e artigiani al
+              lavoro trasformano gli edifici in storia vissuta, non in una fila
+              di semplici facciate.
+            url: https://www.dengamleby.dk/en/
+          moesgaard:
+            name: Moesgaard
+            note: Un magnifico museo di archeologia e antropologia a sud di Aarhus, con gallerie immersive e il corpo di torbiera meglio conservato al mondo.
+            travel: Aarhus + ~25 min di bus
+            kicker: Uomo di Grauballe · tetto percorribile
+            story: >-
+              L'Uomo di Grauballe morì attorno al 390 a.C. e conserva ancora
+              pelle, capelli, unghie e lineamenti dopo più di duemila anni nella
+              torba. È il fulcro di una suggestiva mostra sull'Età del Ferro, ma
+              Moesgaard spazia dalla preistoria e dai Vichinghi all'antropologia.
+              Anche l'edificio di Henning Larsen fa parte della visita: il grande
+              tetto inclinato è aperto a tutti e guarda verso la baia di Aarhus,
+              i boschi e i campi circostanti.
+            url: https://moesgaardmuseum.dk/en/
+          mennesketVedHavet:
+            name: Mennesket ved Havet (L'uomo incontra il mare)
+            note: Quattro figure bianche monumentali siedono davanti al Mare del Nord sulla spiaggia di Sædding, circa quattro chilometri dal centro di Esbjerg.
+            travel: ~3h di treno + bus locale
+            kicker: Esbjerg · Svend Wiig Hansen · 1995
+            story: >-
+              Svend Wiig Hansen disegnò le figure alte nove metri in forme
+              volutamente semplici e senza tempo, con gambe allungate come colonne
+              di un tempio greco. Furono inaugurate nel 1995 per il centenario di
+              Esbjerg come comune indipendente e diventarono presto il simbolo
+              della città. I volti impassibili guardano l'ingresso del porto; con
+              il cielo limpido, i quattro corpi si vedono da dieci chilometri.
+            url: https://www.visitdenmark.dk/danmark/explore/mennesket-ved-havet-kaempeskulptur-i-esbjerg-gdk1076855
+          fano:
+            name: Fanø
+            note: Grandi spiagge sul Mare del Nord, dune, foche, antichi paesi marinari e vento per surf, aquiloni e vela sulla sabbia—a pochi minuti di traghetto da Esbjerg.
+            travel: ~3h fino a Esbjerg + 12 min di traghetto
+            kicker: Mare dei Wadden · non Cold Hawaii
+            story: >-
+              Fanø è davvero adatta al surf ed eccezionale per aquiloni, kite buggy
+              e blokart sulla sua enorme spiaggia compatta. Ma di solito non è
+              lei la “Hawaii della Danimarca”: Cold Hawaii è il nome dei 31 spot
+              da surf sulla costa del Thy, più a nord, con centro a Klitmøller.
+              L'identità di Fanø è invece il Mare dei Wadden patrimonio UNESCO,
+              i banchi di foche, l'ambra, le viuzze marittime di Nordby e il paese
+              ben conservato di Sønderho. Si combina naturalmente con Esbjerg e
+              Mennesket ved Havet.
+            url: https://visitfanoe.dk/en/
           aalborg:
             name: Aalborg
             note: Una città universitaria simpatica sul Limfjord, con lungofiume reinventato, Utzon Center e tanta street art.

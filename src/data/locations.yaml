@@ -226,6 +226,22 @@ louisiana:
   latitude: 55.969352
   longitude: 12.5431572
   googleQuery: Louisiana Museum of Modern Art, Humlebæk
+designmuseum:
+  latitude: 55.685273
+  longitude: 12.590559
+  googleQuery: Designmuseum Danmark, Bredgade 68, Copenhagen
+copenhagenContemporary:
+  latitude: 55.692633
+  longitude: 12.613353
+  googleQuery: Copenhagen Contemporary, Refshalevej 173A, Copenhagen
+arken:
+  latitude: 55.60442
+  longitude: 12.38612
+  googleQuery: ARKEN Museum of Contemporary Art, Skovvej 100, Ishøj
+aire:
+  latitude: 55.66624
+  longitude: 12.53144
+  googleQuery: AIRE Ancient Baths, Ny Carlsberg Vej 101, Copenhagen
 glaecier:
   latitude: 55.690419
   longitude: 12.606667
@@ -315,9 +331,29 @@ legoHouse:
   longitude: 9.1265889
   googleQuery: LEGO House, Billund
 aarhus:
+  latitude: 56.162939
+  longitude: 10.203921
+  googleQuery: Aarhus, Denmark
+aros:
   latitude: 56.1533
   longitude: 10.2003
   googleQuery: ARoS Aarhus Kunstmuseum
+denGamleBy:
+  latitude: 56.158797
+  longitude: 10.191226
+  googleQuery: Den Gamle By, Viborgvej 2, Aarhus
+moesgaard:
+  latitude: 56.086751
+  longitude: 10.223784
+  googleQuery: Moesgaard, Moesgård Allé 15, Højbjerg
+mennesketVedHavet:
+  latitude: 55.487027
+  longitude: 8.411079
+  googleQuery: Mennesket ved Havet, Sædding Strand, Esbjerg
+fano:
+  latitude: 55.41675
+  longitude: 8.40663
+  googleQuery: Fanø, Denmark
 aalborg:
   latitude: 57.0488
   longitude: 9.9217
