@@ -126,7 +126,9 @@ export function App() {
             </p>
           </div>
         ) : null}
+        <BackToTop label={t("site.backToTop")} />
         <MobileBottomNav
+
           sections={sections}
           sectionsLabel={t("site.navLabel")}
           mapLabel={t("site.mapLabel")}
