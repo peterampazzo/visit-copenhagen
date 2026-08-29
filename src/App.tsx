@@ -2,12 +2,16 @@ import { MotionConfig } from "motion/react";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { BackToTop } from "@/components/guide/BackToTop";
 import { GuideFooter } from "@/components/guide/GuideFooter";
 import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
+import { LanguageToggle } from "@/components/guide/LanguageToggle";
 import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
+import { SavedStrip } from "@/components/guide/SavedStrip";
 import { SearchBar } from "@/components/guide/SearchBar";
 import { SectionNav } from "@/components/guide/SectionNav";
+
 import { itemMatchesQuery, toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
 import { toGuideMapPlaces } from "@/lib/locations";
