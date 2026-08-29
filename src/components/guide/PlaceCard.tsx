@@ -80,18 +80,13 @@ export function PlaceCard({
                 onClick={() => onShowOnMap(mapPlace.id)}
                 aria-label={`${showOnMapLabel}: ${item.name}`}
                 title={`${showOnMapLabel}: ${item.name}`}
-                className="inline-flex items-baseline gap-1.5 text-left decoration-harbour/40 decoration-dotted underline-offset-4 transition-colors hover:text-harbour hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="text-left decoration-harbour/40 decoration-dotted underline-offset-4 transition-colors hover:text-harbour hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
-                <span>{item.name}</span>
-                <MapPin
-                  className="shrink-0 translate-y-0.5 text-harbour/65"
-                  aria-hidden="true"
-                  size={14}
-                  strokeWidth={2.25}
-                />
+                {item.name}
               </button>
             </h4>
           ) : (
+
             <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink sm:text-lg">
               {item.name}
             </h4>
