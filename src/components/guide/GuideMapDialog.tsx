@@ -342,7 +342,7 @@ export default function GuideMapDialog({
                 onSelect={selectPlace}
                 mapTitle={copy.title}
                 fitScope={scope}
-                bottomPadding={BOTTOM_PADDING[snap]}
+                bottomPadding={isDesktop ? 0 : BOTTOM_PADDING[snap]}
                 onLocationFound={saveUserLocation}
                 onLocationError={handleLocationError}
                 {...(locationDenied ? { locationHint: copy.locationDenied } : {})}
