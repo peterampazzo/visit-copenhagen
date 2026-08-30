@@ -434,7 +434,20 @@ export default function GuideMapDialog({
                       <ChevronRight size={18} strokeWidth={2.5} aria-hidden="true" />
                     </button>
                   </div>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedId(null);
+                      setSnap("half");
+                    }}
+                    className="mt-2.5 inline-flex min-h-9 w-full items-center justify-center gap-1.5 rounded-full border-2 border-ink/12 px-3 text-xs font-extrabold text-harbour transition-colors hover:border-primary/40 hover:text-ink"
+                  >
+                    <List size={14} strokeWidth={2.5} aria-hidden="true" />
+                    {copy.seeAll}
+                  </button>
                 </div>
+
               ) : null}
 
               <div ref={listRef} className={cn("mt-2.5 space-y-2", cardOnly && "hidden lg:block")}>
