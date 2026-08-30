@@ -37,7 +37,7 @@ export function PlaceCard({
   const hasActions = Boolean(item.travel || hasStory || showTextLink || showIconLink || mapPlace);
 
   const actionPill =
-    "inline-flex min-h-9 items-center gap-1.5 rounded-full bg-harbour/10 px-3 text-xs font-extrabold text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
+    "inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-full bg-harbour/10 px-3 text-xs font-extrabold text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
 
   return (
     <>
@@ -47,7 +47,7 @@ export function PlaceCard({
         viewport={{ once: true, margin: "-48px" }}
         transition={{ duration: 0.36, delay: Math.min(index * 0.035, 0.18) }}
         whileTap={{ scale: 0.995 }}
-        className="group relative flex min-w-0 flex-col rounded-2xl border-2 border-ink/12 bg-card/95 p-4 shadow-[2px_2px_0_rgb(20_55_56_/_0.08)] transition-colors hover:border-harbour/35 hover:bg-cream"
+        className="group relative flex min-w-0 flex-col rounded-xl border-2 border-ink/12 bg-card/95 p-3.5 shadow-[2px_2px_0_rgb(20_55_56_/_0.08)] transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:p-4"
       >
         {mapPlace ? (
           <button
@@ -56,7 +56,7 @@ export function PlaceCard({
             aria-pressed={saved}
             aria-label={saved ? favouriteCopy.remove : favouriteCopy.add}
             title={saved ? favouriteCopy.remove : favouriteCopy.add}
-            className="absolute right-1.5 top-1.5 grid min-h-11 min-w-11 place-items-center rounded-full transition-colors hover:bg-sun focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="absolute right-1 top-1 grid min-h-11 min-w-11 place-items-center rounded-full transition-colors hover:bg-sun focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Star
               aria-hidden="true"
@@ -67,14 +67,14 @@ export function PlaceCard({
           </button>
         ) : null}
 
-        <div className={cn("min-w-0 flex-1", mapPlace && "pr-10")}>
+        <div className={cn("min-w-0 flex-1", mapPlace && "pr-11")}>
           {item.kicker ? (
             <p className="mb-1.5 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
               {item.kicker}
             </p>
           ) : null}
           {mapPlace ? (
-            <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink sm:text-lg">
+            <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg">
               <button
                 type="button"
                 onClick={() => onShowOnMap(mapPlace.id)}
@@ -86,18 +86,18 @@ export function PlaceCard({
               </button>
             </h4>
           ) : (
-
-            <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink sm:text-lg">
+            <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg">
               {item.name}
             </h4>
           )}
           {item.note ? (
-            <p className="mt-1.5 text-[0.95rem] leading-6 text-ink/70">{item.note}</p>
+            <p className="mt-2 text-[0.95rem] leading-[1.55] text-ink/70">{item.note}</p>
           ) : null}
         </div>
 
         {hasActions ? (
           <div className="mt-3.5 flex flex-wrap items-center gap-2 border-t border-ink/10 pt-3">
+
             {item.travel ? (
               <span className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-sun/45 px-3 text-xs font-extrabold text-ink">
                 <TramFront size={13} strokeWidth={2.5} aria-hidden="true" />
