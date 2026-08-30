@@ -76,7 +76,19 @@ export default function GuideMapDialog({
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [locationDenied, setLocationDenied] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
+  const [isDesktop, setIsDesktop] = useState(
+    () => typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches,
+  );
   const { favourites, isFavourite, toggle } = useFavourites();
+
+  useEffect(() => {
+    const query = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => setIsDesktop(query.matches);
+    query.addEventListener("change", onChange);
+    onChange();
+    return () => query.removeEventListener("change", onChange);
+  }, []);
+
 
   const saveUserLocation = useCallback((location: { lat: number; lng: number }) => {
     setUserLocation(location);
