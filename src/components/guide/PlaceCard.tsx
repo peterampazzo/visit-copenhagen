@@ -99,7 +99,8 @@ export function PlaceCard({
           <div className="mt-3.5 flex flex-wrap items-center gap-2 border-t border-ink/10 pt-3">
 
             {item.travel ? (
-              <span className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-sun/45 px-3 text-xs font-extrabold text-ink">
+              <span className="inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-full bg-sun/45 px-3 text-xs font-extrabold text-ink">
+
                 <TramFront size={13} strokeWidth={2.5} aria-hidden="true" />
                 {item.travel}
               </span>
