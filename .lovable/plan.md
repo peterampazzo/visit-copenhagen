@@ -1,45 +1,39 @@
-# What I'd improve in the current version
+# Map fixes + card polish
 
-Based on a fresh read of the app (`App.tsx`, `GuideSection.tsx`, `PlaceCard.tsx`, map components), here is my honest, prioritized list. All items keep the app lightweight, mobile-first, and simple for any age. No new dependencies, no restructuring of the 10 sections, no content changes.
+## 1. Desktop map centering is offset
 
-## Priority 1 — Fix what still feels broken
+Confirmed cause: the map always gets the mobile bottom-sheet padding (`bottomPadding` 190–300px, passed unconditionally at `GuideMapDialog.tsx:333`). On desktop there is no bottom sheet — the list sits beside the map — so every `easeTo`/`fitBounds` pushes the target that far above centre.
 
-**1.1 Text truncation in the map list**
-The map's place list still clamps notes with `line-clamp-2` (`GuideMapDialog.tsx`), so descriptions end in "…" with no way to read the rest. The main-page cards no longer clamp — make the map list consistent: show the full note, or tap-to-expand.
+Fix: only apply bottom padding below the `lg` breakpoint (track viewport with the existing responsive hook / a `matchMedia` listener, pass `0` on desktop). Both the "fit all pins" and "centre on selected pin" moves then land in the true centre on desktop; mobile behaviour stays exactly as it is today.
 
-**1.2 Geolocation dead end**
-Tapping "locate me" shows the crossed-out icon when permission is denied, with no explanation. Add a permission-state check: when blocked, show the localized `locationDenied` hint ("Location is blocked — enable it in your browser settings"); request permission on tap rather than relying on the MapLibre control's silent failure.
+## 2. Selected pin is indistinguishable
 
-## Priority 2 — Card readability (the biggest visual win)
+Today the selected marker turns `--sun` (orange) — the same colour as every cluster bubble, so it disappears in a field of orange (as in the screenshot with Nyhavn selected).
 
-**2.1 Separate cards instead of the divided grid**
-Today each group's items sit in a `gap-px` grid on an ink background (`GuideSection.tsx` `renderCards`), reading as one dense table. Change to individual rounded cards with the existing ink border + offset shadow and real gaps — much easier to scan on a phone, same palette.
+Fix, in `styles.css` + marker rendering:
+- Selected pin: coral fill with cream emoji, thicker ink border, larger scale, and a soft coral halo ring — a colour used by nothing else on the map.
+- Add a gentle one-shot "drop/pulse" animation when a pin becomes selected so the eye catches it.
+- Clusters keep sun but get slightly muted (lower contrast) while a pin is selected, so the selection reads first.
+- The selected pin is always rendered as an individual pin (already the case) and is drawn above clusters (`z-index`).
+- Matching cue in the list/card: selected row keeps a coral border so map and sheet agree.
 
-**2.2 Consistent action row per card**
-Story / link / travel badge currently appear in slightly different spots per card. Move them into one predictable bottom row separated by a hairline divider.
+## 3. Content cards on mobile
 
-**2.3 Star tap target too small**
-The favourite star is `h-8 w-8` (32px) in `PlaceCard.tsx` — below the 44px mobile guideline. Bump to `min-h-11 min-w-11`.
+Keep the current structure, tighten the mobile rendering of `PlaceCard`:
+- Move the star to a stable top-right slot with the title reserving space for it (no more text wrapping under the button), 44px target kept.
+- Title, note, then a single action row that wraps predictably; badges (travel) and pills get consistent height and don't shrink oddly on narrow screens.
+- Slightly reduce padding/border radius on small screens, increase note line-height for readability, and allow long names to break instead of overflowing.
+- Single-column full-width cards below `sm`, so no cramped two-up layout on phones.
 
-## Priority 3 — Small usability additions
+## Additional ideas (my suggestions, included in this pass unless you drop any)
 
-**3.1 Language switch reachable from anywhere**
-The EN/IT toggle lives only in the hero — halfway down a long mobile page you can't switch language without scrolling to the top. Add the toggle to the sticky search bar (mobile) next to the search field.
-
-**3.2 Saved places visible without opening the map**
-Favourites currently only live inside the map dialog. Add a slim "Saved places" strip (chips of starred names) above the sections when at least one favourite exists — tapping a chip opens it on the map. Hidden when nothing is saved, so it never adds clutter.
-
-**3.3 Back-to-top on mobile**
-The page is long; add a small floating "↑ top" button that appears after scrolling ~2 screens, positioned above the bottom nav.
-
-## Out of scope (kept simple on purpose)
-- No section merging/restructuring, no new pages, no accounts or backend.
-- Sharing favourites and curated "top picks" — deliberately skipped before, still skipped.
+- **Map card back-to-list**: on mobile the peek card gets a clear "See all places" affordance so users don't get stuck in the single-card view.
+- **Section colour accents**: each section emoji gets a subtle tinted pin ring so Places / Food / Beyond are distinguishable at a glance on the map.
 
 ## Technical notes
-- Files: `GuideMapDialog.tsx`, `GuideMapCanvas.tsx`, `PlaceCard.tsx`, `GuideSection.tsx`, `App.tsx`, `MobileBottomNav.tsx` (untouched), locale YAMLs (new keys: locationDenied reuse, savedStrip label, backToTop label — EN + IT).
-- All colors via existing tokens; tap targets ≥44px; motion stays limited to existing `whileInView` fades plus a subtle card press feedback.
 
-## Verification
-- Build + typecheck pass.
-- Playwright at 390×844: check map list full text, denied-location hint, card spacing, star tap size, language toggle in sticky bar, saved strip appears after starring, back-to-top appears on scroll.
+- `GuideMapCanvas.tsx`: honour a `bottomPadding` of 0 cleanly; add `data-selected` styling hooks and z-order for the selected marker; keep cluster logic untouched.
+- `GuideMapDialog.tsx`: compute `bottomPadding` from a desktop media query instead of always using `BOTTOM_PADDING[snap]`.
+- `styles.css`: new selected-marker and cluster-dimming rules using existing tokens (`--coral`, `--sun`, `--ink`, `--cream`).
+- `PlaceCard.tsx` / `GuideSection.tsx`: layout-only class changes, no logic or content changes.
+- No backend, locale, or data changes beyond one new label for the back-to-list action (EN + IT).
