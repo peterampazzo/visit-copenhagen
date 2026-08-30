@@ -3,6 +3,7 @@ import {
   ChevronLeft,
   ChevronRight,
   ExternalLink,
+  List,
   Locate,
   MapPin,
   Search,
@@ -35,6 +36,7 @@ type MapCopy = {
   scopeAll: string;
   scopeAllShort: string;
   listToggle: string;
+  seeAll: string;
   sheetHandle: string;
   favourites: string;
   favouriteAdd: string;

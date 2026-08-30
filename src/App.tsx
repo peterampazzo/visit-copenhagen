@@ -181,6 +181,7 @@ export function App() {
                 scopeAll: t("site.mapScopeAll"),
                 scopeAllShort: t("site.mapScopeAllShort"),
                 listToggle: t("site.mapListToggle"),
+                seeAll: t("site.mapSeeAll"),
                 sheetHandle: t("site.mapSheetHandle"),
                 favourites: t("site.favouritesLabel"),
                 favouriteAdd: t("site.favouriteAdd"),
