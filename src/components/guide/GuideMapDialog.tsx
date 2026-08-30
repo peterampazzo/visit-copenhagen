@@ -3,6 +3,7 @@ import {
   ChevronLeft,
   ChevronRight,
   ExternalLink,
+  List,
   Locate,
   MapPin,
   Search,
@@ -35,6 +36,7 @@ type MapCopy = {
   scopeAll: string;
   scopeAllShort: string;
   listToggle: string;
+  seeAll: string;
   sheetHandle: string;
   favourites: string;
   favouriteAdd: string;
@@ -76,7 +78,19 @@ export default function GuideMapDialog({
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [locationDenied, setLocationDenied] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
+  const [isDesktop, setIsDesktop] = useState(
+    () => typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches,
+  );
   const { favourites, isFavourite, toggle } = useFavourites();
+
+  useEffect(() => {
+    const query = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => setIsDesktop(query.matches);
+    query.addEventListener("change", onChange);
+    onChange();
+    return () => query.removeEventListener("change", onChange);
+  }, []);
+
 
   const saveUserLocation = useCallback((location: { lat: number; lng: number }) => {
     setUserLocation(location);
@@ -330,7 +344,7 @@ export default function GuideMapDialog({
                 onSelect={selectPlace}
                 mapTitle={copy.title}
                 fitScope={scope}
-                bottomPadding={BOTTOM_PADDING[snap]}
+                bottomPadding={isDesktop ? 0 : BOTTOM_PADDING[snap]}
                 onLocationFound={saveUserLocation}
                 onLocationError={handleLocationError}
                 {...(locationDenied ? { locationHint: copy.locationDenied } : {})}
@@ -422,7 +436,20 @@ export default function GuideMapDialog({
                       <ChevronRight size={18} strokeWidth={2.5} aria-hidden="true" />
                     </button>
                   </div>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedId(null);
+                      setSnap("half");
+                    }}
+                    className="mt-2.5 inline-flex min-h-9 w-full items-center justify-center gap-1.5 rounded-full border-2 border-ink/12 px-3 text-xs font-extrabold text-harbour transition-colors hover:border-primary/40 hover:text-ink"
+                  >
+                    <List size={14} strokeWidth={2.5} aria-hidden="true" />
+                    {copy.seeAll}
+                  </button>
                 </div>
+
               ) : null}
 
               <div ref={listRef} className={cn("mt-2.5 space-y-2", cardOnly && "hidden lg:block")}>

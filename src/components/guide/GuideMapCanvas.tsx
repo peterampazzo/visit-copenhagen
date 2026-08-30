@@ -91,6 +91,7 @@ export function GuideMapCanvas({
         element.setAttribute("aria-label", place.name);
         element.dataset["selected"] = String(place.id === selected);
         element.dataset["far"] = String(place.far);
+        element.dataset["section"] = place.sectionId;
         const emoji = document.createElement("span");
         emoji.className = "guide-map-marker__emoji";
         emoji.setAttribute("aria-hidden", "true");
@@ -99,9 +100,11 @@ export function GuideMapCanvas({
         element.addEventListener("click", () => select(place.id));
       } else {
         element.className = "guide-map-cluster";
+        element.dataset["dim"] = String(selected !== null);
         element.setAttribute("aria-label", `${String(cluster.places.length)} places`);
         element.textContent = String(cluster.places.length);
         element.addEventListener("click", () => {
+
           const bounds = new LngLatBounds();
           for (const place of cluster.places) bounds.extend([place.longitude, place.latitude]);
           const sameSpot =
