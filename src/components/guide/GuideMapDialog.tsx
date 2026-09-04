@@ -336,8 +336,9 @@ export default function GuideMapDialog({
             {filters}
           </div>
 
-          <div className="relative min-h-0 flex-1 lg:grid lg:grid-cols-[minmax(0,1fr)_21rem]">
-            <div className="h-full overflow-hidden bg-harbour/10 lg:border-r-2 lg:border-ink/10">
+          <div className="relative min-h-0 flex-1 lg:grid lg:grid-cols-[minmax(0,1fr)_21rem] lg:grid-rows-[minmax(0,100%)]">
+            <div className="h-full min-h-0 overflow-hidden bg-harbour/10 lg:border-r-2 lg:border-ink/10">
+
               <GuideMapCanvas
                 places={visiblePlaces}
                 selectedId={selectedId}

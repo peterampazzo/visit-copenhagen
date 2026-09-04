@@ -45,7 +45,7 @@ export function MapPlaceSheet({
   return (
     <aside
       aria-label={label}
-      className="pointer-events-auto absolute inset-x-0 bottom-0 z-10 flex flex-col rounded-t-3xl border-t-2 border-ink bg-cream shadow-[0_-6px_0_rgba(0,0,0,0.06)] transition-[height] duration-300 ease-out lg:static lg:h-full lg:rounded-none lg:border-t-0 lg:shadow-none"
+      className="pointer-events-auto absolute inset-x-0 bottom-0 z-10 flex flex-col rounded-t-3xl border-t-2 border-ink bg-cream shadow-[0_-6px_0_rgba(0,0,0,0.06)] transition-[height] duration-300 ease-out lg:static lg:!h-full lg:rounded-none lg:border-t-0 lg:shadow-none"
       style={{
         height: `calc(${SNAP_HEIGHT[snap]} - ${String(Math.round(dragOffset))}px)`,
         paddingBottom: "env(safe-area-inset-bottom)",
