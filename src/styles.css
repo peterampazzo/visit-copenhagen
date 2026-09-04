@@ -766,7 +766,18 @@
   }
 }
 
+/* The outer button is positioned by MapLibre (inline transform); all visual
+   transforms live on the inner pin so they never fight that positioning. */
 .guide-map-marker {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.guide-map-marker__pin {
   display: grid;
   width: 2.35rem;
   height: 2.35rem;
@@ -777,7 +788,6 @@
   box-shadow: 3px 3px 0 var(--ink);
   font-size: 1.05rem;
   line-height: 1;
-  cursor: pointer;
   transform: rotate(-45deg);
   transition:
     transform 150ms ease,
@@ -791,27 +801,30 @@
 
 .guide-map-marker:hover {
   z-index: 2;
+}
+
+.guide-map-marker:hover .guide-map-marker__pin {
   background: var(--sun);
   transform: rotate(-45deg) translate(2px, -2px) scale(1.12);
 }
 
 /* Section accent rings so pin groups are readable at a glance */
-.guide-map-marker[data-section="food"],
-.guide-map-marker[data-section="pastries"] {
+.guide-map-marker[data-section="food"] .guide-map-marker__pin,
+.guide-map-marker[data-section="pastries"] .guide-map-marker__pin {
   box-shadow:
     0 0 0 3px color-mix(in srgb, var(--sun) 45%, transparent),
     3px 3px 0 var(--ink);
 }
 
-.guide-map-marker[data-section="museums"],
-.guide-map-marker[data-section="places"] {
+.guide-map-marker[data-section="museums"] .guide-map-marker__pin,
+.guide-map-marker[data-section="places"] .guide-map-marker__pin {
   box-shadow:
     0 0 0 3px color-mix(in srgb, var(--harbour) 35%, transparent),
     3px 3px 0 var(--ink);
 }
 
-.guide-map-marker[data-section="saunas"],
-.guide-map-marker[data-section="boats"] {
+.guide-map-marker[data-section="saunas"] .guide-map-marker__pin,
+.guide-map-marker[data-section="boats"] .guide-map-marker__pin {
   box-shadow:
     0 0 0 3px color-mix(in srgb, #4a8fbf 40%, transparent),
     3px 3px 0 var(--ink);
@@ -819,6 +832,9 @@
 
 .guide-map-marker[data-selected="true"] {
   z-index: 6;
+}
+
+.guide-map-marker[data-selected="true"] .guide-map-marker__pin {
   border-width: 3px;
   background: var(--coral);
   box-shadow:
@@ -848,9 +864,10 @@
 .guide-map-marker:focus-visible {
   outline: 3px solid var(--coral);
   outline-offset: 3px;
+  border-radius: 999px;
 }
 
-.guide-map-marker[data-far="true"] {
+.guide-map-marker[data-far="true"] .guide-map-marker__pin {
   border-style: dashed;
   background: color-mix(in srgb, var(--harbour) 16%, var(--card));
   box-shadow:
@@ -858,19 +875,10 @@
     3px 3px 0 var(--ink);
 }
 
-.guide-map-marker[data-far="true"]:hover {
+.guide-map-marker[data-far="true"]:hover .guide-map-marker__pin {
   background: var(--sun);
 }
 
-.guide-map-marker::after {
-  content: "";
-  position: absolute;
-  inset: -0.35rem;
-}
-
-.guide-map-marker {
-  position: relative;
-}
 
 .guide-map-cluster {
   display: grid;
