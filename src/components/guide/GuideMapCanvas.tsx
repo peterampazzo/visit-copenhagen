@@ -92,11 +92,15 @@ export function GuideMapCanvas({
         element.dataset["selected"] = String(place.id === selected);
         element.dataset["far"] = String(place.far);
         element.dataset["section"] = place.sectionId;
+        const pin = document.createElement("span");
+        pin.className = "guide-map-marker__pin";
         const emoji = document.createElement("span");
         emoji.className = "guide-map-marker__emoji";
         emoji.setAttribute("aria-hidden", "true");
         emoji.textContent = place.sectionEmoji;
-        element.append(emoji);
+        pin.append(emoji);
+        element.append(pin);
+
         element.addEventListener("click", () => select(place.id));
       } else {
         element.className = "guide-map-cluster";
