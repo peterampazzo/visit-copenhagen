@@ -1354,3 +1354,15 @@ sections:
             name: Santa Lucia parade in kayaks
             note: A floating procession of lights through the canals. Arrive early for a good spot by the water.
             url: https://www.visitcopenhagen.com/copenhagen/planning/santa-lucia-parade-kayaks-gdk1106677
+
+reels:
+  title: From my phone
+  blurb: A few clips and pictures from around town.
+  items:
+    frozenLakes:
+      caption: When the lakes freeze
+      image: /reels/frozen-lakes.jpg
+      url: https://www.instagram.com/reel/DVHRB9PiILm/
+    bakeries:
+      caption: Bakeries worth saving
+      url: https://www.instagram.com/p/DOSrrF8DJpF/
