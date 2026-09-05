@@ -733,6 +733,11 @@ sections:
             kicker: Raro, freddo e molto Copenaghen
             url: https://www.instagram.com/reel/DVHRB9PiILm/
             linkText: Guarda il reel
+            media:
+              url: https://www.instagram.com/reel/DVHRB9PiILm/
+            tips:
+              - "Aspettate i cartelli blu ufficiali prima di camminare sul ghiaccio."
+              - "Portate un thermos — la parte migliore è stare in giro a fingere di essere danesi."
   food:
     emoji: 😋
     title: Cosa mangiare
