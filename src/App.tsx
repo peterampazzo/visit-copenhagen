@@ -8,11 +8,18 @@ import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
 import { LanguageToggle } from "@/components/guide/LanguageToggle";
 import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
+import { ReelsStrip } from "@/components/guide/ReelsStrip";
 import { SavedStrip } from "@/components/guide/SavedStrip";
 import { SearchBar } from "@/components/guide/SearchBar";
 import { SectionNav } from "@/components/guide/SectionNav";
 
-import { itemMatchesQuery, toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
+import {
+  itemMatchesQuery,
+  toGuideSections,
+  toReelsSection,
+  type GuideSectionsRecord,
+  type ReelsRecord,
+} from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
 import { toGuideMapPlaces } from "@/lib/locations";
 
