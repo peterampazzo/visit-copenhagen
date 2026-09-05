@@ -52,7 +52,7 @@ reels:
       url: https://www.instagram.com/reel/DVHRB9PiILm/
 ```
 
-Thumbnails: Instagram doesn't allow hotlinking its images reliably, so each card needs a thumbnail image saved in the project's public folder (a screenshot of the reel is fine). I'll wire one placeholder-friendly fallback: if a thumbnail is missing, the card shows a coloured tile with the caption instead of breaking.
+Thumbnails: Instagram does not allow reliable iframe embeds or hotlinked thumbnails, so each card needs a thumbnail image saved in the project's public folder. A screenshot of the reel is enough. I'll wire a fallback: if a thumbnail is missing, the card shows a coloured tile with the caption instead of breaking.
 
 ## Technical notes
 
