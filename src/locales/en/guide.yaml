@@ -727,6 +727,11 @@ sections:
             kicker: Rare, cold and extremely Copenhagen
             url: https://www.instagram.com/reel/DVHRB9PiILm/
             linkText: Watch the reel
+            media:
+              url: https://www.instagram.com/reel/DVHRB9PiILm/
+            tips:
+              - "Wait for the official blue signs before walking on the ice."
+              - "Bring a thermos — the best part is standing around pretending you are Danish."
   food:
     emoji: 😋
     title: What to eat
