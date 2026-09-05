@@ -49,6 +49,10 @@ site:
   distanceUnitKm: km
   walkingTime: "{{minutes}} min a piedi"
   locationDenied: La posizione è bloccata — abilitala nelle impostazioni del browser per usare Vicino a me.
+  watchReel: Guarda il reel
+  openPhoto: Apri la foto
+  goodToKnow: Da sapere
+  playReel: Guarda
 
 sections:
   know:
