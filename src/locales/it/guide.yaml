@@ -1365,3 +1365,15 @@ sections:
             name: Sfilata di Santa Lucia in kayak
             note: Una processione galleggiante di luci nei canali. Arrivate presto per un posto buono sull'acqua.
             url: https://www.visitcopenhagen.com/copenhagen/planning/santa-lucia-parade-kayaks-gdk1106677
+
+reels:
+  title: Dal mio telefono
+  blurb: Qualche clip e foto in giro per la città.
+  items:
+    frozenLakes:
+      caption: Quando i laghi ghiacciano
+      image: /reels/frozen-lakes.jpg
+      url: https://www.instagram.com/reel/DVHRB9PiILm/
+    bakeries:
+      caption: Panetterie da salvare
+      url: https://www.instagram.com/p/DOSrrF8DJpF/
