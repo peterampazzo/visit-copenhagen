@@ -144,6 +144,7 @@ export function App() {
           </div>
         ) : null}
         <BackToTop label={t("site.backToTop")} />
+        {reels ? <ReelsStrip reels={reels} playLabel={t("site.playReel")} /> : null}
         <MobileBottomNav
           sections={sections}
           sectionsLabel={t("site.navLabel")}
