@@ -88,9 +88,41 @@ sections:
             name: Le S-train rosse portano gratis la bici
             note: Sono la rete suburbana di Copenaghen, diversa dai treni regionali e InterCity. Sulle S-train la bici è gratis; sugli altri treni valgono regole diverse.
             url: https://www.dsb.dk/s-tog/
+          carRental:
+            name: Noleggiare un'auto—serve davvero?
+            note: Nel centro di Copenaghen no; è utile per Møn, la campagna della Zelanda, lo Jutland o un viaggio dove il treno smette di essere comodo.
+            kicker: Meglio fuori città
+            storyItems:
+              - "Portate una patente valida. Se non usa l'alfabeto latino, serve anche il permesso internazionale di guida."
+              - "Confrontate il prezzo totale, non solo la tariffa giornaliera: franchigia assicurativa, guidatori extra, carburante o ricarica, chilometri e permesso di attraversare il confine possono cambiare molto il conto."
+              - "Nel centro di Copenaghen molti parcheggi sono a pagamento o a tempo; Frederiksberg ha regole proprie. Leggete sempre i cartelli."
+              - "In città, mezzi pubblici, piedi e bici sono quasi sempre più rapidi e molto meno stressanti."
+            url: https://www.visitdenmark.com/denmark/plan-your-trip/plan-your-trip-faq
+          eventTickets:
+            name: Controllate i biglietti evento su Rejsebillet
+            note: Alcune corse, concerti e festival hanno biglietti speciali economici e temporanei; non esiste uno sconto automatico per ogni evento.
+            kicker: Other tickets → Special tickets
+            story: >-
+              Prima di un grande evento aprite Rejsebillet e cercate Other
+              tickets/Øvrige billetter, poi Special tickets/Specialbilletter.
+              Ogni offerta stabilisce zone, durata, prezzo e condizioni proprie
+              e può apparire solo per un periodo limitato. Acquistate e attivate
+              il biglietto come indicato: non date per scontato che l'ingresso
+              all'evento includa automaticamente i mezzi.
+            url: https://www.rejsebillet.dk/da-dk/faa-hjaelp/specialbilletter
       cycling:
         title: Muoversi in bici
         items:
+          bikeRental:
+            name: Come noleggiare una bici
+            note: Chiedete all'hotel, sbloccate una bici via app oppure scegliete un negozio per una bici regolata bene, da bambini o cargo.
+            kicker: Hotel · app · negozio
+            storyItems:
+              - "Più rapido: chiedere all'hotel. Comodo, anche se non sempre economico e con disponibilità limitata."
+              - "Più flessibile: le bici Donkey Republic si trovano, sbloccano e mettono in pausa dall'app in tutta la città. Controllate il prezzo aggiornato prima di partire."
+              - "Meglio per una giornata intera o una famiglia: un negozio può regolare la sella e fornire seggiolini, caschi, e-bike o cargo bike; prenotate in anticipo le misure insolite."
+              - "Prima di partire provate entrambi i freni, campanello e luci, fotografate i danni esistenti e controllate esattamente dove e come restituire la bici."
+            url: https://www.visitcopenhagen.com/copenhagen/things-to-do/biking/copenhagen-bike-rentals
           lights:
             name: Luci obbligatorie dopo il tramonto
             note: Servono due luci—bianca o gialla davanti e rossa dietro—dal tramonto all'alba e quando la visibilità è scarsa.
@@ -139,15 +171,18 @@ sections:
             url: https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
           amalienborg:
             name: Amalienborg
-            note: Quattro palazzi uguali attorno a un re a cavallo decisamente imponente.
-            kicker: Anni 1750 · Quartiere reale
+            note: Quattro palazzi uguali attorno a un re a cavallo decisamente imponente—e il cambio della guardia ogni giorno verso mezzogiorno.
+            kicker: Anni 1750 · cambio alle 12
             story: >-
               Amalienborg nacque come quattro palazzi nobiliari attorno alla
               statua equestre di Frederik V, opera di Saly. La famiglia reale si
               trasferì qui dopo l'incendio di Christiansborg del 1794. La geometria
               ordinata è voluta: Amalienborg è il centro del grande quartiere di
-              Frederiksstaden.
-            url: https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/amalienborg/
+              Frederiksstaden. La guardia cambia ogni giorno verso le 12. Quando
+              il Re risiede qui, la più grande Guardia del Re, con banda, parte
+              dalla caserma su Gothersgade alle 11:27 e attraversa il centro
+              prima di entrare nella piazza poco prima di mezzogiorno.
+            url: https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/changing-of-the-guard/
           tivoli:
             name: Tivoli
             note: "Più che un luna park: un giardino di piacere fatto di luci, musica, teatro, ristoranti e giostre facoltative."
@@ -472,6 +507,67 @@ sections:
               chiesa del matrimonio di Fiona e Lord Farquaad, ma DreamWorks non
               ha mai confermato che sia stata davvero il modello.
             url: https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
+      libraries:
+        title: Biblioteche in cui entrare
+        items:
+          blackDiamond:
+            name: Il Diamante Nero, Biblioteca Reale
+            note: Un atrio gratuito sul porto, biblioteca in attività e centro culturale che unisce l'estensione lucida del 1999 all'edificio del 1906.
+            kicker: Edificio gratuito · mostre talvolta a pagamento
+            story: >-
+              Il Diamante Nero non è soltanto una facciata da fotografare
+              dall'acqua. Entrate nel grande atrio pubblico, guardate il porto e
+              seguite i ponti che collegano il nuovo edificio sul lungomare alla
+              vecchia biblioteca alle sue spalle. L'accesso all'edificio è
+              gratuito e aperto a tutti; mostre, concerti e incontri hanno
+              biglietti propri. Il caffè e il Giardino della Biblioteca sono una
+              facile continuazione di una passeggiata a Christiansborg.
+            url: https://www.kb.dk/en/visit-us/black-diamond-copenhagen
+          fiolstraedeLibrary:
+            name: Biblioteca Universitaria di Fiolstræde
+            note: La spettacolare biblioteca in mattoni rossi dietro la cattedrale—più fantasia gotica che normale sala di lettura.
+            kicker: 1861 · gotico in mattoni · ghisa
+            story: >-
+              Johan Daniel Herholdt vinse il primo concorso di architettura
+              della Danimarca con un progetto ispirato alle cattedrali dell'Italia
+              settentrionale e ai monumenti gotici. Dentro, mattoni gialli,
+              sottili strutture in ghisa e soffitti dipinti da Georg Hilker
+              trasformano la sala dei libri in uno degli ambienti più inattesi
+              della città. L'edificio ha riaperto al pubblico nel 2023 come luogo
+              di ricerca, cultura e visite; controllate il programma aggiornato
+              se volete andarci apposta per un tour guidato.
+            url: https://www.kb.dk/en/visit-us/university-library-fiolstraede
+      rooftops:
+        title: Tetti & viste sulla città
+        items:
+          originalCoffeeIllum:
+            name: Original Coffee, ILLUM Rooftop
+            note: Specialty coffee in cima a ILLUM; il vero motivo per salire è bere guardando Strøget e i tetti del centro dall'alto.
+            kicker: Vista gratuita · sopra Strøget
+            url: https://originalcoffee.dk/en/pages/illum-rooftop
+          nhRoof:
+            name: ROOF al NH Collection
+            note: Terrazza cocktail all'ottavo piano sopra il porto, ideale per il tramonto dietro le torri di rame più che per bere spendendo poco.
+            kicker: Christianshavn · stagionale
+            story: >-
+              È l'opzione rooftop elegante da hotel: divani, cocktail e piccoli
+              piatti con l'acqua da un lato e lo skyline della città vecchia
+              dall'altro. Di solito apre dalla primavera all'autunno e si riempie
+              nelle sere di bel tempo; controllate la stagione e prenotate se il
+              tramonto è importante. Si entra dall'hotel su Strandgade.
+            url: https://www.roofcph.com/
+          filmtaget:
+            name: Filmtaget al Cinemateket
+            note: Tetto gratuito dedicato al cinema danese, con padiglioni interattivi, cibo e cinema all'aperto a pagamento sopra Kongens Have.
+            kicker: Tetto gratuito · film a pagamento
+            story: >-
+              Cinemateket è la casa nazionale del cinema danese; Filmtaget è il
+              suo tetto di 1.700 metri quadrati. La mostra permanente sul cinema
+              e la vista sono accessibili senza biglietto; poi potete fermarvi a
+              mangiare o prenotare una proiezione all'Himmelbio. Quando il tempo
+              cambia il cinema può essere coperto, quindi non è soltanto una
+              vista estiva.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/filmtaget-gdk1145849
       shops:
         title: Negozi che valgono una sosta
         items:
@@ -636,8 +732,44 @@ sections:
   food:
     emoji: 😋
     title: Cosa mangiare
-    blurb: La cucina danese non è memorabile, ma gli smørrebrød valgono la pena.
+    blurb: Iniziate dagli smørrebrød, poi passate ai piatti di casa, ai chioschi dei gelati e alla liquirizia.
     groups:
+      classics:
+        title: Classici danesi, spiegati
+        items:
+          danishDishes:
+            name: Piatti danesi da conoscere
+            note: Un piccolo decoder del menu per il cibo che i danesi riconoscono davvero, non soltanto i menu degustazione New Nordic.
+            kicker: Pane di segale · maiale · remoulade
+            storyItems:
+              - "Smørrebrød: fette aperte di pane di segale, normalmente un rito da pranzo; aringa, uova e gamberi, roast beef e patate sono buoni punti di partenza."
+              - "Stegt flæsk med persillesovs: fettine croccanti di maiale con patate e salsa al prezzemolo—pesante, tradizionale e danese fino in fondo."
+              - "Frikadeller: polpette schiacciate e rosolate in padella, spesso con patate, salsa o verdure sottaceto."
+              - "Flæskesteg: arrosto di maiale con cotenna croccante, servito caldo a cena o freddo in un panino."
+              - "Fiskefilet: platessa impanata e fritta con remoulade e limone, spesso servita come smørrebrød."
+              - "Hot dog del pølsevogn: provate un ristet hotdog con senape, remoulade, cipolle e cetriolini; la salsiccia rossa è la versione più nostalgica."
+            url: https://www.visitcopenhagen.com/copenhagen/eat-drink/restaurants/best-smorrebrod-and-other-traditional-danish-food
+          softice:
+            name: Softice o gammeldags isvaffel?
+            note: La softice è semplicemente gelato soft cremoso alla spina; la parte più danese è mangiarlo in un chiosco al porto, in spiaggia o d'estate.
+            kicker: Gelato soft · guf · flødebolle
+            story: >-
+              La softice è di origine americana, non un'invenzione danese, ma
+              qui il nome si scrive tutto attaccato e il rito estivo è molto
+              locale. Si ordina semplice, immersa nel cioccolato o ricoperta di
+              granella. La gammeldags isvaffel è la cugina più esagerata: palline
+              in un cono di cialda, spesso finite con marmellata, panna montata o
+              la spuma rosa chiamata guf—e talvolta un'intera flødebolle sopra.
+            url: https://lex.dk/softice
+          liquorice:
+            name: Liquirizia, dalle Skipper's Pipes a Bülow
+            note: La liquirizia danese va da una morbida caramella da supermercato a forma di pipa a praline ricoperte di cioccolato in barattoli da regalo.
+            kicker: Skipper's Pipes · Lakrids by Bülow
+            storyItems:
+              - "Le Skipper's Pipes sono la scelta nostalgica: liquirizia dolce e morbida, fornello con granella rosa e una forma riconosciuta da generazioni di danesi."
+              - "Lakrids by Bülow è l'estremo premium: fondata a Bornholm nel 2007, è famosa per la liquirizia ricoperta di cioccolato e gusci aromatizzati."
+              - "Se sulla confezione leggete salt, salmiak o stærk, aspettatevi una liquirizia salata e molto più aggressiva. Iniziate da quella dolce se non siete sicuri."
+            url: https://lakridsbybulow.com/
       markets:
         title: Mercati
         items:
@@ -652,7 +784,17 @@ sections:
             note: Cucine di strada, appena dall'altra parte di Nyhavn. All'aperto.
           kodbyen:
             name: Kødbyen
-            note: Il Meatpacking District — bar e ristoranti nelle vecchie macellerie.
+            note: Il Meatpacking District di Copenaghen—vecchi edifici della carne condivisi oggi da aziende alimentari, ristoranti, gallerie, bar e club.
+            kicker: Città Marrone 1878 · Città Bianca 1934
+            story: >-
+              Kødbyen crebbe in due parti riconoscibili: la zona più antica in
+              mattoni marroni e gli edifici funzionalisti bianchi degli anni
+              Trenta. Non è un quartiere del divertimento completamente ripulito:
+              parte dell'industria alimentare lavora ancora accanto a gallerie,
+              ristoranti e locali notturni. Venite a cena e restate più tardi se
+              cercate energia; al mattino sembra molto di più il luogo di lavoro
+              che era in origine.
+            url: https://www.visitcopenhagen.com/copenhagen/neighbourhoods/neighborhoods/guide-meatpacking-district
           tivoliFoodHall:
             name: Tivoli Food Hall
             note: Una tappa facile e centrale, accanto alla stazione. Si entra dalla strada senza biglietto per Tivoli.
@@ -673,11 +815,6 @@ sections:
       coffee:
         title: Caffè con un motivo per fermarsi
         items:
-          originalCoffeeIllum:
-            name: Original Coffee, ILLUM Rooftop
-            note: Specialty coffee in cima a ILLUM; il vero motivo per salire è bere guardando Strøget e i tetti del centro dall'alto.
-            kicker: Vista gratuita · sopra Strøget
-            url: https://originalcoffee.dk/en/pages/illum-rooftop
           mirabelle:
             name: Mirabelle / Lazy Bakery
             note: Pane a lievitazione naturale, dolci che cambiano ogni giorno e un vero espresso al banco, pubblicizzato ancora a 10 kr.
@@ -894,6 +1031,20 @@ sections:
               osservateli da lontano e non date loro da mangiare. Si combina
               facilmente con Bellevue o con Bakken, il parco divertimenti nel bosco.
             url: https://www.visitcopenhagen.com/copenhagen/planning/deer-park-gdk414367
+          bakken:
+            name: Bakken
+            note: Il più antico parco divertimenti ancora in attività al mondo, nascosto tra gli alberi di Dyrehaven—ingresso gratuito e giostre a pagamento.
+            travel: ~20 min fino a Klampenborg + camminata nel bosco
+            kicker: Dal 1583 · ingresso gratuito
+            story: >-
+              Secondo la tradizione, Kirsten Piil scoprì qui una sorgente nel
+              1583. I visitatori arrivarono per l'acqua; seguirono artisti,
+              venditori di cibo e taverne, creando poco alla volta
+              Dyrehavsbakken. Conserva un'atmosfera più libera ed eccentrica di
+              Tivoli, con banchi indipendenti, vecchie attrazioni in legno e il
+              bosco tutto attorno. L'apertura è stagionale: controllate il
+              calendario prima di abbinarlo a una passeggiata a Dyrehaven.
+            url: https://bakken.dk/english/
           malmo:
             name: Malmö, Svezia
             note: Treno attraverso il ponte dell'Øresund. Un altro Paese prima di pranzo — portate documento o passaporto.
@@ -918,6 +1069,31 @@ sections:
             name: Bullen – Två Krögare
             note: "Una sala storica e cucina svedese classica senza troppi fronzoli: polpette, aringhe e piatti robusti nel centro di Malmö."
             url: https://maps.app.goo.gl/TJjq7w8dQaPwn2JC7
+      crossborder:
+        title: Svezia & Norvegia da Copenaghen
+        items:
+          swedenTravel:
+            name: "Svezia: attraversate l'Øresund in treno"
+            note: Malmö è a circa 35 minuti e Lund a circa 55 con treni diretti; comprate il biglietto transfrontaliero corretto prima di salire.
+            kicker: Gita facile · documento valido
+            story: >-
+              Usate un biglietto Øresund di DSB o il corrispondente biglietto
+              svedese: un normale biglietto a zone di Copenaghen non copre il
+              confine. I treni diretti partono dal centro e dall'aeroporto verso
+              Malmö e proseguono per Lund. Portate passaporto o carta d'identità
+              nazionale accettata anche quando i controlli sembrano improbabili:
+              state entrando in un altro Paese. Le schede di Malmö e Lund qui
+              sotto suggeriscono cosa fare una volta arrivati.
+            url: https://www.dsb.dk/en/tickets-and-services/oresund-ticket/
+          norwayTravel:
+            name: "Norvegia: volo, treno o una notte in traghetto"
+            note: Oslo non è una gita in giornata. L'aereo è più rapido, il treno impiega circa 8 ore e mezza via Svezia e il traghetto notturno trasforma il viaggio nell'esperienza.
+            kicker: Oslo · una notte o più
+            storyItems:
+              - "Via mare: Go Nordic Cruiseline parte normalmente da Copenaghen nel tardo pomeriggio e arriva a Oslo la mattina seguente. La cabina fa parte dell'esperienza notturna; controllate gli orari aggiornati."
+              - "In treno: si passa da Malmö e Göteborg. È panoramico e collega i centri città, ma normalmente richiede cambi e quasi tutta una giornata."
+              - "In aereo: conviene quando il tempo è decisivo, anche se i trasferimenti aeroportuali riducono il vantaggio apparente. In ogni caso portate il documento di viaggio richiesto per la vostra nazionalità."
+            url: https://www.gonordiccruiseline.no/kundeservice/rutetider/
       longer:
         title: Vale il viaggio più lungo
         items:

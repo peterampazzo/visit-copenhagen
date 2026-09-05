@@ -134,6 +134,22 @@ copenhill:
   latitude: 55.6848712
   longitude: 12.6211016
   googleQuery: CopenHill, Copenhagen
+blackDiamond:
+  latitude: 55.6734506
+  longitude: 12.5825537
+  googleQuery: The Black Diamond, Søren Kierkegaards Plads 1, Copenhagen
+fiolstraedeLibrary:
+  latitude: 55.68033
+  longitude: 12.57292
+  googleQuery: University Library, Fiolstræde 1, Copenhagen
+nhRoof:
+  latitude: 55.67404
+  longitude: 12.58793
+  googleQuery: ROOF at NH Collection, Strandgade 7, Copenhagen
+filmtaget:
+  latitude: 55.6832
+  longitude: 12.5786
+  googleQuery: Filmtaget, Gothersgade 55, Copenhagen
 malmo:
   latitude: 55.6091712
   longitude: 12.9998411
@@ -306,6 +322,10 @@ dyrehaven:
   latitude: 55.7748565
   longitude: 12.5790475
   googleQuery: Dyrehaven, Klampenborg
+bakken:
+  latitude: 55.77574
+  longitude: 12.57501
+  googleQuery: Bakken, Dyrehavevej 62, Klampenborg
 lund:
   latitude: 55.7029296
   longitude: 13.1929449
