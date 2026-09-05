@@ -126,6 +126,9 @@ export function App() {
               close: t("site.closeStory"),
               map: t("site.storyMapLabel"),
               learnMore: t("site.learnMoreLabel"),
+              watchReel: t("site.watchReel"),
+              openPhoto: t("site.openPhoto"),
+              goodToKnow: t("site.goodToKnow"),
             }}
             favouriteCopy={{
               add: t("site.favouriteAdd"),
