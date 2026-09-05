@@ -1,3 +1,14 @@
+export type GuideItemLink = {
+  text: string;
+  url: string;
+};
+
+export type GuideItemMedia = {
+  image?: string;
+  url?: string;
+  alt?: string;
+};
+
 export type GuideItem = {
   id: string;
   name: string;
@@ -8,6 +19,9 @@ export type GuideItem = {
   storyItems?: string[];
   travel?: string;
   linkText?: string;
+  tips?: string[];
+  links?: Record<string, GuideItemLink>;
+  media?: GuideItemMedia;
 };
 
 export function itemMatchesQuery(item: GuideItem, groupTitle: string, query: string): boolean {
