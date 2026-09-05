@@ -49,6 +49,10 @@ site:
   distanceUnitKm: km
   walkingTime: "{{minutes}} min walk"
   locationDenied: Location is blocked — enable it in your browser settings to use Near me.
+  watchReel: Watch reel
+  openPhoto: Open photo
+  goodToKnow: Good to know
+  playReel: Play
 
 sections:
   know:
