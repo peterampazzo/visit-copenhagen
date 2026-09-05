@@ -35,6 +35,9 @@ export function App() {
   const sections = toGuideSections(
     t("sections", { returnObjects: true }) as unknown as GuideSectionsRecord,
   );
+  const reels = toReelsSection(
+    t("reels", { returnObjects: true }) as unknown as ReelsRecord | undefined,
+  );
   const mapPlaces = toGuideMapPlaces(sections);
 
   const hasResults = useMemo(
