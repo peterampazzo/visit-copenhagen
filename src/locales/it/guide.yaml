@@ -49,6 +49,10 @@ site:
   distanceUnitKm: km
   walkingTime: "{{minutes}} min a piedi"
   locationDenied: La posizione è bloccata — abilitala nelle impostazioni del browser per usare Vicino a me.
+  watchReel: Guarda il reel
+  openPhoto: Apri la foto
+  goodToKnow: Da sapere
+  playReel: Guarda
 
 sections:
   know:
@@ -729,6 +733,11 @@ sections:
             kicker: Raro, freddo e molto Copenaghen
             url: https://www.instagram.com/reel/DVHRB9PiILm/
             linkText: Guarda il reel
+            media:
+              url: https://www.instagram.com/reel/DVHRB9PiILm/
+            tips:
+              - "Aspettate i cartelli blu ufficiali prima di camminare sul ghiaccio."
+              - "Portate un thermos — la parte migliore è stare in giro a fingere di essere danesi."
   food:
     emoji: 😋
     title: Cosa mangiare
@@ -1361,3 +1370,15 @@ sections:
             name: Sfilata di Santa Lucia in kayak
             note: Una processione galleggiante di luci nei canali. Arrivate presto per un posto buono sull'acqua.
             url: https://www.visitcopenhagen.com/copenhagen/planning/santa-lucia-parade-kayaks-gdk1106677
+
+reels:
+  title: Dal mio telefono
+  blurb: Qualche clip e foto in giro per la città.
+  items:
+    frozenLakes:
+      caption: Quando i laghi ghiacciano
+      image: /reels/frozen-lakes.jpg
+      url: https://www.instagram.com/reel/DVHRB9PiILm/
+    bakeries:
+      caption: Panetterie da salvare
+      url: https://www.instagram.com/p/DOSrrF8DJpF/

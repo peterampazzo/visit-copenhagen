@@ -8,11 +8,18 @@ import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
 import { LanguageToggle } from "@/components/guide/LanguageToggle";
 import { MobileBottomNav } from "@/components/guide/MobileBottomNav";
+import { ReelsStrip } from "@/components/guide/ReelsStrip";
 import { SavedStrip } from "@/components/guide/SavedStrip";
 import { SearchBar } from "@/components/guide/SearchBar";
 import { SectionNav } from "@/components/guide/SectionNav";
 
-import { itemMatchesQuery, toGuideSections, type GuideSectionsRecord } from "@/lib/guide-content";
+import {
+  itemMatchesQuery,
+  toGuideSections,
+  toReelsSection,
+  type GuideSectionsRecord,
+  type ReelsRecord,
+} from "@/lib/guide-content";
 import i18n, { LANGUAGE_STORAGE_KEY, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
 import { toGuideMapPlaces } from "@/lib/locations";
 
@@ -27,6 +34,9 @@ export function App() {
   const [search, setSearch] = useState("");
   const sections = toGuideSections(
     t("sections", { returnObjects: true }) as unknown as GuideSectionsRecord,
+  );
+  const reels = toReelsSection(
+    t("reels", { returnObjects: true }) as unknown as ReelsRecord | undefined,
   );
   const mapPlaces = toGuideMapPlaces(sections);
 
@@ -116,6 +126,9 @@ export function App() {
               close: t("site.closeStory"),
               map: t("site.storyMapLabel"),
               learnMore: t("site.learnMoreLabel"),
+              watchReel: t("site.watchReel"),
+              openPhoto: t("site.openPhoto"),
+              goodToKnow: t("site.goodToKnow"),
             }}
             favouriteCopy={{
               add: t("site.favouriteAdd"),
@@ -131,6 +144,7 @@ export function App() {
           </div>
         ) : null}
         <BackToTop label={t("site.backToTop")} />
+        {reels ? <ReelsStrip reels={reels} playLabel={t("site.playReel")} /> : null}
         <MobileBottomNav
           sections={sections}
           sectionsLabel={t("site.navLabel")}

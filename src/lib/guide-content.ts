@@ -1,3 +1,14 @@
+export type GuideItemLink = {
+  text: string;
+  url: string;
+};
+
+export type GuideItemMedia = {
+  image?: string;
+  url?: string;
+  alt?: string;
+};
+
 export type GuideItem = {
   id: string;
   name: string;
@@ -8,6 +19,9 @@ export type GuideItem = {
   storyItems?: string[];
   travel?: string;
   linkText?: string;
+  tips?: string[];
+  links?: Record<string, GuideItemLink>;
+  media?: GuideItemMedia;
 };
 
 export function itemMatchesQuery(item: GuideItem, groupTitle: string, query: string): boolean {
@@ -111,4 +125,32 @@ export function toGuideSections(resources: GuideSectionsRecord): GuideSectionDat
       })),
     };
   });
+}
+
+export type ReelItem = {
+  id: string;
+  caption: string;
+  image?: string;
+  url?: string;
+};
+
+export type ReelsSection = {
+  title: string;
+  blurb?: string;
+  items: ReelItem[];
+};
+
+export type ReelsRecord = {
+  title: string;
+  blurb?: string;
+  items: Record<string, Omit<ReelItem, "id">>;
+};
+
+export function toReelsSection(reels: ReelsRecord | undefined): ReelsSection | null {
+  if (!reels || !reels.items || Object.keys(reels.items).length === 0) return null;
+  return {
+    title: reels.title,
+    ...(reels.blurb === undefined ? {} : { blurb: reels.blurb }),
+    items: Object.entries(reels.items).map(([id, item]) => ({ id, ...item })),
+  };
 }
