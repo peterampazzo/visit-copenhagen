@@ -1,14 +1,18 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { ArrowUpRight, BookOpenText, MapPin, X } from "lucide-react";
+import { ArrowUpRight, BookOpenText, Lightbulb, MapPin, Play, X } from "lucide-react";
 
 import type { GuideItem } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
+import { cn } from "@/lib/utils";
 
 export type StoryCopy = {
   label: string;
   close: string;
   map: string;
   learnMore: string;
+  watchReel: string;
+  openPhoto: string;
+  goodToKnow: string;
 };
 
 export function GuideStoryDialog({
