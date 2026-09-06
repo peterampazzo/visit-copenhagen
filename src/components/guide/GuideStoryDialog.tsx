@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import { useState } from "react";
 import { ArrowUpRight, BookOpenText, Lightbulb, MapPin, Play, X } from "lucide-react";
 
 import type { GuideItem } from "@/lib/guide-content";
@@ -30,6 +31,8 @@ export function GuideStoryDialog({
   onOpenChange: (open: boolean) => void;
   onShowOnMap: (id: string) => void;
 }) {
+  const [mediaFailed, setMediaFailed] = useState(false);
+
   if (!item.story && !item.storyItems?.length) return null;
 
   return (
@@ -65,11 +68,12 @@ export function GuideStoryDialog({
                     aria-label={`${item.media.url.includes("instagram.com") ? copy.watchReel : copy.openPhoto}: ${item.name}`}
                     className="group relative block aspect-[16/10] overflow-hidden"
                   >
-                    {item.media.image ? (
+                    {item.media.image && !mediaFailed ? (
                       <img
                         src={item.media.image}
                         alt={item.media.alt ?? item.name}
                         loading="lazy"
+                        onError={() => setMediaFailed(true)}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
@@ -89,11 +93,12 @@ export function GuideStoryDialog({
                       {item.media.url.includes("instagram.com") ? copy.watchReel : copy.openPhoto}
                     </span>
                   </a>
-                ) : item.media.image ? (
+                ) : item.media.image && !mediaFailed ? (
                   <img
                     src={item.media.image}
                     alt={item.media.alt ?? item.name}
                     loading="lazy"
+                    onError={() => setMediaFailed(true)}
                     className="aspect-[16/10] w-full object-cover"
                   />
                 ) : null}
