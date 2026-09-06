@@ -609,6 +609,44 @@ sections:
               came from Norwegian and appeared in written Danish around the end
               of the eighteenth century.
             url: https://www.visitdenmark.com/denmark/things-to-do/traditions-lifestyle/hygge
+          tallBenches:
+            name: Why are some Copenhagen benches so tall?
+            note: They are climate warnings, not eccentric street furniture—TV 2 raised the familiar city bench to make future sea-level rise feel real.
+            kicker: TV 2 · 2022 · sea level in 2100
+            story: >-
+              In April 2022, TV 2 placed 15 unusually high versions of the
+              classic Københavnerbænk around Copenhagen, Aarhus and Odense for
+              its “Vores jord – Vores ansvar” campaign. The seat was raised by
+              roughly 85 centimetres, turning a projected rise in sea level by
+              2100 into something people could see—and struggle to sit on.
+              Most of the benches later stayed in Danish public spaces, while
+              one travelled to the UN Water Conference in New York in 2023.
+            url: https://tv2marketing.dk/kampagner/vores-jord-vores-ansvar/
+          bodegas:
+            name: A Danish bodega is a pub
+            note: Think old-school neighbourhood bar—dim light, inexpensive beer, regulars and very little interest in cocktails. It is not a New York corner shop.
+            kicker: Also called a værtshus or brun bodega
+            story: >-
+              The Danish bodega is the local, unpolished end of drinking culture:
+              bottled beer, a jukebox or darts, familiar faces and sometimes an
+              early opening hour. Some of the smallest bodegas that do not serve
+              food can still permit indoor smoking, so the atmosphere may be
+              literally as well as figuratively hazy. Go for a simple beer and
+              the people—not a cocktail list or a tasting menu.
+            url: https://www.visitdenmark.com/denmark/things-do/eat-drink/bodegas
+          bmo:
+            name: BMO means bolle med ost
+            note: A bread roll with butter and cheese—an old Danish breakfast wearing a very new, very Copenhagen acronym.
+            kicker: Bun · butter · cheese
+            story: >-
+              The food is wonderfully uncomplicated: split a good bread roll,
+              add plenty of butter and a slice of cheese. Danes have eaten it
+              for generations, but the initials BMO only took off around
+              Copenhagen cafés in 2023 and quickly spread to bakery menus and
+              social media. The upgraded version is usually sourdough with a
+              characterful Danish cheese—and it can cost rather more than the
+              humble name suggests.
+            url: https://www.thelocal.dk/20231213/danish-word-of-the-day-bmo
           danishBrands:
             name: Danish brands worth recognising
             note: "It is not only LEGO and it is not only furniture: a short list of Danish names found in shops, homes and far beyond."
@@ -1361,13 +1399,81 @@ sections:
             url: https://www.visitcopenhagen.com/copenhagen/planning/santa-lucia-parade-kayaks-gdk1106677
 
 reels:
-  title: From my phone
-  blurb: A few clips and pictures from around town.
+  title: From the feed
+  blurb: Copenhagen, Denmark and a few places worth the detour—one reel at a time.
   items:
+    faroeFerry:
+      caption: The 36-hour ferry to the Faroe Islands
+      creator: "@smileyliving"
+      image: /reels/faroe-ferry.jpg
+      url: https://www.instagram.com/reel/Dcy0xTbR5GX/
+    humanScaleCopenhagen:
+      caption: How Copenhagen was redesigned for people
+      creator: "@cnntravel"
+      image: /reels/human-scale-copenhagen.jpg
+      url: https://www.instagram.com/reel/DcvuJqcE-FW/
+    cinnamonAt25:
+      caption: Unmarried at 25? Prepare for cinnamon
+      creator: "@pubity"
+      image: /reels/cinnamon-at-25.jpg
+      url: https://www.instagram.com/reel/DckmOe6Jmcw/
+    dannebrogEverywhere:
+      caption: Why Dannebrog appears at every celebration
+      creator: "@hygge_withsonali"
+      image: /reels/dannebrog-everywhere.jpg
+      url: https://www.instagram.com/reel/DclTbG5oiku/
+    cyclingInfrastructure:
+      caption: Infrastructure makes cycling the easy choice
+      creator: "@karyna.y"
+      image: /reels/cycling-infrastructure.jpg
+      url: https://www.instagram.com/reel/DclpVqfM052/
+    odeToCopenhagen:
+      caption: An ode to Copenhagen
+      creator: "@jeromememe"
+      image: /reels/ode-to-copenhagen.jpg
+      url: https://www.instagram.com/reel/DcLo7KcuLe4/
+    ironmanCopenhagen:
+      caption: Ironman Copenhagen from above
+      creator: "@bezshumaipyli"
+      image: /reels/ironman-copenhagen.jpg
+      url: https://www.instagram.com/reel/DcBtNWuClNc/
+    oresundReel:
+      caption: Why the Øresund Bridge becomes a tunnel
+      creator: "@europe.in.layers"
+      image: /reels/oresund-link.jpg
+      url: https://www.instagram.com/reel/DbQ2fAfk1W3/
+    danishLesson:
+      caption: A quick Danish lesson with Lukas Graham
+      creator: "@megarobbie"
+      image: /reels/danish-lesson.jpg
+      url: https://www.instagram.com/reel/Db8iu4xxO_M/
+    tivoliQueue:
+      caption: When Danish children queue at Tivoli
+      creator: "@martiniaday"
+      image: /reels/tivoli-queue.jpg
+      url: https://www.instagram.com/reel/CmHDTnbO9AP/
+    surfingDenmark:
+      caption: Yes, Denmark has surf
+      creator: "@olihartkopp"
+      image: /reels/surfing-denmark.jpg
+      url: https://www.instagram.com/reel/DbIgWRGMBac/
+    swanTrafficJam:
+      caption: A swan causes a Copenhagen traffic jam
+      creator: "@hej.hej.sophia"
+      image: /reels/swan-traffic-jam.jpg
+      url: https://www.instagram.com/reel/Da7IPEDottN/
+    lifeInDenmark:
+      caption: Life in Denmark, in one reel
+      creator: "@anremie"
+      image: /reels/life-in-denmark.jpg
+      url: https://www.instagram.com/reel/DWmHgNWCCZb/
     frozenLakes:
       caption: When the lakes freeze
+      creator: "@morten.svane"
       image: /reels/frozen-lakes.jpg
       url: https://www.instagram.com/reel/DVHRB9PiILm/
     bakeries:
-      caption: Bakeries worth saving
+      caption: Eight bakeries for a Copenhagen morning
+      creator: "@vayabo"
+      image: /reels/bakeries.jpg
       url: https://www.instagram.com/p/DOSrrF8DJpF/

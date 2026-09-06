@@ -5,20 +5,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { ReelsSection } from "@/lib/guide-content";
 import { cn } from "@/lib/utils";
 
-const REEL_THEMES = [
-  "bg-coral",
-  "bg-harbour",
-  "bg-sun",
-  "bg-ink",
-] as const;
+const REEL_THEMES = ["bg-coral", "bg-harbour", "bg-sun", "bg-ink"] as const;
 
-export function ReelsStrip({
-  reels,
-  playLabel,
-}: {
-  reels: ReelsSection;
-  playLabel: string;
-}) {
+export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabel: string }) {
   const [failed, setFailed] = useState<Record<string, boolean>>({});
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -169,10 +158,7 @@ export function ReelsStrip({
                         />
                       ) : (
                         <div
-                          className={cn(
-                            "absolute inset-0 opacity-40",
-                            theme,
-                          )}
+                          className={cn("absolute inset-0 opacity-40", theme)}
                           aria-hidden="true"
                         />
                       )}
@@ -194,6 +180,11 @@ export function ReelsStrip({
                       ) : null}
 
                       <div className="relative mt-auto p-3 pt-8">
+                        {reel.creator ? (
+                          <p className="mb-1 text-[0.65rem] font-extrabold uppercase tracking-[0.12em] text-card/75 drop-shadow-sm">
+                            {reel.creator}
+                          </p>
+                        ) : null}
                         <p className="font-display text-sm font-extrabold leading-snug text-card drop-shadow-sm sm:text-base">
                           {reel.caption}
                         </p>
@@ -230,4 +221,3 @@ export function ReelsStrip({
     </section>
   );
 }
-

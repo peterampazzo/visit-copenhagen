@@ -130,6 +130,7 @@ export function toGuideSections(resources: GuideSectionsRecord): GuideSectionDat
 export type ReelItem = {
   id: string;
   caption: string;
+  creator?: string;
   image?: string;
   url?: string;
 };

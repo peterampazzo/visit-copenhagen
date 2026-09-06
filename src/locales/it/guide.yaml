@@ -614,6 +614,46 @@ sections:
               al porto possono essere hyggelige. La parola arrivò dal norvegese
               e compare nel danese scritto dalla fine del Settecento.
             url: https://www.visitdenmark.com/denmark/things-to-do/traditions-lifestyle/hygge
+          tallBenches:
+            name: Perché alcune panchine di Copenaghen sono così alte?
+            note: Sono avvertimenti sul clima, non arredo urbano eccentrico—TV 2 ha alzato la classica panchina per rendere concreto l'innalzamento del mare.
+            kicker: TV 2 · 2022 · livello del mare nel 2100
+            story: >-
+              Nell'aprile 2022 TV 2 installò a Copenaghen, Aarhus e Odense 15
+              versioni insolitamente alte della classica Københavnerbænk per la
+              campagna “Vores jord – Vores ansvar”. La seduta fu alzata di circa
+              85 centimetri, trasformando una previsione sull'aumento del livello
+              del mare entro il 2100 in qualcosa che si poteva vedere—e su cui
+              era difficile sedersi. In seguito quasi tutte le panchine sono
+              rimaste negli spazi pubblici danesi; una è arrivata alla Conferenza
+              ONU sull'acqua di New York nel 2023.
+            url: https://tv2marketing.dk/kampagner/vores-jord-vores-ansvar/
+          bodegas:
+            name: Una bodega danese è un pub
+            note: Un bar di quartiere vecchio stile—luci basse, birra economica, habitué e poco interesse per i cocktail. Non è il negozietto di New York.
+            kicker: Si dice anche værtshus o brun bodega
+            story: >-
+              La bodega danese è il lato più locale e senza fronzoli della cultura
+              del bere: birra in bottiglia, jukebox o freccette, facce conosciute
+              e a volte apertura già al mattino. Alcune tra le più piccole che
+              non servono cibo possono ancora permettere di fumare all'interno,
+              quindi l'atmosfera può essere letteralmente, oltre che
+              figurativamente, fumosa. Andateci per una birra semplice e per le
+              persone—non per la lista dei cocktail o un menu degustazione.
+            url: https://www.visitdenmark.com/denmark/things-do/eat-drink/bodegas
+          bmo:
+            name: BMO significa bolle med ost
+            note: Un panino con burro e formaggio—una vecchia colazione danese con un acronimo nuovissimo e molto copenaghese.
+            kicker: Panino · burro · formaggio
+            story: >-
+              Il cibo è meravigliosamente semplice: si apre un buon panino, si
+              aggiungono parecchio burro e una fetta di formaggio. I danesi lo
+              mangiano da generazioni, ma la sigla BMO si è diffusa nei caffè di
+              Copenaghen solo nel 2023, arrivando presto sui menu delle panetterie
+              e sui social. La versione aggiornata è spesso di pasta madre, con
+              un formaggio danese dal gusto deciso—e può costare molto più di
+              quanto suggerisca il nome umile.
+            url: https://www.thelocal.dk/20231213/danish-word-of-the-day-bmo
           danishBrands:
             name: Brand danesi da riconoscere
             note: "Non è solo LEGO e non sono solo mobili: una piccola lista di nomi danesi che incontrerete nei negozi, nelle case e molto oltre."
@@ -1372,13 +1412,81 @@ sections:
             url: https://www.visitcopenhagen.com/copenhagen/planning/santa-lucia-parade-kayaks-gdk1106677
 
 reels:
-  title: Dal mio telefono
-  blurb: Qualche clip e foto in giro per la città.
+  title: Dal feed
+  blurb: Copenaghen, la Danimarca e qualche posto che merita la deviazione—un reel alla volta.
   items:
+    faroeFerry:
+      caption: Il traghetto di 36 ore per le Isole Faroe
+      creator: "@smileyliving"
+      image: /reels/faroe-ferry.jpg
+      url: https://www.instagram.com/reel/Dcy0xTbR5GX/
+    humanScaleCopenhagen:
+      caption: Come Copenaghen è stata ridisegnata per le persone
+      creator: "@cnntravel"
+      image: /reels/human-scale-copenhagen.jpg
+      url: https://www.instagram.com/reel/DcvuJqcE-FW/
+    cinnamonAt25:
+      caption: 25 anni e non sposati? Arriva la cannella
+      creator: "@pubity"
+      image: /reels/cinnamon-at-25.jpg
+      url: https://www.instagram.com/reel/DckmOe6Jmcw/
+    dannebrogEverywhere:
+      caption: Perché Dannebrog compare a ogni festa
+      creator: "@hygge_withsonali"
+      image: /reels/dannebrog-everywhere.jpg
+      url: https://www.instagram.com/reel/DclTbG5oiku/
+    cyclingInfrastructure:
+      caption: Le infrastrutture rendono facile scegliere la bici
+      creator: "@karyna.y"
+      image: /reels/cycling-infrastructure.jpg
+      url: https://www.instagram.com/reel/DclpVqfM052/
+    odeToCopenhagen:
+      caption: Un'ode a Copenaghen
+      creator: "@jeromememe"
+      image: /reels/ode-to-copenhagen.jpg
+      url: https://www.instagram.com/reel/DcLo7KcuLe4/
+    ironmanCopenhagen:
+      caption: L'Ironman di Copenaghen dall'alto
+      creator: "@bezshumaipyli"
+      image: /reels/ironman-copenhagen.jpg
+      url: https://www.instagram.com/reel/DcBtNWuClNc/
+    oresundReel:
+      caption: Perché il ponte di Øresund diventa un tunnel
+      creator: "@europe.in.layers"
+      image: /reels/oresund-link.jpg
+      url: https://www.instagram.com/reel/DbQ2fAfk1W3/
+    danishLesson:
+      caption: Una lezione veloce di danese con Lukas Graham
+      creator: "@megarobbie"
+      image: /reels/danish-lesson.jpg
+      url: https://www.instagram.com/reel/Db8iu4xxO_M/
+    tivoliQueue:
+      caption: Quando i bambini fanno la fila al Tivoli
+      creator: "@martiniaday"
+      image: /reels/tivoli-queue.jpg
+      url: https://www.instagram.com/reel/CmHDTnbO9AP/
+    surfingDenmark:
+      caption: Sì, in Danimarca si fa surf
+      creator: "@olihartkopp"
+      image: /reels/surfing-denmark.jpg
+      url: https://www.instagram.com/reel/DbIgWRGMBac/
+    swanTrafficJam:
+      caption: Un cigno crea traffico a Copenaghen
+      creator: "@hej.hej.sophia"
+      image: /reels/swan-traffic-jam.jpg
+      url: https://www.instagram.com/reel/Da7IPEDottN/
+    lifeInDenmark:
+      caption: La vita in Danimarca, in un reel
+      creator: "@anremie"
+      image: /reels/life-in-denmark.jpg
+      url: https://www.instagram.com/reel/DWmHgNWCCZb/
     frozenLakes:
       caption: Quando i laghi ghiacciano
+      creator: "@morten.svane"
       image: /reels/frozen-lakes.jpg
       url: https://www.instagram.com/reel/DVHRB9PiILm/
     bakeries:
-      caption: Panetterie da salvare
+      caption: Otto panetterie per una mattina a Copenaghen
+      creator: "@vayabo"
+      image: /reels/bakeries.jpg
       url: https://www.instagram.com/p/DOSrrF8DJpF/
