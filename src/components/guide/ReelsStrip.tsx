@@ -53,7 +53,7 @@ export function ReelsStrip({
       let closestDistance = Infinity;
 
       container.querySelectorAll<HTMLElement>("[data-reel-index]").forEach((card) => {
-        const index = Number(card.dataset.reelIndex);
+        const index = Number(card.dataset["reelIndex"]);
         const cardCenter = card.offsetLeft + card.offsetWidth / 2;
         const distance = Math.abs(center - cardCenter);
         if (distance < closestDistance) {
