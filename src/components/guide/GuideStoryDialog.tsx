@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import { useState } from "react";
 import { ArrowUpRight, BookOpenText, Lightbulb, MapPin, Play, X } from "lucide-react";
 
 import type { GuideItem } from "@/lib/guide-content";
@@ -30,6 +31,8 @@ export function GuideStoryDialog({
   onOpenChange: (open: boolean) => void;
   onShowOnMap: (id: string) => void;
 }) {
+  const [mediaFailed, setMediaFailed] = useState(false);
+
   if (!item.story && !item.storyItems?.length) return null;
 
   return (
