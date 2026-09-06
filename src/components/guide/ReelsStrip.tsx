@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import { motion } from "motion/react";
+import { useState } from "react";
 
 import type { ReelsSection } from "@/lib/guide-content";
 import { cn } from "@/lib/utils";
@@ -18,6 +19,8 @@ export function ReelsStrip({
   reels: ReelsSection;
   playLabel: string;
 }) {
+  const [failed, setFailed] = useState<Record<string, boolean>>({});
+
   return (
     <section className="border-t-2 border-ink/10 bg-background px-4 py-10 sm:px-6 sm:py-14">
       <div className="mx-auto max-w-6xl">
@@ -43,6 +46,7 @@ export function ReelsStrip({
             {reels.items.map((reel, index) => {
               const theme = REEL_THEMES[index % REEL_THEMES.length];
               const hasLink = Boolean(reel.url);
+              const showImage = Boolean(reel.image) && !failed[reel.id];
               const Wrapper = hasLink ? "a" : "div";
 
               return (
@@ -68,17 +72,18 @@ export function ReelsStrip({
                       hasLink && "hover:-translate-y-1 active:scale-[0.99]",
                     )}
                   >
-                    {reel.image ? (
+                    {showImage ? (
                       <img
                         src={reel.image}
                         alt={reel.caption}
                         loading="lazy"
+                        onError={() => setFailed((prev) => ({ ...prev, [reel.id]: true }))}
                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
                       <div
                         className={cn(
-                          "absolute inset-0 opacity-20",
+                          "absolute inset-0 opacity-40",
                           theme,
                         )}
                         aria-hidden="true"
@@ -88,7 +93,7 @@ export function ReelsStrip({
                     <div
                       className={cn(
                         "absolute inset-0",
-                        reel.image
+                        showImage
                           ? "bg-gradient-to-b from-ink/20 via-ink/5 to-ink/70"
                           : "bg-gradient-to-b from-ink/10 via-ink/5 to-ink/40",
                       )}
