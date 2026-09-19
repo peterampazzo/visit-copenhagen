@@ -15,8 +15,10 @@
 ## Presentation
 
 - Preserve the drawing, colors, border, layout character, and all current animation.
+- Make no edits to the illustration asset or its animation code.
+- Use the warm, playful editorial tone from the final two previews, without adopting their illustration or layout changes.
 - Display the signature as a quiet handwritten-style note rather than an official label or prominent badge.
-- Keep the hook to two short lines at most on phones, with the signature clearly secondary.
+- Treat mobile as the primary layout: keep the hook short, prevent awkward wrapping, and keep the signature clearly secondary without crowding the button or drawing.
 - Add the new text through the existing English and Italian translation files.
 
 ## Verification
