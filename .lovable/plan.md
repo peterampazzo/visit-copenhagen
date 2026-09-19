@@ -9,7 +9,7 @@
   - **Italian:** “La mia Copenaghen: posti buoni, angoli nascosti e dritte da condividere.”
 - Add a small personal signature below it:
   - **English:** “Handmade by Pietro · AI-assisted”
-  - **Italian:** “Fatto a mano da Pietro · con l’aiuto dell’AI”
+  - **Italian:** “by Pietro · con l’aiuto dell’AI”
 - Keep the **God tur** button unchanged.
 
 ## Presentation
