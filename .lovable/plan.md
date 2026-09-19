@@ -5,7 +5,7 @@
 - Keep **“Hygge i København”** as the main title.
 - Remove the formal **“København · 55.6761° N”** line.
 - Replace the current paragraph with a shorter, warmer hook:
-  - **English:** “My Copenhagen: good food, hidden corners, and tips worth sharing.”
+  - **English:** “Mostly the tips everyone asks me for—now in one place, plus a few spots worth sharing.”
   - **Italian:** “La mia Copenaghen: posti buoni, angoli nascosti e dritte da condividere.”
 - Add a small personal signature below it:
   - **English:** “Handmade by Pietro · AI-assisted”
