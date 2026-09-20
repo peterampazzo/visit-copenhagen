@@ -1,0 +1,16 @@
+# Hygge i København
+
+> The Copenhagen tips everyone asks me for — now all in one place.
+
+A personal, mobile-friendly Copenhagen guide for visiting friends and family,
+written by Pietro (who lives in Copenhagen). Available in English and Italian.
+The whole site is a single page; the full guide content is available as markdown.
+
+## Content
+
+- [Full guide (English)](/guide.en.md): All sections — transport, places, food, pastries, museums, saunas, boats, day trips and seasonal events.
+- [Guida completa (Italiano)](/guide.it.md): Tutte le sezioni della guida in italiano.
+
+## Pages
+
+- [Guide](/): The single-page guide (English, language toggle to Italian).
