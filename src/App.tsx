@@ -79,6 +79,8 @@ export function App() {
           onLanguageChange={changeLanguage}
           title={t("site.title")}
           description={t("site.description")}
+          authorBy={t("site.authorBy")}
+          aiAssisted={t("site.aiAssisted")}
         />
         <div className="sticky top-0 z-30 border-b-2 border-ink/10 bg-background/95 px-4 py-2.5 backdrop-blur-md sm:px-6 lg:static lg:border-b-0 lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
           <div className="mx-auto flex max-w-6xl items-center gap-2">
