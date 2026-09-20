@@ -1022,7 +1022,7 @@
 
   .cph-hero__credit {
     margin-top: 0.8rem;
-    color: hsl(var(--ink) / 0.72);
+    color: color-mix(in srgb, var(--ink) 72%, transparent);
   }
 
   .cph-hero__signature {
