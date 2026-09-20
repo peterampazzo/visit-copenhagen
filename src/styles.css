@@ -219,8 +219,8 @@
 
 .cph-hero__signature {
   font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 800;
   line-height: 1;
   transform: rotate(-2deg);
 }
@@ -1015,21 +1015,23 @@
 
   .cph-hero__description {
     max-width: 21rem;
+    margin-top: 0.85rem;
     font-size: 0.95rem;
     line-height: 1.4;
   }
 
   .cph-hero__credit {
-    margin-top: 0.45rem;
+    margin-top: 0.8rem;
+    color: hsl(var(--ink) / 0.72);
   }
 
   .cph-hero__signature {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
   }
 
   .cph-hero__copy > a {
     min-height: 2.25rem;
-    margin-top: 0.75rem;
+    margin-top: 1.15rem;
     padding: 0.35rem 0.8rem;
   }
 
