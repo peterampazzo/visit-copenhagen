@@ -4,6 +4,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Caveat";
+  src: url("/fonts/caveat-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
  * Design system definition.
  *
@@ -218,8 +226,8 @@
 }
 
 .cph-hero__signature {
-  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
-  font-size: 1.05rem;
+  font-family: "Caveat", "Segoe Print", "Bradley Hand", cursive;
+  font-size: 1.45rem;
   font-weight: 700;
   line-height: 1;
   transform: rotate(-2deg);
@@ -1015,21 +1023,23 @@
 
   .cph-hero__description {
     max-width: 21rem;
+    margin-top: 0.85rem;
     font-size: 0.95rem;
     line-height: 1.4;
   }
 
   .cph-hero__credit {
-    margin-top: 0.45rem;
+    margin-top: 0.8rem;
+    color: color-mix(in srgb, var(--ink) 72%, transparent);
   }
 
   .cph-hero__signature {
-    font-size: 0.95rem;
+    font-size: 1.35rem;
   }
 
   .cph-hero__copy > a {
     min-height: 2.25rem;
-    margin-top: 0.75rem;
+    margin-top: 1.15rem;
     padding: 0.35rem 0.8rem;
   }
 
