@@ -1,8 +1,8 @@
 site:
   title: Hygge i København
-  description: >-
-    Hej! Just a list of places, tips, and bits of Copenhagen — collected over
-    time for friends and family.
+  description: The Copenhagen tips everyone asks me for — now all in one place.
+  authorBy: by Pietro
+  aiAssisted: AI-assisted
   langLabel: Language
   nav: Jump to a section
   footer: God tur!

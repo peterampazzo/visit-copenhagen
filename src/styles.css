@@ -206,7 +206,7 @@
 
 .cph-hero__copy {
   width: 53%;
-  padding: 2rem 2.35rem 4.5rem;
+  padding: 2.65rem 2.35rem 4.5rem;
 }
 
 .cph-hero__title {
@@ -215,6 +215,14 @@
   font-weight: 800;
   line-height: 0.94;
   letter-spacing: -0.055em;
+}
+
+.cph-hero__signature {
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: rotate(-2deg);
 }
 
 .cph-landscape {
@@ -998,17 +1006,6 @@
     padding: 1.25rem 1rem 0;
   }
 
-  .cph-hero__copy > p:first-child {
-    display: flex;
-    min-height: 2.75rem;
-    align-items: center;
-    max-width: calc(100% - 7.25rem);
-    margin-bottom: 0.65rem;
-    font-size: 0.68rem;
-    letter-spacing: 0.16em;
-    white-space: nowrap;
-  }
-
   .cph-hero__title {
     max-width: 100%;
     margin-top: 0;
@@ -1016,10 +1013,18 @@
     line-height: 0.94;
   }
 
-  .cph-hero__copy p:last-of-type {
+  .cph-hero__description {
     max-width: 21rem;
     font-size: 0.95rem;
     line-height: 1.4;
+  }
+
+  .cph-hero__credit {
+    margin-top: 0.45rem;
+  }
+
+  .cph-hero__signature {
+    font-size: 0.95rem;
   }
 
   .cph-hero__copy > a {

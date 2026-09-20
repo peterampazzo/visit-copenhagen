@@ -7,11 +7,15 @@ export function Hero({
   onLanguageChange,
   title,
   description,
+  authorBy,
+  aiAssisted,
 }: {
   language: Language;
   onLanguageChange: (language: Language) => void;
   title: string;
   description: string;
+  authorBy: string;
+  aiAssisted: string;
 }) {
   return (
     <header className="relative overflow-hidden px-4 pb-5 pt-4 sm:px-6 sm:pb-7 sm:pt-5">
@@ -21,12 +25,13 @@ export function Hero({
         </div>
 
         <div className="cph-hero__copy relative z-10">
-          <p className="mb-2.5 font-display text-xs font-bold uppercase tracking-[0.2em] text-harbour">
-            København · 55.6761° N
-          </p>
           <h1 className="cph-hero__title max-w-[35rem] text-balance text-ink">{title}</h1>
-          <p className="mt-3.5 max-w-md text-[clamp(0.95rem,1.35vw,1.08rem)] font-semibold leading-[1.45] text-ink/75">
+          <p className="cph-hero__description mt-3.5 max-w-md text-[clamp(0.95rem,1.35vw,1.08rem)] font-semibold leading-[1.45] text-ink/75">
             {description}
+          </p>
+          <p className="cph-hero__credit mt-2.5 flex items-baseline gap-2 text-ink/60">
+            <span className="cph-hero__signature text-ink">{authorBy}</span>
+            <span className="text-xs font-semibold">· {aiAssisted}</span>
           </p>
           <a
             href="#know"
