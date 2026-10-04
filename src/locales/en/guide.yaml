@@ -811,6 +811,19 @@ sections:
               - "Lakrids by Bülow is the premium end: founded on Bornholm in 2007 and best known for liquorice coated in chocolate and flavourful shells."
               - "If a packet says salt, salmiak or stærk, expect a much sharper salty-ammonium-liquorice hit. Start with sweet liquorice if you are unsure."
             url: https://lakridsbybulow.com/
+      glutenFree:
+        title: Gluten-free
+        items:
+          glutenFreeDenmark:
+            name: Gluten-free in Denmark
+            note: Options exist, but preparation standards vary—ask clearly, especially if cross-contamination matters.
+            kicker: A practical heads-up
+            storyItems:
+              - "Restaurants and cafés must provide allergen information when asked, but Denmark has no certification scheme for gluten-free food in hospitality."
+              - "Many supermarkets stock gluten-free products, although the range varies from shop to shop."
+              - "If you have coeliac disease or are highly sensitive, ask specifically how the food is prepared. If the answer is unclear, choose somewhere else."
+              - "The Danish Coeliac Society's visitor guide includes travel cards and an experience-based map; always confirm the current offering directly with the venue."
+            url: https://coeliaki.dk/visit-denmark-with-coeliac-disease/
       markets:
         title: Markets
         items:
