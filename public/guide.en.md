@@ -256,6 +256,14 @@ _Start with smørrebrød, then work through the comfort food, ice-cream kiosks a
   - Lakrids by Bülow is the premium end: founded on Bornholm in 2007 and best known for liquorice coated in chocolate and flavourful shells.
   - If a packet says salt, salmiak or stærk, expect a much sharper salty-ammonium-liquorice hit. Start with sweet liquorice if you are unsure.
 
+### Gluten-free
+- **Gluten-free in Denmark** — Options exist, but preparation standards vary—ask clearly, especially if cross-contamination matters. · https://coeliaki.dk/visit-denmark-with-coeliac-disease/
+  - _A practical heads-up_
+  - Restaurants and cafés must provide allergen information when asked, but Denmark has no certification scheme for gluten-free food in hospitality.
+  - Many supermarkets stock gluten-free products, although the range varies from shop to shop.
+  - If you have coeliac disease or are highly sensitive, ask specifically how the food is prepared. If the answer is unclear, choose somewhere else.
+  - The Danish Coeliac Society's visitor guide includes travel cards and an experience-based map; always confirm the current offering directly with the venue.
+
 ### Markets
 - **Torvehallerne** — Two covered halls full of produce, specialist stalls and small meals—an easy place to try smørrebrød without booking.
 - **Reffen** — Street food in old containers on the industrial side of the harbour, with outdoor tables, workshops and lots of space; check seasonal opening.
