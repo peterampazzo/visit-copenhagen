@@ -52,7 +52,10 @@ export function App() {
 
   useEffect(() => {
     const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    const preferred = SUPPORTED_LANGUAGES.includes(saved as Language) ? (saved as Language) : "en";
+    const deviceLanguage = navigator.language?.toLowerCase().startsWith("it") ? "it" : "en";
+    const preferred = SUPPORTED_LANGUAGES.includes(saved as Language)
+      ? (saved as Language)
+      : deviceLanguage;
     setLanguage(preferred);
     void i18n.changeLanguage(preferred);
     document.documentElement.lang = preferred;
