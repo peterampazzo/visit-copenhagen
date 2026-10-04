@@ -256,6 +256,14 @@ _Iniziate dagli smørrebrød, poi passate ai piatti di casa, ai chioschi dei gel
   - Lakrids by Bülow è l'estremo premium: fondata a Bornholm nel 2007, è famosa per la liquirizia ricoperta di cioccolato e gusci aromatizzati.
   - Se sulla confezione leggete salt, salmiak o stærk, aspettatevi una liquirizia salata e molto più aggressiva. Iniziate da quella dolce se non siete sicuri.
 
+### Senza glutine
+- **Senza glutine in Danimarca** — Le opzioni ci sono, ma la preparazione varia—chiedete chiaramente, soprattutto se la contaminazione è un rischio. · https://coeliaki.dk/visit-denmark-with-coeliac-disease/
+  - _Una dritta pratica_
+  - Ristoranti e caffè devono fornire informazioni sugli allergeni su richiesta, ma in Danimarca non esiste una certificazione per il cibo senza glutine nella ristorazione.
+  - Molti supermercati vendono prodotti senza glutine, anche se l'assortimento cambia da un negozio all'altro.
+  - In caso di celiachia o forte sensibilità, chiedete espressamente come viene preparato il piatto. Se la risposta non è chiara, scegliete un altro posto.
+  - La guida della Danish Coeliac Society include carte da viaggio e una mappa basata sulle esperienze degli utenti; verificate sempre l'offerta attuale direttamente con il locale.
+
 ### Mercati
 - **Torvehallerne** — Due padiglioni coperti pieni di banchi, prodotti freschi e piccoli pasti; un posto semplice per assaggiare smørrebrød senza prenotare.
 - **Reffen** — Street food in vecchi container sul lato industriale del porto, con tavoli all'aperto, laboratori e molto spazio; controllate l'apertura stagionale.
