@@ -214,6 +214,22 @@ mirabelle:
   latitude: 55.6923802
   longitude: 12.5562627
   googleQuery: Mirabelle, Guldbergsgade, Copenhagen
+ismageriet:
+  latitude: 55.668456
+  longitude: 12.558609
+  googleQuery: Ismageriet Kødbyen, Flæsketorvet 45-55, Copenhagen
+elis:
+  latitude: 55.678375
+  longitude: 12.590069
+  googleQuery: Elis Copenhagen, Holbergsgade 22, Copenhagen
+sicilianskIs:
+  latitude: 55.703437
+  longitude: 12.549895
+  googleQuery: Siciliansk Is, Skjolds Plads 2, Copenhagen
+nyhavn40:
+  latitude: 55.679171
+  longitude: 12.591828
+  googleQuery: Nyhavn 40 Kastbergs Is, Copenhagen
 smk:
   latitude: 55.6887637
   longitude: 12.5783697

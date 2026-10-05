@@ -256,6 +256,13 @@ _Start with smørrebrød, then work through the comfort food, ice-cream kiosks a
   - Lakrids by Bülow is the premium end: founded on Bornholm in 2007 and best known for liquorice coated in chocolate and flavourful shells.
   - If a packet says salt, salmiak or stærk, expect a much sharper salty-ammonium-liquorice hit. Start with sweet liquorice if you are unsure.
 
+### Ice cream
+- **Ismageriet, Kødbyen** — A Copenhagen favourite with a huge rotating flavour counter. Excellent, popular and very capable of producing a queue. · https://ismageriet.dk/en/pages/ice-cream-shop-meatpacking-district
+- **Elis Copenhagen** — Italian gelato made from scratch near Nyhavn, plus filled churros when one dessert is apparently not enough. · https://www.eliscopenhagen.com/
+- **Siciliansk Is** — Homemade organic Sicilian-style gelato at Skjolds Plads. Seasonal, so check before making the trip. · https://sicilianskis.dk/
+- **Nyhavn 40 · Kastbergs Is** — More than 30 Kastbergs ice creams and sorbets, directly on Nyhavn—an easy sightseeing sugar stop. · https://nyhavn40.dk/
+- **Alice, Amager** — Small-batch seasonal ice cream made from scratch. Try the cardamom flavour if it appears on the counter. · https://www.visitcopenhagen.com/copenhagen/planning/alice-ice-cream-coffee-gdk1111214
+
 ### Gluten-free
 - **Gluten-free in Denmark** — Options exist, but preparation standards vary—ask clearly, especially if cross-contamination matters. · https://coeliaki.dk/visit-denmark-with-coeliac-disease/
   - _A practical heads-up_
