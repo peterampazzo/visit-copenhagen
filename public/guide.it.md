@@ -256,6 +256,13 @@ _Iniziate dagli smørrebrød, poi passate ai piatti di casa, ai chioschi dei gel
   - Lakrids by Bülow è l'estremo premium: fondata a Bornholm nel 2007, è famosa per la liquirizia ricoperta di cioccolato e gusci aromatizzati.
   - Se sulla confezione leggete salt, salmiak o stærk, aspettatevi una liquirizia salata e molto più aggressiva. Iniziate da quella dolce se non siete sicuri.
 
+### Gelaterie
+- **Ismageriet, Kødbyen** — Un grande classico di Copenaghen con tantissimi gusti a rotazione. Ottimo, molto amato e perfettamente capace di creare una fila. · https://ismageriet.dk/en/pages/ice-cream-shop-meatpacking-district
+- **Elis Copenhagen** — Gelato italiano fatto da zero vicino a Nyhavn, più churros ripieni quando un solo dolce evidentemente non basta. · https://www.eliscopenhagen.com/
+- **Siciliansk Is** — Gelato siciliano artigianale e biologico a Skjolds Plads. È stagionale, quindi controllate prima di partire. · https://sicilianskis.dk/
+- **Nyhavn 40 · Kastbergs Is** — Più di 30 gelati e sorbetti Kastbergs, direttamente a Nyhavn—una facile sosta zuccherina durante il giro turistico. · https://nyhavn40.dk/
+- **Alice, Amager** — Gelato stagionale fatto da zero in piccoli lotti. Provate il gusto al cardamomo se compare al banco. · https://www.visitcopenhagen.com/copenhagen/planning/alice-ice-cream-coffee-gdk1111214
+
 ### Senza glutine
 - **Senza glutine in Danimarca** — Le opzioni ci sono, ma la preparazione varia—chiedete chiaramente, soprattutto se la contaminazione è un rischio. · https://coeliaki.dk/visit-denmark-with-coeliac-disease/
   - _Una dritta pratica_
