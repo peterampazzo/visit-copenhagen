@@ -811,6 +811,29 @@ sections:
               - "Lakrids by Bülow is the premium end: founded on Bornholm in 2007 and best known for liquorice coated in chocolate and flavourful shells."
               - "If a packet says salt, salmiak or stærk, expect a much sharper salty-ammonium-liquorice hit. Start with sweet liquorice if you are unsure."
             url: https://lakridsbybulow.com/
+      iceCream:
+        title: Ice cream
+        items:
+          ismageriet:
+            name: Ismageriet, Kødbyen
+            note: A Copenhagen favourite with a huge rotating flavour counter. Excellent, popular and very capable of producing a queue.
+            url: https://ismageriet.dk/en/pages/ice-cream-shop-meatpacking-district
+          elis:
+            name: Elis Copenhagen
+            note: Italian gelato made from scratch near Nyhavn, plus filled churros when one dessert is apparently not enough.
+            url: https://www.eliscopenhagen.com/
+          sicilianskIs:
+            name: Siciliansk Is
+            note: Homemade organic Sicilian-style gelato at Skjolds Plads. Seasonal, so check before making the trip.
+            url: https://sicilianskis.dk/
+          nyhavn40:
+            name: Nyhavn 40 · Kastbergs Is
+            note: More than 30 Kastbergs ice creams and sorbets, directly on Nyhavn—an easy sightseeing sugar stop.
+            url: https://nyhavn40.dk/
+          alice:
+            name: Alice, Amager
+            note: Small-batch seasonal ice cream made from scratch. Try the cardamom flavour if it appears on the counter.
+            url: https://www.visitcopenhagen.com/copenhagen/planning/alice-ice-cream-coffee-gdk1111214
       glutenFree:
         title: Gluten-free
         items:

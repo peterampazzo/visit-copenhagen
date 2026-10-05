@@ -83,7 +83,7 @@ const GUIDE_ORDER = [
     groups: ["classics", "stories", "harbour", "waterfront", "neighbourhoods", "modern", "shops"],
   },
   { id: "funfacts", groups: ["denmark"] },
-  { id: "food", groups: ["classics", "glutenFree", "markets", "dining", "coffee"] },
+  { id: "food", groups: ["classics", "iceCream", "glutenFree", "markets", "dining", "coffee"] },
   { id: "pastries", groups: ["bakeries"] },
   { id: "museums", groups: ["art"] },
   { id: "saunas", groups: ["sweat"] },
