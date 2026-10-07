@@ -3,6 +3,10 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { parse } from "yaml";
 
+const TAGS = parse(readFileSync("src/data/tags.yaml", "utf8"));
+const MUST_SEE = new Set(TAGS.mustSee ?? []);
+const INDOOR = new Set(TAGS.indoor ?? []);
+
 const SITE_URL = "https://hygge.peterampazzo.com";
 
 function renderLinks(item) {
@@ -16,11 +20,16 @@ function renderLinks(item) {
   return links.length ? ` · ${links.join(" · ")}` : "";
 }
 
-function renderItem(item) {
+function renderItem(item, id, lang) {
   const lines = [];
   const note = item.note ? ` — ${item.note}` : "";
   const travel = item.travel ? ` _(${item.travel})_` : "";
-  lines.push(`- **${item.name}**${note}${travel}${renderLinks(item)}`);
+  const flags = [
+    MUST_SEE.has(id) ? (lang === "it" ? "⭐ Imperdibile" : "⭐ Must-see") : null,
+    INDOOR.has(id) ? (lang === "it" ? "☔ Al chiuso" : "☔ Indoor") : null,
+  ].filter(Boolean);
+  const flagText = flags.length ? ` [${flags.join(", ")}]` : "";
+  lines.push(`- **${item.name}**${flagText}${note}${travel}${renderLinks(item)}`);
   if (item.kicker) lines.push(`  - _${item.kicker}_`);
   if (item.story) lines.push(`  - ${item.story.replace(/\s+/g, " ").trim()}`);
   if (item.storyItems) {
@@ -52,8 +61,8 @@ function renderGuide(data, lang) {
       if (group.route) {
         out.push(`Route: ${group.route.label} — ${group.route.stops.join(" → ")}`);
       }
-      for (const item of Object.values(group.items ?? {})) {
-        out.push(...renderItem(item));
+      for (const [id, item] of Object.entries(group.items ?? {})) {
+        out.push(...renderItem(item, id, lang));
       }
       out.push("");
     }

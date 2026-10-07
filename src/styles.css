@@ -846,6 +846,19 @@
     3px 3px 0 var(--ink);
 }
 
+.guide-map-marker[data-must-see="true"]::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--coral);
+  pointer-events: none;
+}
+
 .guide-map-marker[data-selected="true"] {
   z-index: 6;
 }
