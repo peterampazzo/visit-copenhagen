@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { BackToTop } from "@/components/guide/BackToTop";
+import { FilterPills } from "@/components/guide/FilterPills";
 import { GuideFooter } from "@/components/guide/GuideFooter";
 import { GuideSection } from "@/components/guide/GuideSection";
 import { Hero } from "@/components/guide/Hero";
@@ -15,6 +16,7 @@ import { SectionNav } from "@/components/guide/SectionNav";
 
 import {
   itemMatchesQuery,
+  type GuideFilters,
   toGuideSections,
   toReelsSection,
   type GuideSectionsRecord,
@@ -32,6 +34,7 @@ export function App() {
   const [selectedMapPlaceId, setSelectedMapPlaceId] = useState<string | null>(null);
   const [mapFilter, setMapFilter] = useState<"all" | "favourites">("all");
   const [search, setSearch] = useState("");
+  const [filters, setFilters] = useState<GuideFilters>({ mustSee: false, indoor: false });
   const sections = toGuideSections(
     t("sections", { returnObjects: true }) as unknown as GuideSectionsRecord,
   );
@@ -44,10 +47,10 @@ export function App() {
     () =>
       sections.some((section) =>
         section.groups.some((group) =>
-          group.items.some((item) => itemMatchesQuery(item, group.title, search)),
+          group.items.some((item) => itemMatchesQuery(item, group.title, search, filters)),
         ),
       ),
-    [sections, search],
+    [sections, search, filters],
   );
 
   useEffect(() => {
@@ -104,6 +107,16 @@ export function App() {
             </div>
           </div>
         </div>
+        <FilterPills
+          filters={filters}
+          onChange={setFilters}
+          copy={{
+            label: t("site.filterLabel"),
+            mustSee: t("site.filterMustSee"),
+            indoor: t("site.filterIndoor"),
+            reset: t("site.filterReset"),
+          }}
+        />
         <SavedStrip
           places={mapPlaces}
           title={t("site.savedStripTitle")}
@@ -122,6 +135,8 @@ export function App() {
             section={section}
             sectionIndex={index}
             query={search}
+            filters={filters}
+            badgeCopy={{ mustSee: t("site.badgeMustSee"), indoor: t("site.badgeIndoor") }}
             linkLabel={t("site.linkLabel")}
             mapPlaces={mapPlaces}
             showOnMapLabel={t("site.showOnMap")}
