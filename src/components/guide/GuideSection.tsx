@@ -2,7 +2,7 @@ import { ArrowRight, ExternalLink, Footprints } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 
-import { itemMatchesQuery, type GuideGroup, type GuideSectionData } from "@/lib/guide-content";
+import { itemMatchesQuery, type GuideFilters, type GuideGroup, type GuideSectionData } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
 import { cn } from "@/lib/utils";
 
@@ -29,6 +29,8 @@ export function GuideSection({
   onShowOnMap,
   storyCopy,
   favouriteCopy,
+  filters,
+  badgeCopy,
 }: {
   section: GuideSectionData;
   sectionIndex: number;
@@ -39,6 +41,8 @@ export function GuideSection({
   onShowOnMap: (id: string) => void;
   storyCopy: StoryCopy;
   favouriteCopy: { add: string; remove: string };
+  filters: GuideFilters;
+  badgeCopy: { mustSee: string; indoor: string };
 }) {
   const [activeCalendarGroup, setActiveCalendarGroup] = useState(() => {
     const currentMonth = new Date().getMonth() + 1;
@@ -50,7 +54,7 @@ export function GuideSection({
   const visibleGroups = section.groups
     .map((group) => ({
       ...group,
-      items: group.items.filter((item) => itemMatchesQuery(item, group.title, query)),
+      items: group.items.filter((item) => itemMatchesQuery(item, group.title, query, filters)),
     }))
     .filter((group) => group.items.length > 0);
   const standardGroups = visibleGroups.filter((group) => !group.collapsible);
@@ -71,6 +75,7 @@ export function GuideSection({
             onShowOnMap={onShowOnMap}
             storyCopy={storyCopy}
             favouriteCopy={favouriteCopy}
+            badgeCopy={badgeCopy}
             index={index}
           />
         );
@@ -219,7 +224,7 @@ export function GuideSection({
               </div>
               {(() => {
                 const selectedGroup =
-                  query.trim().length > 0
+                  query.trim().length > 0 || filters.mustSee || filters.indoor
                     ? calendarGroups[0]
                     : calendarGroups.find((group) => group.id === activeCalendarGroup);
 

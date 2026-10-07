@@ -42,31 +42,36 @@ _The small stuff that makes a big difference._
 - **Don't bin bottles and cans** — They carry a deposit — return them at any supermarket and get money back. · https://danskretursystem.dk/en/about-deposits/
 - **Payments** — We use Danish kroner, not euros. But the country is almost entirely cashless, so your card works everywhere.
 - **Public toilets are free** — Copenhagen has around 175 of them. The city's map shows the nearest one and its opening hours; park toilets may close in winter. · https://visitorservice.kk.dk/en/explore-copenhagen/public-toilets
+- **What's the weather doing?** — Rain here often lasts ten minutes, not all day. Check the radar, not the percentage. · [DMI rain radar](https://www.dmi.dk/vejrarkiv/nedboersradar) · [YR · Copenhagen](https://www.yr.no/en/forecast/daily-table/2-2618425/Denmark/Capital%20Region/Copenhagen)
+  - _Radar beats forecast_
+  - A '60% rain' forecast often means one short shower and then sun. The rain radar shows where it is and where it's heading.
+  - DMI is the Danish weather service; its app is DMI Vejr. YR (from Norway) gives a clear hour-by-hour forecast.
+  - Tip: Bring a rain jacket rather than an umbrella — the wind usually wins.
 
 ## 🏰 Places & stories
 _The city makes more sense once you know what you're looking at._
 
 ### Classics with a backstory
-- **Nyhavn** — The coloured harbour from every postcard. It is busy and touristy, but still worth walking—especially early or after dinner.
+- **Nyhavn** [⭐ Must-see] — The coloured harbour from every postcard. It is busy and touristy, but still worth walking—especially early or after dinner.
 - **Christiansborg & the Tower** — Parliament, palace and a free city view—all on the same island. · https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
   - _Third palace on this site_
   - Christiansborg did not burn three times. The first and second palaces burned in 1794 and 1884; today's building is the third. Beneath it are the ruins of Bishop Absalon's castle and Copenhagen Castle. It now houses Parliament, the Prime Minister's Office, the Supreme Court and royal reception rooms.
 - **Amalienborg** — Four matching palaces around one very impressive king on horseback—and a changing of the guard every day around noon. · https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/changing-of-the-guard/
   - _1750s · Guard change at 12_
   - Amalienborg was built as four noblemen's palaces around Saly's equestrian statue of Frederik V. The royal family moved here after Christiansborg burned in 1794. The calm geometry is deliberate: Amalienborg is the centre of the grand Frederiksstaden district. The guard changes every day around 12:00. When the King is in residence, the larger King's Guard—with band—leaves the Life Guard Barracks on Gothersgade at 11:27 and marches through the centre before entering the palace square shortly before noon.
-- **Tivoli** — More than an amusement park: a pleasure garden of lights, music, theatre, restaurants and entirely optional rides. · https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
+- **Tivoli** [⭐ Must-see] — More than an amusement park: a pleasure garden of lights, music, theatre, restaurants and entirely optional rides. · https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
   - _Since 1843 · Disney took notes too_
   - Georg Carstensen opened Tivoli in 1843 as an escape for the city, inspired by European pleasure gardens. He mixed Danish romanticism, Chinese fantasy and vaguely Middle Eastern scenery so that every corner felt like a different little world. The 1874 Pantomime Theatre, with its Chinese facade and mechanical peacock curtain, has kept a commedia dell'arte tradition alive since the park opened. Walt Disney visited in 1951 and returned after Disneyland opened, studying Tivoli's atmosphere, cleanliness and attention to detail. H.C. Andersen was among the first visitors and found inspiration here for The Nightingale.
-- **Christiania** — A resident-run community born in a squatted military area—not just the former hash street. · https://www.christiania.org/info/christianias-historie/
+- **Christiania** [⭐ Must-see] — A resident-run community born in a squatted military area—not just the former hash street. · https://www.christiania.org/info/christianias-historie/
   - _1971 → a new chapter_
   - In 1971 neighbours, squatters and hippies moved into abandoned barracks and built a “freetown” around local self-government, shared responsibility and community meetings. You cannot simply buy a home here: vacancies are announced, people apply and the local area chooses its new resident. A foundation bought much of the land from the state in 2012. After years of gang violence around the open cannabis market, residents voted to close Pusher Street. On 6 April 2024 its cobbles were dug up, and the street is now being remade around legal activities, culture and everyday life.
-- **Søerne (The Lakes)** — Three long lakes and the city's favourite 6.35 km walking loop. · https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
+- **Søerne (The Lakes)** [⭐ Must-see] — Three long lakes and the city's favourite 6.35 km walking loop. · https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
   - _Wetlands → water supply → city walk_
   - Sankt Jørgens Sø, Peblinge Sø and Sortedams Sø grew from low wetlands into a carefully managed water system. Over the centuries they powered mills, stored drinking water and strengthened the city's defences. Today their hard-working past is mostly hidden beneath Copenhagen's favourite walking and running route. In a properly cold winter parts can become a rare public ice square—but only step onto the ice when the city has put up the blue “ice traffic permitted” signs.
-- **Kongens Have** — Copenhagen's oldest royal garden, with Rosenborg Castle and the Crown Jewels in the treasury below. · https://denkongeligesamling.dk/en/rosenborg-castle/
+- **Kongens Have** [⭐ Must-see] — Copenhagen's oldest royal garden, with Rosenborg Castle and the Crown Jewels in the treasury below. · https://denkongeligesamling.dk/en/rosenborg-castle/
   - _1600s · Castle above, crowns below_
   - Christian IV laid out the garden and built Rosenborg as his small favourite castle in the early 1600s. It later became a museum of the monarchy. The treasure is not buried in the foundations: the royal crowns, regalia and Danish Crown Jewels are displayed in the Treasury beneath the castle.
-- **Kastellet** — A working star fortress that doubles as one of the city's best walks. · https://www.forsvaret.dk/da/side/kastellet/kastellets-historie/
+- **Kastellet** [⭐ Must-see] — A working star fortress that doubles as one of the city's best walks. · https://www.forsvaret.dk/da/side/kastellet/kastellets-historie/
   - _1662–65 · Frederik III_
   - Christian IV began the fortifications, but Frederik III completed Kastellet with Dutch engineer Henrik Rüse. It is still an active military workplace and is also open as a public park. Look up at Kongeporten: the face above the gate is a bust of Frederik III.
 - **Assistens Cemetery** — Nørrebro's greenest history book—and still an active cemetery. · https://www.visitcopenhagen.com/copenhagen/planning/assistens-cemetery-gdk964360
@@ -131,7 +136,7 @@ Route: Easy waterside walk — Amalienborg → Nyhavn → Skuespilhuset → Papi
 
 ### Architecture & curiosities
 - **Superkilen** — A park in Nørrebro you've probably already seen in a commercial.
-- **CopenHill (Amager Bakke)** — An incinerator with a ski slope on top. Free elevator to the roof, but a bit out of the way — nothing fancy.
+- **CopenHill (Amager Bakke)** [⭐ Must-see] — An incinerator with a ski slope on top. Free elevator to the roof, but a bit out of the way — nothing fancy.
 - **Kaktus Towers** — Two prickly BIG towers with rotating floors, rental apartments and an elevated public park above the city. · https://dac.dk/en/magazine/places/kaktus-towers-prickly-architecture-231
   - _80 metres · BIG_
   - Each floor turns slightly from the one below, creating the pointed balconies that gave the towers their cactus nickname. They are mainly compact rental homes with shared facilities; the useful part for a visitor is the public green route at their base, connected to the IKEA rooftop and the new district behind Central Station.
@@ -141,15 +146,15 @@ Route: Easy waterside walk — Amalienborg → Nyhavn → Skuespilhuset → Papi
 - **Nyboder** — The long yellow houses Christian IV built for the Navy; many are still Defence rental homes today. · https://www.ejendomsstyrelsen.dk/da/arbejdsomraader/salg-og-leje/forsvarets-lejeboliger/
   - _Since 1631 · naval housing_
   - Nyboder roughly means “new little houses”. Christian IV built them for sailors, craftsmen and junior officers, creating a service neighbourhood in the centre of town. They are not merely a postcard backdrop: the Danish Defence still manages roughly six hundred rental homes here, primarily for its own employees.
-- **Grundtvig's Church** — A yellow-brick expressionist cathedral in Bispebjerg, with a facade that looks simultaneously like an organ and a cliff. · https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
+- **Grundtvig's Church** [☔ Indoor] — A yellow-brick expressionist cathedral in Bispebjerg, with a facade that looks simultaneously like an organ and a cliff. · https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
   - _Six million bricks · 1940_
   - Peder Vilhelm Jensen-Klint fused the scale of a Gothic cathedral with the plain forms of Danish village churches; after his death, his son Kaare completed the building and designed its chairs. Online it is often nicknamed “the Shrek church” because it resembles the church where Fiona almost marries Lord Farquaad, but DreamWorks has never confirmed that it was actually the model.
 
 ### Libraries worth entering
-- **The Black Diamond, Royal Danish Library** — A free harbourfront atrium, working library and cultural venue joining a glossy 1999 extension to the old 1906 library. · https://www.kb.dk/en/visit-us/black-diamond-copenhagen
+- **The Black Diamond, Royal Danish Library** [☔ Indoor] — A free harbourfront atrium, working library and cultural venue joining a glossy 1999 extension to the old 1906 library. · https://www.kb.dk/en/visit-us/black-diamond-copenhagen
   - _Free building · exhibitions may cost_
   - The Black Diamond is not only something to photograph from the water. Walk into the huge public atrium, look across the harbour and follow the bridges that connect the new waterfront building with the older library behind it. Entry to the building is free and everyone is welcome; exhibitions, concerts and talks set their own ticket rules. The café and Library Garden make an easy continuation of a Christiansborg walk.
-- **University Library in Fiolstræde** — The spectacular red-brick library behind Copenhagen Cathedral—more Gothic fantasy than ordinary reading room. · https://www.kb.dk/en/visit-us/university-library-fiolstraede
+- **University Library in Fiolstræde** [☔ Indoor] — The spectacular red-brick library behind Copenhagen Cathedral—more Gothic fantasy than ordinary reading room. · https://www.kb.dk/en/visit-us/university-library-fiolstraede
   - _1861 · brick Gothic · cast iron_
   - Johan Daniel Herholdt won Denmark's first architectural competition with a design inspired by northern Italian cathedrals and Gothic monuments. Inside, yellow brick, slender cast-iron structures and Georg Hilker's painted ceilings turn the book hall into one of the city's most unexpected rooms. The building reopened to the public in 2023 as a place for research, culture and tours; check the current programme before going specifically for a guided visit.
 
@@ -164,11 +169,11 @@ Route: Easy waterside walk — Amalienborg → Nyhavn → Skuespilhuset → Papi
   - Cinemateket is Denmark's national film house; Filmtaget is its 1,700-square-metre roof. You can visit the permanent film exhibition and skyline view without buying a cinema ticket, then stay for food or book a screening at Himmelbio. The cinema can be covered when the weather turns, which makes this more than a summer-only view.
 
 ### Shops worth the stop
-- **LEGO Store Copenhagen** — Two floors on Vimmelskaftet, in the middle of Strøget. Build-a-minifigure wall, big city models, and the Pick & Build bricks by weight. · https://www.lego.com/en-dk/stores/store/copenhagen
+- **LEGO Store Copenhagen** [☔ Indoor] — Two floors on Vimmelskaftet, in the middle of Strøget. Build-a-minifigure wall, big city models, and the Pick & Build bricks by weight. · https://www.lego.com/en-dk/stores/store/copenhagen
   - _Danish since 1932_
   - LEGO comes from Billund in Jutland, where Ole Kirk Kristiansen started making wooden toys in 1932; the name is short for "leg godt" — play well. The plastic interlocking brick as we know it was patented in 1958. The Copenhagen flagship is the easy city stop; the full experience is LEGO House in Billund.
-- **Illums Bolighus** — The place for Danish design, from a useful souvenir to furniture you cannot take home. · https://www.illumsbolighus.com/
-- **Royal Copenhagen** — Blue-and-white porcelain, very Danish and very pretty. The outlet is better for a serious bargain hunt. · https://www.royalcopenhagen.com/en-int/
+- **Illums Bolighus** [☔ Indoor] — The place for Danish design, from a useful souvenir to furniture you cannot take home. · https://www.illumsbolighus.com/
+- **Royal Copenhagen** [☔ Indoor] — Blue-and-white porcelain, very Danish and very pretty. The outlet is better for a serious bargain hunt. · https://www.royalcopenhagen.com/en-int/
 
 ## 🇩🇰 Very Danish things
 _The things that make visitors stop and ask, “wait—why?”_
@@ -272,13 +277,13 @@ _Start with smørrebrød, then work through the comfort food, ice-cream kiosks a
   - The Danish Coeliac Society's visitor guide includes travel cards and an experience-based map; always confirm the current offering directly with the venue.
 
 ### Markets
-- **Torvehallerne** — Two covered halls full of produce, specialist stalls and small meals—an easy place to try smørrebrød without booking.
-- **Reffen** — Street food in old containers on the industrial side of the harbour, with outdoor tables, workshops and lots of space; check seasonal opening.
+- **Torvehallerne** [⭐ Must-see, ☔ Indoor] — Two covered halls full of produce, specialist stalls and small meals—an easy place to try smørrebrød without booking.
+- **Reffen** [⭐ Must-see] — Street food in old containers on the industrial side of the harbour, with outdoor tables, workshops and lots of space; check seasonal opening.
 - **Broens Gadekøkken** — The Bridge Street Kitchen, just across from Nyhavn. Outdoor.
 - **Kødbyen** — Copenhagen's Meatpacking District—old butcher halls now shared by food businesses, restaurants, galleries, bars and nightclubs. · https://www.visitcopenhagen.com/copenhagen/neighbourhoods/neighborhoods/guide-meatpacking-district
   - _Brown City 1878 · White City 1934_
   - Kødbyen grew in two recognisable layers: the older brown-brick section and the functional white buildings from the 1930s. It is not a completely sanitised entertainment district; parts of the food industry still work beside galleries, restaurants and late- night venues. Come for dinner and stay later if you want energy; in the morning it feels much more like the workplace it once was.
-- **Tivoli Food Hall** — An easy central food-hall stop, right by Central Station. You can enter from the street without a Tivoli ticket. · https://www.tivoli.dk/en/food-and-drinks/tivoli-food-hall
+- **Tivoli Food Hall** [☔ Indoor] — An easy central food-hall stop, right by Central Station. You can enter from the street without a Tivoli ticket. · https://www.tivoli.dk/en/food-and-drinks/tivoli-food-hall
 
 ### Dining
 - **Det Lille Apotek** — One of the city's oldest restaurants, with low rooms, candles and traditional Danish cooking without creative reinterpretation.
@@ -286,7 +291,7 @@ _Start with smørrebrød, then work through the comfort food, ice-cream kiosks a
 - **Gasoline Grill** — A Copenhagen burger institution with a lot of international hype. Go if a very good burger and a queue sound like lunch. · https://gasolinegrill.com/
 
 ### Coffee with a reason to stop
-- **Mirabelle / Lazy Bakery** — Sourdough bread, pastries that change daily and a proper espresso at the counter, still advertised at 10 kroner. · https://www.mirabelle-spiseria.dk/lazy-bakery
+- **Mirabelle / Lazy Bakery** [☔ Indoor] — Sourdough bread, pastries that change daily and a proper espresso at the counter, still advertised at 10 kroner. · https://www.mirabelle-spiseria.dk/lazy-bakery
   - _Nørrebro · espresso al banco_
   - Mirabelle's bakery brings a small Italian habit to Copenhagen: quick espresso, drunk standing at the counter and at a remarkably kind price for the city. The website currently lists it at ten kroner; because prices change, check that it still applies when you visit. Bread and pastry choices vary from day to day.
 
@@ -294,11 +299,11 @@ _Start with smørrebrød, then work through the comfort food, ice-cream kiosks a
 _Cardamom, butter and a very good reason to get up early._
 
 ### Bakeries
-- **Andersen** — An Islands Brygge bakery for precisely made bread, croissants and pastries—a useful detour to combine with the harbourfront.
-- **Juno** — The city's most famous cardamom bun in a tiny Østerbro bakery. Go early and expect at least a little queue.
-- **Lagkagehuset** — A chain found almost everywhere: less special than an independent bakery, but reliable for bread, pastries and breakfast without a detour.
+- **Andersen** [☔ Indoor] — An Islands Brygge bakery for precisely made bread, croissants and pastries—a useful detour to combine with the harbourfront.
+- **Juno** [☔ Indoor] — The city's most famous cardamom bun in a tiny Østerbro bakery. Go early and expect at least a little queue.
+- **Lagkagehuset** [☔ Indoor] — A chain found almost everywhere: less special than an independent bakery, but reliable for bread, pastries and breakfast without a detour.
 - **Alice, Amager** — Proper pastries, coffee and seasonal ice cream. Try the cardamom ice cream if it's on. · https://maps.app.goo.gl/932ZVTmvULBaKjFJ7
-- **Kong Hans Bakery** — From the team behind two-Michelin-starred Kong Hans Kælder, this still-under-the-radar bakery treats bread, viennoiserie and pâtisserie with fine-dining precision. · https://konghansbakery.dk/en/
+- **Kong Hans Bakery** [☔ Indoor] — From the team behind two-Michelin-starred Kong Hans Kælder, this still-under-the-radar bakery treats bread, viennoiserie and pâtisserie with fine-dining precision. · https://konghansbakery.dk/en/
   - _Østerbro · opened in 2025_
   - Kælder means “cellar” and belongs to the historic restaurant that inspired the project; the bakery is a separate place on Øster Farimagsgade. It brings the same precision out into everyday city life, combining French technique, Nordic discipline, long-fermented bread, croissants and pâtisserie. The space is small and relatively new, so a queue should not be a surprise.
 - **More pastry ideas** — A useful Instagram list with more bakeries to save for later. It is not my list, so treat it as extra inspiration rather than gospel. · https://www.instagram.com/p/DOSrrF8DJpF/
@@ -307,23 +312,23 @@ _Cardamom, butter and a very good reason to get up early._
 _Rainy day? Perfect, that's most days._
 
 ### Art & history
-- **SMK** — Denmark's National Gallery: Danish art, major European painters and a modern wing looking onto Østre Anlæg park.
-- **Nationalmuseet** — The fullest route through Danish history, from prehistory and Vikings to the details of more recent everyday life.
-- **Thorvaldsens Museum** — Neoclassical sculpture inside rooms with painted ceilings and unexpected colour—small enough not to consume the whole day.
-- **Ny Carlsberg Glyptotek** — Egyptian, Greek and Roman antiquities, French painting and a palm-filled winter garden that is nearly worth the visit alone.
-- **Designmuseum Danmark** — The clearest introduction to Danish design—furniture, craft, fashion and graphics—inside the former Royal Frederik's Hospital. · https://designmuseum.dk/en/
-- **Copenhagen Contemporary** — Monumental installations, performance and video art in 7,000 m² of former B&W welding halls on Refshaleøen. · https://copenhagencontemporary.org/en/
-- **Cisternerne** — Changing art installations inside Copenhagen's old underground water reservoirs—dark, damp and unlike a conventional museum.
-- **Experimentarium** — Three floors of hands-on experiments, water play and a rooftop terrace—excellent with children and on long rainy days.
-- **Louisiana Museum of Modern Art** — Outside the city, around one hour by train. Worth the whole day.
-- **ARKEN Museum of Contemporary Art** — Contemporary art in a ship-like building beside Ishøj's beach park; pair the galleries and sculpture park with a coastal walk. _(16 min by S-train + bus or walk)_ · https://www.arken.dk/en
+- **SMK** [⭐ Must-see, ☔ Indoor] — Denmark's National Gallery: Danish art, major European painters and a modern wing looking onto Østre Anlæg park.
+- **Nationalmuseet** [☔ Indoor] — The fullest route through Danish history, from prehistory and Vikings to the details of more recent everyday life.
+- **Thorvaldsens Museum** [☔ Indoor] — Neoclassical sculpture inside rooms with painted ceilings and unexpected colour—small enough not to consume the whole day.
+- **Ny Carlsberg Glyptotek** [⭐ Must-see, ☔ Indoor] — Egyptian, Greek and Roman antiquities, French painting and a palm-filled winter garden that is nearly worth the visit alone.
+- **Designmuseum Danmark** [☔ Indoor] — The clearest introduction to Danish design—furniture, craft, fashion and graphics—inside the former Royal Frederik's Hospital. · https://designmuseum.dk/en/
+- **Copenhagen Contemporary** [☔ Indoor] — Monumental installations, performance and video art in 7,000 m² of former B&W welding halls on Refshaleøen. · https://copenhagencontemporary.org/en/
+- **Cisternerne** [☔ Indoor] — Changing art installations inside Copenhagen's old underground water reservoirs—dark, damp and unlike a conventional museum.
+- **Experimentarium** [☔ Indoor] — Three floors of hands-on experiments, water play and a rooftop terrace—excellent with children and on long rainy days.
+- **Louisiana Museum of Modern Art** [⭐ Must-see, ☔ Indoor] — Outside the city, around one hour by train. Worth the whole day.
+- **ARKEN Museum of Contemporary Art** [☔ Indoor] — Contemporary art in a ship-like building beside Ishøj's beach park; pair the galleries and sculpture park with a coastal walk. _(16 min by S-train + bus or walk)_ · https://www.arken.dk/en
 - **Copenhagen's top museums** — The official round-up for comparing collections, neighbourhoods and less obvious options when you only have time for one museum. · https://www.visitcopenhagen.com/copenhagen/activities/copenhagens-top-museums
 
 ## 🧖 Saunas & baths
 _Hot room, cold harbour or candlelit thermal bath—your choice._
 
 ### Where to sweat or soak
-- **AIRE Ancient Baths** — A luxurious candlelit thermal circuit, steam room and massages in the historic cellars of the old Carlsberg brewery—beautiful, quiet and priced accordingly. · https://relax.beaire.com/en/aire-ancient-baths-copenhagen
+- **AIRE Ancient Baths** [☔ Indoor] — A luxurious candlelit thermal circuit, steam room and massages in the historic cellars of the old Carlsberg brewery—beautiful, quiet and priced accordingly. · https://relax.beaire.com/en/aire-ancient-baths-copenhagen
   - _Carlsberg Byen · book ahead_
 - **Glaecier** — A floating Refshaleøen club with sauna, filtered harbour-water pool and panoramic views; normally members-only except for Open Gus sessions. · https://glaecier.com/en/
 - **Sauna85** — Bookable saunagus without a membership at several locations—an easy introduction to heat, essential oils and a cold plunge. · https://www.sauna85.dk/en/
@@ -352,7 +357,7 @@ _The rest of Denmark is small, flat and very reachable by train._
 - **Frederiksborg Castle, Hillerød** — A Renaissance castle on three islets, with baroque gardens behind it. The most beautiful of the lot. _(40 min from Nørreport)_ · https://dnm.dk/en/
   - _Christian IV · 1600s_
   - Christian IV rebuilt Frederiksborg as his showpiece castle in the early 1600s. After a fire in 1859 the brewer J.C. Jacobsen paid for its restoration, and it reopened as the Museum of National History. The terraced baroque garden behind the castle is free to walk.
-- **Kronborg Castle, Helsingør** — Hamlet's castle, guarding the narrowest point of the Øresund. Sweden is right there. _(45 min from Copenhagen H)_ · https://kongeligeslotte.dk/en/palaces-and-gardens/kronborg-castle.html
+- **Kronborg Castle, Helsingør** [⭐ Must-see] — Hamlet's castle, guarding the narrowest point of the Øresund. Sweden is right there. _(45 min from Copenhagen H)_ · https://kongeligeslotte.dk/en/palaces-and-gardens/kronborg-castle.html
   - _UNESCO · Hamlet_
   - Kronborg controlled the Sound and the toll every passing ship had to pay, which made the Danish crown rich. Shakespeare turned it into Elsinore in Hamlet without ever visiting. Under the castle sleeps Holger Danske, who legend says wakes when Denmark needs him.
 - **Roskilde** — Royal cathedral plus five Viking ships raised from the fjord — and you can sail a reconstruction. _(25 min by train)_ · https://www.vikingeskibsmuseet.dk/en
@@ -383,7 +388,7 @@ _The rest of Denmark is small, flat and very reachable by train._
   - By air: best when time matters, though airport transfers reduce the apparent advantage. In every case, bring the travel document required for your nationality.
 
 ### Worth the longer ride
-- **Møns Klint** — White chalk cliffs dropping 120 m into turquoise water, with beech forest on top. Denmark's most unexpected landscape. _(~2h by car, longer by bus)_ · https://www.moensklint.dk/en/
+- **Møns Klint** [⭐ Must-see] — White chalk cliffs dropping 120 m into turquoise water, with beech forest on top. Denmark's most unexpected landscape. _(~2h by car, longer by bus)_ · https://www.moensklint.dk/en/
   - _70 million years old_
   - The cliffs are chalk formed from the shells of countless tiny sea creatures, pushed up by the ice age. Fossils wash out on the beach below — look for belemnites and sea urchins. Møn is also a Dark Sky reserve, so the night sky is unusually good.
 - **Stevns Klint** — The same chalk, closer to town, with a UNESCO-listed line marking the day the dinosaurs died. _(~1h 15 by car)_ · https://www.stevnsklint.dk/en/
@@ -431,6 +436,12 @@ _The rest of Denmark is small, flat and very reachable by train._
 _If you want someone else's opinion for once._
 
 ### Things I like
+- **Plan B for a rainy day** [☔ Indoor] — Tap "If it rains" at the top to see only indoor places.
+  - _No drama, just drizzle_
+  - Museums: SMK, the Glyptotek (with its winter garden) and the National Museum are all good for a few hours.
+  - Warm up in a sauna — you're getting wet anyway.
+  - Food halls like Torvehallerne are dry, warm and full of snacks.
+  - Or simply wait it out in a bakery: showers here often pass quickly.
 - **Things to do in Copenhagen** — The New York Times guide for a second opinion on neighbourhoods, restaurants and things to do, maintained separately from this list. · https://www.nytimes.com/interactive/2023/07/20/travel/things-to-do-copenhagen.html
 
 ### February

@@ -1,0 +1,44 @@
+# Pietro's highlights. Add or remove item ids (same keys used in the guide YAML).
+mustSee:
+  - nyhavn
+  - tivoli
+  - christiania
+  - kingsGarden
+  - kastellet
+  - lakes
+  - copenhill
+  - torvehallerne
+  - reffen
+  - smk
+  - glyptotek
+  - louisiana
+  - kronborg
+  - monsKlint
+
+# Indoor places for rainy days.
+indoor:
+  - smk
+  - nationalmuseet
+  - thorvaldsens
+  - glyptotek
+  - designmuseum
+  - copenhagenContemporary
+  - cisternerne
+  - experimentarium
+  - louisiana
+  - arken
+  - aire
+  - torvehallerne
+  - tivoliFoodHall
+  - blackDiamond
+  - fiolstraedeLibrary
+  - grundtvigChurch
+  - legoStore
+  - illumBolighus
+  - royalCopenhagen
+  - mirabelle
+  - andersen
+  - juno
+  - lagkagehuset
+  - kongHansBakery
+  - rainyDay

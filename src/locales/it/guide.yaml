@@ -41,6 +41,12 @@ site:
   navLabel: Sezioni
   searchLabel: Cerca nella guida
   searchPlaceholder: Cerca posti, cibo, dritte…
+  filterLabel: Filtri rapidi
+  filterMustSee: Solo imperdibili
+  filterIndoor: Se piove
+  filterReset: Mostra tutto
+  badgeMustSee: Imperdibile
+  badgeIndoor: Al chiuso
   searchClear: Cancella ricerca
   searchNoResults: Niente corrisponde alla ricerca — provate un'altra parola.
   sortDefault: Ordine predefinito
@@ -151,6 +157,22 @@ sections:
             name: I bagni pubblici sono gratis
             note: A Copenaghen ce ne sono circa 175. La mappa del Comune mostra quello più vicino e gli orari; quelli nei parchi possono chiudere in inverno.
             url: https://visitorservice.kk.dk/en/explore-copenhagen/public-toilets
+          weather:
+            name: Che tempo fa?
+            note: Qui la pioggia spesso dura dieci minuti, non tutto il giorno. Guardate il radar, non la percentuale.
+            kicker: Il radar batte le previsioni
+            storyItems:
+              - "Un '60% di pioggia' spesso vuol dire un acquazzone breve e poi sole. Il radar mostra dove piove e dove si sta spostando."
+              - "DMI è il servizio meteo danese; la sua app si chiama DMI Vejr. YR (norvegese) ha previsioni ora per ora molto chiare."
+            tips:
+              - "Meglio una giacca impermeabile che l'ombrello — il vento vince quasi sempre."
+            links:
+              dmiRadar:
+                text: Radar pioggia DMI
+                url: https://www.dmi.dk/vejrarkiv/nedboersradar
+              yr:
+                text: YR · Copenaghen
+                url: https://www.yr.no/en/forecast/daily-table/2-2618425/Denmark/Capital%20Region/Copenhagen
   places:
     emoji: 🏰
     title: Posti & storie
@@ -1363,6 +1385,15 @@ sections:
       things:
         title: Cose che piacciono a me
         items:
+          rainyDay:
+            name: Piano B se piove
+            note: Toccate "Se piove" in alto per vedere solo i posti al chiuso.
+            kicker: Niente drammi, solo pioggerella
+            storyItems:
+              - "Musei: SMK, la Glyptotek (con il suo giardino d'inverno) e il Museo Nazionale valgono qualche ora."
+              - "Scaldatevi in sauna — tanto vi bagnate comunque."
+              - "I mercati coperti come Torvehallerne sono asciutti, caldi e pieni di cose da mangiare."
+              - "Oppure aspettate in una panetteria: qui gli acquazzoni spesso passano in fretta."
           nyt:
             name: Things to do in Copenhagen
             note: La guida del New York Times per un secondo parere su quartieri, ristoranti e cose da fare. Curata e aggiornata separatamente da questa lista.

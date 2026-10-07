@@ -92,6 +92,7 @@ export function GuideMapCanvas({
         element.dataset["selected"] = String(place.id === selected);
         element.dataset["far"] = String(place.far);
         element.dataset["section"] = place.sectionId;
+        if (place.mustSee) element.dataset["mustSee"] = "true";
         const pin = document.createElement("span");
         pin.className = "guide-map-marker__pin";
         const emoji = document.createElement("span");

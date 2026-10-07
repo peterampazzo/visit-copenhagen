@@ -41,6 +41,12 @@ site:
   navLabel: Sections
   searchLabel: Search the guide
   searchPlaceholder: Search places, food, tips…
+  filterLabel: Quick filters
+  filterMustSee: Must-sees only
+  filterIndoor: If it rains
+  filterReset: Show all
+  badgeMustSee: Must-see
+  badgeIndoor: Indoor
   searchClear: Clear search
   searchNoResults: Nothing matches your search — try another word.
   sortDefault: Default order
@@ -150,6 +156,22 @@ sections:
             name: Public toilets are free
             note: Copenhagen has around 175 of them. The city's map shows the nearest one and its opening hours; park toilets may close in winter.
             url: https://visitorservice.kk.dk/en/explore-copenhagen/public-toilets
+          weather:
+            name: What's the weather doing?
+            note: Rain here often lasts ten minutes, not all day. Check the radar, not the percentage.
+            kicker: Radar beats forecast
+            storyItems:
+              - "A '60% rain' forecast often means one short shower and then sun. The rain radar shows where it is and where it's heading."
+              - "DMI is the Danish weather service; its app is DMI Vejr. YR (from Norway) gives a clear hour-by-hour forecast."
+            tips:
+              - "Bring a rain jacket rather than an umbrella — the wind usually wins."
+            links:
+              dmiRadar:
+                text: DMI rain radar
+                url: https://www.dmi.dk/vejrarkiv/nedboersradar
+              yr:
+                text: YR · Copenhagen
+                url: https://www.yr.no/en/forecast/daily-table/2-2618425/Denmark/Capital%20Region/Copenhagen
   places:
     emoji: 🏰
     title: Places & stories
@@ -1350,6 +1372,15 @@ sections:
       things:
         title: Things I like
         items:
+          rainyDay:
+            name: Plan B for a rainy day
+            note: Tap "If it rains" at the top to see only indoor places.
+            kicker: No drama, just drizzle
+            storyItems:
+              - "Museums: SMK, the Glyptotek (with its winter garden) and the National Museum are all good for a few hours."
+              - "Warm up in a sauna — you're getting wet anyway."
+              - "Food halls like Torvehallerne are dry, warm and full of snacks."
+              - "Or simply wait it out in a bakery: showers here often pass quickly."
           nyt:
             name: Things to do in Copenhagen
             note: The New York Times guide for a second opinion on neighbourhoods, restaurants and things to do, maintained separately from this list.

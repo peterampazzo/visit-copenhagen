@@ -42,31 +42,36 @@ _Le piccole cose che fanno la differenza._
 - **Non buttate bottiglie e lattine** — Hanno un deposito — si riportano al supermercato e vi ridanno i soldi. · https://danskretursystem.dk/en/about-deposits/
 - **Pagamenti** — Qui si usano le corone danesi, non gli euro. Ma è un Paese quasi senza contanti, la carta funziona ovunque.
 - **I bagni pubblici sono gratis** — A Copenaghen ce ne sono circa 175. La mappa del Comune mostra quello più vicino e gli orari; quelli nei parchi possono chiudere in inverno. · https://visitorservice.kk.dk/en/explore-copenhagen/public-toilets
+- **Che tempo fa?** — Qui la pioggia spesso dura dieci minuti, non tutto il giorno. Guardate il radar, non la percentuale. · [Radar pioggia DMI](https://www.dmi.dk/vejrarkiv/nedboersradar) · [YR · Copenaghen](https://www.yr.no/en/forecast/daily-table/2-2618425/Denmark/Capital%20Region/Copenhagen)
+  - _Il radar batte le previsioni_
+  - Un '60% di pioggia' spesso vuol dire un acquazzone breve e poi sole. Il radar mostra dove piove e dove si sta spostando.
+  - DMI è il servizio meteo danese; la sua app si chiama DMI Vejr. YR (norvegese) ha previsioni ora per ora molto chiare.
+  - Tip: Meglio una giacca impermeabile che l'ombrello — il vento vince quasi sempre.
 
 ## 🏰 Posti & storie
 _La città ha più senso quando sapete cosa state guardando._
 
 ### Classici con una storia
-- **Nyhavn** — Il porticciolo colorato delle foto. Turistico, ma bello.
+- **Nyhavn** [⭐ Imperdibile] — Il porticciolo colorato delle foto. Turistico, ma bello.
 - **Christiansborg & la Torre** — Parlamento, palazzo e vista gratuita sulla città, tutto sulla stessa isola. · https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
   - _Il terzo palazzo in questo punto_
   - Christiansborg non è bruciato tre volte. Il primo e il secondo palazzo andarono a fuoco nel 1794 e nel 1884; quello di oggi è il terzo. Sotto si trovano le rovine del castello del vescovo Absalon e del Castello di Copenaghen. Oggi ospita Parlamento, ufficio del Primo Ministro, Corte Suprema e sale di rappresentanza reali.
 - **Amalienborg** — Quattro palazzi uguali attorno a un re a cavallo decisamente imponente—e il cambio della guardia ogni giorno verso mezzogiorno. · https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/changing-of-the-guard/
   - _Anni 1750 · cambio alle 12_
   - Amalienborg nacque come quattro palazzi nobiliari attorno alla statua equestre di Frederik V, opera di Saly. La famiglia reale si trasferì qui dopo l'incendio di Christiansborg del 1794. La geometria ordinata è voluta: Amalienborg è il centro del grande quartiere di Frederiksstaden. La guardia cambia ogni giorno verso le 12. Quando il Re risiede qui, la più grande Guardia del Re, con banda, parte dalla caserma su Gothersgade alle 11:27 e attraversa il centro prima di entrare nella piazza poco prima di mezzogiorno.
-- **Tivoli** — Più che un luna park: un giardino di piacere fatto di luci, musica, teatro, ristoranti e giostre facoltative. · https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
+- **Tivoli** [⭐ Imperdibile] — Più che un luna park: un giardino di piacere fatto di luci, musica, teatro, ristoranti e giostre facoltative. · https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
   - _Dal 1843 · anche Disney prese appunti_
   - Georg Carstensen aprì Tivoli nel 1843 come luogo di evasione per la città, ispirato ai giardini di piacere europei. Mescolò romanticismo danese, fantasia cinese e atmosfere orientaleggianti perché ogni angolo sembrasse un piccolo mondo diverso. Il Teatro della Pantomima del 1874, con facciata cinese e sipario meccanico a pavone, mantiene viva la tradizione della Commedia dell'Arte fin dall'apertura del parco. Walt Disney visitò Tivoli nel 1951 e tornò anche dopo l'apertura di Disneyland, studiandone atmosfera, pulizia e attenzione ai dettagli. H.C. Andersen fu tra i primi visitatori e qui trovò ispirazione per L'usignolo.
-- **Christiania** — Una comunità autogestita nata in un'area militare occupata, non soltanto l'ex via dell'hashish. · https://www.christiania.org/info/christianias-historie/
+- **Christiania** [⭐ Imperdibile] — Una comunità autogestita nata in un'area militare occupata, non soltanto l'ex via dell'hashish. · https://www.christiania.org/info/christianias-historie/
   - _1971 → un nuovo capitolo_
   - Nel 1971 abitanti del quartiere, occupanti e hippie entrarono nelle caserme abbandonate e crearono una “città libera” fondata su autogestione locale, responsabilità condivisa e riunioni della comunità. Qui una casa non si compra semplicemente: quando se ne libera una viene pubblicato un annuncio, ci si candida e l'area sceglie il nuovo abitante. Nel 2012 una fondazione ha acquistato gran parte dei terreni dallo Stato. Dopo anni di violenza tra bande intorno al mercato aperto della cannabis, gli abitanti hanno votato per chiudere Pusher Street. Il 6 aprile 2024 ne hanno rimosso i sampietrini; oggi la strada viene ripensata con attività legali, cultura e vita quotidiana.
-- **Søerne (I laghi)** — Tre laghi allungati e il giro cittadino preferito, lungo 6,35 km. · https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
+- **Søerne (I laghi)** [⭐ Imperdibile] — Tre laghi allungati e il giro cittadino preferito, lungo 6,35 km. · https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
   - _Paludi → acqua potabile → passeggiata_
   - Sankt Jørgens Sø, Peblinge Sø e Sortedams Sø nacquero da zone umide e divennero un sistema d'acqua gestito con cura. Nei secoli hanno alimentato mulini, conservato acqua potabile e rafforzato le difese della città. Oggi questo passato laborioso è quasi invisibile sotto il percorso preferito per passeggiare e correre. In un inverno davvero freddo alcune parti possono diventare una rarissima piazza sul ghiaccio, ma si sale soltanto quando il Comune espone i cartelli blu che autorizzano l'accesso.
-- **Kongens Have** — Il giardino reale più antico della città, con il castello di Rosenborg e i Gioielli della Corona nel tesoro sotterraneo. · https://denkongeligesamling.dk/en/rosenborg-castle/
+- **Kongens Have** [⭐ Imperdibile] — Il giardino reale più antico della città, con il castello di Rosenborg e i Gioielli della Corona nel tesoro sotterraneo. · https://denkongeligesamling.dk/en/rosenborg-castle/
   - _Seicento · castello sopra, corone sotto_
   - Christian IV fece realizzare il giardino e Rosenborg come suo piccolo castello preferito all'inizio del Seicento. In seguito divenne un museo della monarchia. Il tesoro non è murato nelle fondamenta: corone, regalia e Gioielli della Corona danese sono esposti nei sotterranei del castello.
-- **Kastellet** — Una fortezza a stella ancora attiva e una delle passeggiate più belle della città. · https://www.forsvaret.dk/da/side/kastellet/kastellets-historie/
+- **Kastellet** [⭐ Imperdibile] — Una fortezza a stella ancora attiva e una delle passeggiate più belle della città. · https://www.forsvaret.dk/da/side/kastellet/kastellets-historie/
   - _1662–65 · Frederik III_
   - Christian IV iniziò le fortificazioni, ma fu Frederik III a completare Kastellet con l'ingegnere olandese Henrik Rüse. È ancora un luogo di lavoro militare, ma anche un parco aperto al pubblico. Guardate in alto sulla Kongeporten: il volto sopra il portone è il busto di Frederik III.
 - **Cimitero Assistens** — Il libro di storia più verde di Nørrebro, ancora oggi un cimitero attivo. · https://www.visitcopenhagen.com/copenhagen/planning/assistens-cemetery-gdk964360
@@ -131,7 +136,7 @@ Route: Passeggiata facile sull'acqua — Amalienborg → Nyhavn → Skuespilhuse
 
 ### Architettura & curiosità
 - **Superkilen** — Un parco a Nørrebro che probabilmente avete già visto in qualche pubblicità.
-- **CopenHill (Amager Bakke)** — Un inceneritore con la pista da sci sopra. Si sale gratis con l'ascensore, ma è un po' fuori — niente di speciale.
+- **CopenHill (Amager Bakke)** [⭐ Imperdibile] — Un inceneritore con la pista da sci sopra. Si sale gratis con l'ascensore, ma è un po' fuori — niente di speciale.
 - **Kaktus Towers** — Due torri appuntite di BIG con piani ruotati, appartamenti in affitto e un parco pubblico rialzato sopra la città. · https://dac.dk/en/magazine/places/kaktus-towers-prickly-architecture-231
   - _80 metri · BIG_
   - Ogni piano ruota rispetto a quello sotto, creando i balconi a punta che danno alle torri il soprannome di cactus. Sono soprattutto appartamenti compatti in affitto con spazi comuni; la parte più interessante per chi passa è il percorso verde pubblico alla base, collegato al tetto di IKEA e alla nuova zona dietro la stazione.
@@ -141,15 +146,15 @@ Route: Passeggiata facile sull'acqua — Amalienborg → Nyhavn → Skuespilhuse
 - **Nyboder** — Le lunghe case gialle costruite per la Marina da Christian IV; molte sono ancora abitazioni in affitto della Difesa. · https://www.ejendomsstyrelsen.dk/da/arbejdsomraader/salg-og-leje/forsvarets-lejeboliger/
   - _Dal 1631 · case della Marina_
   - Nyboder significa più o meno “nuove piccole case”. Christian IV le fece costruire per marinai, artigiani e sottufficiali della flotta, creando un quartiere di servizio nel centro della città. Non sono un semplice fondale da cartolina: la Difesa danese gestisce ancora circa seicento abitazioni in affitto qui, riservate soprattutto al proprio personale.
-- **Grundtvigs Kirke** — Una cattedrale espressionista di mattoni gialli a Bispebjerg, con una facciata che sembra contemporaneamente un organo e una scogliera. · https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
+- **Grundtvigs Kirke** [☔ Al chiuso] — Una cattedrale espressionista di mattoni gialli a Bispebjerg, con una facciata che sembra contemporaneamente un organo e una scogliera. · https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
   - _Sei milioni di mattoni · 1940_
   - Peder Vilhelm Jensen-Klint fuse la scala gotica delle cattedrali con le forme semplici delle chiese rurali danesi; dopo la sua morte il figlio Kaare completò l'edificio e ne disegnò anche le sedie. Online viene spesso chiamata “la chiesa di Shrek” per la somiglianza con la chiesa del matrimonio di Fiona e Lord Farquaad, ma DreamWorks non ha mai confermato che sia stata davvero il modello.
 
 ### Biblioteche in cui entrare
-- **Il Diamante Nero, Biblioteca Reale** — Un atrio gratuito sul porto, biblioteca in attività e centro culturale che unisce l'estensione lucida del 1999 all'edificio del 1906. · https://www.kb.dk/en/visit-us/black-diamond-copenhagen
+- **Il Diamante Nero, Biblioteca Reale** [☔ Al chiuso] — Un atrio gratuito sul porto, biblioteca in attività e centro culturale che unisce l'estensione lucida del 1999 all'edificio del 1906. · https://www.kb.dk/en/visit-us/black-diamond-copenhagen
   - _Edificio gratuito · mostre talvolta a pagamento_
   - Il Diamante Nero non è soltanto una facciata da fotografare dall'acqua. Entrate nel grande atrio pubblico, guardate il porto e seguite i ponti che collegano il nuovo edificio sul lungomare alla vecchia biblioteca alle sue spalle. L'accesso all'edificio è gratuito e aperto a tutti; mostre, concerti e incontri hanno biglietti propri. Il caffè e il Giardino della Biblioteca sono una facile continuazione di una passeggiata a Christiansborg.
-- **Biblioteca Universitaria di Fiolstræde** — La spettacolare biblioteca in mattoni rossi dietro la cattedrale—più fantasia gotica che normale sala di lettura. · https://www.kb.dk/en/visit-us/university-library-fiolstraede
+- **Biblioteca Universitaria di Fiolstræde** [☔ Al chiuso] — La spettacolare biblioteca in mattoni rossi dietro la cattedrale—più fantasia gotica che normale sala di lettura. · https://www.kb.dk/en/visit-us/university-library-fiolstraede
   - _1861 · gotico in mattoni · ghisa_
   - Johan Daniel Herholdt vinse il primo concorso di architettura della Danimarca con un progetto ispirato alle cattedrali dell'Italia settentrionale e ai monumenti gotici. Dentro, mattoni gialli, sottili strutture in ghisa e soffitti dipinti da Georg Hilker trasformano la sala dei libri in uno degli ambienti più inattesi della città. L'edificio ha riaperto al pubblico nel 2023 come luogo di ricerca, cultura e visite; controllate il programma aggiornato se volete andarci apposta per un tour guidato.
 
@@ -164,11 +169,11 @@ Route: Passeggiata facile sull'acqua — Amalienborg → Nyhavn → Skuespilhuse
   - Cinemateket è la casa nazionale del cinema danese; Filmtaget è il suo tetto di 1.700 metri quadrati. La mostra permanente sul cinema e la vista sono accessibili senza biglietto; poi potete fermarvi a mangiare o prenotare una proiezione all'Himmelbio. Quando il tempo cambia il cinema può essere coperto, quindi non è soltanto una vista estiva.
 
 ### Negozi che valgono una sosta
-- **LEGO Store Copenaghen** — Due piani su Vimmelskaftet, in mezzo allo Strøget. Il muro per costruire la minifigure, i grandi modelli della città e i mattoncini a peso. · https://www.lego.com/en-dk/stores/store/copenhagen
+- **LEGO Store Copenaghen** [☔ Al chiuso] — Due piani su Vimmelskaftet, in mezzo allo Strøget. Il muro per costruire la minifigure, i grandi modelli della città e i mattoncini a peso. · https://www.lego.com/en-dk/stores/store/copenhagen
   - _Danese dal 1932_
   - La LEGO nasce a Billund, nello Jutland, dove Ole Kirk Kristiansen iniziò a fare giocattoli di legno nel 1932; il nome viene da "leg godt", giocare bene. Il mattoncino a incastro come lo conosciamo è stato brevettato nel 1958. Il negozio di Copenaghen è la tappa comoda in città; l'esperienza completa è la LEGO House a Billund.
-- **Illums Bolighus** — Il posto per il design danese, dal souvenir utile ai mobili che non potete portare in valigia. · https://www.illumsbolighus.com/
-- **Royal Copenhagen** — Porcellana bianca e blu, molto danese e molto bella. Per gli affari seri c'è anche l'outlet. · https://www.royalcopenhagen.com/en-int/
+- **Illums Bolighus** [☔ Al chiuso] — Il posto per il design danese, dal souvenir utile ai mobili che non potete portare in valigia. · https://www.illumsbolighus.com/
+- **Royal Copenhagen** [☔ Al chiuso] — Porcellana bianca e blu, molto danese e molto bella. Per gli affari seri c'è anche l'outlet. · https://www.royalcopenhagen.com/en-int/
 
 ## 🇩🇰 Cose molto danesi
 _Quelle cose che fanno fermare i visitatori e chiedere “aspetta, perché?”_
@@ -272,13 +277,13 @@ _Iniziate dagli smørrebrød, poi passate ai piatti di casa, ai chioschi dei gel
   - La guida della Danish Coeliac Society include carte da viaggio e una mappa basata sulle esperienze degli utenti; verificate sempre l'offerta attuale direttamente con il locale.
 
 ### Mercati
-- **Torvehallerne** — Due padiglioni coperti pieni di banchi, prodotti freschi e piccoli pasti; un posto semplice per assaggiare smørrebrød senza prenotare.
-- **Reffen** — Street food in vecchi container sul lato industriale del porto, con tavoli all'aperto, laboratori e molto spazio; controllate l'apertura stagionale.
+- **Torvehallerne** [⭐ Imperdibile, ☔ Al chiuso] — Due padiglioni coperti pieni di banchi, prodotti freschi e piccoli pasti; un posto semplice per assaggiare smørrebrød senza prenotare.
+- **Reffen** [⭐ Imperdibile] — Street food in vecchi container sul lato industriale del porto, con tavoli all'aperto, laboratori e molto spazio; controllate l'apertura stagionale.
 - **Broens Gadekøkken** — Cucine di strada, appena dall'altra parte di Nyhavn. All'aperto.
 - **Kødbyen** — Il Meatpacking District di Copenaghen—vecchi edifici della carne condivisi oggi da aziende alimentari, ristoranti, gallerie, bar e club. · https://www.visitcopenhagen.com/copenhagen/neighbourhoods/neighborhoods/guide-meatpacking-district
   - _Città Marrone 1878 · Città Bianca 1934_
   - Kødbyen crebbe in due parti riconoscibili: la zona più antica in mattoni marroni e gli edifici funzionalisti bianchi degli anni Trenta. Non è un quartiere del divertimento completamente ripulito: parte dell'industria alimentare lavora ancora accanto a gallerie, ristoranti e locali notturni. Venite a cena e restate più tardi se cercate energia; al mattino sembra molto di più il luogo di lavoro che era in origine.
-- **Tivoli Food Hall** — Una tappa facile e centrale, accanto alla stazione. Si entra dalla strada senza biglietto per Tivoli. · https://www.tivoli.dk/en/food-and-drinks/tivoli-food-hall
+- **Tivoli Food Hall** [☔ Al chiuso] — Una tappa facile e centrale, accanto alla stazione. Si entra dalla strada senza biglietto per Tivoli. · https://www.tivoli.dk/en/food-and-drinks/tivoli-food-hall
 
 ### Ristoranti
 - **Det Lille Apotek** — Uno dei ristoranti più antichi della città, con stanze basse, candele e cucina danese tradizionale senza reinterpretazioni creative.
@@ -286,7 +291,7 @@ _Iniziate dagli smørrebrød, poi passate ai piatti di casa, ai chioschi dei gel
 - **Gasoline Grill** — Un'istituzione per gli hamburger a Copenaghen, con molta fama internazionale. Andateci se vi va un burger molto buono e un po' di coda. · https://gasolinegrill.com/
 
 ### Caffè con un motivo per fermarsi
-- **Mirabelle / Lazy Bakery** — Pane a lievitazione naturale, dolci che cambiano ogni giorno e un vero espresso al banco, pubblicizzato ancora a 10 kr. · https://www.mirabelle-spiseria.dk/lazy-bakery
+- **Mirabelle / Lazy Bakery** [☔ Al chiuso] — Pane a lievitazione naturale, dolci che cambiano ogni giorno e un vero espresso al banco, pubblicizzato ancora a 10 kr. · https://www.mirabelle-spiseria.dk/lazy-bakery
   - _Nørrebro · espresso al banco_
   - La parte bakery di Mirabelle porta a Copenaghen una piccola abitudine italiana: espresso rapido, bevuto in piedi al banco e a un prezzo insolitamente gentile per la città. Il sito lo indica attualmente a dieci corone; essendo un prezzo, controllate che sia ancora valido quando andate. Il pane e i dolci cambiano ogni giorno.
 
@@ -294,11 +299,11 @@ _Iniziate dagli smørrebrød, poi passate ai piatti di casa, ai chioschi dei gel
 _Cardamomo, burro e un'ottima ragione per alzarsi presto._
 
 ### Pasticcerie
-- **Andersen** — Panificio a Islands Brygge con pane, croissant e dolci molto precisi; una buona deviazione da abbinare a una passeggiata sul porto.
-- **Juno** — Il cardamom bun più famoso della città, in una piccola panetteria di Østerbro. Andate presto e mettete in conto un po' di fila.
-- **Lagkagehuset** — È una catena e si trova ovunque: meno speciale delle bakery indipendenti, ma affidabile per pane, dolci e colazione senza deviazioni.
+- **Andersen** [☔ Al chiuso] — Panificio a Islands Brygge con pane, croissant e dolci molto precisi; una buona deviazione da abbinare a una passeggiata sul porto.
+- **Juno** [☔ Al chiuso] — Il cardamom bun più famoso della città, in una piccola panetteria di Østerbro. Andate presto e mettete in conto un po' di fila.
+- **Lagkagehuset** [☔ Al chiuso] — È una catena e si trova ovunque: meno speciale delle bakery indipendenti, ma affidabile per pane, dolci e colazione senza deviazioni.
 - **Alice, Amager** — Pasticceria fatta bene, caffè e gelato stagionale. Se c'è, provate il gelato al cardamomo. · https://maps.app.goo.gl/932ZVTmvULBaKjFJ7
-- **Kong Hans Bakery** — Dal team del bistellato Kong Hans Kælder, una bakery ancora abbastanza sotto il radar con lievitati, pane e pâtisserie trattati con precisione da alta cucina. · https://konghansbakery.dk/en/
+- **Kong Hans Bakery** [☔ Al chiuso] — Dal team del bistellato Kong Hans Kælder, una bakery ancora abbastanza sotto il radar con lievitati, pane e pâtisserie trattati con precisione da alta cucina. · https://konghansbakery.dk/en/
   - _Østerbro · aperta nel 2025_
   - Kælder significa “cantina” ed è il nome dello storico ristorante da cui nasce il progetto; la bakery è invece un locale separato in Øster Farimagsgade. Porta fuori dal ristorante la stessa idea di precisione, unendo tecnica francese, disciplina nordica, pane a lunga fermentazione, croissant e pasticceria. Il posto è piccolo e relativamente nuovo: aspettatevi facilmente un po' di fila.
 - **Altri consigli dolci** — Una lista utile trovata su Instagram — non è mia, ma salvatela. · https://www.instagram.com/p/DOSrrF8DJpF/
@@ -307,23 +312,23 @@ _Cardamomo, burro e un'ottima ragione per alzarsi presto._
 _Piove? Perfetto, piove quasi sempre._
 
 ### Arte & storia
-- **SMK** — La Galleria Nazionale: arte danese, grandi maestri europei e un'ala moderna affacciata sul parco di Østre Anlæg.
-- **Nationalmuseet** — Il modo più completo per seguire la storia danese dalla preistoria ai Vichinghi e alla vita quotidiana più recente.
-- **Thorvaldsens Museum** — Sculture neoclassiche dentro sale dai soffitti dipinti e colori inaspettati; piccolo abbastanza da non sacrificargli l'intera giornata.
-- **Ny Carlsberg Glyptotek** — Antichità egizie, greche e romane, pittura francese e un giardino d'inverno pieno di palme che vale già la visita.
-- **Designmuseum Danmark** — L'introduzione più chiara al design danese—mobili, artigianato, moda e grafica—nell'ex Ospedale Reale Frederik. · https://designmuseum.dk/en/
-- **Copenhagen Contemporary** — Installazioni monumentali, performance e videoarte in 7.000 m² degli ex capannoni di saldatura B&W a Refshaleøen. · https://copenhagencontemporary.org/en/
-- **Cisternerne** — Installazioni artistiche in vecchie cisterne sotterranee.
-- **Experimentarium** — Tre piani di esperimenti da toccare, giochi sull'acqua e terrazza sul tetto; ottimo con bambini e giornate di pioggia lunghe.
-- **Louisiana Museum of Modern Art** — Fuori città, circa un'ora di treno. Vale l'intera giornata.
-- **ARKEN Museum of Contemporary Art** — Arte contemporanea in un edificio a forma di nave accanto al parco costiero di Ishøj; abbinate gallerie e parco di sculture a una passeggiata sul mare. _(16 min di S-train + bus o camminata)_ · https://www.arken.dk/en
+- **SMK** [⭐ Imperdibile, ☔ Al chiuso] — La Galleria Nazionale: arte danese, grandi maestri europei e un'ala moderna affacciata sul parco di Østre Anlæg.
+- **Nationalmuseet** [☔ Al chiuso] — Il modo più completo per seguire la storia danese dalla preistoria ai Vichinghi e alla vita quotidiana più recente.
+- **Thorvaldsens Museum** [☔ Al chiuso] — Sculture neoclassiche dentro sale dai soffitti dipinti e colori inaspettati; piccolo abbastanza da non sacrificargli l'intera giornata.
+- **Ny Carlsberg Glyptotek** [⭐ Imperdibile, ☔ Al chiuso] — Antichità egizie, greche e romane, pittura francese e un giardino d'inverno pieno di palme che vale già la visita.
+- **Designmuseum Danmark** [☔ Al chiuso] — L'introduzione più chiara al design danese—mobili, artigianato, moda e grafica—nell'ex Ospedale Reale Frederik. · https://designmuseum.dk/en/
+- **Copenhagen Contemporary** [☔ Al chiuso] — Installazioni monumentali, performance e videoarte in 7.000 m² degli ex capannoni di saldatura B&W a Refshaleøen. · https://copenhagencontemporary.org/en/
+- **Cisternerne** [☔ Al chiuso] — Installazioni artistiche in vecchie cisterne sotterranee.
+- **Experimentarium** [☔ Al chiuso] — Tre piani di esperimenti da toccare, giochi sull'acqua e terrazza sul tetto; ottimo con bambini e giornate di pioggia lunghe.
+- **Louisiana Museum of Modern Art** [⭐ Imperdibile, ☔ Al chiuso] — Fuori città, circa un'ora di treno. Vale l'intera giornata.
+- **ARKEN Museum of Contemporary Art** [☔ Al chiuso] — Arte contemporanea in un edificio a forma di nave accanto al parco costiero di Ishøj; abbinate gallerie e parco di sculture a una passeggiata sul mare. _(16 min di S-train + bus o camminata)_ · https://www.arken.dk/en
 - **I musei top di Copenaghen** — La selezione ufficiale per confrontare collezioni, quartieri e idee meno ovvie quando volete scegliere un solo museo. · https://www.visitcopenhagen.com/copenhagen/activities/copenhagens-top-museums
 
 ## 🧖 Saune & bagni termali
 _Stanza calda, porto freddo o terme a lume di candela: scegliete voi._
 
 ### Dove sudare o immergersi
-- **AIRE Ancient Baths** — Un lussuoso percorso termale a lume di candela con bagno turco e massaggi nelle cantine storiche del vecchio birrificio Carlsberg—bellissimo, silenzioso e con prezzi adeguati. · https://relax.beaire.com/en/aire-ancient-baths-copenhagen
+- **AIRE Ancient Baths** [☔ Al chiuso] — Un lussuoso percorso termale a lume di candela con bagno turco e massaggi nelle cantine storiche del vecchio birrificio Carlsberg—bellissimo, silenzioso e con prezzi adeguati. · https://relax.beaire.com/en/aire-ancient-baths-copenhagen
   - _Carlsberg Byen · prenotate_
 - **Glaecier** — Club galleggiante a Refshaleøen con sauna, piscina di acqua portuale filtrata e vista panoramica; normalmente richiede membership, salvo gli Open Gus. · https://glaecier.com/en/
 - **Sauna85** — Saunagus prenotabile senza membership in più sedi: una buona introduzione se volete provare calore, oli essenziali e immersione fredda. · https://www.sauna85.dk/en/
@@ -352,7 +357,7 @@ _Il resto della Danimarca è piccolo, piatto e molto comodo in treno._
 - **Castello di Frederiksborg, Hillerød** — Un castello rinascimentale su tre isolotti, con giardini barocchi dietro. Il più bello di tutti. _(40 min da Nørreport)_ · https://dnm.dk/en/
   - _Christian IV · '600_
   - Christian IV ricostruì Frederiksborg all'inizio del Seicento come il suo castello di rappresentanza. Dopo l'incendio del 1859 fu il birraio J.C. Jacobsen a pagarne il restauro, e riaprì come Museo di Storia Nazionale. Il giardino barocco a terrazze dietro il castello si visita gratis.
-- **Castello di Kronborg, Helsingør** — Il castello di Amleto, nel punto più stretto dell'Øresund. La Svezia è lì davanti. _(45 min da Copenhagen H)_ · https://kongeligeslotte.dk/en/palaces-and-gardens/kronborg-castle.html
+- **Castello di Kronborg, Helsingør** [⭐ Imperdibile] — Il castello di Amleto, nel punto più stretto dell'Øresund. La Svezia è lì davanti. _(45 min da Copenhagen H)_ · https://kongeligeslotte.dk/en/palaces-and-gardens/kronborg-castle.html
   - _UNESCO · Amleto_
   - Kronborg controllava lo Stretto e il pedaggio che ogni nave doveva pagare, e questo rese ricca la corona danese. Shakespeare lo trasformò in Elsinore nell'Amleto senza averlo mai visto. Sotto il castello dorme Holger Danske, che secondo la leggenda si sveglierà quando la Danimarca ne avrà bisogno.
 - **Roskilde** — La cattedrale reale più cinque navi vichinghe recuperate dal fiordo — e si può navigare su una ricostruzione. _(25 min di treno)_ · https://www.vikingeskibsmuseet.dk/en
@@ -383,7 +388,7 @@ _Il resto della Danimarca è piccolo, piatto e molto comodo in treno._
   - In aereo: conviene quando il tempo è decisivo, anche se i trasferimenti aeroportuali riducono il vantaggio apparente. In ogni caso portate il documento di viaggio richiesto per la vostra nazionalità.
 
 ### Vale il viaggio più lungo
-- **Møns Klint** — Scogliere bianche di gesso che cadono per 120 m su acqua turchese, con una faggeta sopra. Il paesaggio più inaspettato della Danimarca. _(~2h in auto, di più in bus)_ · https://www.moensklint.dk/en/
+- **Møns Klint** [⭐ Imperdibile] — Scogliere bianche di gesso che cadono per 120 m su acqua turchese, con una faggeta sopra. Il paesaggio più inaspettato della Danimarca. _(~2h in auto, di più in bus)_ · https://www.moensklint.dk/en/
   - _70 milioni di anni_
   - Le scogliere sono gesso formato dai gusci di innumerevoli creature marine, spinto in superficie dall'era glaciale. Sulla spiaggia sotto emergono fossili — cercate belemniti e ricci di mare. Møn è anche riserva Dark Sky: il cielo notturno è spettacolare.
 - **Stevns Klint** — Lo stesso gesso, più vicino alla città, con una linea patrimonio UNESCO che segna il giorno in cui si estinsero i dinosauri. _(~1h 15 in auto)_ · https://www.stevnsklint.dk/en/
@@ -431,6 +436,12 @@ _Il resto della Danimarca è piccolo, piatto e molto comodo in treno._
 _Se per una volta volete il parere di qualcun altro._
 
 ### Cose che piacciono a me
+- **Piano B se piove** [☔ Al chiuso] — Toccate "Se piove" in alto per vedere solo i posti al chiuso.
+  - _Niente drammi, solo pioggerella_
+  - Musei: SMK, la Glyptotek (con il suo giardino d'inverno) e il Museo Nazionale valgono qualche ora.
+  - Scaldatevi in sauna — tanto vi bagnate comunque.
+  - I mercati coperti come Torvehallerne sono asciutti, caldi e pieni di cose da mangiare.
+  - Oppure aspettate in una panetteria: qui gli acquazzoni spesso passano in fretta.
 - **Things to do in Copenhagen** — La guida del New York Times per un secondo parere su quartieri, ristoranti e cose da fare. Curata e aggiornata separatamente da questa lista. · https://www.nytimes.com/interactive/2023/07/20/travel/things-to-do-copenhagen.html
 
 ### Febbraio
