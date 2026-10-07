@@ -24,6 +24,7 @@ export type GuideMapPlace = {
   sectionTitle: string;
   sectionEmoji: string;
   far: boolean;
+  mustSee?: boolean;
   distance?: number;
 };
 
@@ -79,6 +80,7 @@ export function toGuideMapPlaces(sections: GuideSectionData[]): GuideMapPlace[] 
         sectionTitle: match.sectionTitle,
         sectionEmoji: match.sectionEmoji,
         far: isFarFromCity(location.latitude, location.longitude),
+        ...(match.item.mustSee ? { mustSee: true } : {}),
       },
     ];
   });

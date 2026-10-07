@@ -1,3 +1,7 @@
+import { parse } from "yaml";
+
+import tagsYaml from "../data/tags.yaml?raw";
+
 export type GuideItemLink = {
   text: string;
   url: string;
@@ -22,9 +26,24 @@ export type GuideItem = {
   tips?: string[];
   links?: Record<string, GuideItemLink>;
   media?: GuideItemMedia;
+  mustSee?: boolean;
+  indoor?: boolean;
 };
 
-export function itemMatchesQuery(item: GuideItem, groupTitle: string, query: string): boolean {
+export type GuideFilters = { mustSee: boolean; indoor: boolean };
+
+const tags = parse(tagsYaml) as { mustSee?: string[]; indoor?: string[] };
+const MUST_SEE = new Set(tags.mustSee ?? []);
+const INDOOR = new Set(tags.indoor ?? []);
+
+export function itemMatchesQuery(
+  item: GuideItem,
+  groupTitle: string,
+  query: string,
+  filters?: GuideFilters,
+): boolean {
+  if (filters?.mustSee && !item.mustSee) return false;
+  if (filters?.indoor && !item.indoor) return false;
   const needle = query.trim().toLowerCase();
   if (!needle) return true;
   const haystack =
@@ -121,7 +140,12 @@ export function toGuideSections(resources: GuideSectionsRecord): GuideSectionDat
         ...(group.collapsible === undefined ? {} : { collapsible: group.collapsible }),
         ...(group.months === undefined ? {} : { months: group.months }),
         ...(group.route === undefined ? {} : { route: group.route }),
-        items: Object.entries(group.items).map(([itemId, item]) => ({ id: itemId, ...item })),
+        items: Object.entries(group.items).map(([itemId, item]) => ({
+          id: itemId,
+          ...item,
+          ...(MUST_SEE.has(itemId) ? { mustSee: true } : {}),
+          ...(INDOOR.has(itemId) ? { indoor: true } : {}),
+        })),
       })),
     };
   });

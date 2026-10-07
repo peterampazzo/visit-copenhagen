@@ -1,4 +1,13 @@
-import { BookOpenText, ExternalLink, Instagram, MapPin, Star, TramFront } from "lucide-react";
+import {
+  Bookmark,
+  BookOpenText,
+  ExternalLink,
+  Instagram,
+  MapPin,
+  Star,
+  TramFront,
+  Umbrella,
+} from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 
@@ -18,6 +27,7 @@ export function PlaceCard({
   storyCopy,
   index,
   favouriteCopy,
+  badgeCopy,
 }: {
   item: GuideItem;
   linkLabel: string;
@@ -27,6 +37,7 @@ export function PlaceCard({
   storyCopy: StoryCopy;
   index: number;
   favouriteCopy: { add: string; remove: string };
+  badgeCopy: { mustSee: string; indoor: string };
 }) {
   const [storyOpen, setStoryOpen] = useState(false);
   const { isFavourite, toggle } = useFavourites();
@@ -68,6 +79,22 @@ export function PlaceCard({
         ) : null}
 
         <div className={cn("min-w-0 flex-1", mapPlace && "pr-11")}>
+          {item.mustSee || item.indoor ? (
+            <div className="mb-2 flex flex-wrap gap-1.5">
+              {item.mustSee ? (
+                <span className="inline-flex items-center gap-1 rounded-md bg-coral px-2 py-1 text-[0.68rem] font-extrabold uppercase tracking-[0.08em] text-card">
+                  <Bookmark size={12} strokeWidth={2.75} className="fill-current" aria-hidden="true" />
+                  {badgeCopy.mustSee}
+                </span>
+              ) : null}
+              {item.indoor ? (
+                <span className="inline-flex items-center gap-1 rounded-md bg-harbour/12 px-2 py-1 text-[0.68rem] font-extrabold uppercase tracking-[0.08em] text-harbour">
+                  <Umbrella size={12} strokeWidth={2.75} aria-hidden="true" />
+                  {badgeCopy.indoor}
+                </span>
+              ) : null}
+            </div>
+          ) : null}
           {item.kicker ? (
             <p className="mb-1.5 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
               {item.kicker}
