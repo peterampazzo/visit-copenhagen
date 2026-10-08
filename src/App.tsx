@@ -106,17 +106,17 @@ export function App() {
               />
             </div>
           </div>
+          <FilterPills
+            filters={filters}
+            onChange={setFilters}
+            copy={{
+              label: t("site.filterLabel"),
+              mustSee: t("site.filterMustSee"),
+              indoor: t("site.filterIndoor"),
+              reset: t("site.filterReset"),
+            }}
+          />
         </div>
-        <FilterPills
-          filters={filters}
-          onChange={setFilters}
-          copy={{
-            label: t("site.filterLabel"),
-            mustSee: t("site.filterMustSee"),
-            indoor: t("site.filterIndoor"),
-            reset: t("site.filterReset"),
-          }}
-        />
         <SavedStrip
           places={mapPlaces}
           title={t("site.savedStripTitle")}

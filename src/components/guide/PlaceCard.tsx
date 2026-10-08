@@ -78,22 +78,23 @@ export function PlaceCard({
           </button>
         ) : null}
 
-        <div className={cn("min-w-0 flex-1", mapPlace && "pr-11")}>
-          {item.mustSee || item.indoor ? (
-            <div className="mb-2 flex flex-wrap gap-1.5">
-              {item.mustSee ? (
-                <span className="inline-flex items-center gap-1 rounded-md bg-coral px-2 py-1 text-[0.68rem] font-extrabold uppercase tracking-[0.08em] text-card">
-                  <Bookmark size={12} strokeWidth={2.75} className="fill-current" aria-hidden="true" />
-                  {badgeCopy.mustSee}
-                </span>
-              ) : null}
-              {item.indoor ? (
-                <span className="inline-flex items-center gap-1 rounded-md bg-harbour/12 px-2 py-1 text-[0.68rem] font-extrabold uppercase tracking-[0.08em] text-harbour">
-                  <Umbrella size={12} strokeWidth={2.75} aria-hidden="true" />
-                  {badgeCopy.indoor}
-                </span>
-              ) : null}
-            </div>
+        {item.mustSee ? (
+          <span
+            className="absolute -top-2 left-3.5 z-10 inline-flex items-center gap-1 rounded-t-md bg-coral pb-2.5 pl-2 pr-2.5 pt-1.5 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-card shadow-[2px_2px_0_rgb(20_55_56_/_0.18)] [clip-path:polygon(0_0,100%_0,100%_100%,50%_78%,0_100%)]"
+            title={badgeCopy.mustSee}
+          >
+            <Bookmark size={11} strokeWidth={2.75} className="fill-current" aria-hidden="true" />
+            {badgeCopy.mustSee}
+          </span>
+        ) : null}
+        <div className={cn("min-w-0 flex-1", mapPlace && "pr-11", item.mustSee && "pt-5")}>
+          {item.indoor ? (
+            <span
+              className="mb-1.5 inline-flex items-center gap-1 text-[0.65rem] font-extrabold uppercase tracking-[0.1em] text-harbour"
+            >
+              <Umbrella size={12} strokeWidth={2.75} aria-hidden="true" />
+              {badgeCopy.indoor}
+            </span>
           ) : null}
           {item.kicker ? (
             <p className="mb-1.5 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
