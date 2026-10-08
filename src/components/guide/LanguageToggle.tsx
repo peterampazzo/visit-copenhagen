@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 
 import { LANGUAGE_LABELS, SUPPORTED_LANGUAGES, type Language } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 export function LanguageToggle({
   value,
   onChange,
-  layoutId = "lang-pill",
 }: {
   value: Language;
   onChange: (lang: Language) => void;
@@ -21,31 +21,34 @@ export function LanguageToggle({
       role="group"
       aria-label={t("site.langLabel")}
     >
+      <div className="relative grid grid-cols-2 gap-1">
+        <motion.span
+          aria-hidden="true"
+          className="pointer-events-none absolute left-0 top-0 size-11 rounded-full bg-primary"
+          initial={false}
+          animate={{ x: value === "it" ? 48 : 0 }}
+          transition={{ type: "spring", stiffness: 420, damping: 32 }}
+        />
       {SUPPORTED_LANGUAGES.map((lang) => {
         const active = lang === value;
         return (
-          <button
+          <Button
             key={lang}
+            variant="ghost"
             type="button"
             onClick={() => onChange(lang)}
             aria-pressed={active}
             className={cn(
-              "relative min-h-9 rounded-full px-3 py-1.5 text-sm font-semibold transition-colors",
+              "relative size-11 rounded-full p-0 text-sm font-semibold hover:bg-transparent",
               active ? "text-primary-foreground" : "text-ink/60 hover:text-ink",
             )}
           >
-            {active ? (
-              <motion.span
-                layoutId={layoutId}
-                className="absolute inset-0 rounded-full bg-primary"
-                transition={{ type: "spring", stiffness: 420, damping: 32 }}
-              />
-            ) : null}
             <span className="relative">{lang === "en" ? "EN" : "IT"}</span>
             <span className="sr-only"> — {LANGUAGE_LABELS[lang]}</span>
-          </button>
+          </Button>
         );
       })}
+      </div>
     </div>
   );
 }
