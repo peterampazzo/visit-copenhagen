@@ -1,5 +1,4 @@
 import {
-  Bookmark,
   BookOpenText,
   ExternalLink,
   Instagram,
@@ -15,6 +14,7 @@ import { useFavourites } from "@/hooks/use-favourites";
 import type { GuideItem } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 import { GuideStoryDialog, type StoryCopy } from "./GuideStoryDialog";
 
@@ -48,7 +48,7 @@ export function PlaceCard({
   const hasActions = Boolean(item.travel || hasStory || showTextLink || showIconLink || mapPlace);
 
   const actionPill =
-    "inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-full bg-harbour/10 px-3 text-xs font-extrabold text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
+    "inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full bg-harbour/10 px-3 text-xs font-extrabold text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
 
   return (
     <>
@@ -58,10 +58,11 @@ export function PlaceCard({
         viewport={{ once: true, margin: "-48px" }}
         transition={{ duration: 0.36, delay: Math.min(index * 0.035, 0.18) }}
         whileTap={{ scale: 0.995 }}
-        className="group relative flex min-w-0 flex-col rounded-xl border-2 border-ink/12 bg-card/95 p-3.5 shadow-[2px_2px_0_rgb(20_55_56_/_0.08)] transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:p-4"
+        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 p-3.5 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:p-4"
       >
         {mapPlace ? (
-          <button
+          <Button
+            variant="ghost"
             type="button"
             onClick={() => toggle(item.id)}
             aria-pressed={saved}
@@ -75,27 +76,28 @@ export function PlaceCard({
               strokeWidth={2.25}
               className={saved ? "fill-sun text-ink" : "text-ink/35"}
             />
-          </button>
+          </Button>
         ) : null}
 
         {item.mustSee ? (
           <span
-            className="absolute -top-2 left-3.5 z-10 inline-flex items-center gap-1 rounded-t-md bg-coral pb-2.5 pl-2 pr-2.5 pt-1.5 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-card shadow-[2px_2px_0_rgb(20_55_56_/_0.18)] [clip-path:polygon(0_0,100%_0,100%_100%,50%_78%,0_100%)]"
+            className="guide-card__corner-ribbon"
             title={badgeCopy.mustSee}
           >
-            <Bookmark size={11} strokeWidth={2.75} className="fill-current" aria-hidden="true" />
             {badgeCopy.mustSee}
           </span>
         ) : null}
-        <div className={cn("min-w-0 flex-1", mapPlace && "pr-11", item.mustSee && "pt-5")}>
+        <div className="min-w-0 flex-1">
+          <div className="mb-2 flex min-h-9 items-center pl-6 pr-9">
           {item.indoor ? (
             <span
-              className="mb-1.5 inline-flex items-center gap-1 text-[0.65rem] font-extrabold uppercase tracking-[0.1em] text-harbour"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-harbour"
             >
               <Umbrella size={12} strokeWidth={2.75} aria-hidden="true" />
               {badgeCopy.indoor}
             </span>
           ) : null}
+          </div>
           {item.kicker ? (
             <p className="mb-1.5 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
               {item.kicker}
@@ -134,10 +136,10 @@ export function PlaceCard({
               </span>
             ) : null}
             {hasStory ? (
-              <button type="button" onClick={() => setStoryOpen(true)} className={actionPill}>
+               <Button variant="ghost" type="button" onClick={() => setStoryOpen(true)} className={actionPill}>
                 <BookOpenText size={14} strokeWidth={2.5} aria-hidden="true" />
                 {storyCopy.label}
-              </button>
+              </Button>
             ) : null}
             {showTextLink ? (
               <a href={item.url} target="_blank" rel="noreferrer" className={actionPill}>
@@ -163,7 +165,8 @@ export function PlaceCard({
               </a>
             ) : null}
             {mapPlace ? (
-              <button
+              <Button
+                variant="ghost"
                 type="button"
                 onClick={() => onShowOnMap(mapPlace.id)}
                 className={actionPill}
@@ -171,7 +174,7 @@ export function PlaceCard({
               >
                 <MapPin size={14} strokeWidth={2.5} aria-hidden="true" />
                 {showOnMapLabel}
-              </button>
+              </Button>
             ) : null}
           </div>
         ) : null}

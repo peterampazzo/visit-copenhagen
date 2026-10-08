@@ -72,6 +72,8 @@
   --color-sun: var(--sun);
   --color-coral: var(--coral);
   --color-harbour: var(--harbour);
+  --color-recommendation: var(--recommendation);
+  --color-recommendation-foreground: var(--recommendation-foreground);
   --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", "Figtree", ui-sans-serif, system-ui, sans-serif;
   --shadow-pop: 4px 4px 0 var(--ink);
@@ -85,6 +87,8 @@
   --sun: #e8a33d;
   --coral: #d94f3d;
   --harbour: #2f6f6b;
+  --recommendation: #173638;
+  --recommendation-foreground: #fff9ed;
   --background: #fff8ea;
   --foreground: #173536;
   --card: #fffdf7;
@@ -152,6 +156,26 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+.guide-card__corner-ribbon {
+  position: absolute;
+  top: 16px;
+  left: -30px;
+  z-index: 1;
+  width: 112px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+  background: var(--recommendation);
+  color: var(--recommendation-foreground);
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  white-space: nowrap;
 }
 
 @layer base {
