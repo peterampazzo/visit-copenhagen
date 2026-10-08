@@ -14,16 +14,16 @@ export function FilterPills({
 }) {
   const pill = (active: boolean) =>
     cn(
-      "inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border-2 px-4 text-sm font-extrabold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+      "inline-flex min-h-10 shrink-0 items-center gap-1.5 rounded-full border-2 px-3.5 text-[0.82rem] font-extrabold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
       active
-        ? "border-ink bg-ink text-card"
+        ? "border-coral bg-coral text-card shadow-[2px_2px_0_rgb(20_55_56_/_0.18)]"
         : "border-ink/12 bg-card text-ink hover:border-harbour/45 hover:bg-cream",
     );
   const anyActive = filters.mustSee || filters.indoor;
 
   return (
-    <div role="group" aria-label={copy.label} className="px-4 pt-3 sm:px-6">
-      <div className="scrollbar-none mx-auto flex max-w-6xl gap-2 overflow-x-auto">
+    <div role="group" aria-label={copy.label} className="mx-auto mt-2 max-w-6xl">
+      <div className="scrollbar-none flex items-center gap-2 overflow-x-auto">
         <button
           type="button"
           aria-pressed={filters.mustSee}
