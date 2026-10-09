@@ -58,7 +58,7 @@ export function PlaceCard({
         viewport={{ once: true, margin: "-48px" }}
         transition={{ duration: 0.36, delay: Math.min(index * 0.035, 0.18) }}
         whileTap={{ scale: 0.995 }}
-        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 pt-6 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4"
+        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 pt-7 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4"
       >
         {mapPlace ? (
           <Button
