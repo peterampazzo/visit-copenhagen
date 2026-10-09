@@ -13,7 +13,6 @@ import { useState } from "react";
 import { useFavourites } from "@/hooks/use-favourites";
 import type { GuideItem } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 import { GuideStoryDialog, type StoryCopy } from "./GuideStoryDialog";
@@ -88,7 +87,7 @@ export function PlaceCard({
           </span>
         ) : null}
         <div className="min-w-0 flex-1">
-          <div className="mb-2 flex min-h-9 items-center pl-6 pr-9">
+          <div className="mb-2 flex min-h-9 items-center pl-10 pr-9">
           {item.indoor ? (
             <span
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-harbour"
