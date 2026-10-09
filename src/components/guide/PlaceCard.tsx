@@ -1,5 +1,6 @@
 import {
   BookOpenText,
+  Bookmark,
   ExternalLink,
   Instagram,
   MapPin,
@@ -57,7 +58,7 @@ export function PlaceCard({
         viewport={{ once: true, margin: "-48px" }}
         transition={{ duration: 0.36, delay: Math.min(index * 0.035, 0.18) }}
         whileTap={{ scale: 0.995 }}
-        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 p-3.5 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:p-4"
+        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 pt-6 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4"
       >
         {mapPlace ? (
           <Button
@@ -78,25 +79,29 @@ export function PlaceCard({
           </Button>
         ) : null}
 
-        {item.mustSee ? (
-          <span
-            className="guide-card__corner-ribbon"
-            title={badgeCopy.mustSee}
-          >
-            {badgeCopy.mustSee}
-          </span>
+        {item.mustSee || item.indoor ? (
+          <div className="guide-card__tags">
+            {item.mustSee ? (
+              <span
+                className="guide-card__tab guide-card__tab--must-see"
+                title={badgeCopy.mustSee}
+              >
+                <Bookmark size={10} strokeWidth={2.75} aria-hidden="true" />
+                {badgeCopy.mustSee}
+              </span>
+            ) : null}
+            {item.indoor ? (
+              <span
+                className="guide-card__tab guide-card__tab--indoor"
+                title={badgeCopy.indoor}
+              >
+                <Umbrella size={10} strokeWidth={2.75} aria-hidden="true" />
+                {badgeCopy.indoor}
+              </span>
+            ) : null}
+          </div>
         ) : null}
         <div className="min-w-0 flex-1">
-          <div className="mb-2 flex min-h-9 items-center pl-10 pr-9">
-          {item.indoor ? (
-            <span
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-harbour"
-            >
-              <Umbrella size={12} strokeWidth={2.75} aria-hidden="true" />
-              {badgeCopy.indoor}
-            </span>
-          ) : null}
-          </div>
           {item.kicker ? (
             <p className="mb-1.5 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
               {item.kicker}
