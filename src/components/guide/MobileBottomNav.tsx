@@ -31,7 +31,7 @@ export function MobileBottomNav({
   return (
     <>
       {open ? (
-        <div className="fixed inset-0 z-40 lg:hidden">
+        <div className="fixed inset-0 z-40 md:hidden">
           <button
             type="button"
             aria-label={closeLabel}
@@ -70,7 +70,7 @@ export function MobileBottomNav({
 
       <nav
         aria-label={sectionsLabel}
-        className="fixed inset-x-0 bottom-0 z-50 flex border-t-2 border-ink bg-cream/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-md lg:hidden"
+        className="fixed inset-x-0 bottom-0 z-50 flex border-t-2 border-ink bg-cream/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden"
       >
         <button
           type="button"

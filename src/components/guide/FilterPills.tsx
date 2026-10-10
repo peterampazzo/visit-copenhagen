@@ -46,7 +46,7 @@ export function FilterPills({
           <button
             type="button"
             onClick={() => onChange({ mustSee: false, indoor: false })}
-            className="inline-flex min-h-11 shrink-0 items-center gap-1 rounded-full px-3 text-sm font-bold text-harbour underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-primary"
+            className="inline-flex min-h-10 shrink-0 items-center gap-1 rounded-full px-3 text-sm font-bold text-harbour underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-primary"
           >
             <X size={14} strokeWidth={2.5} aria-hidden="true" />
             {copy.reset}

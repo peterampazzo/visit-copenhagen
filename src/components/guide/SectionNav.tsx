@@ -25,7 +25,7 @@ export function SectionNav({
           .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
         if (visible?.target.id) setActive(visible.target.id);
       },
-      { rootMargin: "-96px 0px -60% 0px", threshold: 0 },
+      { rootMargin: "-96px 0px -80% 0px", threshold: 0 },
     );
 
     for (const section of sections) {
@@ -39,7 +39,7 @@ export function SectionNav({
   return (
     <nav
       aria-label={label}
-      className="sticky top-0 z-40 hidden border-b-2 lg:block border-ink/10 bg-background/90 backdrop-blur-md"
+      className="sticky top-0 z-40 hidden border-b-2 md:block border-ink/10 bg-background/90 backdrop-blur-md"
     >
       <ul className="scrollbar-none mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-3">
         <li className="shrink-0">
