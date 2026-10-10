@@ -158,52 +158,6 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-.guide-card__tags {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  padding-left: 12px;
-  padding-right: 48px;
-  pointer-events: none;
-}
-
-.guide-card__tab {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  height: 24px;
-  padding: 0 9px 5px;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 74%, 0 100%);
-  filter: drop-shadow(0 2px 2px rgb(20 55 56 / 0.18));
-}
-
-.guide-card__tab--must-see {
-  background: var(--recommendation);
-  color: var(--recommendation-foreground);
-}
-
-.guide-card__tab--indoor {
-  background: var(--harbour);
-  color: var(--recommendation-foreground);
-}
-
-@media (min-width: 640px) {
-  .guide-card__tags {
-    padding-left: 16px;
-    padding-right: 56px;
-  }
-}
 
 @layer base {
   * {
