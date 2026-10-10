@@ -88,7 +88,7 @@ export function App() {
           authorBy={t("site.authorBy")}
           aiAssisted={t("site.aiAssisted")}
         />
-        <div className="sticky top-0 z-30 border-b-2 border-ink/10 bg-background/95 px-4 py-2.5 backdrop-blur-md sm:px-6 lg:static lg:border-b-0 lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
+        <div className="sticky top-0 z-30 border-b-2 border-ink/10 bg-background/95 px-4 py-1.5 backdrop-blur-md sm:px-6 md:static md:border-b-0 md:bg-transparent md:px-0 md:py-0 md:backdrop-blur-none">
           <div className="mx-auto flex max-w-6xl items-center gap-2">
             <SearchBar
               value={search}
@@ -98,7 +98,7 @@ export function App() {
               clearLabel={t("site.searchClear")}
               className="min-w-0 flex-1"
             />
-            <div className="shrink-0 lg:hidden">
+            <div className="shrink-0 md:hidden">
               <LanguageToggle
                 value={language}
                 onChange={changeLanguage}
