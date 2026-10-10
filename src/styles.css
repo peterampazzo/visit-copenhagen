@@ -249,12 +249,6 @@
   }
 }
 
-/* Fades the right edge of horizontally scrollable rows so overflow is discoverable */
-@utility scroll-fade-x {
-  mask-image: linear-gradient(to right, black 88%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, black 88%, transparent 100%);
-}
-
 .cph-hero {
   min-height: clamp(20rem, 31vw, 22.5rem);
   overflow: hidden;
