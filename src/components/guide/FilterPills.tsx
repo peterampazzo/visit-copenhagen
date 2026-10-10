@@ -23,7 +23,7 @@ export function FilterPills({
 
   return (
     <div role="group" aria-label={copy.label} className="mx-auto mt-2 max-w-6xl">
-      <div className="scrollbar-none flex items-center gap-2 overflow-x-auto">
+      <div className="scrollbar-none scroll-fade-x flex items-center gap-2 overflow-x-auto">
         <button
           type="button"
           aria-pressed={filters.mustSee}

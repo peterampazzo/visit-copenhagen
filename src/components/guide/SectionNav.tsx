@@ -41,7 +41,7 @@ export function SectionNav({
       aria-label={label}
       className="sticky top-0 z-40 hidden border-b-2 md:block border-ink/10 bg-background/90 backdrop-blur-md"
     >
-      <ul className="scrollbar-none mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-3">
+      <ul className="scrollbar-none scroll-fade-x mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-3">
         <li className="shrink-0">
           <button
             type="button"
