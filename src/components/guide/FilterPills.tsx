@@ -1,5 +1,6 @@
-import { Bookmark, Umbrella, X } from "lucide-react";
+import { Bookmark, Umbrella } from "lucide-react";
 
+import { Button } from "@/components/ui/button";
 import type { GuideFilters } from "@/lib/guide-content";
 import { cn } from "@/lib/utils";
 
@@ -14,45 +15,38 @@ export function FilterPills({
 }) {
   const pill = (active: boolean) =>
     cn(
-      "inline-flex min-h-8 shrink-0 items-center gap-1 rounded-full border px-2.5 text-[0.72rem] font-extrabold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+      "size-10 shrink-0 rounded-full border-2 p-0 text-xs font-extrabold shadow-none transition-colors sm:w-auto sm:px-3",
       active
-        ? "border-coral bg-coral text-card shadow-[2px_2px_0_rgb(20_55_56_/_0.18)]"
-        : "border-ink/12 bg-card/80 text-ink hover:border-harbour/45 hover:bg-cream",
+        ? "border-coral bg-coral text-primary-foreground shadow-[2px_2px_0_var(--ink)] hover:bg-coral/90"
+        : "border-ink/15 bg-card text-ink hover:border-harbour/45 hover:bg-cream",
     );
-  const anyActive = filters.mustSee || filters.indoor;
 
   return (
-    <div role="group" aria-label={copy.label} className="mx-auto mt-1.5 max-w-6xl">
-      <div className="scrollbar-none flex items-center gap-1.5 overflow-x-auto">
-        <button
+    <div role="group" aria-label={copy.label} className="flex shrink-0 items-center gap-1.5">
+        <Button
+          variant="ghost"
           type="button"
           aria-pressed={filters.mustSee}
+          aria-label={copy.mustSee}
+          title={copy.mustSee}
           onClick={() => onChange({ ...filters, mustSee: !filters.mustSee })}
           className={pill(filters.mustSee)}
         >
-          <Bookmark size={12} strokeWidth={2.5} className="fill-current" aria-hidden="true" />
-          {copy.mustSee}
-        </button>
-        <button
+          <Bookmark strokeWidth={2.5} className="fill-current" aria-hidden="true" />
+          <span className="hidden sm:inline">{copy.mustSee}</span>
+        </Button>
+        <Button
+          variant="ghost"
           type="button"
           aria-pressed={filters.indoor}
+          aria-label={copy.indoor}
+          title={copy.indoor}
           onClick={() => onChange({ ...filters, indoor: !filters.indoor })}
           className={pill(filters.indoor)}
         >
-          <Umbrella size={12} strokeWidth={2.5} aria-hidden="true" />
-          {copy.indoor}
-        </button>
-        {anyActive ? (
-          <button
-            type="button"
-            onClick={() => onChange({ mustSee: false, indoor: false })}
-            className="inline-flex min-h-8 shrink-0 items-center gap-1 rounded-full px-2 text-[0.72rem] font-bold text-harbour underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-primary"
-          >
-            <X size={12} strokeWidth={2.5} aria-hidden="true" />
-            {copy.reset}
-          </button>
-        ) : null}
-      </div>
+          <Umbrella strokeWidth={2.5} aria-hidden="true" />
+          <span className="hidden sm:inline">{copy.indoor}</span>
+        </Button>
     </div>
   );
 }
