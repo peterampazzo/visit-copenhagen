@@ -58,8 +58,24 @@ export function PlaceCard({
         viewport={{ once: true, margin: "-48px" }}
         transition={{ duration: 0.36, delay: Math.min(index * 0.035, 0.18) }}
         whileTap={{ scale: 0.995 }}
-        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 pt-3.5 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4"
+        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 pt-6 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4"
       >
+        {item.mustSee || item.indoor ? (
+          <div className="guide-card__tags" aria-hidden="true">
+            {item.mustSee ? (
+              <span className="guide-card__tab guide-card__tab--must-see" title={badgeCopy.mustSee}>
+                <Bookmark size={10} strokeWidth={2.75} className="fill-current" />
+                {badgeCopy.mustSee}
+              </span>
+            ) : null}
+            {item.indoor ? (
+              <span className="guide-card__tab guide-card__tab--indoor" title={badgeCopy.indoor}>
+                <Umbrella size={10} strokeWidth={2.75} />
+                {badgeCopy.indoor}
+              </span>
+            ) : null}
+          </div>
+        ) : null}
         {mapPlace ? (
           <Button
             variant="ghost"
@@ -80,27 +96,9 @@ export function PlaceCard({
         ) : null}
 
         <div className="min-w-0 flex-1">
-          {item.kicker || item.mustSee || item.indoor ? (
-            <p className="mb-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 pr-9 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
-              {item.kicker ? <span>{item.kicker}</span> : null}
-              {item.mustSee ? (
-                <span
-                  className="inline-flex items-center gap-1 rounded-full bg-ink px-2 py-0.5 text-[0.6rem] tracking-[0.09em] text-card"
-                  title={badgeCopy.mustSee}
-                >
-                  <Bookmark size={9} strokeWidth={2.75} className="fill-current" aria-hidden="true" />
-                  {badgeCopy.mustSee}
-                </span>
-              ) : null}
-              {item.indoor ? (
-                <span
-                  className="inline-flex items-center gap-1 rounded-full border border-harbour/35 px-2 py-0.5 text-[0.6rem] tracking-[0.09em] text-harbour"
-                  title={badgeCopy.indoor}
-                >
-                  <Umbrella size={9} strokeWidth={2.75} aria-hidden="true" />
-                  {badgeCopy.indoor}
-                </span>
-              ) : null}
+          {item.kicker ? (
+            <p className="mb-1.5 pr-9 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
+              {item.kicker}
             </p>
           ) : null}
           {mapPlace ? (
