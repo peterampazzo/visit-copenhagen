@@ -98,6 +98,16 @@ export function App() {
               clearLabel={t("site.searchClear")}
               className="min-w-0 flex-1"
             />
+            <FilterPills
+              filters={filters}
+              onChange={setFilters}
+              copy={{
+                label: t("site.filterLabel"),
+                mustSee: t("site.filterMustSee"),
+                indoor: t("site.filterIndoor"),
+                reset: t("site.filterReset"),
+              }}
+            />
             <div className="shrink-0 lg:hidden">
               <LanguageToggle
                 value={language}
@@ -106,16 +116,6 @@ export function App() {
               />
             </div>
           </div>
-          <FilterPills
-            filters={filters}
-            onChange={setFilters}
-            copy={{
-              label: t("site.filterLabel"),
-              mustSee: t("site.filterMustSee"),
-              indoor: t("site.filterIndoor"),
-              reset: t("site.filterReset"),
-            }}
-          />
         </div>
         <SavedStrip
           places={mapPlaces}
