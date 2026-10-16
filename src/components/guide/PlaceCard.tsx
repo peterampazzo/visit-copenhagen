@@ -46,6 +46,7 @@ export function PlaceCard({
   const showTextLink = Boolean(item.url && item.linkText && !hasStory);
   const showIconLink = Boolean(item.url && !hasStory && !item.linkText);
   const hasActions = Boolean(item.travel || hasStory || showTextLink || showIconLink || mapPlace);
+  const headerPad = item.mustSee ? "pr-[8.5rem] sm:pr-[9rem]" : "";
 
   const actionPill =
     "inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full bg-harbour/10 px-3 text-xs font-extrabold text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
@@ -60,21 +61,11 @@ export function PlaceCard({
         whileTap={{ scale: 0.995 }}
         className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 pt-6 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4"
       >
-        {item.mustSee || item.indoor ? (
-          <div className="guide-card__tags" aria-hidden="true">
-            {item.mustSee ? (
-              <span className="guide-card__tab guide-card__tab--must-see" title={badgeCopy.mustSee}>
-                <Bookmark size={10} strokeWidth={2.75} className="fill-current" />
-                {badgeCopy.mustSee}
-              </span>
-            ) : null}
-            {item.indoor ? (
-              <span className="guide-card__tab guide-card__tab--indoor" title={badgeCopy.indoor}>
-                <Umbrella size={10} strokeWidth={2.75} />
-                {badgeCopy.indoor}
-              </span>
-            ) : null}
-          </div>
+        {item.mustSee ? (
+          <span className="guide-card__stamp" aria-hidden="true" title={badgeCopy.mustSee}>
+            <Bookmark size={10} strokeWidth={2.75} className="fill-current" />
+            {badgeCopy.mustSee}
+          </span>
         ) : null}
         {mapPlace ? (
           <Button
@@ -96,13 +87,28 @@ export function PlaceCard({
         ) : null}
 
         <div className="min-w-0 flex-1">
-          {item.kicker ? (
-            <p className="mb-1.5 pr-9 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
-              {item.kicker}
-            </p>
+          {item.kicker || item.indoor ? (
+            <div className={`mb-1.5 flex flex-wrap items-center gap-1.5 ${headerPad || "pr-9"}`}>
+              {item.indoor ? (
+                <span
+                  className="inline-flex h-5 shrink-0 items-center gap-1 rounded-full bg-harbour/10 px-1.5 text-[0.6rem] font-extrabold uppercase tracking-[0.1em] text-harbour"
+                  title={badgeCopy.indoor}
+                >
+                  <Umbrella size={10} strokeWidth={2.75} aria-hidden="true" />
+                  {badgeCopy.indoor}
+                </span>
+              ) : null}
+              {item.kicker ? (
+                <p className="text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
+                  {item.kicker}
+                </p>
+              ) : null}
+            </div>
           ) : null}
           {mapPlace ? (
-            <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg">
+            <h4
+              className={`font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg ${headerPad}`}
+            >
               <button
                 type="button"
                 onClick={() => onShowOnMap(mapPlace.id)}
@@ -114,7 +120,9 @@ export function PlaceCard({
               </button>
             </h4>
           ) : (
-            <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg">
+            <h4
+              className={`font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg ${headerPad}`}
+            >
               {item.name}
             </h4>
           )}
@@ -125,16 +133,19 @@ export function PlaceCard({
 
         {hasActions ? (
           <div className="mt-3.5 flex flex-wrap items-center gap-2 border-t border-ink/10 pt-3">
-
             {item.travel ? (
               <span className="inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-full bg-sun/45 px-3 text-xs font-extrabold text-ink">
-
                 <TramFront size={13} strokeWidth={2.5} aria-hidden="true" />
                 {item.travel}
               </span>
             ) : null}
             {hasStory ? (
-               <Button variant="ghost" type="button" onClick={() => setStoryOpen(true)} className={actionPill}>
+              <Button
+                variant="ghost"
+                type="button"
+                onClick={() => setStoryOpen(true)}
+                className={actionPill}
+              >
                 <BookOpenText size={14} strokeWidth={2.5} aria-hidden="true" />
                 {storyCopy.label}
               </Button>
