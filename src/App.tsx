@@ -164,7 +164,15 @@ export function App() {
           </div>
         ) : null}
         <BackToTop label={t("site.backToTop")} />
-        {reels ? <ReelsStrip reels={reels} playLabel={t("site.playReel")} /> : null}
+        {reels ? (
+          <ReelsStrip
+            reels={reels}
+            copy={{
+              play: t("site.playReel"),
+              counter: (current, total) => t("site.reelCounter", { current, total }),
+            }}
+          />
+        ) : null}
         <MobileBottomNav
           sections={sections}
           sectionsLabel={t("site.navLabel")}

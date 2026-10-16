@@ -7,10 +7,30 @@ import { cn } from "@/lib/utils";
 
 const REEL_THEMES = ["bg-coral", "bg-harbour", "bg-sun", "bg-ink"] as const;
 
-export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabel: string }) {
+export function ReelsStrip({
+  reels,
+  copy,
+}: {
+  reels: ReelsSection;
+  copy: { play: string; counter: (current: number, total: number) => string };
+}) {
   const [failed, setFailed] = useState<Record<string, boolean>>({});
   const [activeIndex, setActiveIndex] = useState(0);
+  const [activeTheme, setActiveTheme] = useState<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  const visibleItems = activeTheme
+    ? reels.items.filter((item) => item.theme === activeTheme)
+    : reels.items;
+  const themes = Object.entries(reels.themes ?? {}).filter(([id]) =>
+    reels.items.some((item) => item.theme === id),
+  );
+
+  const selectTheme = (theme: string | null) => {
+    setActiveTheme(theme);
+    setActiveIndex(0);
+    scrollRef.current?.scrollTo({ left: 0 });
+  };
 
   const scrollToIndex = useCallback((index: number) => {
     const container = scrollRef.current;
@@ -26,13 +46,13 @@ export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabe
   }, [activeIndex, scrollToIndex]);
 
   const handleNext = useCallback(() => {
-    const next = Math.min(reels.items.length - 1, activeIndex + 1);
+    const next = Math.min(visibleItems.length - 1, activeIndex + 1);
     scrollToIndex(next);
-  }, [activeIndex, reels.items.length, scrollToIndex]);
+  }, [activeIndex, visibleItems.length, scrollToIndex]);
 
   useEffect(() => {
     const container = scrollRef.current;
-    if (!container || reels.items.length <= 1) return;
+    if (!container || visibleItems.length <= 1) return;
 
     const updateActive = () => {
       const scrollLeft = container.scrollLeft;
@@ -54,10 +74,10 @@ export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabe
     container.addEventListener("scroll", updateActive, { passive: true });
     updateActive();
     return () => container.removeEventListener("scroll", updateActive);
-  }, [reels.items.length]);
+  }, [visibleItems.length]);
 
   const canGoBack = activeIndex > 0;
-  const canGoForward = activeIndex < reels.items.length - 1;
+  const canGoForward = activeIndex < visibleItems.length - 1;
 
   return (
     <section className="border-t-2 border-ink/10 bg-background px-4 py-10 sm:px-6 sm:py-14">
@@ -79,8 +99,32 @@ export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabe
           ) : null}
         </motion.div>
 
+        {themes.length > 0 ? (
+          <div role="group" aria-label={reels.title} className="mb-5 flex flex-wrap gap-1.5">
+            {[
+              { id: null as string | null, label: reels.allLabel ?? "All" },
+              ...themes.map(([id, label]) => ({ id: id as string | null, label })),
+            ].map(({ id, label }) => (
+              <button
+                key={id ?? "all"}
+                type="button"
+                aria-pressed={activeTheme === id}
+                onClick={() => selectTheme(id)}
+                className={cn(
+                  "h-9 rounded-full border-2 px-3 text-xs font-extrabold shadow-none transition-colors",
+                  activeTheme === id
+                    ? "border-coral bg-coral text-primary-foreground shadow-[2px_2px_0_var(--ink)] hover:bg-coral/90"
+                    : "border-ink/15 bg-card text-ink hover:border-harbour/45 hover:bg-cream",
+                )}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        ) : null}
+
         <div className="relative">
-          {reels.items.length > 1 ? (
+          {visibleItems.length > 1 ? (
             <>
               <button
                 type="button"
@@ -118,7 +162,7 @@ export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabe
             className="scrollbar-none -mx-4 snap-x snap-mandatory overflow-x-auto px-4 sm:-mx-6 sm:px-6"
           >
             <div className="flex gap-3 pb-2">
-              {reels.items.map((reel, index) => {
+              {visibleItems.map((reel, index) => {
                 const theme = REEL_THEMES[index % REEL_THEMES.length];
                 const hasLink = Boolean(reel.url);
                 const showImage = Boolean(reel.image) && !failed[reel.id];
@@ -140,7 +184,7 @@ export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabe
                             href: reel.url,
                             target: "_blank",
                             rel: "noreferrer",
-                            "aria-label": `${playLabel}: ${reel.caption}`,
+                            "aria-label": `${copy.play}: ${reel.caption}`,
                           }
                         : {})}
                       className={cn(
@@ -197,25 +241,13 @@ export function ReelsStrip({ reels, playLabel }: { reels: ReelsSection; playLabe
           </div>
         </div>
 
-        {reels.items.length > 1 ? (
-          <div className="mt-4 flex justify-center gap-2" role="tablist" aria-label="Reels">
-            {reels.items.map((reel, index) => (
-              <button
-                key={reel.id}
-                type="button"
-                role="tab"
-                aria-selected={activeIndex === index}
-                aria-label={`Go to reel ${index + 1}: ${reel.caption}`}
-                onClick={() => scrollToIndex(index)}
-                className={cn(
-                  "h-2.5 w-2.5 rounded-full border-2 border-ink transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
-                  activeIndex === index
-                    ? "bg-coral shadow-[1px_1px_0_var(--ink)]"
-                    : "bg-card hover:bg-cream",
-                )}
-              />
-            ))}
-          </div>
+        {visibleItems.length > 1 ? (
+          <p
+            className="mt-4 text-center text-xs font-extrabold uppercase tracking-[0.12em] text-ink/55"
+            aria-live="polite"
+          >
+            {copy.counter(activeIndex + 1, visibleItems.length)}
+          </p>
         ) : null}
       </div>
     </section>

@@ -157,17 +157,22 @@ export type ReelItem = {
   creator?: string;
   image?: string;
   url?: string;
+  theme?: string;
 };
 
 export type ReelsSection = {
   title: string;
   blurb?: string;
+  allLabel?: string;
+  themes?: Record<string, string>;
   items: ReelItem[];
 };
 
 export type ReelsRecord = {
   title: string;
   blurb?: string;
+  allLabel?: string;
+  themes?: Record<string, string>;
   items: Record<string, Omit<ReelItem, "id">>;
 };
 
@@ -176,6 +181,8 @@ export function toReelsSection(reels: ReelsRecord | undefined): ReelsSection | n
   return {
     title: reels.title,
     ...(reels.blurb === undefined ? {} : { blurb: reels.blurb }),
+    ...(reels.allLabel === undefined ? {} : { allLabel: reels.allLabel }),
+    ...(reels.themes === undefined ? {} : { themes: reels.themes }),
     items: Object.entries(reels.items).map(([id, item]) => ({ id, ...item })),
   };
 }

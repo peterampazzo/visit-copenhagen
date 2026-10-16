@@ -59,6 +59,7 @@ site:
   openPhoto: Apri la foto
   goodToKnow: Da sapere
   playReel: Guarda
+  reelCounter: "{{current}} di {{total}}"
 
 sections:
   know:
@@ -184,6 +185,11 @@ sections:
           nyhavn:
             name: Nyhavn
             note: Il porticciolo colorato delle foto. Turistico, ma bello.
+            url: https://www.instagram.com/reel/DdtuOratq5i/
+            linkText: Guarda il reel
+            media:
+              image: /reels/nyhavn-night.jpg
+              url: https://www.instagram.com/reel/DdtuOratq5i/
           christiansborg:
             name: Christiansborg & la Torre
             note: Parlamento, palazzo e vista gratuita sulla città, tutto sulla stessa isola.
@@ -533,6 +539,9 @@ sections:
               chiesa del matrimonio di Fiona e Lord Farquaad, ma DreamWorks non
               ha mai confermato che sia stata davvero il modello.
             url: https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
+            media:
+              image: /reels/grundtvig-church.jpg
+              url: https://www.instagram.com/reel/DeDUN-GMpju/
       libraries:
         title: Biblioteche in cui entrare
         items:
@@ -563,6 +572,9 @@ sections:
               di ricerca, cultura e visite; controllate il programma aggiornato
               se volete andarci apposta per un tour guidato.
             url: https://www.kb.dk/en/visit-us/university-library-fiolstraede
+            media:
+              image: /reels/fiolstraede-library.jpg
+              url: https://www.instagram.com/reel/DecPZt4thtI/
       rooftops:
         title: Tetti & viste sulla città
         items:
@@ -1481,79 +1493,178 @@ sections:
 reels:
   title: Dal feed
   blurb: Copenaghen, la Danimarca e qualche posto che merita la deviazione—un reel alla volta.
+  allLabel: Tutti
+  themes:
+    life: Vita danese
+    transport: Muoversi
+    spots: Angoli nascosti
+    beyond: Oltre Copenaghen
   items:
+    flagsOnBuses:
+      caption: Perché gli autobus danesi sventolano bandiere
+      creator: "@hygge_withsonali"
+      image: /reels/flags-on-buses.jpg
+      url: https://www.instagram.com/reel/DehhK71IBmE/
+      theme: life
+    bikeRushHour:
+      caption: "L'ora di punta, versione Copenaghen"
+      creator: "@hyggetourcopenhagen"
+      image: /reels/bike-rush-hour.jpg
+      url: https://www.instagram.com/reel/DalYQBZN7EK/
+      theme: transport
+    taarnetKiosk:
+      caption: "Il chiosco con una storia: Taarnet"
+      creator: "@bsc_.hoi"
+      image: /reels/taarnet-kiosk.jpg
+      url: https://www.instagram.com/reel/Degs7MsA3I1/
+      theme: spots
+    paternosterLift:
+      caption: "L'ascensore paternoster di Axelborg"
+      creator: "@copenhagenspots"
+      image: /reels/paternoster-lift.jpg
+      url: https://www.instagram.com/reel/DeMyXritM0O/
+      theme: spots
+    driverlessMetro:
+      caption: In prima fila sulla metro senza conducente
+      creator: "@prashantvatsafilms"
+      image: /reels/driverless-metro.jpg
+      url: https://www.instagram.com/reel/DdRbu4ds08i/
+      theme: transport
+    newCafes:
+      caption: Dodici caffè nuovi per un buon caffè
+      creator: "@nana_ha"
+      image: /reels/new-cafes.jpg
+      url: https://www.instagram.com/reel/DePCHsRNgfi/
+      theme: spots
+    karenBlixensPlads:
+      caption: Le colline di Karen Blixens Plads
+      creator: "@matter.by.millie"
+      image: /reels/karen-blixens-plads.jpg
+      url: https://www.instagram.com/reel/DeMyzP0t-V0/
+      theme: spots
+    bikeLaneDetails:
+      caption: I piccoli dettagli di una pista ciclabile
+      creator: "@probably_riding"
+      image: /reels/bike-lane-details.jpg
+      url: https://www.instagram.com/reel/Dc_MwzdBfp0/
+      theme: transport
+    metroDanceFloor:
+      caption: Quando la metro è diventata una pista da ballo
+      creator: "@food.travel_lifestyle"
+      image: /reels/metro-dance-floor.jpg
+      url: https://www.instagram.com/reel/Dd0WJaHMw_2/
+      theme: transport
+    tivoliPumpkin:
+      caption: Una zucca da 1.198 kg al Tivoli
+      creator: "@mydearcopenhagen"
+      image: /reels/tivoli-pumpkin.jpg
+      url: https://www.instagram.com/reel/DeO0L9uOH0E/
+      theme: spots
+    danishBenches:
+      caption: Ma a cosa servono queste panchine?
+      creator: "@samdevine44"
+      image: /reels/danish-benches.jpg
+      url: https://www.instagram.com/reel/Dd9SGsmiaSS/
+      theme: life
+    saveThisSpot:
+      caption: La biblioteca reale dentro Christiansborg
+      creator: "@szabinasedlak"
+      image: /reels/save-this-spot.jpg
+      url: https://www.instagram.com/reel/Dd1kca6IL0u/
+      theme: spots
+    merchantsHarbour:
+      caption: Perché Copenaghen significa "porto dei mercanti"
+      creator: "@inglesesumisura_edward"
+      image: /reels/merchants-harbour.jpg
+      url: https://www.instagram.com/reel/DeFXL77vxtK/
+      theme: life
     faroeFerry:
       caption: Il traghetto di 36 ore per le Isole Faroe
       creator: "@smileyliving"
       image: /reels/faroe-ferry.jpg
       url: https://www.instagram.com/reel/Dcy0xTbR5GX/
+      theme: beyond
     humanScaleCopenhagen:
       caption: Come Copenaghen è stata ridisegnata per le persone
       creator: "@cnntravel"
       image: /reels/human-scale-copenhagen.jpg
       url: https://www.instagram.com/reel/DcvuJqcE-FW/
+      theme: transport
     cinnamonAt25:
       caption: 25 anni e non sposati? Arriva la cannella
       creator: "@pubity"
       image: /reels/cinnamon-at-25.jpg
       url: https://www.instagram.com/reel/DckmOe6Jmcw/
+      theme: life
     dannebrogEverywhere:
       caption: Perché Dannebrog compare a ogni festa
       creator: "@hygge_withsonali"
       image: /reels/dannebrog-everywhere.jpg
       url: https://www.instagram.com/reel/DclTbG5oiku/
+      theme: life
     cyclingInfrastructure:
       caption: Le infrastrutture rendono facile scegliere la bici
       creator: "@karyna.y"
       image: /reels/cycling-infrastructure.jpg
       url: https://www.instagram.com/reel/DclpVqfM052/
+      theme: transport
     odeToCopenhagen:
       caption: Un'ode a Copenaghen
       creator: "@jeromememe"
       image: /reels/ode-to-copenhagen.jpg
       url: https://www.instagram.com/reel/DcLo7KcuLe4/
+      theme: life
     ironmanCopenhagen:
       caption: L'Ironman di Copenaghen dall'alto
       creator: "@bezshumaipyli"
       image: /reels/ironman-copenhagen.jpg
       url: https://www.instagram.com/reel/DcBtNWuClNc/
+      theme: life
     oresundReel:
       caption: Perché il ponte di Øresund diventa un tunnel
       creator: "@europe.in.layers"
       image: /reels/oresund-link.jpg
       url: https://www.instagram.com/reel/DbQ2fAfk1W3/
+      theme: transport
     danishLesson:
       caption: Una lezione veloce di danese con Lukas Graham
       creator: "@megarobbie"
       image: /reels/danish-lesson.jpg
       url: https://www.instagram.com/reel/Db8iu4xxO_M/
+      theme: life
     tivoliQueue:
       caption: Quando i bambini fanno la fila al Tivoli
       creator: "@martiniaday"
       image: /reels/tivoli-queue.jpg
       url: https://www.instagram.com/reel/CmHDTnbO9AP/
+      theme: life
     surfingDenmark:
       caption: Sì, in Danimarca si fa surf
       creator: "@olihartkopp"
       image: /reels/surfing-denmark.jpg
       url: https://www.instagram.com/reel/DbIgWRGMBac/
+      theme: beyond
     swanTrafficJam:
       caption: Un cigno crea traffico a Copenaghen
       creator: "@hej.hej.sophia"
       image: /reels/swan-traffic-jam.jpg
       url: https://www.instagram.com/reel/Da7IPEDottN/
+      theme: life
     lifeInDenmark:
       caption: La vita in Danimarca, in un reel
       creator: "@anremie"
       image: /reels/life-in-denmark.jpg
       url: https://www.instagram.com/reel/DWmHgNWCCZb/
+      theme: life
     frozenLakes:
       caption: Quando i laghi ghiacciano
       creator: "@morten.svane"
       image: /reels/frozen-lakes.jpg
       url: https://www.instagram.com/reel/DVHRB9PiILm/
+      theme: spots
     bakeries:
       caption: Otto panetterie per una mattina a Copenaghen
       creator: "@vayabo"
       image: /reels/bakeries.jpg
       url: https://www.instagram.com/p/DOSrrF8DJpF/
+      theme: spots

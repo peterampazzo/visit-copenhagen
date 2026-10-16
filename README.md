@@ -20,6 +20,12 @@ The production-ready static site is generated in `dist/`.
 
 Keep English and Italian keys aligned. English is the fallback language.
 
+### Add a reel
+
+Run `pnpm add-reel <instagram-url> <slug>` to fetch the cover image, crop it to
+640x800 into `public/reels/`, and print YAML snippets to paste under `reels.items`
+in both locale files. See `.github/skills/add-reel/SKILL.md` for the full workflow.
+
 ## Deploys
 
 GitHub Actions builds and uploads the static site to Cloudflare Pages:

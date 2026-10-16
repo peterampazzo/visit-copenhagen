@@ -59,6 +59,7 @@ site:
   openPhoto: Open photo
   goodToKnow: Good to know
   playReel: Play
+  reelCounter: "{{current}} of {{total}}"
 
 sections:
   know:
@@ -183,6 +184,11 @@ sections:
           nyhavn:
             name: Nyhavn
             note: The coloured harbour from every postcard. It is busy and touristy, but still worth walking—especially early or after dinner.
+            url: https://www.instagram.com/reel/DdtuOratq5i/
+            linkText: Watch the reel
+            media:
+              image: /reels/nyhavn-night.jpg
+              url: https://www.instagram.com/reel/DdtuOratq5i/
           christiansborg:
             name: Christiansborg & the Tower
             note: Parliament, palace and a free city view—all on the same island.
@@ -530,6 +536,9 @@ sections:
               the church where Fiona almost marries Lord Farquaad, but DreamWorks
               has never confirmed that it was actually the model.
             url: https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
+            media:
+              image: /reels/grundtvig-church.jpg
+              url: https://www.instagram.com/reel/DeDUN-GMpju/
       libraries:
         title: Libraries worth entering
         items:
@@ -559,6 +568,9 @@ sections:
               in 2023 as a place for research, culture and tours; check the
               current programme before going specifically for a guided visit.
             url: https://www.kb.dk/en/visit-us/university-library-fiolstraede
+            media:
+              image: /reels/fiolstraede-library.jpg
+              url: https://www.instagram.com/reel/DecPZt4thtI/
       rooftops:
         title: Rooftops & city views
         items:
@@ -1468,79 +1480,178 @@ sections:
 reels:
   title: From the feed
   blurb: Copenhagen, Denmark and a few places worth the detour—one reel at a time.
+  allLabel: All
+  themes:
+    life: Danish life
+    transport: Getting around
+    spots: Hidden spots
+    beyond: Beyond Copenhagen
   items:
+    flagsOnBuses:
+      caption: Why Danish buses fly flags
+      creator: "@hygge_withsonali"
+      image: /reels/flags-on-buses.jpg
+      url: https://www.instagram.com/reel/DehhK71IBmE/
+      theme: life
+    bikeRushHour:
+      caption: Rush hour, Copenhagen style
+      creator: "@hyggetourcopenhagen"
+      image: /reels/bike-rush-hour.jpg
+      url: https://www.instagram.com/reel/DalYQBZN7EK/
+      theme: transport
+    taarnetKiosk:
+      caption: "The kiosk with a story: Taarnet"
+      creator: "@bsc_.hoi"
+      image: /reels/taarnet-kiosk.jpg
+      url: https://www.instagram.com/reel/Degs7MsA3I1/
+      theme: spots
+    paternosterLift:
+      caption: Ride the paternoster lift at Axelborg
+      creator: "@copenhagenspots"
+      image: /reels/paternoster-lift.jpg
+      url: https://www.instagram.com/reel/DeMyXritM0O/
+      theme: spots
+    driverlessMetro:
+      caption: Front-row seat on the driverless metro
+      creator: "@prashantvatsafilms"
+      image: /reels/driverless-metro.jpg
+      url: https://www.instagram.com/reel/DdRbu4ds08i/
+      theme: transport
+    newCafes:
+      caption: Twelve new cafés for good coffee
+      creator: "@nana_ha"
+      image: /reels/new-cafes.jpg
+      url: https://www.instagram.com/reel/DePCHsRNgfi/
+      theme: spots
+    karenBlixensPlads:
+      caption: The hills of Karen Blixens Plads
+      creator: "@matter.by.millie"
+      image: /reels/karen-blixens-plads.jpg
+      url: https://www.instagram.com/reel/DeMyzP0t-V0/
+      theme: spots
+    bikeLaneDetails:
+      caption: The tiny details of a bike lane
+      creator: "@probably_riding"
+      image: /reels/bike-lane-details.jpg
+      url: https://www.instagram.com/reel/Dc_MwzdBfp0/
+      theme: transport
+    metroDanceFloor:
+      caption: When the metro became a dance floor
+      creator: "@food.travel_lifestyle"
+      image: /reels/metro-dance-floor.jpg
+      url: https://www.instagram.com/reel/Dd0WJaHMw_2/
+      theme: transport
+    tivoliPumpkin:
+      caption: A 1,198 kg pumpkin at Tivoli
+      creator: "@mydearcopenhagen"
+      image: /reels/tivoli-pumpkin.jpg
+      url: https://www.instagram.com/reel/DeO0L9uOH0E/
+      theme: spots
+    danishBenches:
+      caption: What are these benches even for?
+      creator: "@samdevine44"
+      image: /reels/danish-benches.jpg
+      url: https://www.instagram.com/reel/Dd9SGsmiaSS/
+      theme: life
+    saveThisSpot:
+      caption: The royal library inside Christiansborg
+      creator: "@szabinasedlak"
+      image: /reels/save-this-spot.jpg
+      url: https://www.instagram.com/reel/Dd1kca6IL0u/
+      theme: spots
+    merchantsHarbour:
+      caption: Why Copenhagen means "merchants' harbour"
+      creator: "@inglesesumisura_edward"
+      image: /reels/merchants-harbour.jpg
+      url: https://www.instagram.com/reel/DeFXL77vxtK/
+      theme: life
     faroeFerry:
       caption: The 36-hour ferry to the Faroe Islands
       creator: "@smileyliving"
       image: /reels/faroe-ferry.jpg
       url: https://www.instagram.com/reel/Dcy0xTbR5GX/
+      theme: beyond
     humanScaleCopenhagen:
       caption: How Copenhagen was redesigned for people
       creator: "@cnntravel"
       image: /reels/human-scale-copenhagen.jpg
       url: https://www.instagram.com/reel/DcvuJqcE-FW/
+      theme: transport
     cinnamonAt25:
       caption: Unmarried at 25? Prepare for cinnamon
       creator: "@pubity"
       image: /reels/cinnamon-at-25.jpg
       url: https://www.instagram.com/reel/DckmOe6Jmcw/
+      theme: life
     dannebrogEverywhere:
       caption: Why Dannebrog appears at every celebration
       creator: "@hygge_withsonali"
       image: /reels/dannebrog-everywhere.jpg
       url: https://www.instagram.com/reel/DclTbG5oiku/
+      theme: life
     cyclingInfrastructure:
       caption: Infrastructure makes cycling the easy choice
       creator: "@karyna.y"
       image: /reels/cycling-infrastructure.jpg
       url: https://www.instagram.com/reel/DclpVqfM052/
+      theme: transport
     odeToCopenhagen:
       caption: An ode to Copenhagen
       creator: "@jeromememe"
       image: /reels/ode-to-copenhagen.jpg
       url: https://www.instagram.com/reel/DcLo7KcuLe4/
+      theme: life
     ironmanCopenhagen:
       caption: Ironman Copenhagen from above
       creator: "@bezshumaipyli"
       image: /reels/ironman-copenhagen.jpg
       url: https://www.instagram.com/reel/DcBtNWuClNc/
+      theme: life
     oresundReel:
       caption: Why the Øresund Bridge becomes a tunnel
       creator: "@europe.in.layers"
       image: /reels/oresund-link.jpg
       url: https://www.instagram.com/reel/DbQ2fAfk1W3/
+      theme: transport
     danishLesson:
       caption: A quick Danish lesson with Lukas Graham
       creator: "@megarobbie"
       image: /reels/danish-lesson.jpg
       url: https://www.instagram.com/reel/Db8iu4xxO_M/
+      theme: life
     tivoliQueue:
       caption: When Danish children queue at Tivoli
       creator: "@martiniaday"
       image: /reels/tivoli-queue.jpg
       url: https://www.instagram.com/reel/CmHDTnbO9AP/
+      theme: life
     surfingDenmark:
       caption: Yes, Denmark has surf
       creator: "@olihartkopp"
       image: /reels/surfing-denmark.jpg
       url: https://www.instagram.com/reel/DbIgWRGMBac/
+      theme: beyond
     swanTrafficJam:
       caption: A swan causes a Copenhagen traffic jam
       creator: "@hej.hej.sophia"
       image: /reels/swan-traffic-jam.jpg
       url: https://www.instagram.com/reel/Da7IPEDottN/
+      theme: life
     lifeInDenmark:
       caption: Life in Denmark, in one reel
       creator: "@anremie"
       image: /reels/life-in-denmark.jpg
       url: https://www.instagram.com/reel/DWmHgNWCCZb/
+      theme: life
     frozenLakes:
       caption: When the lakes freeze
       creator: "@morten.svane"
       image: /reels/frozen-lakes.jpg
       url: https://www.instagram.com/reel/DVHRB9PiILm/
+      theme: spots
     bakeries:
       caption: Eight bakeries for a Copenhagen morning
       creator: "@vayabo"
       image: /reels/bakeries.jpg
       url: https://www.instagram.com/p/DOSrrF8DJpF/
+      theme: spots

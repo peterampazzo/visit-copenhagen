@@ -52,7 +52,7 @@ _The small stuff that makes a big difference._
 _The city makes more sense once you know what you're looking at._
 
 ### Classics with a backstory
-- **Nyhavn** [⭐ Must-see] — The coloured harbour from every postcard. It is busy and touristy, but still worth walking—especially early or after dinner.
+- **Nyhavn** [⭐ Must-see] — The coloured harbour from every postcard. It is busy and touristy, but still worth walking—especially early or after dinner. · [Watch the reel](https://www.instagram.com/reel/DdtuOratq5i/)
 - **Christiansborg & the Tower** — Parliament, palace and a free city view—all on the same island. · https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
   - _Third palace on this site_
   - Christiansborg did not burn three times. The first and second palaces burned in 1794 and 1884; today's building is the third. Beneath it are the ruins of Bishop Absalon's castle and Copenhagen Castle. It now houses Parliament, the Prime Minister's Office, the Supreme Court and royal reception rooms.
@@ -472,6 +472,19 @@ _If you want someone else's opinion for once._
 ## From the feed
 _Copenhagen, Denmark and a few places worth the detour—one reel at a time._
 
+- Why Danish buses fly flags — https://www.instagram.com/reel/DehhK71IBmE/
+- Rush hour, Copenhagen style — https://www.instagram.com/reel/DalYQBZN7EK/
+- The kiosk with a story: Taarnet — https://www.instagram.com/reel/Degs7MsA3I1/
+- Ride the paternoster lift at Axelborg — https://www.instagram.com/reel/DeMyXritM0O/
+- Front-row seat on the driverless metro — https://www.instagram.com/reel/DdRbu4ds08i/
+- Twelve new cafés for good coffee — https://www.instagram.com/reel/DePCHsRNgfi/
+- The hills of Karen Blixens Plads — https://www.instagram.com/reel/DeMyzP0t-V0/
+- The tiny details of a bike lane — https://www.instagram.com/reel/Dc_MwzdBfp0/
+- When the metro became a dance floor — https://www.instagram.com/reel/Dd0WJaHMw_2/
+- A 1,198 kg pumpkin at Tivoli — https://www.instagram.com/reel/DeO0L9uOH0E/
+- What are these benches even for? — https://www.instagram.com/reel/Dd9SGsmiaSS/
+- The royal library inside Christiansborg — https://www.instagram.com/reel/Dd1kca6IL0u/
+- Why Copenhagen means "merchants' harbour" — https://www.instagram.com/reel/DeFXL77vxtK/
 - The 36-hour ferry to the Faroe Islands — https://www.instagram.com/reel/Dcy0xTbR5GX/
 - How Copenhagen was redesigned for people — https://www.instagram.com/reel/DcvuJqcE-FW/
 - Unmarried at 25? Prepare for cinnamon — https://www.instagram.com/reel/DckmOe6Jmcw/

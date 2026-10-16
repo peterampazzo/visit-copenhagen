@@ -52,7 +52,7 @@ _Le piccole cose che fanno la differenza._
 _La città ha più senso quando sapete cosa state guardando._
 
 ### Classici con una storia
-- **Nyhavn** [⭐ Imperdibile] — Il porticciolo colorato delle foto. Turistico, ma bello.
+- **Nyhavn** [⭐ Imperdibile] — Il porticciolo colorato delle foto. Turistico, ma bello. · [Guarda il reel](https://www.instagram.com/reel/DdtuOratq5i/)
 - **Christiansborg & la Torre** — Parlamento, palazzo e vista gratuita sulla città, tutto sulla stessa isola. · https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
   - _Il terzo palazzo in questo punto_
   - Christiansborg non è bruciato tre volte. Il primo e il secondo palazzo andarono a fuoco nel 1794 e nel 1884; quello di oggi è il terzo. Sotto si trovano le rovine del castello del vescovo Absalon e del Castello di Copenaghen. Oggi ospita Parlamento, ufficio del Primo Ministro, Corte Suprema e sale di rappresentanza reali.
@@ -472,6 +472,19 @@ _Se per una volta volete il parere di qualcun altro._
 ## Dal feed
 _Copenaghen, la Danimarca e qualche posto che merita la deviazione—un reel alla volta._
 
+- Perché gli autobus danesi sventolano bandiere — https://www.instagram.com/reel/DehhK71IBmE/
+- L'ora di punta, versione Copenaghen — https://www.instagram.com/reel/DalYQBZN7EK/
+- Il chiosco con una storia: Taarnet — https://www.instagram.com/reel/Degs7MsA3I1/
+- L'ascensore paternoster di Axelborg — https://www.instagram.com/reel/DeMyXritM0O/
+- In prima fila sulla metro senza conducente — https://www.instagram.com/reel/DdRbu4ds08i/
+- Dodici caffè nuovi per un buon caffè — https://www.instagram.com/reel/DePCHsRNgfi/
+- Le colline di Karen Blixens Plads — https://www.instagram.com/reel/DeMyzP0t-V0/
+- I piccoli dettagli di una pista ciclabile — https://www.instagram.com/reel/Dc_MwzdBfp0/
+- Quando la metro è diventata una pista da ballo — https://www.instagram.com/reel/Dd0WJaHMw_2/
+- Una zucca da 1.198 kg al Tivoli — https://www.instagram.com/reel/DeO0L9uOH0E/
+- Ma a cosa servono queste panchine? — https://www.instagram.com/reel/Dd9SGsmiaSS/
+- La biblioteca reale dentro Christiansborg — https://www.instagram.com/reel/Dd1kca6IL0u/
+- Perché Copenaghen significa "porto dei mercanti" — https://www.instagram.com/reel/DeFXL77vxtK/
 - Il traghetto di 36 ore per le Isole Faroe — https://www.instagram.com/reel/Dcy0xTbR5GX/
 - Come Copenaghen è stata ridisegnata per le persone — https://www.instagram.com/reel/DcvuJqcE-FW/
 - 25 anni e non sposati? Arriva la cannella — https://www.instagram.com/reel/DckmOe6Jmcw/
