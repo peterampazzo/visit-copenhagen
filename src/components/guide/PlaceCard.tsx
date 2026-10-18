@@ -14,6 +14,7 @@ import { useState } from "react";
 import { useFavourites } from "@/hooks/use-favourites";
 import type { GuideItem } from "@/lib/guide-content";
 import type { GuideMapPlace } from "@/lib/locations";
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 import { GuideStoryDialog, type StoryCopy } from "./GuideStoryDialog";
@@ -46,7 +47,7 @@ export function PlaceCard({
   const showTextLink = Boolean(item.url && item.linkText && !hasStory);
   const showIconLink = Boolean(item.url && !hasStory && !item.linkText);
   const hasActions = Boolean(item.travel || hasStory || showTextLink || showIconLink || mapPlace);
-  const headerPad = item.mustSee ? "pr-[8.5rem] sm:pr-[9rem]" : "";
+  const hasMarks = Boolean(item.mustSee || item.indoor);
 
   const actionPill =
     "inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full bg-harbour/10 px-3 text-xs font-extrabold text-harbour transition-colors hover:bg-sun hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
@@ -59,13 +60,32 @@ export function PlaceCard({
         viewport={{ once: true, margin: "-48px" }}
         transition={{ duration: 0.36, delay: Math.min(index * 0.035, 0.18) }}
         whileTap={{ scale: 0.995 }}
-        className="group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 pt-6 shadow-sm transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4"
+        className={cn(
+          "group relative flex min-w-0 flex-col overflow-hidden rounded-xl border-2 border-ink/12 bg-card/95 px-3.5 pb-3.5 transition-colors hover:border-harbour/35 hover:bg-cream sm:rounded-2xl sm:px-4 sm:pb-4",
+          "pt-7",
+          hasMarks && (item.mustSee ? "guide-card--edge-must-see" : "guide-card--edge-indoor"),
+        )}
       >
-        {item.mustSee ? (
-          <span className="guide-card__stamp" aria-hidden="true" title={badgeCopy.mustSee}>
-            <Bookmark size={10} strokeWidth={2.75} className="fill-current" />
-            {badgeCopy.mustSee}
-          </span>
+        {hasMarks ? (
+          <div className="guide-card__tabs">
+            {item.mustSee ? (
+              <span className="guide-card__tag guide-card__tag--must-see" title={badgeCopy.mustSee}>
+                <Bookmark
+                  size={10}
+                  strokeWidth={2.75}
+                  className="fill-current"
+                  aria-hidden="true"
+                />
+                {badgeCopy.mustSee}
+              </span>
+            ) : null}
+            {item.indoor ? (
+              <span className="guide-card__tag guide-card__tag--indoor" title={badgeCopy.indoor}>
+                <Umbrella size={10} strokeWidth={2.75} aria-hidden="true" />
+                {badgeCopy.indoor}
+              </span>
+            ) : null}
+          </div>
         ) : null}
         {mapPlace ? (
           <Button
@@ -87,28 +107,13 @@ export function PlaceCard({
         ) : null}
 
         <div className="min-w-0 flex-1">
-          {item.kicker || item.indoor ? (
-            <div className={`mb-1.5 flex flex-wrap items-center gap-1.5 ${headerPad || "pr-9"}`}>
-              {item.indoor ? (
-                <span
-                  className="inline-flex h-5 shrink-0 items-center gap-1 rounded-full bg-harbour/10 px-1.5 text-[0.6rem] font-extrabold uppercase tracking-[0.1em] text-harbour"
-                  title={badgeCopy.indoor}
-                >
-                  <Umbrella size={10} strokeWidth={2.75} aria-hidden="true" />
-                  {badgeCopy.indoor}
-                </span>
-              ) : null}
-              {item.kicker ? (
-                <p className="text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
-                  {item.kicker}
-                </p>
-              ) : null}
-            </div>
+          {item.kicker ? (
+            <p className="mb-1.5 pr-9 text-[0.65rem] font-extrabold uppercase tracking-[0.13em] text-harbour/85">
+              {item.kicker}
+            </p>
           ) : null}
           {mapPlace ? (
-            <h4
-              className={`font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg ${headerPad}`}
-            >
+            <h4 className="pr-9 font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg">
               <button
                 type="button"
                 onClick={() => onShowOnMap(mapPlace.id)}
@@ -120,9 +125,7 @@ export function PlaceCard({
               </button>
             </h4>
           ) : (
-            <h4
-              className={`font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg ${headerPad}`}
-            >
+            <h4 className="font-display text-[1.05rem] font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-lg">
               {item.name}
             </h4>
           )}

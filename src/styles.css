@@ -86,6 +86,7 @@
   --ink: #173536;
   --sun: #e8a33d;
   --coral: #d94f3d;
+  --coral-deep: #c2402f;
   --harbour: #2f6f6b;
   --recommendation: #173638;
   --recommendation-foreground: #fff9ed;
@@ -123,38 +124,54 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 }
 
-/* Place-card markers: a rotated rubber-stamp for must-see in the reserved top
-   band next to the star, and an inline chip for indoor in the kicker row, so
-   tagging a card never moves its title. */
-.guide-card__stamp {
+/* Place-card markers: the card's own top border is recoloured (coral for
+   must-see, harbour for indoor-only) and labelled tags hang from it inside a
+   reserved top band, so tagging a card never moves its title. Same glyphs as
+   the filter pills (bookmark / umbrella). */
+.guide-card--edge-must-see {
+  border-top-color: var(--coral-deep);
+}
+
+.guide-card--edge-indoor {
+  border-top-color: var(--harbour);
+}
+
+.guide-card__tabs {
   position: absolute;
-  top: 8px;
-  right: 50px; /* clears the 44px star button at right:4px */
-  z-index: 10;
+  top: 0;
+  left: 12px;
+  display: flex;
+  gap: 6px;
+  z-index: 5;
+}
+
+.guide-card__tag {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 1px 6px;
-  border: 2px solid var(--coral);
-  border-radius: 5px;
-  outline: 1.5px solid var(--coral);
-  outline-offset: 1.5px;
-  font-size: 9px;
+  height: 20px;
+  padding: 0 8px;
+  border-radius: 0 0 6px 6px;
+  font-size: 10px;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
+  line-height: 1;
   text-transform: uppercase;
-  color: var(--coral);
-  background: transparent;
-  transform: rotate(-6deg);
-  opacity: 0.82;
-  mix-blend-mode: multiply;
-  pointer-events: none;
+  color: var(--card);
+  white-space: nowrap;
+}
+
+.guide-card__tag--must-see {
+  background: var(--coral-deep);
+}
+
+.guide-card__tag--indoor {
+  background: var(--harbour);
 }
 
 @media (min-width: 640px) {
-  .guide-card__stamp {
-    right: 56px;
-    top: 9px;
+  .guide-card__tabs {
+    left: 16px;
   }
 }
 
