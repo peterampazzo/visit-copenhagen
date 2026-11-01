@@ -1,6 +1,6 @@
 site:
   title: Hygge i København
-  description: The Copenhagen tips everyone asks me for — now all in one place.
+  description: The Copenhagen tips everyone asks me for, now all in one place.
   authorBy: by Pietro
   aiAssisted: AI-assisted
   langLabel: Language
@@ -24,7 +24,7 @@ site:
   learnMoreLabel: Read more
   mapSearchLabel: Search places
   mapSearchPlaceholder: Search a place…
-  mapNoResults: Nothing here — try another search.
+  mapNoResults: Nothing here. Try another search.
   mapScopeLabel: Map view
   mapScopeCity: City
   mapScopeAll: All of Denmark
@@ -48,13 +48,13 @@ site:
   badgeMustSee: Must-see
   badgeIndoor: Indoor
   searchClear: Clear search
-  searchNoResults: Nothing matches your search — try another word.
+  searchNoResults: Nothing matches your search. Try another word.
   sortDefault: Default order
   sortNearMe: Near me
   distanceUnitM: m
   distanceUnitKm: km
   walkingTime: "{{minutes}} min walk"
-  locationDenied: Location is blocked — enable it in your browser settings to use Near me.
+  locationDenied: Location is blocked. Enable it in your browser settings to use Near me.
   watchReel: Watch reel
   openPhoto: Open photo
   goodToKnow: Good to know
@@ -71,36 +71,36 @@ sections:
         title: Public transport
         items:
           metro:
-            name: The Metro runs 24/7 — driverless
+            name: The Metro runs 24/7 without a driver
             note: Copenhagen's automated Metro has no driver and is operated and maintained by Metro Service, now owned by Milan's ATM Group.
             kicker: Driverless · with an Italian connection
             story: >-
-              No driver means no Metro driver can go on strike—there is no
-              driver. The people who monitor, maintain and assist the system are
-              very real, of course. Since late 2025, Metro Service has been fully
-              owned by Milan's public transport group ATM; Hitachi remains the
-              main contractor for M3 and M4 until its contract ends.
+              No drivers, so no driver strikes. There are still people who monitor,
+              maintain and assist the system, of course. Since late 2025, Metro
+              Service has been fully owned by Milan's public transport group ATM;
+              Hitachi remains the main contractor for M3 and M4 until its contract
+              ends.
             url: https://www.metroservice.dk/media/5m5pwgyl/metroservice-annual-report-2025.pdf
           paperTickets:
             name: Paper tickets need no validation
             note: They're time-stamped when you buy them, so just hop on. One ticket works for metro, bus, train and the waterbus.
           cityPass:
             name: City Pass Small
-            note: Unlimited travel only in zones 1–4—central Copenhagen plus the airport. It does not cover all of Zealand.
+            note: Unlimited travel only in zones 1-4, which cover central Copenhagen and the airport. It does not cover all of Zealand.
             url: https://www.publictransport.dk/tickets/citypass
           copenhagenCard:
             name: Copenhagen Card
-            note: Better value if you plan to visit several museums — transport and admissions included.
+            note: Better value if you plan to visit several museums. Transport and admissions are included.
             url: https://copenhagencard.com
           waterbus:
             name: Waterbus
-            note: Your normal transport ticket covers it. It crosses the harbour, roughly every half hour — check Citymapper for times.
+            note: Your normal transport ticket covers it. It crosses the harbour roughly every half hour; check Citymapper for times.
           sTrainBike:
             name: The red S-trains take bikes for free
             note: They are Copenhagen's suburban network, separate from regional and InterCity trains. Bikes are free on S-trains; other train types have different rules.
             url: https://www.dsb.dk/s-tog/
           carRental:
-            name: Renting a car—do you actually need one?
+            name: "Renting a car: do you actually need one?"
             note: Skip it for central Copenhagen; rent one for Møn, rural Zealand, Jutland or a road trip where the train stops being convenient.
             kicker: Better outside the city
             storyItems:
@@ -111,7 +111,7 @@ sections:
             url: https://www.visitdenmark.com/denmark/plan-your-trip/plan-your-trip-faq
           eventTickets:
             name: Check Rejsebillet for event tickets
-            note: Selected races, concerts and festivals sometimes get cheap, time-limited special tickets—there is no automatic discount for every event.
+            note: Selected races, concerts and festivals sometimes get cheap, time-limited special tickets. There is no automatic discount for every event.
             kicker: Other tickets → Special tickets
             story: >-
               Open Rejsebillet before a major event and look under Other tickets,
@@ -135,7 +135,7 @@ sections:
             url: https://www.visitcopenhagen.com/copenhagen/things-to-do/biking/copenhagen-bike-rentals
           lights:
             name: Lights are mandatory after sunset
-            note: Use two lights—a white or yellow one in front and a red one behind—from sunset to sunrise and whenever visibility is poor.
+            note: "From sunset to sunrise, and whenever visibility is poor, use two lights: a white or yellow one in front and a red one behind."
           stopping:
             name: Always raise your arm before stopping
             note: Raise one arm before stopping, point the other towards your turn, and keep right so faster riders can pass.
@@ -148,7 +148,7 @@ sections:
         items:
           deposit:
             name: Don't bin bottles and cans
-            note: They carry a deposit — return them at any supermarket and get money back.
+            note: They carry a deposit. Return them at any supermarket and you get the money back.
             url: https://danskretursystem.dk/en/about-deposits/
           payments:
             name: Payments
@@ -165,7 +165,7 @@ sections:
               - "A '60% rain' forecast often means one short shower and then sun. The rain radar shows where it is and where it's heading."
               - "DMI is the Danish weather service; its app is DMI Vejr. YR (from Norway) gives a clear hour-by-hour forecast."
             tips:
-              - "Bring a rain jacket rather than an umbrella — the wind usually wins."
+              - "Bring a rain jacket rather than an umbrella. The wind usually wins."
             links:
               dmiRadar:
                 text: DMI rain radar
@@ -183,7 +183,7 @@ sections:
         items:
           nyhavn:
             name: Nyhavn
-            note: The coloured harbour from every postcard. It is busy and touristy, but still worth walking—especially early or after dinner.
+            note: The coloured harbour from every postcard. It is busy and touristy, but still worth walking, especially early or after dinner.
             url: https://www.instagram.com/reel/DdtuOratq5i/
             linkText: Watch the reel
             media:
@@ -191,7 +191,7 @@ sections:
               url: https://www.instagram.com/reel/DdtuOratq5i/
           christiansborg:
             name: Christiansborg & the Tower
-            note: Parliament, palace and a free city view—all on the same island.
+            note: Parliament, palace and a free city view, all on the same island.
             kicker: Third palace on this site
             story: >-
               Christiansborg did not burn three times. The first and second
@@ -202,21 +202,21 @@ sections:
             url: https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
           amalienborg:
             name: Amalienborg
-            note: Four matching palaces around one very impressive king on horseback—and a changing of the guard every day around noon.
+            note: Four matching palaces around one very impressive king on horseback, and a changing of the guard every day around noon.
             kicker: 1750s · Guard change at 12
             story: >-
               Amalienborg was built as four noblemen's palaces around Saly's
               equestrian statue of Frederik V. The royal family moved here after
-              Christiansborg burned in 1794. The calm geometry is deliberate:
-              Amalienborg is the centre of the grand Frederiksstaden district.
-              The guard changes every day around 12:00. When the King is in
-              residence, the larger King's Guard—with band—leaves the Life
-              Guard Barracks on Gothersgade at 11:27 and marches through the
-              centre before entering the palace square shortly before noon.
+              Christiansborg burned in 1794. The square is the centre of the
+              Frederiksstaden district, laid out at the same time. The guard changes
+              every day around 12:00. When the King is in residence, the larger
+              King's Guard, with its band, leaves the Life Guard Barracks on
+              Gothersgade at 11:27 and marches through the centre before entering
+              the palace square shortly before noon.
             url: https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/changing-of-the-guard/
           tivoli:
             name: Tivoli
-            note: "More than an amusement park: a pleasure garden of lights, music, theatre, restaurants and entirely optional rides."
+            note: A pleasure garden of lights, music, theatre and restaurants. The rides are entirely optional.
             kicker: Since 1843 · Disney took notes too
             story: >-
               Georg Carstensen opened Tivoli in 1843 as an escape for the city,
@@ -232,32 +232,31 @@ sections:
             url: https://www.tivoli.dk/en/about-tivoli/the-history-of-tivoli-gardens
           christiania:
             name: Christiania
-            note: A resident-run community born in a squatted military area—not just the former hash street.
-            kicker: 1971 → a new chapter
+            note: A resident-run community that began in a squatted military area. The old hash street, Pusher Street, closed in 2024.
+            kicker: Since 1971 · freetown
             story: >-
               In 1971 neighbours, squatters and hippies moved into abandoned
-              barracks and built a “freetown” around local self-government,
-              shared responsibility and community meetings. You cannot simply
-              buy a home here: vacancies are announced, people apply and the
-              local area chooses its new resident. A foundation bought much of
-              the land from the state in 2012. After years of gang violence
-              around the open cannabis market, residents voted to close Pusher
-              Street. On 6 April 2024 its cobbles were dug up, and the street is
-              now being remade around legal activities, culture and everyday life.
+              barracks and built a "freetown" around local self-government, shared
+              responsibility and community meetings. You cannot simply buy a home
+              here: vacancies are announced, people apply and the local area chooses
+              its new resident. A foundation bought much of the land from the state
+              in 2012. After years of gang violence around the open cannabis market,
+              residents voted to close Pusher Street. On 6 April 2024 its cobbles
+              were dug up, and the street is now being remade around legal
+              activities, culture and everyday life.
             url: https://www.christiania.org/info/christianias-historie/
           lakes:
             name: Søerne (The Lakes)
             note: Three long lakes and the city's favourite 6.35 km walking loop.
             kicker: Wetlands → water supply → city walk
             story: >-
-              Sankt Jørgens Sø, Peblinge Sø and Sortedams Sø grew from low
-              wetlands into a carefully managed water system. Over the centuries
-              they powered mills, stored drinking water and strengthened the
-              city's defences. Today their hard-working past is mostly hidden
-              beneath Copenhagen's favourite walking and running route. In a
-              properly cold winter parts can become a rare public ice square—but
-              only step onto the ice when the city has put up the blue “ice
-              traffic permitted” signs.
+              Sankt Jørgens Sø, Peblinge Sø and Sortedams Sø grew from low wetlands
+              into a carefully managed water system. Over the centuries they powered
+              mills, stored drinking water and strengthened the city's defences.
+              Today most people know them as Copenhagen's favourite walking and
+              running route. In a properly cold winter parts of the lakes can become
+              a public ice square, but only step onto the ice when the city has put
+              up the blue "ice traffic permitted" signs.
             url: https://www.visitcopenhagen.com/copenhagen/planning/copenhagen-lakes-gdk412235
           kingsGarden:
             name: Kongens Have
@@ -265,15 +264,14 @@ sections:
             kicker: 1600s · Castle above, crowns below
             story: >-
               Christian IV laid out the garden and built Rosenborg as his small
-              favourite castle in the early 1600s. It later became a museum of
-              the monarchy. The treasure is not buried in the foundations: the
-              royal crowns, regalia and Danish Crown Jewels are displayed in the
-              Treasury beneath the castle.
+              favourite castle in the early 1600s. It later became a museum of the
+              monarchy. The royal crowns, regalia and Danish Crown Jewels are on
+              display in the Treasury beneath the castle.
             url: https://denkongeligesamling.dk/en/rosenborg-castle/
           kastellet:
             name: Kastellet
             note: A working star fortress that doubles as one of the city's best walks.
-            kicker: 1662–65 · Frederik III
+            kicker: 1662-65 · Frederik III
             story: >-
               Christian IV began the fortifications, but Frederik III completed
               Kastellet with Dutch engineer Henrik Rüse. It is still an active
@@ -282,7 +280,7 @@ sections:
             url: https://www.forsvaret.dk/da/side/kastellet/kastellets-historie/
           assistens:
             name: Assistens Cemetery
-            note: Nørrebro's greenest history book—and still an active cemetery.
+            note: Nørrebro's greenest history book, and still an active cemetery.
             kicker: Since 1760
             story: >-
               Assistens opened when burial space inside Copenhagen's walls ran
@@ -302,11 +300,11 @@ sections:
             note: Copenhagen's most dramatic fountain, just outside Kastellet.
             kicker: 1908 · Norse legend
             story: >-
-              The goddess Gefion drives four oxen—her sons transformed—while
-              ploughing the island of Zealand out of Sweden. Anders Bundgaard's
-              fountain was funded for Carlsberg's 50th anniversary and finished
-              in 1908. The matching hole left in Sweden is, according to the
-              legend, Lake Vänern.
+              The goddess Gefion drives four oxen (her sons, transformed) as she
+              ploughs the island of Zealand out of Sweden. Anders Bundgaard's
+              fountain was funded for Carlsberg's 50th anniversary and finished in
+              1908. The matching hole left in Sweden is, according to the legend,
+              Lake Vänern.
             url: https://www.visitcopenhagen.com/copenhagen/planning/gefion-fountain-gdk410604
           littleMermaid:
             name: The Little Mermaid
@@ -321,7 +319,7 @@ sections:
             url: https://www.visitcopenhagen.com/copenhagen/planning/the-little-mermaid-gdk586951
           david:
             name: David by the harbour
-            note: Michelangelo in Copenhagen? A full-size bronze cast, not a counterfeit.
+            note: Michelangelo in Copenhagen? Yes, as a full-size bronze cast.
             kicker: 1897 · The art of copying
             story: >-
               Carl Jacobsen commissioned this bronze cast of Michelangelo's David
@@ -332,23 +330,23 @@ sections:
             url: https://www.open.smk.dk/en/artwork/image/DEP466/1
           storkFountain:
             name: Stork Fountain
-            note: The busy fountain on Amagertorv—with birds that are actually herons.
+            note: The busy fountain on Amagertorv, with birds that are actually herons.
             kicker: 1894 · Strøget
             story: >-
-              The fountain was unveiled in 1894 and quickly became one of
-              Strøget's best-known meeting points. Its three birds are herons,
-              despite the name. Since 1950, newly qualified midwives have kept
-              the wonderfully specific tradition of dancing around it.
+              The fountain was unveiled in 1894 and quickly became one of Strøget's
+              best-known meeting points. Its three birds are herons, despite the
+              name. Since 1950, newly qualified midwives have celebrated by dancing
+              around it.
             url: https://www.visitcopenhagen.com/copenhagen/planning/the-stork-fountain-gdk410612
           caritas:
             name: Caritas Fountain
-            note: Copenhagen's oldest fountain, hiding in plain sight on Gammeltorv.
+            note: Copenhagen's oldest fountain, on Gammeltorv. Easy to walk past without noticing.
             kicker: 1608 · Water for the city
             story: >-
-              Christian IV gave Caritas to Copenhagen when Gammeltorv was the
-              city's main civic square. It was not only decoration: water arrived
-              from Emdrup Sø through hollow wooden pipes, and people used the well
-              below for everyday water. The figures represent charity and love.
+              Christian IV gave Caritas to Copenhagen when Gammeltorv was the city's
+              main civic square. It was also a water supply: water arrived from
+              Emdrup Sø through hollow wooden pipes, and people drew everyday water
+              from the well below. The figures represent charity and love.
             url: https://cphmuseum.kk.dk/en/whats-on/greed-garbage-and-grand-architecture-an-almost-free-guided-tour-in-copenhagen
       harbour:
         title: The harbour, rebuilt
@@ -368,23 +366,23 @@ sections:
             kicker: 2008 · Drama by the water
             story: >-
               The glass-fronted building at the end of Nyhavn is the Royal Danish
-              Playhouse—not part of the Opera building, although both belong to
-              the Royal Danish Theatre. You can enter the foyer or walk its oak
-              promenade without a ticket. Aamanns currently runs the restaurant
-              on the ground floor.
+              Playhouse. It is separate from the Opera, although both belong to the
+              Royal Danish Theatre. You can enter the foyer or walk its oak
+              promenade without a ticket. Aamanns currently runs the restaurant on
+              the ground floor.
             url: https://www.kglteater.dk/dit-besoeg/lokationer/skuespilhuset/
           papiroen:
             name: Papirøen
             note: From naval stores and newspaper rolls to a new waterside neighbourhood.
             kicker: 1696 → now
             story: >-
-              Christiansholm is an artificial island that has stored cannons,
-              coal and, from 1958, huge newspaper-paper rolls—the source of its
-              nickname. Copenhagen Street Food opened the former warehouses to
-              the public in 2014. Today there are new waterfront homes—including
-              private, social and student housing—plus cafés, a hotel and public
-              spaces; the old street-food spirit moved on to Reffen. And no, the
-              new apartments are not made of paper. I checked.
+              Christiansholm is an artificial island that has stored cannons, coal
+              and, from 1958, huge rolls of newspaper paper, which gave it its
+              nickname. Copenhagen Street Food opened the former warehouses to the
+              public in 2014. Today there are new waterfront homes (private, social
+              and student housing), plus cafés, a hotel and public spaces; the old
+              street-food spirit moved on to Reffen. And no, the new apartments are
+              not made of paper. I checked.
             url: https://papiroeen.dk/historien/
           opera:
             name: Operaen
@@ -403,10 +401,9 @@ sections:
             kicker: Greenhouse · coffee, lunch or dinner
             story: >-
               Operaparken opened in 2023 between Papirøen and the Opera. Its six
-              gardens, 600 trees and central glass greenhouse sit above a
-              two-storey car park. Væksthuset is the café and restaurant inside
-              the greenhouse—not another part of the Opera—and the park is free
-              to enter all year.
+              gardens, 600 trees and central glass greenhouse sit above a two-storey
+              car park. Væksthuset is the café and restaurant inside the greenhouse;
+              it is not part of the Opera. The park is free to enter all year.
             url: https://maps.app.goo.gl/5o2TLkcnDbcvyw7z5
       waterfront:
         title: Water, swimming & piers
@@ -428,11 +425,10 @@ sections:
             note: "The classic urban swim: harbour pools, a lawn full of people and the city skyline across the water."
             kicker: City centre · very local in summer
             story: >-
-              Reopening the harbour for swimming is one of Copenhagen's most
-              successful transformations. Here, an industrial waterfront became
-              a public living room with protected pools and diving platforms.
-              Always check the signs and water quality before getting in: swim
-              only inside official bathing zones.
+              Copenhagen reopened its harbour for swimming, and here an industrial
+              waterfront became a public living room with protected pools and diving
+              platforms. Always check the signs and water quality before getting in:
+              swim only inside official bathing zones.
             url: https://www.visitcopenhagen.com/copenhagen/things-to-do/outdoor/baths-and-beaches
           sandkaj:
             name: Sandkaj
@@ -459,17 +455,17 @@ sections:
         items:
           norrebro:
             name: Nørrebro
-            note: Vibrant and historic, one of the most multi-ethnic and diverse parts of Copenhagen.
+            note: Lively and historic, and one of the most multi-ethnic parts of Copenhagen.
           christianshavn:
             name: Christianshavn
             note: A canal district designed as a little Dutch-inspired city of its own.
-            kicker: Founded 1617–18
+            kicker: Founded 1617-18
             story: >-
-              Christian IV ordered Christianshavn built on shallow, reclaimed
-              land to protect the harbour and create a fortified merchant town.
-              Johan Semp planned its straight streets and canals in the Dutch
-              style. It was briefly independent, then grew wealthy through
-              international shipping—including Denmark's colonial trade.
+              Christian IV ordered Christianshavn built on shallow, reclaimed land
+              to protect the harbour and create a fortified merchant town. Johan
+              Semp planned its straight streets and canals in the Dutch style. It
+              was briefly independent, then grew wealthy through international
+              shipping, including Denmark's colonial trade.
             url: https://kp24.kk.dk/retningslinjer/kulturarv/vaerdifulde-kulturmiljoeer/21-christianshavn
           nordhavn:
             name: Nordhavn
@@ -485,7 +481,7 @@ sections:
             note: A park in Nørrebro you've probably already seen in a commercial.
           copenhill:
             name: CopenHill (Amager Bakke)
-            note: An incinerator with a ski slope on top. Free elevator to the roof, but a bit out of the way — nothing fancy.
+            note: An incinerator with a ski slope on top. Free elevator to the roof, but a bit out of the way. Nothing fancy.
           kaktusTowers:
             name: Kaktus Towers
             note: Two prickly BIG towers with rotating floors, rental apartments and an elevated public park above the city.
@@ -498,43 +494,42 @@ sections:
               the IKEA rooftop and the new district behind Central Station.
             url: https://dac.dk/en/magazine/places/kaktus-towers-prickly-architecture-231
           lynetteholm:
-            name: Lynetteholm—the whole project
+            name: "Lynetteholm: the whole project"
             note: "A 275-hectare artificial peninsula rising between Refshaleøen and Nordhavn: part storm-surge barrier, part reuse site for construction soil and part future city district."
             kicker: 2022 → around 2070
             story: >-
               The seven-kilometre stone perimeter was completed in 2026. Surplus
-              soil from construction around Copenhagen will now fill the inside,
-              a process expected to continue until about 2050. Its new coast is
-              designed to help protect Copenhagen from storm surges from the
-              north. A 2025 political agreement envisages almost 50,000 residents
-              and 30,000 jobs on Lynetteholm, eventually served by the M5 Metro
-              and an eastern ring road. The neighbourhood and infrastructure
-              still involve separate planning, environmental reviews and laws,
-              so “Lynetteholm” can mean the peninsula, the climate barrier, the
-              soil project or the much larger city-building plan.
+              soil from construction around Copenhagen will now fill the inside, a
+              process expected to continue until about 2050. Its new coast is
+              designed to help protect Copenhagen from storm surges from the north.
+              A 2025 political agreement envisages almost 50,000 residents and
+              30,000 jobs on Lynetteholm, eventually served by the M5 Metro and an
+              eastern ring road. The neighbourhood and infrastructure still involve
+              separate planning, environmental reviews and laws, so "Lynetteholm"
+              can mean the peninsula, the climate barrier, the soil project or the
+              much larger city-building plan.
             url: https://byoghavn.dk/lynetteholm/
           nyboder:
             name: Nyboder
             note: The long yellow houses Christian IV built for the Navy; many are still Defence rental homes today.
             kicker: Since 1631 · naval housing
             story: >-
-              Nyboder roughly means “new little houses”. Christian IV built them
-              for sailors, craftsmen and junior officers, creating a service
-              neighbourhood in the centre of town. They are not merely a postcard
-              backdrop: the Danish Defence still manages roughly six hundred
-              rental homes here, primarily for its own employees.
+              Nyboder roughly means "new little houses". Christian IV built them for
+              sailors, craftsmen and junior officers, creating a service
+              neighbourhood in the centre of town. The Danish Defence still manages
+              roughly six hundred rental homes here, mainly for its own employees.
             url: https://www.ejendomsstyrelsen.dk/da/arbejdsomraader/salg-og-leje/forsvarets-lejeboliger/
           grundtvigChurch:
             name: Grundtvig's Church
             note: A yellow-brick expressionist cathedral in Bispebjerg, with a facade that looks simultaneously like an organ and a cliff.
             kicker: Six million bricks · 1940
             story: >-
-              Peder Vilhelm Jensen-Klint fused the scale of a Gothic cathedral
-              with the plain forms of Danish village churches; after his death,
-              his son Kaare completed the building and designed its chairs.
-              Online it is often nicknamed “the Shrek church” because it resembles
-              the church where Fiona almost marries Lord Farquaad, but DreamWorks
-              has never confirmed that it was actually the model.
+              Peder Vilhelm Jensen-Klint fused the scale of a Gothic cathedral with
+              the plain forms of Danish village churches; after his death, his son
+              Kaare completed the building and designed its chairs. Online it is
+              often nicknamed "the Shrek church" because it resembles the church
+              where Fiona almost marries Lord Farquaad, but DreamWorks has never
+              confirmed that it was actually the model.
             url: https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
             media:
               image: /reels/grundtvig-church.jpg
@@ -547,17 +542,16 @@ sections:
             note: A free harbourfront atrium, working library and cultural venue joining a glossy 1999 extension to the old 1906 library.
             kicker: Free building · exhibitions may cost
             story: >-
-              The Black Diamond is not only something to photograph from the
-              water. Walk into the huge public atrium, look across the harbour
-              and follow the bridges that connect the new waterfront building
-              with the older library behind it. Entry to the building is free
-              and everyone is welcome; exhibitions, concerts and talks set
-              their own ticket rules. The café and Library Garden make an easy
-              continuation of a Christiansborg walk.
+              Walk into the huge public atrium, look across the harbour and follow
+              the bridges that connect the new waterfront building with the older
+              library behind it. Entry to the building is free and everyone is
+              welcome; exhibitions, concerts and talks set their own ticket rules.
+              The café and Library Garden make an easy continuation of a
+              Christiansborg walk.
             url: https://www.kb.dk/en/visit-us/black-diamond-copenhagen
           fiolstraedeLibrary:
             name: University Library in Fiolstræde
-            note: The spectacular red-brick library behind Copenhagen Cathedral—more Gothic fantasy than ordinary reading room.
+            note: The red-brick library behind Copenhagen Cathedral, closer to a Gothic fantasy than an ordinary reading room.
             kicker: 1861 · brick Gothic · cast iron
             story: >-
               Johan Daniel Herholdt won Denmark's first architectural competition
@@ -576,7 +570,7 @@ sections:
         items:
           originalCoffeeIllum:
             name: Original Coffee, ILLUM Rooftop
-            note: Specialty coffee on top of ILLUM; the real reason to go up is drinking it above Strøget with the city roofs in view.
+            note: Specialty coffee on top of ILLUM, drunk above Strøget with the city roofs in view.
             kicker: Free view · above Strøget
             url: https://originalcoffee.dk/en/pages/illum-rooftop
           nhRoof:
@@ -597,9 +591,9 @@ sections:
             story: >-
               Cinemateket is Denmark's national film house; Filmtaget is its
               1,700-square-metre roof. You can visit the permanent film exhibition
-              and skyline view without buying a cinema ticket, then stay for food
-              or book a screening at Himmelbio. The cinema can be covered when
-              the weather turns, which makes this more than a summer-only view.
+              and skyline view without buying a cinema ticket, then stay for food or
+              book a screening at Himmelbio. The cinema can be covered when the
+              weather turns, so it works outside summer too.
             url: https://www.visitcopenhagen.com/copenhagen/planning/filmtaget-gdk1145849
       shops:
         title: Shops worth the stop
@@ -609,11 +603,11 @@ sections:
             note: Two floors on Vimmelskaftet, in the middle of Strøget. Build-a-minifigure wall, big city models, and the Pick & Build bricks by weight.
             kicker: Danish since 1932
             story: >-
-              LEGO comes from Billund in Jutland, where Ole Kirk Kristiansen
-              started making wooden toys in 1932; the name is short for "leg
-              godt" — play well. The plastic interlocking brick as we know it
-              was patented in 1958. The Copenhagen flagship is the easy city
-              stop; the full experience is LEGO House in Billund.
+              LEGO comes from Billund in Jutland, where Ole Kirk Kristiansen started
+              making wooden toys in 1932; the name is short for "leg godt" (play
+              well). The plastic interlocking brick as we know it was patented in
+              1958. The Copenhagen flagship is the easy city stop; the full
+              experience is LEGO House in Billund.
             url: https://www.lego.com/en-dk/stores/store/copenhagen
           illumBolighus:
             name: Illums Bolighus
@@ -626,7 +620,7 @@ sections:
   funfacts:
     emoji: 🇩🇰
     title: Very Danish things
-    blurb: The things that make visitors stop and ask, “wait—why?”
+    blurb: The things that make visitors stop and ask "wait, why?"
     groups:
       denmark:
         title: Small explanations for big Danish habits
@@ -634,7 +628,7 @@ sections:
           hygge:
             name: Hygge, no candles required
             note: Feeling comfortably together, without rushing or turning everything into an event. It can be dinner, a picnic or coffee in the rain.
-            kicker: Pronounced roughly “hoo-gah”
+            kicker: Pronounced roughly "hoo-gah"
             story: >-
               Hygge is often translated as cosiness, but the feeling matters more:
               unhurried time, an informal atmosphere and people whose company is
@@ -645,45 +639,44 @@ sections:
             url: https://www.visitdenmark.com/denmark/things-to-do/traditions-lifestyle/hygge
           tallBenches:
             name: Why are some Copenhagen benches so tall?
-            note: They are climate warnings, not eccentric street furniture—TV 2 raised the familiar city bench to make future sea-level rise feel real.
+            note: "They are a climate warning: TV 2 raised the familiar city bench to make future sea-level rise feel real."
             kicker: TV 2 · 2022 · sea level in 2100
             story: >-
-              In April 2022, TV 2 placed 15 unusually high versions of the
-              classic Københavnerbænk around Copenhagen, Aarhus and Odense for
-              its “Vores jord – Vores ansvar” campaign. The seat was raised by
-              roughly 85 centimetres, turning a projected rise in sea level by
-              2100 into something people could see—and struggle to sit on.
-              Most of the benches later stayed in Danish public spaces, while
-              one travelled to the UN Water Conference in New York in 2023.
+              In April 2022, TV 2 placed 15 unusually high versions of the classic
+              Københavnerbænk around Copenhagen, Aarhus and Odense for its "Vores
+              jord – Vores ansvar" campaign. The seat was raised by roughly 85
+              centimetres, turning a projected rise in sea level by 2100 into
+              something people could see, and struggle to sit on. Most of the
+              benches later stayed in Danish public spaces, while one travelled to
+              the UN Water Conference in New York in 2023.
             url: https://tv2marketing.dk/kampagner/vores-jord-vores-ansvar/
           bodegas:
             name: A Danish bodega is a pub
-            note: Think old-school neighbourhood bar—dim light, inexpensive beer, regulars and very little interest in cocktails. It is not a New York corner shop.
+            note: "Think old-school neighbourhood bar: dim light, cheap beer, regulars and very little interest in cocktails. It is not a New York corner shop."
             kicker: Also called a værtshus or brun bodega
             story: >-
               The Danish bodega is the local, unpolished end of drinking culture:
               bottled beer, a jukebox or darts, familiar faces and sometimes an
               early opening hour. Some of the smallest bodegas that do not serve
               food can still permit indoor smoking, so the atmosphere may be
-              literally as well as figuratively hazy. Go for a simple beer and
-              the people—not a cocktail list or a tasting menu.
+              literally as well as figuratively hazy. Go for a simple beer and the
+              people.
             url: https://www.visitdenmark.com/denmark/things-do/eat-drink/bodegas
           bmo:
             name: BMO means bolle med ost
-            note: A bread roll with butter and cheese—an old Danish breakfast wearing a very new, very Copenhagen acronym.
+            note: "A bread roll with butter and cheese: an old Danish breakfast wearing a very new, very Copenhagen acronym."
             kicker: Bun · butter · cheese
             story: >-
-              The food is wonderfully uncomplicated: split a good bread roll,
-              add plenty of butter and a slice of cheese. Danes have eaten it
-              for generations, but the initials BMO only took off around
-              Copenhagen cafés in 2023 and quickly spread to bakery menus and
-              social media. The upgraded version is usually sourdough with a
-              characterful Danish cheese—and it can cost rather more than the
-              humble name suggests.
+              The food is simple: split a good bread roll, add plenty of butter and
+              a slice of cheese. Danes have eaten it for generations, but the
+              initials BMO only took off around Copenhagen cafés in 2023 and quickly
+              spread to bakery menus and social media. The upgraded version is
+              usually sourdough with a characterful Danish cheese, and it can cost
+              rather more than the humble name suggests.
             url: https://www.thelocal.dk/20231213/danish-word-of-the-day-bmo
           danishBrands:
             name: Danish brands worth recognising
-            note: "It is not only LEGO and it is not only furniture: a short list of Danish names found in shops, homes and far beyond."
+            note: "Beyond LEGO: a short list of Danish names you will find in shops, homes and abroad."
             kicker: Design · fashion · industry
             storyItems:
               - "Furniture and objects: HAY, Muuto, Normann Copenhagen, &Tradition, Georg Jensen and Kay Bojesen."
@@ -711,7 +704,7 @@ sections:
             note: Start on Netflix with Borgen – Power & Glory, The Chestnut Man and The Rain; then go deeper into Nordic noir and Danish cinema.
             kicker: Politics · crime · Dogme 95
             storyItems:
-              - "Series: Borgen for politics, The Killing and The Chestnut Man for Copenhagen noir, and The Bridge for a Danish–Swedish murder exactly on the border."
+              - "Series: Borgen for politics, The Killing and The Chestnut Man for Copenhagen noir, and The Bridge for a Danish-Swedish murder exactly on the border."
               - "Lighter or stranger: Rita is a sharp school comedy-drama; The Rain turns Scandinavia into a post-apocalyptic thriller."
               - "Films: Another Round, The Hunt, A Royal Affair, Babette's Feast and Pelle the Conqueror are excellent starting points."
               - "For contemporary Copenhagen scenery, Netflix's A Copenhagen Love Story stays close to everyday city life."
@@ -719,32 +712,32 @@ sections:
             url: https://www.netflix.com/title/81282868
           studentTrucks:
             name: The loud graduation trucks
-            note: At the end of June, each graduating class tours every student's home in a decorated open truck—with white caps, music and almost no volume control.
+            note: At the end of June, each graduating class tours every student's home in a decorated open truck, with white caps, music and almost no volume control.
             kicker: Studenterkørsel · late June
             story: >-
-              The white cap marks the end of upper-secondary school. Then the
-              whole class climbs onto a decorated truck and spends the day
-              stopping at every classmate's family home for food, drinks and a
-              very short party. And yes, the story about the “good ones” running
-              is real—with a caveat. A newer, informal custom says anyone who got
-              12, the top mark, in the final exam runs behind the truck from one
-              stop to the next. It varies by class and is not a national rule;
-              it means the top mark in that exam, not the best students overall.
+              The white cap marks the end of upper-secondary school. Then the whole
+              class climbs onto a decorated truck and spends the day stopping at
+              every classmate's family home for food, drinks and a very short party.
+              And yes, the story about the "good ones" running is true, with a
+              caveat. A newer, informal custom says anyone who got 12, the top mark,
+              in the final exam runs behind the truck from one stop to the next. It
+              varies by class and is not a national rule; it means the top mark in
+              that exam, not the best students overall.
             url: https://odensekatedralskole.dk/drop-karakteren-i-huen/
           danishRealm:
             name: Denmark is bigger than Denmark
             note: The country on the European map is one of three parts of the Kingdom of Denmark, alongside Greenland and the Faroe Islands.
             kicker: Rigsfællesskabet · three parts
             story: >-
-              Greenland and the Faroe Islands are distinct, self-governing parts
-              of the Kingdom with their own elected parliaments and governments.
+              Greenland and the Faroe Islands are distinct, self-governing parts of
+              the Kingdom with their own elected parliaments and governments.
               Faroese Home Rule began in 1948 and Greenlandic Home Rule in 1979;
-              later arrangements expanded their powers in 2005 and 2009. The
-              Danish state still handles several realm-wide matters, especially
-              much of foreign, security and defence policy, with growing Faroese
-              and Greenlandic involvement. Greenland was formally a Danish colony
-              until 1953, and the relationship—and possible future independence—
-              is living politics, not merely an old constitutional curiosity.
+              later arrangements expanded their powers in 2005 and 2009. The Danish
+              state still handles several realm-wide matters, especially much of
+              foreign, security and defence policy, with growing Faroese and
+              Greenlandic involvement. Greenland was formally a Danish colony until
+              1953, and the relationship, including possible future independence, is
+              a live political question.
             url: https://um.dk/en/foreign-policy/the-arctic/greenland-and-the-faroe-islands
           skane:
             name: Yes, Skåne used to be Danish
@@ -762,7 +755,7 @@ sections:
             url: https://natmus.dk/historisk-viden/danmark/enevaelde-1660-1849/den-enevaeldige-stat/det-danske-rige-under-enevaelden/
           oresundLink:
             name: The bridge that becomes a tunnel
-            note: The link to Sweden is not half bridge and half underwater—it is 8 km of bridge, a 4 km artificial island and a 4 km tunnel.
+            note: The link to Sweden is 8 km of bridge, a 4 km artificial island and a 4 km tunnel.
             kicker: Øresund Link · 15.9 km
             story: >-
               From Sweden the route crosses the Øresund Bridge, lands on the
@@ -772,7 +765,7 @@ sections:
             url: https://www.oresundsbron.com/en/about-oresundsbron/about-us/facts-about-oresundsbron
           danishLanguage:
             name: Danish really is hard to hear
-            note: Danish has unusually many vowel-like sounds, so word boundaries blur—even Danish-learning toddlers have to work harder.
+            note: Danish has unusually many vowel-like sounds, so word boundaries blur. Even Danish toddlers have to work harder to learn it.
             kicker: Too many vowels, apparently
             story: >-
               Aarhus University research links Danish's reduced consonants and
@@ -784,14 +777,14 @@ sections:
           cyclingComeback:
             name: Copenhagen was not always a bike city
             note: Cars nearly displaced bicycles in the 1960s. The 1973 oil crisis, car-free Sundays, protests and decades of safer lanes brought them back.
-            kicker: A comeback, not a miracle
+            kicker: A comeback since the 1970s
             story: >-
-              Bikes were already mass transport here in the 1920s and 1930s,
-              but post-war prosperity pushed Copenhagen towards cars. The oil
-              crisis made that model look fragile; environmental protests and
-              public pressure then demanded space for bicycles. Continuous
-              investment in protected routes made cycling the easy everyday
-              option—not simply the fact that Denmark is flat.
+              Bikes were already mass transport here in the 1920s and 1930s, but
+              post-war prosperity pushed Copenhagen towards cars. The oil crisis
+              made that model look fragile; environmental protests and public
+              pressure then demanded space for bicycles. Decades of investment in
+              protected routes made cycling the easy everyday option. Being flat
+              helps, but it does not explain it on its own.
             url: https://denmark.dk/people-and-culture/biking
           frozenLakes:
             name: When Søerne becomes a city square
@@ -803,7 +796,7 @@ sections:
               url: https://www.instagram.com/reel/DVHRB9PiILm/
             tips:
               - "Wait for the official blue signs before walking on the ice."
-              - "Bring a thermos — the best part is standing around pretending you are Danish."
+              - "Bring a thermos. The best part is standing around pretending you are Danish."
   food:
     emoji: 😋
     title: What to eat
@@ -814,27 +807,27 @@ sections:
         items:
           danishDishes:
             name: Danish dishes worth knowing
-            note: A compact menu decoder for the food Danes actually recognise—not only New Nordic tasting menus.
+            note: A short menu decoder for the everyday food Danes actually eat, away from New Nordic tasting menus.
             kicker: Rye bread · pork · remoulade
             storyItems:
               - "Smørrebrød: open rye-bread sandwiches, usually a lunch ritual; herring, egg and shrimp, roast beef and potato are useful starting points."
-              - "Stegt flæsk med persillesovs: crisp slices of pork with potatoes and parsley sauce—heavy, traditional and extremely Danish."
+              - "Stegt flæsk med persillesovs: crisp slices of pork with potatoes and parsley sauce. Heavy, traditional and extremely Danish."
               - "Frikadeller: pan-fried meatballs, often served with potatoes, gravy or pickled vegetables."
               - "Flæskesteg: pork roast with crisp crackling, served hot at dinner or cold in a sandwich."
               - "Fiskefilet: fried plaice with remoulade and lemon, often appearing on smørrebrød."
               - "Pølsevogn hot dog: try a ristet hotdog with mustard, remoulade, onions and pickles; the red sausage is the more nostalgic version."
             url: https://www.visitcopenhagen.com/copenhagen/eat-drink/restaurants/best-smorrebrod-and-other-traditional-danish-food
           softice:
-            name: Softice—or a gammeldags isvaffel?
+            name: Softice or a gammeldags isvaffel?
             note: Softice is simply creamy machine-dispensed soft serve; the especially Danish part is eating it at a harbour, beach or summer kiosk.
             kicker: Soft serve · guf · flødebolle
             story: >-
-              Softice is American in origin, not a Danish invention, but the
-              Danish word is written as one and the summer ritual is very local.
-              Order it plain, dipped in chocolate or covered in sprinkles. A
-              gammeldags isvaffel is the more excessive cousin: scoops in a
-              waffle cone, often finished with jam, whipped cream or the airy
-              pink topping called guf—and sometimes a whole flødebolle on top.
+              Softice is American in origin, not a Danish invention, but the Danish
+              word is written as one and the summer ritual is very local. Order it
+              plain, dipped in chocolate or covered in sprinkles. A gammeldags
+              isvaffel is the more excessive cousin: scoops in a waffle cone, often
+              finished with jam, whipped cream or the airy pink topping called guf,
+              and sometimes a whole flødebolle on top.
             url: https://lex.dk/softice
           liquorice:
             name: Liquorice, from Skipper's Pipes to Bülow
@@ -862,7 +855,7 @@ sections:
             url: https://sicilianskis.dk/
           nyhavn40:
             name: Nyhavn 40 · Kastbergs Is
-            note: More than 30 Kastbergs ice creams and sorbets, directly on Nyhavn—an easy sightseeing sugar stop.
+            note: More than 30 Kastbergs ice creams and sorbets, right on Nyhavn. An easy sugar stop while sightseeing.
             url: https://nyhavn40.dk/
           alice:
             name: Alice, Amager
@@ -873,8 +866,8 @@ sections:
         items:
           glutenFreeDenmark:
             name: Gluten-free in Denmark
-            note: Options exist, but preparation standards vary—ask clearly, especially if cross-contamination matters.
-            kicker: A practical heads-up
+            note: Options exist, but preparation standards vary. Ask clearly, especially if cross-contamination matters.
+            kicker: Ask before you order
             storyItems:
               - "Restaurants and cafés must provide allergen information when asked, but Denmark has no certification scheme for gluten-free food in hospitality."
               - "Many supermarkets stock gluten-free products, although the range varies from shop to shop."
@@ -886,7 +879,7 @@ sections:
         items:
           torvehallerne:
             name: Torvehallerne
-            note: Two covered halls full of produce, specialist stalls and small meals—an easy place to try smørrebrød without booking.
+            note: Two covered halls full of produce, specialist stalls and small meals. An easy place to try smørrebrød without booking.
           reffen:
             name: Reffen
             note: Street food in old containers on the industrial side of the harbour, with outdoor tables, workshops and lots of space; check seasonal opening.
@@ -895,15 +888,14 @@ sections:
             note: The Bridge Street Kitchen, just across from Nyhavn. Outdoor.
           kodbyen:
             name: Kødbyen
-            note: Copenhagen's Meatpacking District—old butcher halls now shared by food businesses, restaurants, galleries, bars and nightclubs.
+            note: "Copenhagen's Meatpacking District: old butcher halls now shared by food businesses, restaurants, galleries, bars and nightclubs."
             kicker: Brown City 1878 · White City 1934
             story: >-
-              Kødbyen grew in two recognisable layers: the older brown-brick
-              section and the functional white buildings from the 1930s. It is
-              not a completely sanitised entertainment district; parts of the
-              food industry still work beside galleries, restaurants and late-
-              night venues. Come for dinner and stay later if you want energy;
-              in the morning it feels much more like the workplace it once was.
+              Kødbyen grew in two recognisable layers: the older brown-brick section
+              and the functional white buildings from the 1930s. Parts of the food
+              industry still work beside galleries, restaurants and late-night
+              venues. Come for dinner and stay later if you want energy; in the
+              morning it feels much more like the workplace it once was.
             url: https://www.visitcopenhagen.com/copenhagen/neighbourhoods/neighborhoods/guide-meatpacking-district
           tivoliFoodHall:
             name: Tivoli Food Hall
@@ -917,7 +909,7 @@ sections:
             note: One of the city's oldest restaurants, with low rooms, candles and traditional Danish cooking without creative reinterpretation.
           aamanns:
             name: Aamanns 1921
-            note: Modern, carefully built smørrebrød in a proper restaurant rather than a quick lunch stop—excellent, but check the prices first.
+            note: Modern, carefully built smørrebrød in a proper restaurant, not a quick lunch stop. Excellent, but check the prices first.
           gasolineGrill:
             name: Gasoline Grill
             note: A Copenhagen burger institution with a lot of international hype. Go if a very good burger and a queue sound like lunch.
@@ -946,7 +938,7 @@ sections:
         items:
           andersen:
             name: Andersen
-            note: An Islands Brygge bakery for precisely made bread, croissants and pastries—a useful detour to combine with the harbourfront.
+            note: An Islands Brygge bakery for precisely made bread, croissants and pastries. A useful detour if you are walking the harbourfront.
           juno:
             name: Juno
             note: The city's most famous cardamom bun in a tiny Østerbro bakery. Go early and expect at least a little queue.
@@ -962,12 +954,11 @@ sections:
             note: From the team behind two-Michelin-starred Kong Hans Kælder, this still-under-the-radar bakery treats bread, viennoiserie and pâtisserie with fine-dining precision.
             kicker: Østerbro · opened in 2025
             story: >-
-              Kælder means “cellar” and belongs to the historic restaurant that
+              Kælder means "cellar" and belongs to the historic restaurant that
               inspired the project; the bakery is a separate place on Øster
-              Farimagsgade. It brings the same precision out into everyday city
-              life, combining French technique, Nordic discipline, long-fermented
-              bread, croissants and pâtisserie. The space is small and relatively
-              new, so a queue should not be a surprise.
+              Farimagsgade. Expect French technique, long-fermented bread,
+              croissants and pâtisserie. The space is small and relatively new, so a
+              queue should not be a surprise.
             url: https://konghansbakery.dk/en/
           morePastries:
             name: More pastry ideas
@@ -989,13 +980,13 @@ sections:
             note: The fullest route through Danish history, from prehistory and Vikings to the details of more recent everyday life.
           thorvaldsens:
             name: Thorvaldsens Museum
-            note: Neoclassical sculpture inside rooms with painted ceilings and unexpected colour—small enough not to consume the whole day.
+            note: Neoclassical sculpture inside rooms with painted ceilings and unexpected colour. Small enough not to take the whole day.
           glyptotek:
             name: Ny Carlsberg Glyptotek
             note: Egyptian, Greek and Roman antiquities, French painting and a palm-filled winter garden that is nearly worth the visit alone.
           designmuseum:
             name: Designmuseum Danmark
-            note: The clearest introduction to Danish design—furniture, craft, fashion and graphics—inside the former Royal Frederik's Hospital.
+            note: The clearest introduction to Danish design (furniture, craft, fashion and graphics), inside the former Royal Frederik's Hospital.
             url: https://designmuseum.dk/en/
           copenhagenContemporary:
             name: Copenhagen Contemporary
@@ -1003,10 +994,10 @@ sections:
             url: https://copenhagencontemporary.org/en/
           cisternerne:
             name: Cisternerne
-            note: Changing art installations inside Copenhagen's old underground water reservoirs—dark, damp and unlike a conventional museum.
+            note: Changing art installations inside Copenhagen's old underground water reservoirs. Dark, damp and unlike a normal museum.
           experimentarium:
             name: Experimentarium
-            note: Three floors of hands-on experiments, water play and a rooftop terrace—excellent with children and on long rainy days.
+            note: Three floors of hands-on experiments, water play and a rooftop terrace. Excellent with children and on long rainy days.
           louisiana:
             name: Louisiana Museum of Modern Art
             note: Outside the city, around one hour by train. Worth the whole day.
@@ -1022,14 +1013,14 @@ sections:
   saunas:
     emoji: 🧖
     title: Saunas & baths
-    blurb: Hot room, cold harbour or candlelit thermal bath—your choice.
+    blurb: "Hot room, cold harbour or candlelit thermal bath: your choice."
     groups:
       sweat:
         title: Where to sweat or soak
         items:
           aire:
             name: AIRE Ancient Baths
-            note: A luxurious candlelit thermal circuit, steam room and massages in the historic cellars of the old Carlsberg brewery—beautiful, quiet and priced accordingly.
+            note: A candlelit thermal circuit, steam room and massages in the historic cellars of the old Carlsberg brewery. Beautiful, quiet and priced accordingly.
             kicker: Carlsberg Byen · book ahead
             url: https://relax.beaire.com/en/aire-ancient-baths-copenhagen
           glaecier:
@@ -1038,7 +1029,7 @@ sections:
             url: https://glaecier.com/en/
           sauna85:
             name: Sauna85
-            note: Bookable saunagus without a membership at several locations—an easy introduction to heat, essential oils and a cold plunge.
+            note: Bookable saunagus without a membership at several locations. An easy introduction to heat, essential oils and a cold plunge.
             url: https://www.sauna85.dk/en/
           pluginHeat:
             name: Plugin Heat Club
@@ -1078,7 +1069,7 @@ sections:
             url: https://www.heycaptain.dk/
           duffyBoats:
             name: Duffy Boats
-            note: A comfortable electric boat with its own captain — the relaxed option if no one wants to steer.
+            note: A comfortable electric boat with its own captain. The relaxed option if no one wants to steer.
             kicker: Captained · Bring a picnic
             url: https://duffyboats.dk/
   beyond:
@@ -1114,7 +1105,7 @@ sections:
             url: https://kongeligeslotte.dk/en/palaces-and-gardens/kronborg-castle.html
           roskilde:
             name: Roskilde
-            note: Royal cathedral plus five Viking ships raised from the fjord — and you can sail a reconstruction.
+            note: Royal cathedral plus five Viking ships raised from the fjord, and you can sail a reconstruction.
             travel: 25 min by train
             kicker: Cathedral + Viking ships
             story: >-
@@ -1130,7 +1121,7 @@ sections:
             travel: 35 min by train + short walk
           dyrehaven:
             name: Dyrehaven
-            note: A former royal reserve full of deer, trails and ancient oaks just beyond Bellevue—real nature within S-train reach.
+            note: A former royal reserve full of deer, trails and ancient oaks just beyond Bellevue. Real nature, a short S-train ride away.
             travel: ~20 min to Klampenborg
             kicker: UNESCO · free-roaming deer
             story: >-
@@ -1142,7 +1133,7 @@ sections:
             url: https://www.visitcopenhagen.com/copenhagen/planning/deer-park-gdk414367
           bakken:
             name: Bakken
-            note: The world's oldest operating amusement park, hidden among the trees of Dyrehaven—with free entry and rides paid separately.
+            note: The world's oldest operating amusement park, hidden among the trees of Dyrehaven. Entry is free; rides are paid separately.
             travel: ~20 min to Klampenborg + woodland walk
             kicker: Since 1583 · free entry
             story: >-
@@ -1156,19 +1147,19 @@ sections:
             url: https://bakken.dk/english/
           malmo:
             name: Malmö, Sweden
-            note: Take the train across the Øresund Bridge. Another country before lunch — bring your passport or ID.
+            note: Take the train across the Øresund Bridge. Another country before lunch, so bring your passport or ID.
             travel: 35 min from Copenhagen H
           lund:
             name: Lund, Sweden
-            note: A compact university city with a Romanesque cathedral, low houses and cobbled streets—quieter than Malmö and ideal for a slow day.
+            note: A compact university city with a Romanesque cathedral, low houses and cobbled streets. Quieter than Malmö and good for a slow day.
             travel: ~55 min by direct train
             kicker: University since 1666 · Skåne
             story: >-
               Lund was an important Danish religious centre before Scania became
-              Swedish in the seventeenth century. Its cathedral has an eleventh-
-              century crypt and astronomical clock; around it, the university and
-              Kulturen fill the centre with courtyards, museums and students.
-              Bring valid identification: you are still crossing a border.
+              Swedish in the seventeenth century. Its cathedral has an
+              eleventh-century crypt and an astronomical clock; around it, the
+              university and Kulturen fill the centre with courtyards, museums and
+              students. Bring valid identification: you are still crossing a border.
             url: https://visitlund.se/en
           skybarMalmo:
             name: Skybar, Malmö Live
@@ -1176,7 +1167,7 @@ sections:
             url: https://maps.app.goo.gl/EyKtERFBjXYHZ5pc8
           bullenMalmo:
             name: Bullen – Två Krögare
-            note: A historic dining room serving old-school Swedish cooking without fuss—meatballs, herring and sturdy dishes in central Malmö.
+            note: "A historic dining room serving old-school Swedish cooking without fuss: meatballs, herring and sturdy dishes in central Malmö."
             url: https://maps.app.goo.gl/TJjq7w8dQaPwn2JC7
       crossborder:
         title: Sweden & Norway from Copenhagen
@@ -1195,7 +1186,7 @@ sections:
               do once you arrive.
             url: https://www.dsb.dk/en/tickets-and-services/oresund-ticket/
           norwayTravel:
-            name: "Norway: fly, take the train—or sleep on the ferry"
+            name: "Norway: fly, take the train or sleep on the ferry"
             note: Oslo is not a day trip. Flying is fastest; rail takes around 8½ hours via Sweden, while the overnight ferry turns the journey into the experience.
             kicker: Oslo · overnight or stay longer
             storyItems:
@@ -1214,8 +1205,8 @@ sections:
             story: >-
               The cliffs are chalk formed from the shells of countless tiny sea
               creatures, pushed up by the ice age. Fossils wash out on the beach
-              below — look for belemnites and sea urchins. Møn is also a Dark
-              Sky reserve, so the night sky is unusually good.
+              below: look for belemnites and sea urchins. Møn is also a Dark Sky
+              reserve, so the night sky is unusually good.
             url: https://www.moensklint.dk/en/
           stevnsKlint:
             name: Stevns Klint
@@ -1223,10 +1214,10 @@ sections:
             travel: ~1h 15 by car
             kicker: UNESCO · the K-Pg boundary
             story: >-
-              In the cliff face runs a thin dark layer of "fish clay" — debris
-              from the asteroid impact that ended the age of the dinosaurs 66
-              million years ago. Above it, the church of Højerup slowly lost its
-              choir to the sea in 1928.
+              In the cliff face runs a thin dark layer of "fish clay", debris from
+              the asteroid impact that ended the age of the dinosaurs 66 million
+              years ago. Above it, the church of Højerup lost its choir to the sea
+              in 1928.
             url: https://www.stevnsklint.dk/en/
           odense:
             name: Odense
@@ -1246,11 +1237,11 @@ sections:
             travel: Ferry or a short flight from Copenhagen · stay over
             kicker: Island escape
             story: >-
-              Bornholm feels unlike the rest of Denmark: granite cliffs and
-              round churches in the north, broad beaches in the south, and
-              smokehouses everywhere. It is too much for a day trip, so make a
-              weekend of it—take the ferry or fly from Copenhagen, then use the
-              island buses or a bike to wander.
+              Bornholm feels unlike the rest of Denmark: granite cliffs and round
+              churches in the north, broad beaches in the south, and smokehouses
+              everywhere. It is too much for a day trip, so make a weekend of it.
+              Take the ferry or fly from Copenhagen, then use the island buses or a
+              bike to wander.
             url: https://visit-bornholm.com/en/plan-your-trip-to-bornholm
           tisvildeleje:
             name: Tisvildeleje
@@ -1264,7 +1255,7 @@ sections:
             url: https://www.visitnorthzealand.com/north-zealand/cities/gilleleje-the-fishing-town-at-the-top-of-north-zealand
           campAdventure:
             name: Camp Adventure
-            note: Forest Tower and a huge climbing park in the south of Zealand — a good outdoors day if you have a car.
+            note: Forest Tower and a huge climbing park in the south of Zealand. A good outdoors day if you have a car.
             travel: ~1h 15 by car
             url: https://www.campadventure.dk/
       jutland:
@@ -1292,22 +1283,20 @@ sections:
             kicker: Your rainbow panorama · Olafur Eliasson
             story: >-
               The museum's best-known work is Your rainbow panorama: a circular,
-              150-metre glass walkway in every colour of the spectrum, installed
-              on the roof in 2011 by Danish-Icelandic artist Olafur Eliasson.
-              Walk it slowly for shifting views over Aarhus, then leave time for
-              the collection and large installations below—it is much more than
-              a viewing platform with a museum underneath.
+              150-metre glass walkway in every colour of the spectrum, installed on
+              the roof in 2011 by Danish-Icelandic artist Olafur Eliasson. Walk it
+              slowly for shifting views over Aarhus, then leave time for the
+              collection and large installations below.
             url: https://www.aros.dk/en/
           denGamleBy:
             name: Den Gamle By, Aarhus
             note: An open-air museum of Danish urban life, built from 80 historic houses moved here from towns across the country.
             kicker: Streets through several centuries
             story: >-
-              This is not a single reconstructed medieval village. You move
-              through homes, workshops, shops and gardens from the 1600s onwards,
-              with especially vivid districts around 1864, 1927 and 1974. From
-              spring to winter, costumed residents and working craftspeople turn
-              the buildings into lived-in history rather than a row of facades.
+              You move through homes, workshops, shops and gardens from the 1600s
+              onwards, with especially vivid districts around 1864, 1927 and 1974.
+              From spring to winter, costumed residents and working craftspeople
+              turn the buildings into lived-in history.
             url: https://www.dengamleby.dk/en/
           moesgaard:
             name: Moesgaard
@@ -1338,17 +1327,17 @@ sections:
             url: https://www.visitdenmark.dk/danmark/explore/mennesket-ved-havet-kaempeskulptur-i-esbjerg-gdk1076855
           fano:
             name: Fanø
-            note: Wide North Sea beaches, dunes, seals, old maritime villages and enough wind for surfing, kites and beach sailing—all a short ferry ride from Esbjerg.
+            note: Wide North Sea beaches, dunes, seals, old maritime villages and enough wind for surfing, kites and beach sailing, all a short ferry ride from Esbjerg.
             travel: ~3h to Esbjerg + 12 min ferry
             kicker: Wadden Sea · not Cold Hawaii
             story: >-
               Fanø is genuinely good for surfing and exceptional for kite flying,
               kite buggies and blokarts on its enormous firm beach. But it is not
-              usually the “Hawaii of Denmark”: Cold Hawaii is the name for 31
-              surf spots along the Thy coast farther north, centred on Klitmøller.
-              Fanø's own identity is the UNESCO-listed Wadden Sea, seal banks,
-              amber, Nordby's maritime lanes and the preserved village of
-              Sønderho. It pairs naturally with Esbjerg and Men at Sea.
+              usually the "Hawaii of Denmark": Cold Hawaii is the name for 31 surf
+              spots along the Thy coast farther north, centred on Klitmøller. Fanø's
+              own identity is the UNESCO-listed Wadden Sea, seal banks, amber,
+              Nordby's maritime lanes and the preserved village of Sønderho. It
+              pairs naturally with Esbjerg and Men at Sea.
             url: https://visitfanoe.dk/en/
           aalborg:
             name: Aalborg
@@ -1390,7 +1379,7 @@ sections:
             kicker: No drama, just drizzle
             storyItems:
               - "Museums: SMK, the Glyptotek (with its winter garden) and the National Museum are all good for a few hours."
-              - "Warm up in a sauna — you're getting wet anyway."
+              - "Warm up in a sauna. You're getting wet anyway."
               - "Food halls like Torvehallerne are dry, warm and full of snacks."
               - "Or simply wait it out in a bakery: showers here often pass quickly."
           nyt:
@@ -1430,7 +1419,7 @@ sections:
             url: https://www.cphdistortion.dk/
           threeDays:
             name: 3daysofdesign
-            note: Copenhagen turns into a giant design open house. Many exhibitions are free—book the popular ones.
+            note: Copenhagen turns into a giant design open house. Many exhibitions are free; book the popular ones.
             url: https://www.3daysofdesign.dk/
           sanktHans:
             name: Sankt Hans
@@ -1479,7 +1468,7 @@ sections:
 
 reels:
   title: From the feed
-  blurb: Copenhagen, Denmark and a few places worth the detour—one reel at a time.
+  blurb: Copenhagen, Denmark and a few places worth the detour, one reel at a time.
   allLabel: All
   themes:
     life: Danish life
