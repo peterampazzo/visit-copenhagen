@@ -9,11 +9,11 @@ Language: English · Source: https://hygge.peterampazzo.com
 _The small stuff that makes a big difference._
 
 ### Public transport
-- **The Metro runs 24/7 without a driver** — Copenhagen's automated Metro has no driver and is operated and maintained by Metro Service, now owned by Milan's ATM Group. · https://www.metroservice.dk/media/5m5pwgyl/metroservice-annual-report-2025.pdf
-  - _Driverless · with an Italian connection_
-  - No drivers, so no driver strikes. There are still people who monitor, maintain and assist the system, of course. Since late 2025, Metro Service has been fully owned by Milan's public transport group ATM; Hitachi remains the main contractor for M3 and M4 until its contract ends.
+- **The Metro runs 24/7 without a driver** — Copenhagen's Metro is fully automated, and quite Italian: the trains were built in Italy, and an Italian consortium built the M3 City Circle Line. · https://www.hitachirail.com/products-and-solutions/rolling-stock/driverless-trains/copenhagen-cityringen-m3m4/
+  - _Driverless · built in Italy_
+  - No drivers, so no driver strikes. There are still people who monitor, maintain and assist the system, of course. The trains on all four lines were built in Italy by Ansaldo, now Hitachi Rail, which also supplied the signalling for the City Circle Line. That line, M3, was built by an Italian consortium led by Salini Impregilo and opened in 2019. Milan's ATM owns the current operator, Metro Service, but from September 2027 KBH Metro Partner, a joint venture of France's RATP Dev and Singapore's ComfortDelGro, takes over.
 - **Paper tickets need no validation** — They're time-stamped when you buy them, so just hop on. One ticket works for metro, bus, train and the waterbus.
-- **City Pass Small** — Unlimited travel only in zones 1-4, which cover central Copenhagen and the airport. It does not cover all of Zealand. · https://www.publictransport.dk/tickets/citypass
+- **City Pass Small or Large** — Small covers zones 1-4: central Copenhagen and the airport. For Louisiana, Kronborg, Roskilde or Hillerød you need Large, which covers zones 1-99 across the Greater Copenhagen area. · https://www.dsb.dk/find-produkter-og-services/citypass/
 - **Copenhagen Card** — Better value if you plan to visit several museums. Transport and admissions are included. · https://copenhagencard.com
 - **Waterbus** — Your normal transport ticket covers it. It crosses the harbour roughly every half hour; check Citymapper for times.
 - **The red S-trains take bikes for free** — They are Copenhagen's suburban network, separate from regional and InterCity trains. Bikes are free on S-trains; other train types have different rules. · https://www.dsb.dk/s-tog/
@@ -21,7 +21,9 @@ _The small stuff that makes a big difference._
   - _Better outside the city_
   - Bring a valid driving licence. If it is not written in the Roman alphabet, carry an international driving permit too.
   - Compare the total price, not only the daily rate: insurance excess, extra drivers, fuel or charging, mileage and permission to cross a border can all matter.
-  - Central Copenhagen has paid and time-limited parking, while Frederiksberg has separate rules. Read the street signs every time.
+  - Parking in the City of Copenhagen is paid or time-limited almost everywhere, so leaving a car for long hours gets tricky. Pay in an app such as EasyPark, and read the street signs every time; Frederiksberg has its own rules.
+  - Staying with friends in a time-limited zone? Residents there can apply for a free guest licence for three days at a time.
+  - Car sharing (delebil) such as GreenMobility, GoMore or HYRE follows its own parking rules and often parks free in the paid zones. Check the app before you leave the car.
   - Inside the city, public transport, walking and a bike are usually faster and much less annoying.
 - **Check Rejsebillet for event tickets** — Selected races, concerts and festivals sometimes get cheap, time-limited special tickets. There is no automatic discount for every event. · https://www.rejsebillet.dk/da-dk/faa-hjaelp/specialbilletter
   - _Other tickets → Special tickets_
@@ -104,6 +106,9 @@ Route: Easy waterside walk — Amalienborg → Nyhavn → Skuespilhuset → Papi
 - **Papirøen** — From naval stores and newspaper rolls to a new waterside neighbourhood. · https://papiroeen.dk/historien/
   - _1696 → now_
   - Christiansholm is an artificial island that has stored cannons, coal and, from 1958, huge rolls of newspaper paper, which gave it its nickname. Copenhagen Street Food opened the former warehouses to the public in 2014. Today there are new waterfront homes (private, social and student housing), plus cafés, a hotel and public spaces; the old street-food spirit moved on to Reffen. And no, the new apartments are not made of paper. I checked.
+- **KAI, the water culture house on Papirøen** [☔ Indoor] — Copenhagen's new public swimming and wellness house by Kengo Kuma, with ten pools inside and out. Opens on 5 December 2026. · https://kai.kk.dk/en
+  - _Kengo Kuma · ten pools_
+  - The ground floor has a 25-metre pool, a teaching pool and three play pools. There is a wellness floor with a Finnish sauna, steam room and hot and cold pools, and two heated open-air pools between the brick towers, including an onsen looking over the harbour. On the boardwalk outside, a 50-metre harbour bathing zone and a dipping zone are expected to open in early 2027 for swimming all year. Regular opening hours are 06:00-21:00 every day.
 - **Operaen** — Denmark's monumental opera house, directly across from Amalienborg. · https://www.apmollerfonde.dk/projekter/operaen/
   - _2005 · A gift to Denmark_
   - The A.P. Møller Foundation funded the opera house and gave it to Denmark; Mærsk Mc-Kinney Møller personally influenced many design decisions. Henning Larsen was the architect, and their disagreements helped make the building famously controversial. Its position ends the grand visual axis from Marmorkirken through Amalienborg.

@@ -72,22 +72,26 @@ sections:
         items:
           metro:
             name: La metro è H24 e senza conducente
-            note: È automatica. Metro Service, che la gestisce e mantiene, oggi è di proprietà del gruppo ATM di Milano.
-            kicker: Senza conducente · con un legame italiano
+            note: "È completamente automatica e piuttosto italiana: i treni sono stati costruiti in Italia e la linea circolare M3 l'ha realizzata un consorzio italiano."
+            kicker: Senza conducente · made in Italy
             story: >-
               Niente conducenti, quindi niente scioperi dei conducenti. C'è comunque
-              il personale che controlla, mantiene e assiste il sistema. Dalla fine
-              del 2025 Metro Service è interamente di proprietà del gruppo milanese
-              ATM; Hitachi resta il principale appaltatore per M3 e M4 fino alla
-              scadenza del contratto.
-            url: https://www.metroservice.dk/media/5m5pwgyl/metroservice-annual-report-2025.pdf
+              il personale che controlla, mantiene e assiste il sistema. I treni di
+              tutte e quattro le linee sono stati costruiti in Italia da Ansaldo,
+              oggi Hitachi Rail, che ha fornito anche il segnalamento della linea
+              circolare. La M3 l'ha realizzata un consorzio italiano guidato da
+              Salini Impregilo ed è stata inaugurata nel 2019. Oggi il gestore,
+              Metro Service, è di proprietà dell'ATM di Milano, ma da settembre 2027
+              subentra KBH Metro Partner, una joint venture tra la francese RATP Dev
+              e la singaporiana ComfortDelGro.
+            url: https://www.hitachirail.com/products-and-solutions/rolling-stock/driverless-trains/copenhagen-cityringen-m3m4/
           paperTickets:
             name: Il biglietto cartaceo non si valida
             note: Ha già l'ora stampata sopra, quindi si sale e via. Vale per metro, bus, treno e vaporetto.
           cityPass:
-            name: City Pass Small
-            note: Viaggi illimitati solo nelle zone 1-4, cioè centro e aeroporto. Non copre tutta la Zelanda.
-            url: https://www.publictransport.dk/tickets/citypass
+            name: City Pass Small o Large
+            note: Small copre le zone 1-4, cioè centro e aeroporto. Per Louisiana, Kronborg, Roskilde o Hillerød serve Large, che copre le zone 1-99 dell'area metropolitana di Copenaghen.
+            url: https://www.dsb.dk/find-produkter-og-services/citypass/
           copenhagenCard:
             name: Copenhagen Card
             note: "Conviene se pensate di visitare vari musei: include mezzi e ingressi."
@@ -106,7 +110,9 @@ sections:
             storyItems:
               - "Portate una patente valida. Se non usa l'alfabeto latino, serve anche il permesso internazionale di guida."
               - "Confrontate il prezzo totale, non solo la tariffa giornaliera: franchigia assicurativa, guidatori extra, carburante o ricarica, chilometri e permesso di attraversare il confine possono cambiare molto il conto."
-              - "Nel centro di Copenaghen molti parcheggi sono a pagamento o a tempo; Frederiksberg ha regole proprie. Leggete sempre i cartelli."
+              - "A Copenaghen il parcheggio è quasi ovunque a pagamento o a tempo, quindi lasciare l'auto per molte ore diventa complicato. Pagate con un'app come EasyPark e leggete sempre i cartelli; Frederiksberg ha regole proprie."
+              - "Siete ospiti di amici in una zona a tempo? Chi abita lì può richiedere una licenza ospite gratuita per tre giorni alla volta."
+              - "Il car sharing (delebil) come GreenMobility, GoMore o HYRE ha regole di parcheggio proprie e spesso parcheggia gratis nelle zone a pagamento. Controllate l'app prima di lasciare l'auto."
               - "In città, mezzi pubblici, piedi e bici sono quasi sempre più rapidi e molto meno stressanti."
             url: https://www.visitdenmark.com/denmark/plan-your-trip/plan-your-trip-faq
           eventTickets:
@@ -385,6 +391,19 @@ sections:
               dello street food si è spostato a Reffen. E no, i nuovi appartamenti
               non sono fatti di carta. Ho controllato.
             url: https://papiroeen.dk/historien/
+          kai:
+            name: KAI, la casa dell'acqua di Papirøen
+            note: La nuova piscina pubblica con wellness di Copenaghen, progettata da Kengo Kuma, con dieci vasche dentro e fuori. Apre il 5 dicembre 2026.
+            kicker: Kengo Kuma · dieci vasche
+            story: >-
+              Al piano terra ci sono una vasca da 25 metri, una vasca didattica e
+              tre vasche gioco. C'è un piano wellness con sauna finlandese, bagno
+              turco e vasche calde e fredde, e due vasche riscaldate all'aperto tra
+              le torri di mattoni, tra cui un onsen affacciato sul porto. Sul
+              pontile davanti, una zona di balneazione nel porto da 50 metri e una
+              zona per tuffi brevi dovrebbero aprire all'inizio del 2027, per
+              nuotare tutto l'anno. L'orario normale è 06:00-21:00 tutti i giorni.
+            url: https://kai.kk.dk/en
           opera:
             name: Operaen
             note: Il monumentale teatro dell'opera, esattamente di fronte ad Amalienborg.

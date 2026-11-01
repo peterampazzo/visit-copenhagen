@@ -66,6 +66,10 @@ papiroen:
   latitude: 55.679924
   longitude: 12.603273
   googleQuery: Papirøen, Copenhagen
+kai:
+  latitude: 55.679648
+  longitude: 12.598059
+  googleQuery: KAI, Papirøen 47, Copenhagen
 opera:
   latitude: 55.681812
   longitude: 12.600541

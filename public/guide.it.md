@@ -9,11 +9,11 @@ Language: Italian · Source: https://hygge.peterampazzo.com
 _Le piccole cose che fanno la differenza._
 
 ### Mezzi pubblici
-- **La metro è H24 e senza conducente** — È automatica. Metro Service, che la gestisce e mantiene, oggi è di proprietà del gruppo ATM di Milano. · https://www.metroservice.dk/media/5m5pwgyl/metroservice-annual-report-2025.pdf
-  - _Senza conducente · con un legame italiano_
-  - Niente conducenti, quindi niente scioperi dei conducenti. C'è comunque il personale che controlla, mantiene e assiste il sistema. Dalla fine del 2025 Metro Service è interamente di proprietà del gruppo milanese ATM; Hitachi resta il principale appaltatore per M3 e M4 fino alla scadenza del contratto.
+- **La metro è H24 e senza conducente** — È completamente automatica e piuttosto italiana: i treni sono stati costruiti in Italia e la linea circolare M3 l'ha realizzata un consorzio italiano. · https://www.hitachirail.com/products-and-solutions/rolling-stock/driverless-trains/copenhagen-cityringen-m3m4/
+  - _Senza conducente · made in Italy_
+  - Niente conducenti, quindi niente scioperi dei conducenti. C'è comunque il personale che controlla, mantiene e assiste il sistema. I treni di tutte e quattro le linee sono stati costruiti in Italia da Ansaldo, oggi Hitachi Rail, che ha fornito anche il segnalamento della linea circolare. La M3 l'ha realizzata un consorzio italiano guidato da Salini Impregilo ed è stata inaugurata nel 2019. Oggi il gestore, Metro Service, è di proprietà dell'ATM di Milano, ma da settembre 2027 subentra KBH Metro Partner, una joint venture tra la francese RATP Dev e la singaporiana ComfortDelGro.
 - **Il biglietto cartaceo non si valida** — Ha già l'ora stampata sopra, quindi si sale e via. Vale per metro, bus, treno e vaporetto.
-- **City Pass Small** — Viaggi illimitati solo nelle zone 1-4, cioè centro e aeroporto. Non copre tutta la Zelanda. · https://www.publictransport.dk/tickets/citypass
+- **City Pass Small o Large** — Small copre le zone 1-4, cioè centro e aeroporto. Per Louisiana, Kronborg, Roskilde o Hillerød serve Large, che copre le zone 1-99 dell'area metropolitana di Copenaghen. · https://www.dsb.dk/find-produkter-og-services/citypass/
 - **Copenhagen Card** — Conviene se pensate di visitare vari musei: include mezzi e ingressi. · https://copenhagencard.com
 - **Vaporetto** — È incluso nel normale biglietto dei mezzi. Attraversa il porto circa ogni mezz'ora; orari su Citymapper.
 - **Le S-train rosse portano gratis la bici** — Sono la rete suburbana di Copenaghen, diversa dai treni regionali e InterCity. Sulle S-train la bici è gratis; sugli altri treni valgono regole diverse. · https://www.dsb.dk/s-tog/
@@ -21,7 +21,9 @@ _Le piccole cose che fanno la differenza._
   - _Meglio fuori città_
   - Portate una patente valida. Se non usa l'alfabeto latino, serve anche il permesso internazionale di guida.
   - Confrontate il prezzo totale, non solo la tariffa giornaliera: franchigia assicurativa, guidatori extra, carburante o ricarica, chilometri e permesso di attraversare il confine possono cambiare molto il conto.
-  - Nel centro di Copenaghen molti parcheggi sono a pagamento o a tempo; Frederiksberg ha regole proprie. Leggete sempre i cartelli.
+  - A Copenaghen il parcheggio è quasi ovunque a pagamento o a tempo, quindi lasciare l'auto per molte ore diventa complicato. Pagate con un'app come EasyPark e leggete sempre i cartelli; Frederiksberg ha regole proprie.
+  - Siete ospiti di amici in una zona a tempo? Chi abita lì può richiedere una licenza ospite gratuita per tre giorni alla volta.
+  - Il car sharing (delebil) come GreenMobility, GoMore o HYRE ha regole di parcheggio proprie e spesso parcheggia gratis nelle zone a pagamento. Controllate l'app prima di lasciare l'auto.
   - In città, mezzi pubblici, piedi e bici sono quasi sempre più rapidi e molto meno stressanti.
 - **Controllate i biglietti evento su Rejsebillet** — Alcune corse, concerti e festival hanno biglietti speciali economici e temporanei; non esiste uno sconto automatico per ogni evento. · https://www.rejsebillet.dk/da-dk/faa-hjaelp/specialbilletter
   - _Other tickets → Special tickets_
@@ -104,6 +106,9 @@ Route: Passeggiata facile sull'acqua — Amalienborg → Nyhavn → Skuespilhuse
 - **Papirøen** — Da deposito navale e rotoli di giornale a nuovo quartiere sull'acqua. · https://papiroeen.dk/historien/
   - _1696 → oggi_
   - Christiansholm è un'isola artificiale che ha conservato cannoni, carbone e, dal 1958, enormi rotoli di carta da giornale: da qui il soprannome. Nel 2014 Copenhagen Street Food aprì i vecchi magazzini al pubblico. Oggi ci sono nuove case sul porto (private, sociali e studentesche), oltre a caffè, un hotel e spazi pubblici; lo spirito dello street food si è spostato a Reffen. E no, i nuovi appartamenti non sono fatti di carta. Ho controllato.
+- **KAI, la casa dell'acqua di Papirøen** [☔ Al chiuso] — La nuova piscina pubblica con wellness di Copenaghen, progettata da Kengo Kuma, con dieci vasche dentro e fuori. Apre il 5 dicembre 2026. · https://kai.kk.dk/en
+  - _Kengo Kuma · dieci vasche_
+  - Al piano terra ci sono una vasca da 25 metri, una vasca didattica e tre vasche gioco. C'è un piano wellness con sauna finlandese, bagno turco e vasche calde e fredde, e due vasche riscaldate all'aperto tra le torri di mattoni, tra cui un onsen affacciato sul porto. Sul pontile davanti, una zona di balneazione nel porto da 50 metri e una zona per tuffi brevi dovrebbero aprire all'inizio del 2027, per nuotare tutto l'anno. L'orario normale è 06:00-21:00 tutti i giorni.
 - **Operaen** — Il monumentale teatro dell'opera, esattamente di fronte ad Amalienborg. · https://www.apmollerfonde.dk/projekter/operaen/
   - _2005 · Un regalo alla Danimarca_
   - La Fondazione A.P. Møller finanziò l'edificio e lo donò alla Danimarca; Mærsk Mc-Kinney Møller influenzò personalmente molte scelte progettuali. L'architetto era Henning Larsen e i loro disaccordi resero l'opera famosa e controversa. La posizione chiude l'asse visivo che parte da Marmorkirken e attraversa Amalienborg.
