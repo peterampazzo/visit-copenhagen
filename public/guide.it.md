@@ -54,7 +54,7 @@ _Le piccole cose che fanno la differenza._
 _La città ha più senso quando sapete cosa state guardando._
 
 ### Classici con una storia
-- **Nyhavn** [⭐ Imperdibile] — Il porticciolo colorato delle foto. Turistico, ma bello. · [Guarda il reel](https://www.instagram.com/reel/DdtuOratq5i/)
+- **Nyhavn** [⭐ Imperdibile] — Il porticciolo colorato delle foto. Turistico, ma bello.
 - **Christiansborg & la Torre** — Parlamento, palazzo e vista gratuita sulla città, tutto sulla stessa isola. · https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
   - _Il terzo palazzo in questo punto_
   - Christiansborg non è bruciato tre volte. Il primo e il secondo palazzo andarono a fuoco nel 1794 e nel 1884; quello di oggi è il terzo. Sotto si trovano le rovine del castello del vescovo Absalon e del Castello di Copenaghen. Oggi ospita Parlamento, ufficio del Primo Ministro, Corte Suprema e sale di rappresentanza reali.
@@ -240,7 +240,7 @@ _Quelle cose che fanno fermare i visitatori e chiedere "aspetta, perché?"_
 - **Copenaghen non è sempre stata la città delle bici** — Negli anni Sessanta le auto stavano sostituendo le bici. Crisi petrolifera del 1973, domeniche senza auto, proteste e decenni di piste sicure le hanno riportate. · https://denmark.dk/people-and-culture/biking
   - _Un ritorno dagli anni Settanta_
   - Negli anni Venti e Trenta la bici era già un mezzo di massa, ma il benessere del dopoguerra spinse Copenaghen verso l'auto. La crisi petrolifera rese fragile quel modello; proteste ambientaliste e pressione pubblica chiesero poi spazio per le biciclette. Investimenti continui in percorsi protetti hanno reso la bici la scelta quotidiana più facile: non basta dire che la Danimarca è piatta.
-- **Quando Søerne diventa una piazza** — In un inverno davvero freddo, una parte sicura dei laghi si riempie di persone e pattinatori. Aspettate i cartelli blu del Comune. · [Guarda il reel](https://www.instagram.com/reel/DVHRB9PiILm/)
+- **Quando Søerne diventa una piazza** — In un inverno davvero freddo, una parte sicura dei laghi si riempie di persone e pattinatori. Aspettate i cartelli blu del Comune.
   - _Raro, freddo e molto Copenaghen_
   - Tip: Aspettate i cartelli blu ufficiali prima di camminare sul ghiaccio.
   - Tip: Portate un thermos: la parte migliore è stare in giro a fingere di essere danesi.
@@ -477,6 +477,9 @@ _Se per una volta volete il parere di qualcun altro._
 ## Dal feed
 _Copenaghen, la Danimarca e qualche posto che merita la deviazione, un reel alla volta._
 
+- Nyhavn di sera — https://www.instagram.com/reel/DdtuOratq5i/
+- Dentro la Grundtvigs Kirke — https://www.instagram.com/reel/DeDUN-GMpju/
+- La biblioteca alla Hogwarts di Copenaghen — https://www.instagram.com/reel/DecPZt4thtI/
 - Perché gli autobus danesi sventolano bandiere — https://www.instagram.com/reel/DehhK71IBmE/
 - L'ora di punta, versione Copenaghen — https://www.instagram.com/reel/DalYQBZN7EK/
 - Il chiosco con una storia: Taarnet — https://www.instagram.com/reel/Degs7MsA3I1/

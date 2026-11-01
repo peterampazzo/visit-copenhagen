@@ -54,7 +54,7 @@ _The small stuff that makes a big difference._
 _The city makes more sense once you know what you're looking at._
 
 ### Classics with a backstory
-- **Nyhavn** [⭐ Must-see] — The coloured harbour from every postcard. It is busy and touristy, but still worth walking, especially early or after dinner. · [Watch the reel](https://www.instagram.com/reel/DdtuOratq5i/)
+- **Nyhavn** [⭐ Must-see] — The coloured harbour from every postcard. It is busy and touristy, but still worth walking, especially early or after dinner.
 - **Christiansborg & the Tower** — Parliament, palace and a free city view, all on the same island. · https://www.ft.dk/da/folkestyret/folketinget-og-christiansborg/christiansborgs-historie
   - _Third palace on this site_
   - Christiansborg did not burn three times. The first and second palaces burned in 1794 and 1884; today's building is the third. Beneath it are the ruins of Bishop Absalon's castle and Copenhagen Castle. It now houses Parliament, the Prime Minister's Office, the Supreme Court and royal reception rooms.
@@ -240,7 +240,7 @@ _The things that make visitors stop and ask "wait, why?"_
 - **Copenhagen was not always a bike city** — Cars nearly displaced bicycles in the 1960s. The 1973 oil crisis, car-free Sundays, protests and decades of safer lanes brought them back. · https://denmark.dk/people-and-culture/biking
   - _A comeback since the 1970s_
   - Bikes were already mass transport here in the 1920s and 1930s, but post-war prosperity pushed Copenhagen towards cars. The oil crisis made that model look fragile; environmental protests and public pressure then demanded space for bicycles. Decades of investment in protected routes made cycling the easy everyday option. Being flat helps, but it does not explain it on its own.
-- **When Søerne becomes a city square** — In a properly cold winter, a safe part of the frozen lakes fills with walkers and skaters. Wait for the city's blue permission signs. · [Watch the reel](https://www.instagram.com/reel/DVHRB9PiILm/)
+- **When Søerne becomes a city square** — In a properly cold winter, a safe part of the frozen lakes fills with walkers and skaters. Wait for the city's blue permission signs.
   - _Rare, cold and extremely Copenhagen_
   - Tip: Wait for the official blue signs before walking on the ice.
   - Tip: Bring a thermos. The best part is standing around pretending you are Danish.
@@ -477,6 +477,9 @@ _If you want someone else's opinion for once._
 ## From the feed
 _Copenhagen, Denmark and a few places worth the detour, one reel at a time._
 
+- Nyhavn after dark — https://www.instagram.com/reel/DdtuOratq5i/
+- Inside Grundtvig's Church — https://www.instagram.com/reel/DeDUN-GMpju/
+- Copenhagen's own Hogwarts library — https://www.instagram.com/reel/DecPZt4thtI/
 - Why Danish buses fly flags — https://www.instagram.com/reel/DehhK71IBmE/
 - Rush hour, Copenhagen style — https://www.instagram.com/reel/DalYQBZN7EK/
 - The kiosk with a story: Taarnet — https://www.instagram.com/reel/Degs7MsA3I1/

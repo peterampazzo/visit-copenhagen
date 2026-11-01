@@ -193,11 +193,6 @@ sections:
           nyhavn:
             name: Nyhavn
             note: Il porticciolo colorato delle foto. Turistico, ma bello.
-            url: https://www.instagram.com/reel/DdtuOratq5i/
-            linkText: Guarda il reel
-            media:
-              image: /reels/nyhavn-night.jpg
-              url: https://www.instagram.com/reel/DdtuOratq5i/
           christiansborg:
             name: Christiansborg & la Torre
             note: Parlamento, palazzo e vista gratuita sulla città, tutto sulla stessa isola.
@@ -557,9 +552,6 @@ sections:
               chiesa del matrimonio di Fiona e Lord Farquaad, ma DreamWorks non ha
               mai confermato che sia stata davvero il modello.
             url: https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
-            media:
-              image: /reels/grundtvig-church.jpg
-              url: https://www.instagram.com/reel/DeDUN-GMpju/
       libraries:
         title: Biblioteche in cui entrare
         items:
@@ -589,9 +581,6 @@ sections:
               di ricerca, cultura e visite; controllate il programma aggiornato
               se volete andarci apposta per un tour guidato.
             url: https://www.kb.dk/en/visit-us/university-library-fiolstraede
-            media:
-              image: /reels/fiolstraede-library.jpg
-              url: https://www.instagram.com/reel/DecPZt4thtI/
       rooftops:
         title: Tetti & viste sulla città
         items:
@@ -819,10 +808,6 @@ sections:
             name: Quando Søerne diventa una piazza
             note: In un inverno davvero freddo, una parte sicura dei laghi si riempie di persone e pattinatori. Aspettate i cartelli blu del Comune.
             kicker: Raro, freddo e molto Copenaghen
-            url: https://www.instagram.com/reel/DVHRB9PiILm/
-            linkText: Guarda il reel
-            media:
-              url: https://www.instagram.com/reel/DVHRB9PiILm/
             tips:
               - "Aspettate i cartelli blu ufficiali prima di camminare sul ghiaccio."
               - "Portate un thermos: la parte migliore è stare in giro a fingere di essere danesi."
@@ -1509,6 +1494,24 @@ reels:
     spots: Angoli nascosti
     beyond: Oltre Copenaghen
   items:
+    nyhavnAfterDark:
+      caption: Nyhavn di sera
+      creator: "@adi.onthemap"
+      image: /reels/nyhavn-night.jpg
+      url: https://www.instagram.com/reel/DdtuOratq5i/
+      theme: spots
+    grundtvigChurchInside:
+      caption: Dentro la Grundtvigs Kirke
+      creator: "@area_archives"
+      image: /reels/grundtvig-church.jpg
+      url: https://www.instagram.com/reel/DeDUN-GMpju/
+      theme: spots
+    fiolstraedeHogwarts:
+      caption: La biblioteca alla Hogwarts di Copenaghen
+      creator: "@copenhagenspots"
+      image: /reels/fiolstraede-library.jpg
+      url: https://www.instagram.com/reel/DecPZt4thtI/
+      theme: spots
     flagsOnBuses:
       caption: Perché gli autobus danesi sventolano bandiere
       creator: "@hygge_withsonali"

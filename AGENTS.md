@@ -6,3 +6,4 @@
 ## Content
 
 - Adding Instagram reels to the feed strip: follow `.github/skills/add-reel/SKILL.md` (`pnpm add-reel <url> <slug>`).
+- Reels belong only in the "From the feed" strip; place cards must not link or embed Instagram reels.

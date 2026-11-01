@@ -191,11 +191,6 @@ sections:
           nyhavn:
             name: Nyhavn
             note: The coloured harbour from every postcard. It is busy and touristy, but still worth walking, especially early or after dinner.
-            url: https://www.instagram.com/reel/DdtuOratq5i/
-            linkText: Watch the reel
-            media:
-              image: /reels/nyhavn-night.jpg
-              url: https://www.instagram.com/reel/DdtuOratq5i/
           christiansborg:
             name: Christiansborg & the Tower
             note: Parliament, palace and a free city view, all on the same island.
@@ -551,9 +546,6 @@ sections:
               where Fiona almost marries Lord Farquaad, but DreamWorks has never
               confirmed that it was actually the model.
             url: https://www.visitcopenhagen.com/copenhagen/planning/grundtvigs-church-gdk410661
-            media:
-              image: /reels/grundtvig-church.jpg
-              url: https://www.instagram.com/reel/DeDUN-GMpju/
       libraries:
         title: Libraries worth entering
         items:
@@ -582,9 +574,6 @@ sections:
               in 2023 as a place for research, culture and tours; check the
               current programme before going specifically for a guided visit.
             url: https://www.kb.dk/en/visit-us/university-library-fiolstraede
-            media:
-              image: /reels/fiolstraede-library.jpg
-              url: https://www.instagram.com/reel/DecPZt4thtI/
       rooftops:
         title: Rooftops & city views
         items:
@@ -810,10 +799,6 @@ sections:
             name: When Søerne becomes a city square
             note: In a properly cold winter, a safe part of the frozen lakes fills with walkers and skaters. Wait for the city's blue permission signs.
             kicker: Rare, cold and extremely Copenhagen
-            url: https://www.instagram.com/reel/DVHRB9PiILm/
-            linkText: Watch the reel
-            media:
-              url: https://www.instagram.com/reel/DVHRB9PiILm/
             tips:
               - "Wait for the official blue signs before walking on the ice."
               - "Bring a thermos. The best part is standing around pretending you are Danish."
@@ -1496,6 +1481,24 @@ reels:
     spots: Hidden spots
     beyond: Beyond Copenhagen
   items:
+    nyhavnAfterDark:
+      caption: Nyhavn after dark
+      creator: "@adi.onthemap"
+      image: /reels/nyhavn-night.jpg
+      url: https://www.instagram.com/reel/DdtuOratq5i/
+      theme: spots
+    grundtvigChurchInside:
+      caption: Inside Grundtvig's Church
+      creator: "@area_archives"
+      image: /reels/grundtvig-church.jpg
+      url: https://www.instagram.com/reel/DeDUN-GMpju/
+      theme: spots
+    fiolstraedeHogwarts:
+      caption: Copenhagen's own Hogwarts library
+      creator: "@copenhagenspots"
+      image: /reels/fiolstraede-library.jpg
+      url: https://www.instagram.com/reel/DecPZt4thtI/
+      theme: spots
     flagsOnBuses:
       caption: Why Danish buses fly flags
       creator: "@hygge_withsonali"
