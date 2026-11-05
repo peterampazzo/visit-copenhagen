@@ -35,5 +35,5 @@ feed" strip rendered by `src/components/guide/ReelsStrip.tsx`.
 - `/p/` photo posts work too — the script accepts both `/reel/` and `/p/` URLs.
 - Re-run the script with `--force` to replace an existing thumbnail.
 
-A reel can also be linked from a place card via `media.url` (see the
-`frozenLakes` item, ~line 786 in `src/locales/en/guide.yaml`).
+Reels live only in this strip. Do not link them from place cards
+(`url`, `linkText` or `media` pointing at Instagram).

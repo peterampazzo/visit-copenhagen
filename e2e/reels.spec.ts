@@ -69,24 +69,10 @@ test("reel cards open Instagram in a new tab", async ({ page }) => {
   expect(await link.getAttribute("rel")).toContain("noreferrer");
 });
 
-test("Nyhavn card links to its reel", async ({ page }) => {
-  const link = page.locator('a[href*="DdtuOratq5i"]');
-  await link.scrollIntoViewIfNeeded();
-  await expect(link).toBeVisible();
-  await expect(link).toHaveText(/Watch the reel/);
-});
-
-for (const { place, shortcode } of [
-  { place: "Grundtvig's Church", shortcode: "DeDUN-GMpju" },
-  { place: "University Library in Fiolstræde", shortcode: "DecPZt4thtI" },
-]) {
-  test(`${place} story shows its reel`, async ({ page }) => {
-    const card = page
-      .locator("article")
-      .filter({ has: page.getByRole("heading", { name: place }) });
-    await card.scrollIntoViewIfNeeded();
-    await card.getByRole("button", { name: "The story" }).click();
-    await expect(page.getByRole("dialog").locator(`a[href*="${shortcode}"]`)).toBeVisible();
+for (const shortcode of ["DdtuOratq5i", "DeDUN-GMpju", "DecPZt4thtI", "DVHRB9PiILm"]) {
+  test(`reel ${shortcode} lives in the strip, not on a place card`, async ({ page }) => {
+    await expect(page.locator(`[data-reel-index] a[href*="${shortcode}"]`)).toHaveCount(1);
+    await expect(page.locator(`article a[href*="${shortcode}"]`)).toHaveCount(0);
   });
 }
 
