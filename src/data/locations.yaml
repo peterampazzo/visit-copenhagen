@@ -63,9 +63,13 @@ playhouse:
   longitude: 12.597105
   googleQuery: Royal Danish Playhouse, Copenhagen
 papiroen:
-  latitude: 55.679924
-  longitude: 12.603273
+  latitude: 55.679179
+  longitude: 12.598325
   googleQuery: Papirøen, Copenhagen
+kai:
+  latitude: 55.679648
+  longitude: 12.598059
+  googleQuery: KAI, Papirøen 47, Copenhagen
 opera:
   latitude: 55.681812
   longitude: 12.600541
